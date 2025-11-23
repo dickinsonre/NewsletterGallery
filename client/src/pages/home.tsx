@@ -41,7 +41,7 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">The Archive</h1>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">EPASWMM5 Related Software Library</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Library</p>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-24 border-t border-border/40 pt-12 pb-8 text-center space-y-4">
-          <p className="font-serif text-2xl italic text-primary/80">The Archive</p>
+          <p className="font-serif text-2xl italic text-primary/80">EPASWMM5 Related Software Library</p>
           <p className="text-sm text-muted-foreground">
             &copy; 2025 Robert Dickinson. All rights reserved. <br />
             Published on LinkedIn.
