@@ -100,7 +100,7 @@ export default function Home() {
 
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-serif font-medium text-foreground leading-tight">
-              A curated collection of thoughts on stormwater, modeling, and engineering history.
+              A collection of thoughts on stormwater, modeling, and engineering history from an ICM and SWMM5 perspective
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Explore the archive of newsletters by Robert Dickinson. A digital library dedicated to understanding 
