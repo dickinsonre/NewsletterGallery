@@ -2,6 +2,7 @@ import { newsletters } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 import avatarImage from "@assets/generated_images/friendly_senior_engineer_avatar_illustration.png";
+import headerImage from "@assets/image_1763937601766.png";
 import { BookOpen, Search, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -92,23 +93,29 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero / Intro */}
-        <div className="max-w-2xl mx-auto text-center mb-16 space-y-6">
-          <h2 className="text-4xl md:text-5xl font-serif font-medium text-foreground leading-tight">
-            A curated collection of thoughts on stormwater, modeling, and engineering history.
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Explore the archive of newsletters by Robert Dickinson. A digital library dedicated to understanding 
-            the complex systems of water management and the software that powers them.
-          </p>
-          
-          <div className="relative max-w-md mx-auto pt-4">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input 
-              placeholder="Search the archives..." 
-              className="pl-10 bg-background/50 border-primary/20 focus-visible:ring-primary/20 font-serif"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
+        <div className="max-w-4xl mx-auto text-center mb-16 space-y-8">
+          <div className="w-full rounded-lg overflow-hidden shadow-2xl border border-border/50">
+            <img src={headerImage} alt="Urban Watershed SWMM Modeling Expertise" className="w-full h-auto" />
+          </div>
+
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-medium text-foreground leading-tight">
+              A curated collection of thoughts on stormwater, modeling, and engineering history.
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Explore the archive of newsletters by Robert Dickinson. A digital library dedicated to understanding 
+              the complex systems of water management and the software that powers them.
+            </p>
+            
+            <div className="relative max-w-md mx-auto pt-4">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <Input 
+                placeholder="Search the archives..." 
+                className="pl-10 bg-background/50 border-primary/20 focus-visible:ring-primary/20 font-serif"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </div>
           </div>
         </div>
 
