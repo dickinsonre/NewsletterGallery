@@ -1,12 +1,9 @@
-import cover1 from "@assets/generated_images/minimalist_abstract_book_cover_art_1.png";
-import cover2 from "@assets/generated_images/minimalist_abstract_book_cover_art_2.png";
-import cover3 from "@assets/generated_images/minimalist_abstract_book_cover_art_3.png";
-import hydraulic from "@assets/generated_images/geometric_water_flow_diagram_aesthetic.png";
-import codeViz from "@assets/generated_images/code_and_data_visualization_abstract.png";
-import blueprint from "@assets/generated_images/historical_engineering_blueprint_style.png";
-import aiNetwork from "@assets/generated_images/ai_and_network_node_connection.png";
-import urbanWater from "@assets/generated_images/urban_water_management_abstract.png";
-import simulation from "@assets/generated_images/hydraulic_simulation_abstract.png";
+import quizCover from "@assets/generated_images/quiz_and_testing_knowledge_check.png";
+import rubyCover from "@assets/generated_images/ruby_code_and_scripting_automation.png";
+import icmCover from "@assets/generated_images/icm_infoworks_software_interface.png";
+import historyCover from "@assets/generated_images/historical_timeline_of_swmm_evolution.png";
+import aiCover from "@assets/generated_images/ai_and_machine_learning_integration.png";
+import sqlCover from "@assets/generated_images/sql_database_queries_and_data_extraction.png";
 
 export interface Newsletter {
   id: string;
@@ -19,12 +16,6 @@ export interface Newsletter {
   issueNumber: number;
 }
 
-// Helper to randomize images for variety since we generated 6 new thematic ones
-const getCover = (index: number) => {
-  const covers = [hydraulic, codeViz, blueprint, aiNetwork, urbanWater, simulation, cover1, cover2, cover3];
-  return covers[index % covers.length];
-};
-
 export const newsletters: Newsletter[] = [
   {
     id: "45",
@@ -32,7 +23,7 @@ export const newsletters: Newsletter[] = [
     description: "Test your knowledge on simulation parameters within ICM InfoWorks. A comprehensive quiz for modelers.",
     date: "2 weeks ago",
     readTime: "10 min read",
-    imageUrl: getCover(0),
+    imageUrl: quizCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 45
   },
@@ -42,7 +33,7 @@ export const newsletters: Newsletter[] = [
     description: "Exploring the intersection of AI prompts and legacy water modeling software versions.",
     date: "6 months ago",
     readTime: "8 min read",
-    imageUrl: getCover(1),
+    imageUrl: aiCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 44
   },
@@ -52,7 +43,7 @@ export const newsletters: Newsletter[] = [
     description: "Using Ruby scripting to extract and analyze statistical data from vast network parameters in ICM SWMM.",
     date: "6 months ago",
     readTime: "7 min read",
-    imageUrl: getCover(2),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 43
   },
@@ -62,7 +53,7 @@ export const newsletters: Newsletter[] = [
     description: "A guide to simplifying the statistical analysis of network parameters in InfoWorks ICM using Ruby.",
     date: "6 months ago",
     readTime: "6 min read",
-    imageUrl: getCover(3),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 42
   },
@@ -72,7 +63,7 @@ export const newsletters: Newsletter[] = [
     description: "Automating the export of large datasets from ICM SWMM to CSV format using Ruby scripts.",
     date: "6 months ago",
     readTime: "5 min read",
-    imageUrl: getCover(4),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 41
   },
@@ -82,7 +73,7 @@ export const newsletters: Newsletter[] = [
     description: "Efficient techniques for exporting InfoWorks ICM network data to CSV for external analysis.",
     date: "6 months ago",
     readTime: "5 min read",
-    imageUrl: getCover(5),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 40
   },
@@ -92,7 +83,7 @@ export const newsletters: Newsletter[] = [
     description: "A historical journey through the development of the Storm Water Management Model (SWMM) since 1978.",
     date: "8 months ago",
     readTime: "12 min read",
-    imageUrl: getCover(6),
+    imageUrl: historyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 39
   },
@@ -102,7 +93,7 @@ export const newsletters: Newsletter[] = [
     description: "Integrating modern AI and Ruby scripting with classic and current SWMM versions.",
     date: "8 months ago",
     readTime: "9 min read",
-    imageUrl: getCover(7),
+    imageUrl: aiCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 38
   },
@@ -112,7 +103,7 @@ export const newsletters: Newsletter[] = [
     description: "Reviewing classic hydraulic test files that have stood the test of time across multiple SWMM generations.",
     date: "9 months ago",
     readTime: "8 min read",
-    imageUrl: getCover(8),
+    imageUrl: icmCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 37
   },
@@ -122,7 +113,7 @@ export const newsletters: Newsletter[] = [
     description: "A curated list of resources for mastering Ruby scripting in the context of ICM and ICM SWMM.",
     date: "9 months ago",
     readTime: "7 min read",
-    imageUrl: getCover(0),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 36
   },
@@ -132,7 +123,7 @@ export const newsletters: Newsletter[] = [
     description: "Digitizing and organizing historical SWMM documentation for use with AI-driven queries.",
     date: "1 year ago",
     readTime: "6 min read",
-    imageUrl: getCover(1),
+    imageUrl: aiCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 35
   },
@@ -142,7 +133,7 @@ export const newsletters: Newsletter[] = [
     description: "A broad overview of water quality modeling across various software platforms and the role of Ruby.",
     date: "1 year ago",
     readTime: "8 min read",
-    imageUrl: getCover(2),
+    imageUrl: icmCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 34
   },
@@ -152,7 +143,7 @@ export const newsletters: Newsletter[] = [
     description: "A collection of miscellaneous yet useful Ruby tools for enhancing your modeling workflow.",
     date: "1 year ago",
     readTime: "5 min read",
-    imageUrl: getCover(3),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 33
   },
@@ -162,7 +153,7 @@ export const newsletters: Newsletter[] = [
     description: "Customizing ICM SWMM output reports to match the familiar format of InfoSWMM using Ruby.",
     date: "1 year ago",
     readTime: "7 min read",
-    imageUrl: getCover(4),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 32
   },
@@ -172,7 +163,7 @@ export const newsletters: Newsletter[] = [
     description: "An intriguing look into the organizational structure of the newsletter and the significance of the number 1729.",
     date: "1 year ago",
     readTime: "4 min read",
-    imageUrl: getCover(5),
+    imageUrl: quizCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 31
   },
@@ -182,7 +173,7 @@ export const newsletters: Newsletter[] = [
     description: "A guide on migrating from InfoSewer to ICM InfoWorks using advanced data import and scripting techniques.",
     date: "1 year ago",
     readTime: "10 min read",
-    imageUrl: getCover(6),
+    imageUrl: sqlCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 30
   },
@@ -192,7 +183,7 @@ export const newsletters: Newsletter[] = [
     description: "Advanced Ruby scripting for spatial manipulation of 2D polygons and results points in network models.",
     date: "1 year ago",
     readTime: "8 min read",
-    imageUrl: getCover(7),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 29
   },
@@ -202,7 +193,7 @@ export const newsletters: Newsletter[] = [
     description: "Tracking the exponential performance improvements in SWMM engines over nearly four decades.",
     date: "1 year ago",
     readTime: "6 min read",
-    imageUrl: getCover(8),
+    imageUrl: historyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 28
   },
@@ -212,7 +203,7 @@ export const newsletters: Newsletter[] = [
     description: "Using Ruby to audit and analyze runoff surface usage in your hydraulic networks.",
     date: "1 year ago",
     readTime: "5 min read",
-    imageUrl: getCover(0),
+    imageUrl: rubyCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 27
   },
@@ -222,7 +213,7 @@ export const newsletters: Newsletter[] = [
     description: "Comprehensive SQL queries for extracting all types of results and parameters from ICM SWMM.",
     date: "1 year ago",
     readTime: "9 min read",
-    imageUrl: getCover(1),
+    imageUrl: sqlCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 26
   }
