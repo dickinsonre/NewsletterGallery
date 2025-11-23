@@ -41,8 +41,8 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">EPASWMM5 Related Software Library</h1>
-              <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Library</p>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5 Modeling Expertise</h1>
+              <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Archive</p>
             </div>
           </div>
           
