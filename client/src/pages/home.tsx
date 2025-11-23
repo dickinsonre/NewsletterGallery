@@ -30,7 +30,8 @@ export default function Home() {
       className="min-h-screen w-full bg-repeat"
       style={{ 
         backgroundImage: `url(${bgTexture})`,
-        backgroundSize: '500px'
+        backgroundSize: '500px',
+        filter: 'hue-rotate(200deg) saturate(1.5)'
       }}
     >
       {/* Header Section */}
