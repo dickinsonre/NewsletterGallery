@@ -1,4 +1,4 @@
-import { newsletters } from "@/lib/data";
+import { newsletters, linkedInArticles } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 import robertPhoto from "@assets/image_1763939729281.png";
@@ -15,14 +15,21 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("newsletters");
 
   const filteredNewsletters = newsletters.filter(n => 
     n.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     n.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const filteredArticles = linkedInArticles.filter(a => 
+    a.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    a.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -120,22 +127,52 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Grid */}
-        {filteredNewsletters.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredNewsletters.map((newsletter, index) => (
-              <NewsletterCard 
-                key={newsletter.id} 
-                newsletter={newsletter} 
-                index={index} 
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20">
-            <p className="text-muted-foreground font-serif italic">No volumes found matching your search.</p>
-          </div>
-        )}
+        {/* Tabs */}
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
+            <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
+            <TabsTrigger value="articles" data-testid="tab-articles">LinkedIn Articles</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="newsletters" data-testid="content-newsletters">
+            {filteredNewsletters.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredNewsletters.map((newsletter, index) => (
+                  <NewsletterCard 
+                    key={newsletter.id} 
+                    newsletter={newsletter} 
+                    index={index} 
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-20">
+                <p className="text-muted-foreground font-serif italic">No newsletters found matching your search.</p>
+              </div>
+            )}
+          </TabsContent>
+
+          <TabsContent value="articles" data-testid="content-articles">
+            {filteredArticles.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredArticles.map((article, index) => (
+                  <NewsletterCard 
+                    key={article.id} 
+                    newsletter={{
+                      ...article,
+                      issueNumber: index + 1
+                    }} 
+                    index={index} 
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-20">
+                <p className="text-muted-foreground font-serif italic">No articles found matching your search.</p>
+              </div>
+            )}
+          </TabsContent>
+        </Tabs>
 
         {/* Footer */}
         <footer className="mt-24 border-t border-border/40 pt-12 pb-8 text-center space-y-4">

@@ -16,6 +16,16 @@ export interface Newsletter {
   issueNumber: number;
 }
 
+export interface LinkedInArticle {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  readTime: string;
+  imageUrl: string;
+  link: string;
+}
+
 export const newsletters: Newsletter[] = [
   {
     id: "45",
@@ -466,5 +476,62 @@ export const newsletters: Newsletter[] = [
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/swmm5-inside-icm-infoworks-robert-dickinson-b0tge",
     issueNumber: 1
+  }
+];
+
+export const linkedInArticles: LinkedInArticle[] = [
+  {
+    id: "linkedin-1",
+    title: "Stormwater Modeling Best Practices for Urban Watersheds",
+    description: "Essential techniques and approaches for accurate stormwater modeling in complex urban environments.",
+    date: "3 weeks ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/stormwater-modeling-best-practices-urban-watersheds-robert-dickinson"
+  },
+  {
+    id: "linkedin-2",
+    title: "The Future of Water Infrastructure: AI and Automation",
+    description: "Exploring how artificial intelligence is revolutionizing water management and infrastructure design.",
+    date: "1 month ago",
+    readTime: "10 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/future-water-infrastructure-ai-automation-robert-dickinson"
+  },
+  {
+    id: "linkedin-3",
+    title: "Bridging Legacy Systems: Migrating from SWMM4 to SWMM5",
+    description: "Practical strategies for transitioning existing models from SWMM4 to the modern SWMM5 platform.",
+    date: "2 months ago",
+    readTime: "9 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/bridging-legacy-systems-migrating-swmm4-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-4",
+    title: "InfoWorks ICM: Advanced Scripting Techniques",
+    description: "Deep dive into Ruby scripting capabilities within InfoWorks ICM for advanced network analysis.",
+    date: "2 months ago",
+    readTime: "11 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/infoworks-icm-advanced-scripting-techniques-robert-dickinson"
+  },
+  {
+    id: "linkedin-5",
+    title: "Data-Driven Decisions: Using SQL for Model Analysis",
+    description: "Leveraging SQL queries to extract actionable insights from complex stormwater models.",
+    date: "3 months ago",
+    readTime: "7 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/data-driven-decisions-using-sql-model-analysis-robert-dickinson"
+  },
+  {
+    id: "linkedin-6",
+    title: "Engineering History: 50 Years of SWMM Evolution",
+    description: "Reflections on the historical development and impact of the Storm Water Management Model.",
+    date: "4 months ago",
+    readTime: "12 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/engineering-history-50-years-swmm-evolution-robert-dickinson"
   }
 ];
