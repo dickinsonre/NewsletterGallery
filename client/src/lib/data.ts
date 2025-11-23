@@ -24,7 +24,7 @@ export const newsletters: Newsletter[] = [
     date: "2 weeks ago",
     readTime: "10 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/icm-infoworks-simulation-parameters-100-question-quiz-dickinson-oh8ke",
     issueNumber: 45
   },
   {
@@ -34,7 +34,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/ai-ruby-time-travel-prompts-swmm4-icm-infoworks-swmm5-dickinson-7cjse",
     issueNumber: 44
   },
   {
@@ -44,7 +44,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-swmm-simple-statistics-ruby-dickinson-dxtre",
     issueNumber: 43
   },
   {
@@ -54,7 +54,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-simple-statistics-network-ruby-dickinson-cnbve",
     issueNumber: 42
   },
   {
@@ -64,7 +64,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-swmm-exporting-thousands-csv-dickinson-gcpce",
     issueNumber: 41
   },
   {
@@ -74,7 +74,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-exporting-thousands-csv-ruby-dickinson-cov5c",
     issueNumber: 40
   },
   {
@@ -84,7 +84,7 @@ export const newsletters: Newsletter[] = [
     date: "8 months ago",
     readTime: "12 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-40-history-swmm-from-1978-onwards-pdf-files-robert-dickinson-z9kje",
     issueNumber: 39
   },
   {
@@ -94,7 +94,7 @@ export const newsletters: Newsletter[] = [
     date: "8 months ago",
     readTime: "9 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-39-swmm4-swmm5-ruby-ai-robert-dickinson-m31le",
     issueNumber: 38
   },
   {
@@ -104,7 +104,7 @@ export const newsletters: Newsletter[] = [
     date: "9 months ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-38-seven-classic-swmm5-hydraulics-test-files-from-dickinson-izrye",
     issueNumber: 37
   },
   {
@@ -114,7 +114,7 @@ export const newsletters: Newsletter[] = [
     date: "9 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-37-ruby-scripting-resources-icm-swmm-help-files-dickinson-7safe",
     issueNumber: 36
   },
   {
@@ -124,7 +124,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "6 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-36-pdf-files-swmm1-swmm2-swmm3-swmm4-swmm5-ai-dickinson-juhke",
     issueNumber: 35
   },
   {
@@ -134,7 +134,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-35-swmm5-infosewer-icm-swmm-infoworks-ruby-water-dickinson-qbvye",
     issueNumber: 34
   },
   {
@@ -144,7 +144,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-34-misc-ruby-tools-icm-infoworks-swmm-robert-dickinson-g7z5e",
     issueNumber: 33
   },
   {
@@ -154,7 +154,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-33-using-ruby-make-icm-swmm-more-like-output-report-robert-8cuse",
     issueNumber: 32
   },
   {
@@ -164,7 +164,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "4 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/how-epaswmm5-related-software-newsletter-organized-using-dickinson-6ybme",
     issueNumber: 31
   },
   {
@@ -174,7 +174,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "10 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-31-infosewer-icm-infoworks-using-odic-ruby-sql-dickinson-3e80e",
     issueNumber: 30
   },
   {
@@ -184,7 +184,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-30-ruby-code-altering-2d-polygons-making-points-dickinson-xklwe",
     issueNumber: 29
   },
   {
@@ -194,7 +194,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "6 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-29-from-1988-2024-swmms-incredible-54000-fold-dickinson-9chye",
     issueNumber: 28
   },
   {
@@ -204,7 +204,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-28-how-many-runoff-surfaces-do-i-actually-use-dickinson-h3jie",
     issueNumber: 27
   },
   {
@@ -214,257 +214,257 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "9 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-27-sql-all-icm-swmm-results-nodes-links-lids-input-dickinson-si1ye",
     issueNumber: 26
   },
   {
     id: "25",
-    title: "SQL for ALL ICM SWMM Results for Nodes, Links and Subcatchments and LIDS Input and Results Parameters",
-    description: "Comprehensive SQL queries for extracting all types of results and parameters from ICM SWMM.",
+    title: "SQL for ALL ICM InfoWorks Results for Nodes, Links, Subcatchments, and SUDS Input and Results Parameters",
+    description: "Comprehensive SQL queries for extracting all types of results and parameters from ICM InfoWorks.",
     date: "2 years ago",
     readTime: "9 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-26-sql-all-icm-infoworks-results-nodes-links-suds-dickinson-d7oae",
     issueNumber: 25
   },
   {
     id: "24",
-    title: "ICM InfoWorks: SQL Functions and Network Parameter Extraction",
+    title: "ICM SQL Functions and Network Parameter Extraction for SWMM and InfoWorks",
     description: "Deep dive into SQL functions available in ICM InfoWorks for efficient network analysis.",
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/edition-25-icm-sql-functions-swmm-infoworks-robert-dickinson-q7qxe",
     issueNumber: 24
   },
   {
     id: "23",
+    title: "I Imported InfoSWMM to ICM SWMM: Where Are All the DWF Dry Flow Rates?",
+    description: "Troubleshooting data migration and understanding parameter mapping in model conversions.",
+    date: "2 years ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/i-imported-infoswmm-icm-swmm-where-all-dwf-dry-flow-dickinson-r16qe",
+    issueNumber: 23
+  },
+  {
+    id: "22",
+    title: "SWMM5 Components in ICM InfoWorks Networks",
+    description: "Understanding how SWMM5 components integrate within ICM InfoWorks architecture.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/swmm5-components-icm-infoworks-networks-robert-dickinson-aadee",
+    issueNumber: 22
+  },
+  {
+    id: "21",
     title: "100 SWMM5 Quiz Questions",
     description: "A comprehensive quiz covering SWMM5 fundamentals, test your expertise.",
     date: "2 years ago",
     readTime: "15 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 23
+    link: "https://www.linkedin.com/pulse/100-swmm5-quiz-questions-robert-dickinson-jonke",
+    issueNumber: 21
   },
   {
-    id: "22",
-    title: "InfoSewer to ICM SWMM Migration: Database and Ruby Tools",
-    description: "Step-by-step guidance on converting InfoSewer models to ICM SWMM using Ruby scripting.",
-    date: "2 years ago",
-    readTime: "12 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 22
-  },
-  {
-    id: "21",
+    id: "20",
     title: "Seven InfoSWMM Blogs for Readers in the Years 2024-2030+",
     description: "A curated collection of InfoSWMM resources and best practices for modern modeling.",
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 21
-  },
-  {
-    id: "20",
-    title: "Ruby Tools for InfoWorks Network Parameter Analysis",
-    description: "Practical Ruby scripts for analyzing and manipulating ICM InfoWorks network parameters.",
-    date: "2 years ago",
-    readTime: "8 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/seven-infoswmm-blogs-readers-years-2024-2030-robert-dickinson-aflue",
     issueNumber: 20
   },
   {
     id: "19",
-    title: "ICM SWMM: From Legacy InfoSWMM to Modern Modeling",
-    description: "Understanding the transition from InfoSWMM to ICM SWMM and leveraging new features.",
+    title: "Summary of Last 19 Newsletter Edition Topics",
+    description: "Comprehensive overview and summary of the previous nineteen editions.",
     date: "2 years ago",
-    readTime: "10 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "6 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/summary-last-19-newsletter-edition-topics-robert-dickinson-wzn4e",
     issueNumber: 19
   },
   {
     id: "18",
-    title: "SWMM5 Hydraulics: Deep Dive into Link and Node Calculations",
-    description: "Technical analysis of how SWMM5 calculates hydraulic performance in stormwater networks.",
+    title: "ICM Ruby: Read InfoSewer and InfoSWMM Scenario Facilities and Loads",
+    description: "Using Ruby scripting to extract facility and load data from InfoSewer and InfoSWMM scenarios.",
     date: "2 years ago",
-    readTime: "11 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/icm-ruby-read-infosewer-infoswmm-scenario-facilities-loads-dickinson-qnnme",
     issueNumber: 18
   },
   {
     id: "17",
-    title: "Ruby Automation for ICM InfoWorks LID and SUDS Modeling",
-    description: "Automating the creation and analysis of Low Impact Development features in InfoWorks.",
+    title: "From Legacy to Future: Recalling Engine InfoSewer ICM 2030",
+    description: "Reflecting on the evolution from InfoSewer to modern ICM systems.",
     date: "2 years ago",
     readTime: "7 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/from-legacy-future-recalling-engine-infosewer-icm-2030-dickinson-m269e",
     issueNumber: 17
   },
   {
     id: "16",
-    title: "SWMM5 Routing Models and Network Representation",
-    description: "Exploring different routing approaches and network modeling strategies in SWMM5.",
+    title: "InfoSWMM Graphical Tools: Understanding SWMM5 and ICM SWMM",
+    description: "Visual tools and techniques for better understanding stormwater models.",
     date: "2 years ago",
-    readTime: "9 min read",
+    readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/infoswmm-graphical-tools-understanding-swmm5-icm-swmm-dickinson-gul2c",
     issueNumber: 16
   },
   {
     id: "15",
-    title: "SQL Queries for InfoWorks ICM Results Analysis and Reporting",
-    description: "Advanced SQL techniques for extracting and analyzing ICM results data.",
+    title: "Embedded Posts from Autodesk Water Infrastructure Zone",
+    description: "Collection of insights from the Autodesk Water Infrastructure community.",
     date: "2 years ago",
-    readTime: "10 min read",
-    imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/embedded-posts-from-autodesk-water-infrastructures-one-dickinson-borge",
     issueNumber: 15
   },
   {
     id: "14",
-    title: "Ruby Scripting for SWMM5 Network Generation and Modification",
-    description: "Learn how to programmatically create and modify SWMM5 networks using Ruby.",
+    title: "Ruby: See Statistics of All Items in Both ICM InfoWorks and SWMM",
+    description: "Ruby scripting for comprehensive statistical analysis across different modeling platforms.",
     date: "2 years ago",
-    readTime: "8 min read",
+    readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/ruby-see-statistics-all-items-both-icm-infoworks-swmm-dickinson-ghvse",
     issueNumber: 14
   },
   {
     id: "13",
-    title: "ICM InfoWorks Advanced Reporting with SQL and Ruby",
-    description: "Combining SQL and Ruby to create custom reports from InfoWorks data.",
+    title: "Story: C Code Link Hydraulics SWMM5 DWFLOWC",
+    description: "Deep technical dive into the C code underlying SWMM5 hydraulic calculations.",
     date: "2 years ago",
-    readTime: "9 min read",
-    imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "10 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/story-c-code-link-hydraulics-swmm5-dwflowc-robert-dickinson-mvv3e",
     issueNumber: 13
   },
   {
     id: "12",
-    title: "SWMM5 Hydrology: Infiltration, Runoff, and Rainfall Analysis",
-    description: "Understanding the hydrological processes modeled in SWMM5 and their implementation.",
+    title: "Story: C Code Node Hydraulics SWMM5 DYNWAVEC",
+    description: "Examining the C code for dynamic wave node hydraulics in SWMM5.",
     date: "2 years ago",
-    readTime: "10 min read",
+    readTime: "9 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/story-c-code-node-hydraulics-swmm5-dynwavec-robert-dickinson-cgnte",
     issueNumber: 12
   },
   {
     id: "11",
-    title: "InfoWorks ICM Calibration and Validation Techniques",
-    description: "Best practices for calibrating and validating stormwater models in InfoWorks.",
+    title: "Story: C Code Hydrology SWMM5",
+    description: "Understanding the hydrological calculations at the core of SWMM5.",
     date: "2 years ago",
-    readTime: "9 min read",
+    readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/story-c-code-hydrology-swmm5-robert-dickinson-2x0we",
     issueNumber: 11
   },
   {
     id: "10",
-    title: "Ruby Tools for Data Extraction from SWMM and InfoWorks Models",
-    description: "Efficient Ruby scripts for extracting and transforming model data.",
+    title: "Blogs: Modeling Components General SDSU SWMM5",
+    description: "Educational resources on SWMM5 modeling components from SDSU.",
     date: "2 years ago",
-    readTime: "7 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "6 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/blogs-modeling-components-general-sdsu-swmm5-robert-dickinson-xvfhe",
     issueNumber: 10
   },
   {
     id: "9",
-    title: "SWMM4 to SWMM5: A Comprehensive Migration Guide",
-    description: "Complete walkthrough of upgrading SWMM4 models to SWMM5 with best practices.",
+    title: "Interesting Modeling Blogs: InfoWorks ICM",
+    description: "Curated collection of interesting blogs about water modeling and InfoWorks ICM.",
     date: "2 years ago",
-    readTime: "12 min read",
-    imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "7 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/interesting-modeling-blogs-interesante-infoworks-icm-robert-dickinson-3gr8e",
     issueNumber: 9
   },
   {
     id: "8",
-    title: "ICM InfoWorks Database Structure and Management",
-    description: "Understanding the database architecture underlying ICM InfoWorks projects.",
+    title: "Roaming Around Singapore: Commenting on Drainage Features",
+    description: "Travel observations and commentary on stormwater drainage systems in Singapore.",
     date: "2 years ago",
-    readTime: "8 min read",
-    imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/roaming-around-singapore-commenting-drainage-features-dickinson-pchpe",
     issueNumber: 8
   },
   {
     id: "7",
+    title: "Ruby and SQL: InfoWorks ICM SWMM Networks",
+    description: "Combining Ruby and SQL for advanced InfoWorks ICM and SWMM network analysis.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/ruby-sql-infoworks-icm-swmm-networks-robert-dickinson-qvuwe",
+    issueNumber: 7
+  },
+  {
+    id: "6",
+    title: "Deep Dive: Inner Workings of XPSWMM and SWMM5 Through the Lens of ICM",
+    description: "Technical analysis of XPSWMM and SWMM5 architecture as implemented in ICM.",
+    date: "2 years ago",
+    readTime: "11 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/deep-dive-inner-workings-xpswmm-swmm5-icm-through-lens-dickinson-ugoxe",
+    issueNumber: 6
+  },
+  {
+    id: "5",
+    title: "Deep Dive: Inside SWMM5 Using Tables",
+    description: "Exploring SWMM5 internal structure and data tables.",
+    date: "2 years ago",
+    readTime: "9 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/deep-dive-inside-swmm5-using-tables-robert-dickinson-ukjfe",
+    issueNumber: 5
+  },
+  {
+    id: "4",
     title: "Seven Blogs about SWMM and Myself at Autodesk",
     description: "Personal reflections on SWMM development and water management innovation.",
     date: "2 years ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 7
+    link: "https://www.linkedin.com/pulse/seven-blogs-swmm-myself-autodesk-robert-dickinson-pyafe",
+    issueNumber: 4
   },
   {
-    id: "6",
+    id: "3",
     title: "Seven Blogs about ChatGPT and SWMM5",
     description: "Exploring the intersection of AI language models and stormwater modeling.",
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 6
-  },
-  {
-    id: "5",
-    title: "Seven Blogs about Importing InfoSewer or InfoSWMM to ICM InfoWorks",
-    description: "Comprehensive guide to model migration and data integration strategies.",
-    date: "2 years ago",
-    readTime: "11 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 5
-  },
-  {
-    id: "4",
-    title: "SWMM5 inside ICM InfoWorks",
-    description: "How SWMM5 engine powers ICM InfoWorks and integration architecture.",
-    date: "2 years ago",
-    readTime: "8 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
-    issueNumber: 4
-  },
-  {
-    id: "3",
-    title: "Seven Blogs About Ruby, ICM SWMM and InfoWorks Networks",
-    description: "Ruby scripting techniques for advanced stormwater network modeling.",
-    date: "3 years ago",
-    readTime: "9 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/seven-blogs-chatgpt-swmm5-robert-dickinson-gqyxe",
     issueNumber: 3
   },
   {
     id: "2",
-    title: "Stormwater Management Model (SWMM) Fundamentals and Applications",
-    description: "Introduction to SWMM and its role in modern stormwater engineering.",
-    date: "3 years ago",
-    readTime: "8 min read",
+    title: "Seven Blogs about Importing InfoSewer or InfoSWMM to ICM",
+    description: "Comprehensive guide to model migration and data integration strategies.",
+    date: "2 years ago",
+    readTime: "11 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    link: "https://www.linkedin.com/pulse/seven-blogs-importing-infosewer-infoswmm-icm-robert-dickinson-bi47e",
     issueNumber: 2
   },
   {
     id: "1",
-    title: "Welcome to EPASWMM5 Related Software Newsletter",
-    description: "Introduction to the newsletter covering SWMM, InfoWorks, Ruby scripting, and water engineering.",
+    title: "SWMM5 Inside ICM InfoWorks",
+    description: "How SWMM5 engine powers ICM InfoWorks and integration architecture.",
     date: "3 years ago",
-    readTime: "5 min read",
-    imageUrl: quizCover,
-    link: "https://www.linkedin.com/in/robertdickinson/",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/swmm5-inside-icm-infoworks-robert-dickinson-b0tge",
     issueNumber: 1
   }
 ];
