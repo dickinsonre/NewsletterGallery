@@ -1,12 +1,23 @@
 import { newsletters } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
-import { BookOpen, Search } from "lucide-react";
+import avatarImage from "@assets/generated_images/friendly_senior_engineer_avatar_illustration.png";
+import { BookOpen, Search, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   const filteredNewsletters = newsletters.filter(n => 
     n.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -34,10 +45,43 @@ export default function Home() {
             </div>
           </div>
           
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground">
+          <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground items-center">
             <a href="#" className="text-foreground hover:text-primary transition-colors">Library</a>
-            <a href="#" className="hover:text-primary transition-colors">About</a>
-            <a href="#" className="hover:text-primary transition-colors">Subscribe</a>
+            
+            <Dialog open={isAboutOpen} onOpenChange={setIsAboutOpen}>
+              <DialogTrigger asChild>
+                <button className="hover:text-primary transition-colors focus:outline-none">About</button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md bg-card/95 backdrop-blur-sm border-border">
+                <DialogHeader className="flex flex-col items-center text-center space-y-4 pt-4">
+                  <Avatar className="w-32 h-32 border-4 border-background shadow-xl">
+                    <AvatarImage src={avatarImage} alt="Robert Dickinson" className="object-cover" />
+                    <AvatarFallback>RD</AvatarFallback>
+                  </Avatar>
+                  <div className="space-y-2">
+                    <DialogTitle className="text-2xl font-serif">Robert Dickinson</DialogTitle>
+                    <DialogDescription className="text-sm font-medium text-primary uppercase tracking-wider">
+                      Grandpa & Engineer
+                    </DialogDescription>
+                  </div>
+                </DialogHeader>
+                <div className="space-y-4 py-4 text-center">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Helping across the full stormwater spectrum:
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-2 text-sm">
+                    <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">SWMM (50+ yrs)</span>
+                    <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoSWMM/ESRI (20 yrs)</span>
+                    <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoWorks ICM (15 yrs)</span>
+                    <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Autodesk AEC Collection (5 yrs)</span>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            <a href="https://www.linkedin.com/in/robert-dickinson-899011/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              LinkedIn
+            </a>
           </nav>
         </div>
       </header>
@@ -46,11 +90,11 @@ export default function Home() {
         {/* Hero / Intro */}
         <div className="max-w-2xl mx-auto text-center mb-16 space-y-6">
           <h2 className="text-4xl md:text-5xl font-serif font-medium text-foreground leading-tight">
-            A curated collection of thoughts on leadership, technology, and design.
+            A curated collection of thoughts on stormwater, modeling, and engineering history.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Explore the archive of newsletters. A digital library dedicated to understanding 
-            the complex systems that shape our modern world.
+            Explore the archive of newsletters by Robert Dickinson. A digital library dedicated to understanding 
+            the complex systems of water management and the software that powers them.
           </p>
           
           <div className="relative max-w-md mx-auto pt-4">
@@ -85,7 +129,7 @@ export default function Home() {
         <footer className="mt-24 border-t border-border/40 pt-12 pb-8 text-center space-y-4">
           <p className="font-serif text-2xl italic text-primary/80">The Archive</p>
           <p className="text-sm text-muted-foreground">
-            &copy; 2025. All rights reserved. <br />
+            &copy; 2025 Robert Dickinson. All rights reserved. <br />
             Published on LinkedIn.
           </p>
         </footer>
