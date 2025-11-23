@@ -32,33 +32,33 @@
 
 :root {
   /* Blue & Green Water Theme */
-  --background: 200 30% 97%; /* Cool Light Blue */
-  --foreground: 210 10% 10%; /* Deep Navy */
+  --background: 190 40% 92%; /* Blue-green background */
+  --foreground: 210 20% 8%; /* Deep navy text */
 
-  --card: 0 0% 100%;
-  --card-foreground: 210 10% 10%;
+  --card: 200 25% 98%;
+  --card-foreground: 210 20% 8%;
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 210 10% 10%;
+  --popover: 200 25% 98%;
+  --popover-foreground: 210 20% 8%;
 
-  --primary: 210 70% 45%; /* Ocean Blue */
+  --primary: 200 85% 50%; /* Vibrant Ocean Blue */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 160 60% 50%; /* Teal Green */
+  --secondary: 150 70% 45%; /* Vibrant Green */
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 200 20% 90%;
-  --muted-foreground: 210 10% 40%;
+  --muted: 190 30% 85%;
+  --muted-foreground: 210 15% 35%;
 
-  --accent: 140 60% 60%; /* Fresh Green */
-  --accent-foreground: 210 10% 10%;
+  --accent: 170 65% 55%; /* Teal Accent */
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 200 30% 85%;
-  --input: 200 30% 85%;
-  --ring: 210 70% 45%;
+  --border: 190 40% 80%;
+  --input: 190 40% 88%;
+  --ring: 200 85% 50%;
 }
 
 @layer base {
