@@ -74,6 +74,7 @@ export default function Home() {
                     <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoSWMM/ESRI (20 yrs)</span>
                     <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoWorks ICM (15 yrs)</span>
                     <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Autodesk AEC Collection (5 yrs)</span>
+                    <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Grandpa (10 yrs)</span>
                   </div>
                 </div>
               </DialogContent>
