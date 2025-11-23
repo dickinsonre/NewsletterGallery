@@ -25,7 +25,7 @@ export function NewsletterCard({ newsletter, index }: NewsletterCardProps) {
             className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute top-4 left-4 z-20 bg-background/90 backdrop-blur px-3 py-1 text-xs font-serif tracking-wider rounded-full shadow-sm">
-            ISSUE #{newsletter.issueNumber}
+            EDITION #{newsletter.issueNumber}
           </div>
         </CardHeader>
         <CardContent className="flex-grow p-6">
