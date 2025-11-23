@@ -24,7 +24,7 @@ export const newsletters: Newsletter[] = [
     date: "2 weeks ago",
     readTime: "10 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 45
   },
   {
@@ -34,7 +34,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 44
   },
   {
@@ -44,7 +44,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 43
   },
   {
@@ -54,7 +54,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 42
   },
   {
@@ -64,7 +64,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 41
   },
   {
@@ -74,7 +74,7 @@ export const newsletters: Newsletter[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 40
   },
   {
@@ -84,7 +84,7 @@ export const newsletters: Newsletter[] = [
     date: "8 months ago",
     readTime: "12 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 39
   },
   {
@@ -94,7 +94,7 @@ export const newsletters: Newsletter[] = [
     date: "8 months ago",
     readTime: "9 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 38
   },
   {
@@ -104,7 +104,7 @@ export const newsletters: Newsletter[] = [
     date: "9 months ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 37
   },
   {
@@ -114,7 +114,7 @@ export const newsletters: Newsletter[] = [
     date: "9 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 36
   },
   {
@@ -124,7 +124,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "6 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 35
   },
   {
@@ -134,7 +134,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 34
   },
   {
@@ -144,7 +144,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 33
   },
   {
@@ -154,7 +154,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 32
   },
   {
@@ -164,7 +164,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "4 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 31
   },
   {
@@ -174,7 +174,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "10 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 30
   },
   {
@@ -184,7 +184,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 29
   },
   {
@@ -194,7 +194,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "6 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 28
   },
   {
@@ -204,7 +204,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 27
   },
   {
@@ -214,7 +214,7 @@ export const newsletters: Newsletter[] = [
     date: "1 year ago",
     readTime: "9 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 26
   },
   {
@@ -224,7 +224,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "9 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 25
   },
   {
@@ -234,7 +234,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 24
   },
   {
@@ -244,7 +244,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "15 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 23
   },
   {
@@ -254,7 +254,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "12 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 22
   },
   {
@@ -264,7 +264,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 21
   },
   {
@@ -274,7 +274,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 20
   },
   {
@@ -284,7 +284,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "10 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 19
   },
   {
@@ -294,7 +294,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "11 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 18
   },
   {
@@ -304,7 +304,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 17
   },
   {
@@ -314,7 +314,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "9 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 16
   },
   {
@@ -324,7 +324,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "10 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 15
   },
   {
@@ -334,7 +334,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 14
   },
   {
@@ -344,7 +344,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "9 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 13
   },
   {
@@ -354,7 +354,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "10 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 12
   },
   {
@@ -364,7 +364,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "9 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 11
   },
   {
@@ -374,7 +374,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 10
   },
   {
@@ -384,7 +384,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "12 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 9
   },
   {
@@ -394,7 +394,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 8
   },
   {
@@ -404,7 +404,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 7
   },
   {
@@ -414,7 +414,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "7 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 6
   },
   {
@@ -424,7 +424,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "11 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 5
   },
   {
@@ -434,7 +434,7 @@ export const newsletters: Newsletter[] = [
     date: "2 years ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 4
   },
   {
@@ -444,7 +444,7 @@ export const newsletters: Newsletter[] = [
     date: "3 years ago",
     readTime: "9 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 3
   },
   {
@@ -454,7 +454,7 @@ export const newsletters: Newsletter[] = [
     date: "3 years ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 2
   },
   {
@@ -464,7 +464,7 @@ export const newsletters: Newsletter[] = [
     date: "3 years ago",
     readTime: "5 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    link: "https://www.linkedin.com/in/robertdickinson/",
     issueNumber: 1
   }
 ];
