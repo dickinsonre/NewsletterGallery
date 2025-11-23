@@ -1,7 +1,7 @@
 import { newsletters } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
-import avatarImage from "@assets/generated_images/friendly_senior_engineer_avatar_illustration.png";
+import robertPhoto from "@assets/image_1763939729281.png";
 import headerImage from "@assets/image_1763937601766.png";
 import { BookOpen, Search, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -55,10 +55,9 @@ export default function Home() {
               </DialogTrigger>
               <DialogContent className="sm:max-w-md bg-card/95 backdrop-blur-sm border-border">
                 <DialogHeader className="flex flex-col items-center text-center space-y-4 pt-4">
-                  <Avatar className="w-32 h-32 border-4 border-background shadow-xl">
-                    <AvatarImage src={avatarImage} alt="Robert Dickinson" className="object-cover" />
-                    <AvatarFallback>RD</AvatarFallback>
-                  </Avatar>
+                  <div className="w-32 h-32 rounded-full border-4 border-background shadow-xl overflow-hidden">
+                    <img src={robertPhoto} alt="Robert Dickinson" className="w-full h-full object-cover" />
+                  </div>
                   <div className="space-y-2">
                     <DialogTitle className="text-2xl font-serif">Robert Dickinson</DialogTitle>
                     <DialogDescription className="text-sm font-medium text-primary uppercase tracking-wider">
