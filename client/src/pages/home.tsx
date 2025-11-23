@@ -79,6 +79,10 @@ export default function Home() {
               </DialogContent>
             </Dialog>
 
+            <a href="https://www.linkedin.com/newsletters/7159940733972434944/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Subscribe
+            </a>
+
             <a href="https://www.linkedin.com/in/robert-dickinson-899011/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               LinkedIn
             </a>
