@@ -31,34 +31,34 @@
 }
 
 :root {
-  /* Warm Paper / Library Theme */
-  --background: 40 20% 97%; /* Warm Cream */
-  --foreground: 240 10% 10%; /* Ink Black */
+  /* Blue & Green Water Theme */
+  --background: 200 30% 97%; /* Cool Light Blue */
+  --foreground: 210 10% 10%; /* Deep Navy */
 
   --card: 0 0% 100%;
-  --card-foreground: 240 10% 10%;
+  --card-foreground: 210 10% 10%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 240 10% 10%;
+  --popover-foreground: 210 10% 10%;
 
-  --primary: 25 30% 35%; /* Leather Brown */
-  --primary-foreground: 40 20% 97%;
+  --primary: 210 70% 45%; /* Ocean Blue */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 40 10% 90%;
-  --secondary-foreground: 240 10% 10%;
+  --secondary: 160 60% 50%; /* Teal Green */
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 40 10% 90%;
-  --muted-foreground: 240 5% 40%;
+  --muted: 200 20% 90%;
+  --muted-foreground: 210 10% 40%;
 
-  --accent: 25 30% 90%; /* Light Leather */
-  --accent-foreground: 25 30% 35%;
+  --accent: 140 60% 60%; /* Fresh Green */
+  --accent-foreground: 210 10% 10%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 40 10% 85%;
-  --input: 40 10% 85%;
-  --ring: 25 30% 35%;
+  --border: 200 30% 85%;
+  --input: 200 30% 85%;
+  --ring: 210 70% 45%;
 }
 
 @layer base {
