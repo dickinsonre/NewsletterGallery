@@ -216,5 +216,255 @@ export const newsletters: Newsletter[] = [
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/newsletters/7159940733972434944/",
     issueNumber: 26
+  },
+  {
+    id: "25",
+    title: "SQL for ALL ICM SWMM Results for Nodes, Links and Subcatchments and LIDS Input and Results Parameters",
+    description: "Comprehensive SQL queries for extracting all types of results and parameters from ICM SWMM.",
+    date: "2 years ago",
+    readTime: "9 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 25
+  },
+  {
+    id: "24",
+    title: "ICM InfoWorks: SQL Functions and Network Parameter Extraction",
+    description: "Deep dive into SQL functions available in ICM InfoWorks for efficient network analysis.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 24
+  },
+  {
+    id: "23",
+    title: "100 SWMM5 Quiz Questions",
+    description: "A comprehensive quiz covering SWMM5 fundamentals, test your expertise.",
+    date: "2 years ago",
+    readTime: "15 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 23
+  },
+  {
+    id: "22",
+    title: "InfoSewer to ICM SWMM Migration: Database and Ruby Tools",
+    description: "Step-by-step guidance on converting InfoSewer models to ICM SWMM using Ruby scripting.",
+    date: "2 years ago",
+    readTime: "12 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 22
+  },
+  {
+    id: "21",
+    title: "Seven InfoSWMM Blogs for Readers in the Years 2024-2030+",
+    description: "A curated collection of InfoSWMM resources and best practices for modern modeling.",
+    date: "2 years ago",
+    readTime: "7 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 21
+  },
+  {
+    id: "20",
+    title: "Ruby Tools for InfoWorks Network Parameter Analysis",
+    description: "Practical Ruby scripts for analyzing and manipulating ICM InfoWorks network parameters.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 20
+  },
+  {
+    id: "19",
+    title: "ICM SWMM: From Legacy InfoSWMM to Modern Modeling",
+    description: "Understanding the transition from InfoSWMM to ICM SWMM and leveraging new features.",
+    date: "2 years ago",
+    readTime: "10 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 19
+  },
+  {
+    id: "18",
+    title: "SWMM5 Hydraulics: Deep Dive into Link and Node Calculations",
+    description: "Technical analysis of how SWMM5 calculates hydraulic performance in stormwater networks.",
+    date: "2 years ago",
+    readTime: "11 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 18
+  },
+  {
+    id: "17",
+    title: "Ruby Automation for ICM InfoWorks LID and SUDS Modeling",
+    description: "Automating the creation and analysis of Low Impact Development features in InfoWorks.",
+    date: "2 years ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 17
+  },
+  {
+    id: "16",
+    title: "SWMM5 Routing Models and Network Representation",
+    description: "Exploring different routing approaches and network modeling strategies in SWMM5.",
+    date: "2 years ago",
+    readTime: "9 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 16
+  },
+  {
+    id: "15",
+    title: "SQL Queries for InfoWorks ICM Results Analysis and Reporting",
+    description: "Advanced SQL techniques for extracting and analyzing ICM results data.",
+    date: "2 years ago",
+    readTime: "10 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 15
+  },
+  {
+    id: "14",
+    title: "Ruby Scripting for SWMM5 Network Generation and Modification",
+    description: "Learn how to programmatically create and modify SWMM5 networks using Ruby.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 14
+  },
+  {
+    id: "13",
+    title: "ICM InfoWorks Advanced Reporting with SQL and Ruby",
+    description: "Combining SQL and Ruby to create custom reports from InfoWorks data.",
+    date: "2 years ago",
+    readTime: "9 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 13
+  },
+  {
+    id: "12",
+    title: "SWMM5 Hydrology: Infiltration, Runoff, and Rainfall Analysis",
+    description: "Understanding the hydrological processes modeled in SWMM5 and their implementation.",
+    date: "2 years ago",
+    readTime: "10 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 12
+  },
+  {
+    id: "11",
+    title: "InfoWorks ICM Calibration and Validation Techniques",
+    description: "Best practices for calibrating and validating stormwater models in InfoWorks.",
+    date: "2 years ago",
+    readTime: "9 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 11
+  },
+  {
+    id: "10",
+    title: "Ruby Tools for Data Extraction from SWMM and InfoWorks Models",
+    description: "Efficient Ruby scripts for extracting and transforming model data.",
+    date: "2 years ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 10
+  },
+  {
+    id: "9",
+    title: "SWMM4 to SWMM5: A Comprehensive Migration Guide",
+    description: "Complete walkthrough of upgrading SWMM4 models to SWMM5 with best practices.",
+    date: "2 years ago",
+    readTime: "12 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 9
+  },
+  {
+    id: "8",
+    title: "ICM InfoWorks Database Structure and Management",
+    description: "Understanding the database architecture underlying ICM InfoWorks projects.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 8
+  },
+  {
+    id: "7",
+    title: "Seven Blogs about SWMM and Myself at Autodesk",
+    description: "Personal reflections on SWMM development and water management innovation.",
+    date: "2 years ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 7
+  },
+  {
+    id: "6",
+    title: "Seven Blogs about ChatGPT and SWMM5",
+    description: "Exploring the intersection of AI language models and stormwater modeling.",
+    date: "2 years ago",
+    readTime: "7 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 6
+  },
+  {
+    id: "5",
+    title: "Seven Blogs about Importing InfoSewer or InfoSWMM to ICM InfoWorks",
+    description: "Comprehensive guide to model migration and data integration strategies.",
+    date: "2 years ago",
+    readTime: "11 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 5
+  },
+  {
+    id: "4",
+    title: "SWMM5 inside ICM InfoWorks",
+    description: "How SWMM5 engine powers ICM InfoWorks and integration architecture.",
+    date: "2 years ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 4
+  },
+  {
+    id: "3",
+    title: "Seven Blogs About Ruby, ICM SWMM and InfoWorks Networks",
+    description: "Ruby scripting techniques for advanced stormwater network modeling.",
+    date: "3 years ago",
+    readTime: "9 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 3
+  },
+  {
+    id: "2",
+    title: "Stormwater Management Model (SWMM) Fundamentals and Applications",
+    description: "Introduction to SWMM and its role in modern stormwater engineering.",
+    date: "3 years ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 2
+  },
+  {
+    id: "1",
+    title: "Welcome to EPASWMM5 Related Software Newsletter",
+    description: "Introduction to the newsletter covering SWMM, InfoWorks, Ruby scripting, and water engineering.",
+    date: "3 years ago",
+    readTime: "5 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/newsletters/7159940733972434944/",
+    issueNumber: 1
   }
 ];
