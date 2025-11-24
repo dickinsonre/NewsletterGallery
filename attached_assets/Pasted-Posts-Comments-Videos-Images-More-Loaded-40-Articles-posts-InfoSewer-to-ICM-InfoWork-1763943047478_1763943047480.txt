@@ -1,0 +1,99 @@
+Posts
+
+Comments
+
+Videos
+
+Images
+
+More
+Loaded 40 Articles posts
+
+InfoSewer to ICM InfoWorks App (for AI and Humans)
+What is this, you may ask? It is an app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze InfWhat is this, you may ask? It is an app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze Inf
+by Robert Dickinson • 2 min read
+
+
+EPA SWMM5 Inp File Reader App for Stats and Images of the Network Elements
+Introduction As a long-term water resources professional associated with SWMM, I found myself repeatedly hitting the same wall. I have a collection ofIntroduction As a long-term water resources professional associated with SWMM, I found myself repeatedly hitting the same wall. I have a collection of
+by Robert Dickinson • 4 min read
+
+
+Level Up Your ICM InfoWorks Skills: Try This Interactive Technical Quiz App on Replit
+Are you a stormwater engineer grappling with the intricacies of ICM InfoWorks? From unit conversions to advanced hydraulics like the Saint-Venant equaAre you a stormwater engineer grappling with the intricacies of ICM InfoWorks? From unit conversions to advanced hydraulics like the Saint-Venant equa
+by Robert Dickinson • 2 min read
+
+
+Level Up Your SWMM5 Skills: Try This Interactive Technical Quiz App on Replit
+Are you a stormwater engineer grappling with the intricacies of EPA's SWMM5? From unit conversions to advanced hydraulics like the Saint-Venant equatiAre you a stormwater engineer grappling with the intricacies of EPA's SWMM5? From unit conversions to advanced hydraulics like the Saint-Venant equati
+by Robert Dickinson • 2 min read
+
+
+Revolutionizing Hydraulic Network Data Export: A Universal Ruby Script Tool for InfoWorks ICM and SWMM Networks
+How We Built an Intelligent Ruby Data Exporter That Adapts to Your Network Type Using One Ruby Script for SWMM and InfoWorks Networks I developed thisHow We Built an Intelligent Ruby Data Exporter That Adapts to Your Network Type Using One Ruby Script for SWMM and InfoWorks Networks I developed this
+by Robert Dickinson • 3 min read
+
+
+Eight ICMs in One. ICM Ultimate, Sewer, Flood, and Viewer for InfoWorks and SWMM Networks.
+A note from the Autodesk Water Lifecycle team: the morphing of ICM Standard into ICM Flood and ICM Sewer and the continuing awesomeness of ICM UltimatA note from the Autodesk Water Lifecycle team: the morphing of ICM Standard into ICM Flood and ICM Sewer and the continuing awesomeness of ICM Ultimat
+by Robert Dickinson • 1 min read
+
+
+Bridging Decades: Reading InfoSewer Report RPT Output for ICM InfoWorks in 2030+
+As we move closer to 2030 or sooner, some engineers face a unique challenge: accessing and interpreting InfoSewer output from projects dating back to As we move closer to 2030 or sooner, some engineers face a unique challenge: accessing and interpreting InfoSewer output from projects dating back to 
+by Robert Dickinson • 2 min read
+
+
+Reviving 1988 SWMM4 Models with AI: A Seamless Transition to SWMM5
+Introduction Bridging Decades with AI Imagine being handed a stormwater model from 1988, written for SWMM4, and tasked with making it run on modern soIntroduction Bridging Decades with AI Imagine being handed a stormwater model from 1988, written for SWMM4, and tasked with making it run on modern so
+by Robert Dickinson • 7 min read
+
+
+Converting ICM InfoWorks PRN Files to CFS Units with AI in 2025
+This article was inspired by a question on our User Feedback Page about unit conversions in ICM InfoWorks, a topic that resonates with me as I frequenThis article was inspired by a question on our User Feedback Page about unit conversions in ICM InfoWorks, a topic that resonates with me as I frequen
+by Robert Dickinson • 2 min read
+
+
+Exporting Up to 99 HW Conduit Parameters to CSV with Ruby in InfoWorks ICM
+As part of our Ruby scripting series for InfoWorks ICM, this article shares a Ruby script to export hw_conduits data to a CSV file, simplifying data aAs part of our Ruby scripting series for InfoWorks ICM, this article shares a Ruby script to export hw_conduits data to a CSV file, simplifying data a
+by Robert Dickinson • 3 min read
+
+
+Extran1 and Extran2 from the Extran Manual for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+This is a story about two inp files. It shows the continuity in stormwater modeling from 1980 to 2025 onwards. It is about Extran1 (free outfall) and This is a story about two inp files. It shows the continuity in stormwater modeling from 1980 to 2025 onwards. It is about Extran1 (free outfall) and 
+by Robert Dickinson • 8 min read
+
+
+Example 7 of Extran Manual - Type 2 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+The SWMM3 or Extran3 Type 2 Pump Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows the contThe SWMM3 or Extran3 Type 2 Pump Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows the cont
+by Robert Dickinson • 8 min read
+
+
+Example 6 of Extran Manual - Type 1 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+The SWMM3 or Extran3 Type 1 Pump Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows the contThe SWMM3 or Extran3 Type 1 Pump Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows the cont
+by Robert Dickinson • 8 min read
+
+
+Extran 5 Storage Facility with Side Outlet Orifice for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+The SWMM3 or Extran3 Side Outlet Orifice Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows The SWMM3 or Extran3 Side Outlet Orifice Test File: A Historical Reference for Modern Hydraulic Modeling This is a story about one inp file. It shows 
+by Robert Dickinson • 9 min read
+
+
+SWMM 44H Fortran Code from 2004 on GitHub
+Introduction This is about a GitHub repository that that preserves the SWMM 4 Fortran engine and associated files from Wayne C. Huber's version at OreIntroduction This is about a GitHub repository that that preserves the SWMM 4 Fortran engine and associated files from Wayne C. Huber's version at Ore
+by Robert Dickinson • 2 min read
+
+
+The Many Avenues of Ruby Help in the ICM Online Help File—Hint for AI Usage
+1/ Ruby Introduction In the ICM Online Help File You can print any of these pages and use them with most of the AIs. Or copy and paste the section you1/ Ruby Introduction In the ICM Online Help File You can print any of these pages and use them with most of the AIs. Or copy and paste the section you
+by Robert Dickinson • 2 min read
+
+
+Ruby Code for ICM InfoWorks and ICM SWMM Comparisons is now in 25 Folders on the Innovyze GitHub
+There is a completely reorganized suite of Ruby code on the Innovyze GitHub Website. The number of folders went from 155 to 25 but the number of Ruby There is a completely reorganized suite of Ruby code on the Innovyze GitHub Website. The number of folders went from 155 to 25 but the number of Ruby 
+by Robert Dickinson • 1 min read
+
+
+Running List of my LinkedIn Articles
+153 Articles SWMM History https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G-153 Articles SWMM History https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G-
+by Robert Dickinson • 47 min read

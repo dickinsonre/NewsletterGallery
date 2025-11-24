@@ -1,0 +1,304 @@
+153 Articles
+SWMM History 
+https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G-zN?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_using-punch-cards-to-run-swmm-2-and-swmm3-activity-7292368911352664066-z6dF?utm_source=share&utm_medium=member_desktop
+
+SWMM 4
+https://www.linkedin.com/posts/robertdickinson_swmm4manual1265-runoff-and-transport-activity-7290925832858910720-JH9Q?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm-4-manual-part-2-storage-treatment-activity-7290929335908057088-xbHO?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm4-files-used-in-the-swmm-qa-report-for-activity-7283944235534352384-qXR-?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm-users-manual-version-4-extran-addendum-activity-7284368762005250048-0GDW?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm-users-manual-version-4-extran-addendum-activity-7284368762005250048-0GDW?utm_source=share&utm_medium=member_desktop
+
+SWMM3
+https://www.linkedin.com/posts/robertdickinson_swmm3-pdf-from-1981-in-two-parts-for-ai-activity-7283969724349050881-Az4C?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm3-pdf-part-2-for-ai-activity-7283971378138021888-eUc2?utm_source=share&utm_medium=member_desktop
+
+SWMM2
+https://www.linkedin.com/posts/robertdickinson_swmm-version-2-runoff-only-user-manual-activity-7289457419078762496-MTRh?utm_source=share&utm_medium=member_desktop
+
+SWMM1
+https://www.linkedin.com/posts/robertdickinson_swmm-volume-i-final-report-july-1971-activity-7289469326389043200-aM9c?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm-volume-ii-verification-and-testing-activity-7289460627213828097-EdJo?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_swmm-volume-iii-users-manual-september-activity-7289472094550016000--v4T?utm_source=share&utm_medium=member_desktop
+
+swmm-1-volume-iv-program-listing.pdf
+
+InfoSewer
+https://www.linkedin.com/posts/robertdickinson_infosewer-lectures-innovyze-autodesk-activity-7270858395350450176-wyXG?utm_source=share&utm_medium=member_desktop
+
+https://www.linkedin.com/posts/robertdickinson_comprehensive-sewer-collection-system-analysis-activity-6881694143643439104-KR38?utm_source=share&utm_medium=member_desktop
+
+Articles
+Extran1 and Extran2 from the Extran Manual for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+Example 7 of Extran Manual - Type 2 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+Example 6 of Extran Manual - Type 1 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+Extran 5 Storage Facility with Side Outlet Orifice for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks and SWMM5 3rd Party Tests
+SWMM 44H Fortran Code from 2004 on GitHub
+The Many Avenues of Ruby Help in the ICM Online Help File—Hint for AI Usage
+Ruby Code for ICM InfoWorks and ICM SWMM Comparisons is now in 25 Folders on the Innovyze GitHub
+Running List of my LinkedIn Articles
+SWMM3 Weir Extran4 Test File for AI, GitHub, SWMM5, ICM
+Creating Complete SWMM5 Input Files Using AI Chain Prompting from SWMM5 Rules
+
+Ruby Code for ICM InfoWorks and ICM SWMM Comparisons is now in 25 Folders on the Innovyze GitHub There is a completely reorganized suite of Ruby code on the Innovyze GitHub Website. The number of folders went from 155 to 25 but the number of Ruby There is a completely reorganized suite of Ruby code on the Innovyze GitHub Website. The number of folders went from 155 to 25 but the number of Ruby by Robert Dickinson • 1 min read
+
+https://www.linkedin.com/posts/robertdickinson_impacts-of-rainfall-spatiotemporal-variability-on-pressurized-flow-conditions-in-urban-drainage-systemspdf-activity-7289373107385978880-MuxB?utm_source=share&utm_medium=member_desktop
+
+The SWMM3 Weir Test File: A Historical Reference for Modern Hydraulic Modeling This test file holds special historical significance in the developmentThe SWMM3 Weir Test File: A Historical Reference for Modern Hydraulic Modeling This test file holds special historical significance in the development by Robert Dickinson • 4 min read
+
+Creating Complete SWMM5 Input Files Using AI Chain Prompting When generating SWMM5 input files using AI, a two-prompt strategy proves highly effectiveCreating Complete SWMM5 Input Files Using AI Chain Prompting When generating SWMM5 input files using AI, a two-prompt strategy proves highly effective by Robert Dickinson • 3 min read
+
+A comprehensive guide to getting started with InfoWorks ICM. Here is the technical hub https://boards.autodesk.com/icm ## Initial Setup and Interface A comprehensive guide to getting started with InfoWorks ICM. Here is the technical hub https://boards.autodesk.com/icm ## Initial Setup and Interface by Robert Dickinson • 4 min read
+
+SWMM3 Test Files for AI, GitHub, SWMM5, ICM The SWMM3 Orifice Test File: A Historical Reference for Modern Hydraulic Modeling This test file holds special historical significance in the developmThe SWMM3 Orifice Test File: A Historical Reference for Modern Hydraulic Modeling This test file holds special historical significance in the developm by Robert Dickinson 4 min read
+
+InfoSewer Load Allocation Expertise: Test Yourself with 50 Questions for 2025 to 2050 Here are the 50 multiple-choice questions based on the infoSewer help file about Innovyze's DWF Allocator, designed to test understanding of its featuHere are the 50 multiple-choice questions based on the infoSewer help file about Innovyze's DWF Allocator, designed to test understanding of its featu by Robert Dickinson 11 min read
+
+Diamond Village at the University of Florida and SWMM 2.5, 3, and 4 and XPSWMM Diamond Village is one of the University of Floridaâ€™s long-standing graduate and family housing communities, known for its close-knit atmosphere and Diamond Village is one of the University of Floridaâ€™s long-standing graduate and family housing communities, known for its close-knit atmosphere and t by Robert Dickinson 4 min read
+
+Detecting and Preventing Invalid Hydraulic Solutions in SWMM 5 (Robert E. Dickinson, Khalid K. Khan, and James T. Smullen | CDM Inc.) While recently organizing my garage, I discovered an intriguing poster I'd created comparing the 1D St Venant Terms between SWMM4 and SWMM5. OriginallWhile recently organizing my garage, I discovered an intriguing poster I'd created comparing the 1D St Venant Terms between SWMM4 and SWMM5. Originall by Robert Dickinson 4 min read
+
+Enhancing Subcatchment Connectivity in InfoWorks ICM: A Step-by-Step Guide Using Ruby Scripting Enhancing Subcatchment Connectivity in InfoWorks ICM: A Step-by-Step Guide Using Ruby Scripting This Ruby script is designed for use within InfoWorks Enhancing Subcatchment Connectivity in InfoWorks ICM: A Step-by-Step Guide Using Ruby Scripting This Ruby script is designed for use within InfoWorks by Robert Dickinson 6 min read
+
+Why You Should Not Import InfoSewer to InfoSWMM but Use the Newer AWI Ruby/ODIC Methodology with SQL from the Autodesk Water Infrastructure GitHub 1: Introduction The Great InfoSewer Migration Adventure: Your Guide to InfoWorks ICM ðŸŒŠ Ah, the winds of change are blowing through the water infrastr1: Introduction The Great InfoSewer Migration Adventure: Your Guide to InfoWorks ICM, the winds of change are blowing through the water infrastructure by Robert Dickinson 3 min read
+
+Introducing SWMM5+ BR Hodges, S Sharior, ED Tiernan, E Jenkinsâ€¦ - Journal of Environmental Engineering, 2024 The SWMM5+ project began with the observation that the EPA SWMM hydraulic solver (1) is the primary consumer of computational time, (2) is the source The SWMM5+ project began with the observation that the EPA SWMM hydraulic solver (1) is the primary consumer of computational time, (2) is the source by Robert Dickinson 1 min read
+
+The Steady State, EPS, and Kinematic, Dynamic Wave Options in InfoSewer, SWMM5, InfoSWMM, ICM SWMM, and ICM INFOWORKS The terms "Steady State," "EPS," and "Kinematic, Dynamic Wave options" refer to different types of hydraulic simulation methods used to analyze and prThe terms "Steady State," "EPS," and "Kinematic, Dynamic Wave options" refer to different types of hydraulic simulation methods used to analyze and pr by Robert Dickinson 5 min read
+
+Ruby ICM InfoWorks vs. ICM SWMM Link Property Data Comparison The ICM Infoworks and SWMM Network Comparison Tool for Conduits is a Ruby script designed to bridge the gap between two prominent hydraulic modeling sThe ICM Infoworks and SWMM Network Comparison Tool for Conduits is a Ruby script designed to bridge the gap between two prominent hydraulic modeling s by Robert Dickinson 4 min read
+
+Ruby ICM InfoWorks vs. ICM SWMM Node Property Data Comparison The ICM Infoworks and SWMM Network Comparison Tool for Nodes is a script designed to bridge the gap between two hydraulic modeling systems, InfoWorks The ICM Infoworks and SWMM Network Comparison Tool for Nodes is a script designed to bridge the gap between two hydraulic modeling systems, InfoWorks by Robert Dickinson 4 min read
+
+Navigating the Landscape of Hydraulic Modeling: A Comparative Study of InfoSewer, ICM InfoWorks, and ICM SWMM for Steady State Models This article explores the interoperability and comparative performance of three hydraulic models: InfoSewer, ICM InfoWorks, and ICM SWMM. We begin witThis article explores the interoperability and comparative performance of three hydraulic models: InfoSewer, ICM InfoWorks, and ICM SWMM. We begin wit by Robert Dickinson 2 min read
+
+Deep Dive into Water Quality Buildup Washoff (BW) in ICM InfoWorks using the SWMM5 BW Options Using nine separate scenarios, this paper investigates water quality modeling in ICM InfoWorks with all of the SWMM5 buildup washoff choices for runofUsing nine separate scenarios, this paper investigates water quality modeling in ICM InfoWorks with all of the SWMM5 buildup washoff choices for runof by Robert Dickinson 5 min read
+
+How to Use the Graph/Report Output of InfoSewer/InfoSWMM to Make Observed Predicted Custom Graphs in ICM InfoWorks Creating custom observed-predicted graphs in ICM InfoWorks using the graph/report output from InfoSewer or InfoSWMM involves several steps. This proceCreating custom observed-predicted graphs in ICM InfoWorks using the graph/report output from InfoSewer or InfoSWMM involves several steps. This proce by Robert Dickinson 3 min read
+
+Using Ruby for some InfoSWMM Subcatchment Manager Tools In ICM Infoworks Navigating the complexities of stormwater management often involves working with specialized software and tools. As we approach 2025, the impending diNavigating the complexities of stormwater management often involves working with specialized software and tools. As we approach 2025, the impending di by Robert Dickinson 3 min read
+
+Using AI to Interpret the PRN file of ICM Infoworks for a person with a SWMM5 Background As a young proto engineer, I first encountered SWMM5's text output tables in 1978. Back then, these tables were our lifelineâ€”the graphs were merely liAs a young proto engineer, I first encountered SWMM5's text output tables in 1978. Back then, these tables were our lifelineâ€”the graphs were merely li by Robert Dickinson 6 min read
+
+Streamlining ICM Workflow: Preserving User-Fields with Ruby Automation to CSV Files One of the standout features of ICM (Integrated Catchment Modeling) is its inclusion of 10 user numbers and 10 user text fields associated with each tOne of the standout features of ICM (Integrated Catchment Modeling) is its inclusion of 10 user numbers and 10 user text fields associated with each t by Robert Dickinson 2 min read
+
+Using Ruby to supplement Native ICM QM Tau or Shear Stress This Ruby code processes the results of an ICM Infoworks run, focusing on specific links within the model. It employs a user-defined equation for seleThis Ruby code processes the results of an ICM Infoworks run, focusing on specific links within the model. It employs a user-defined equation for sele by Robert Dickinson 4 min read
+
+Using Ruby to Read the Steady State Report file of InfoSewer post 2025+ New note - see the extra section at the bottom of this note for the links to the improved Ruby code on our GitHub The year is 2030, and we need to updNew note - see the extra section at the bottom of this note for the links to the improved Ruby code on our GitHub The year is 2030, and we need to upd by Robert Dickinson 4 min read
+
+Using Ruby to Recreate the InfoSWMM Node Report Tables in ICM SWMM from any SWMM5 Report File Weâ€™ve integrated the powerful InfoSWMM engine as the OneSWMM engine into InfoWorks ICM, incorporating the sophisticated ICM UX tools and comprehensiveWeâ€™ve integrated the powerful InfoSWMM engine as the OneSWMM engine into InfoWorks ICM, incorporating the sophisticated ICM UX tools and comprehensive by Robert Dickinson 4 min read
+
+How to Use Ruby to Read Problem Node and Links from the SWMM5 Report File and Add them as Selected Elements in ICM SWMM Utilizing the Tools in the InfoWorks Geoplan in ICM SWMM can greatly enhance understanding and optimization of the SWMM5 model. Here's how integratingUtilizing the Tools in the InfoWorks Geoplan in ICM SWMM can greatly enhance understanding and optimization of the SWMM5 model. Here's how integrating by Robert Dickinson 3 min read
+
+ICM SWMM and InfoDrainage share the same swmmsim.exe Engine SWMM 5.2.4, InfoSWMM uses an older version of the EPA SWMM5 Engine based on SWMM 5.1.015 This article explains the differences between the SWMM engines used in various Innovyze and now Autodesk Water modeling products. It is noted that theThis article explains the differences between the SWMM engines used in various Innovyze and now Autodesk Water modeling products. It is noted that the by Robert Dickinson 10 min read
+
+Using Ruby to Export ICM InfoWorks Node, Link, and Subcatchment Grid Data to Shapefiles and a Custom Folder This Ruby script is designed to export GIS data from an ICM InfoWorks network to a shapefile (SHP) format. Hereâ€™s a summary of its operation: It firstThis Ruby script is designed to export GIS data from an ICM InfoWorks network to a shapefile (SHP) format. Hereâ€™s a summary of its operation: It first by Robert Dickinson 2 min read
+
+Using Ruby to Export ICM InfoWorks User-Selected Link Results to a Custom CSV Folder One of the true advantages of working with advanced water infrastructure modeling platforms like ICM InfoWorks is the ability to harness the flexibiliOne of the true advantages of working with advanced water infrastructure modeling platforms like ICM InfoWorks is the ability to harness the flexibili by Robert Dickinson 2 min read
+
+23 Ruby Lessons in the ICM InfoWorks Online Help File from Autodesk The InfoWorks ICM help file now contains a new Technical Note that provides 23 lessons on using Ruby scripting. These lessons are designed to introducThe InfoWorks ICM help file now contains a new Technical Note that provides 23 lessons on using Ruby scripting. These lessons are designed to introduc by Robert Dickinson 2 min read
+
+How to use SWMM5 Buildup/Washoff in an ICM InfoWorks Network for Event Mean Concentrations (EMC) How to use SWMM5 Buildup/Washoff in an ICM InfoWorks Network for Event Mean Concentrations (EMC). Ten steps to use EMC in an InfoWorks Network in ICM.How to use SWMM5 Buildup/Washoff in an ICM InfoWorks Network for Event Mean Concentrations (EMC). Ten steps to use EMC in an InfoWorks Network in ICM. by Robert Dickinson 1 min read
+
+Knowledge Assisted Theme Enhancements in ICM SWMM to Show InfoSWMM Like Map Displays for d/D and q/Q This article demonstrates how to leverage the power of SQL and Themes in ICM SWMM to create informative map displays similar to those found in InfoSWMThis article demonstrates how to leverage the power of SQL and Themes in ICM SWMM to create informative map displays similar to those found in InfoSWM by Robert Dickinson 2 min read
+
+Using Ruby to Recreate the InfoSWMM Link Report Tables in ICM SWMM from any SWMM5 Report File Weâ€™ve integrated the powerful InfoSWMM engine as the OneSWMM engine into InfoWorks ICM, incorporating the sophisticated ICM UX tools and comprehensiveWeâ€™ve integrated the powerful InfoSWMM engine as the OneSWMM engine into InfoWorks ICM, incorporating the sophisticated ICM UX tools and comprehensive by Robert Dickinson 8 min read
+
+Unhappy with some components of the LI Social Selling Index, I make up my own SSI+ Index I've been utilizing LinkedIn's SSI score for over a decade, yet I've noticed two components of my scoreâ€”finding people and adding insightsâ€”rarely chanI've been utilizing LinkedIn's SSI score for over a decade, yet I've noticed two components of my scoreâ€”finding people and adding insightsâ€”rarely chan by Robert Dickinson 2 min read
+
+Using Ruby to Create Sensitivity Scenarios in ICM InfoWorks This Ruby script focuses on managing scenarios in an InfoWorks network using the WSApplication API. Here's a summary of the main ideas: 1. The script This Ruby script focuses on managing scenarios in an InfoWorks network using the WSApplication API. Here's a summary of the main ideas: 1. The script by Robert Dickinson 4 min read
+
+A Better Workflow for InfoSWMM to ICM SWMM Network Conversions for ALL InfoSWMM Scenarios and Active Elements into One ICM SWMM Network The direct import of an InfoSWMM.mxd file and its associated.ISDB folder as a model group is a straightforward process that efficiently imports the noThe direct import of an InfoSWMM.mxd file and its associated.ISDB folder as a model group is a straightforward process that efficiently imports the no by Robert Dickinson 8 min read
+
+How to Use the USEPA SWMM-Climate Adjustment Tool with ICM InfoWorks, ICM SWMM, and Autodesk InfoDrainage A Climate Adjustment Tool from the US EPA for SWMM5 will estimate monthly changes in temperature, evaporation, and rainfall for the years 2035 and 206A Climate Adjustment Tool from the US EPA for SWMM5 will estimate monthly changes in temperature, evaporation, and rainfall for the years 2035 and 206 by Robert Dickinson 3 min read
+
+Curve Number or CNSWMM infiltration model for 2D simulations is now in ICM 2025.1 New in 2025.1 is an often-requested feature - using a CN value or curve number on the ICM 2D mesh for infiltration. The following is from the online hNew in 2025.1 is an often-requested feature - using a CN value or curve number on the ICM 2D mesh for infiltration. The following is from the online h by Robert Dickinson 2 min read
+
+Using Ruby to QA/QC InfoSWMM DWF Import to ICM SWMM In this tutorial, we will demonstrate a reverse-order step to show that the dry weather flow (DWF) in an ICM SWMM scenario is equivalent to the DWF inIn this tutorial, we will demonstrate a reverse-order step to show that the dry weather flow (DWF) in an ICM SWMM scenario is equivalent to the DWF in by Robert Dickinson 5 min read
+
+Diagram GPT's for Seeing Connections in a SWMM5 in Input File The SWMM5 input file is well-organized into data sections, but sometimes it's challenging to see the relationships between ancillary data such as DWF,The SWMM5 input file is well-organized into data sections, but sometimes it's challenging to see the relationships between ancillary data such as DWF, by Robert Dickinson 3 min read
+
+How to use Ruby for Subcatchments Statistics using the Current and Background Networks in ICM This blog and many future and past blogs are centered around a few key objectives. The first is explaining the integration of InfoSewer, InfoSWMM, andThis blog and many future and past blogs are centered around a few key objectives. The first is explaining the integration of InfoSewer, InfoSWMM, and by Robert Dickinson 9 min read
+
+How to use SQL to see the SUDS or LID Usage for all Subcatchments in ICM InfoWorks and SWMM Networks ICM InfoWorks and ICM SWMM leverage the core SWMM5 code to implement Low Impact Development (LID) controls, but they do so with distinct approaches. IICM InfoWorks and ICM SWMM leverage the core SWMM5 code to implement Low Impact Development (LID) controls, but they do so with distinct approaches. I by Robert Dickinson 6 min read
+
+Using SQL for Understanding ICM SWMM Network Options Using SQL for Understanding the ICM SWMM Network Options As water resources engineers and modelers, we rely on powerful tools like InfoWorks ICM InfoWUsing SQL for Understanding the ICM SWMM Network Options As water resources engineers and modelers, we rely on powerful tools like InfoWorks ICM InfoW by Robert Dickinson 5 min read
+
+Categorizing Conduit Lengths Using Bucketing in SQL for ICM InfoWorks and SWMM Networks Analyzing Conduit Characteristics with InfoWorks ICM As a hydraulic modeling professional, one of the key tasks is to understand the characteristics oAnalyzing Conduit Characteristics with InfoWorks ICM As a hydraulic modeling professional, one of the key tasks is to understand the characteristics o by Robert Dickinson 4 min read
+
+InfoSWMM and InfoSewer Nodes vs ICM InfoWorks Subcatchments for DWF Loading When importing InfoSewer or InfoSWMM models into ICM InfoWorks, the dry weather flow loadings are assigned to nodes. However, in ICM InfoWorks, dry weWhen importing InfoSewer or InfoSWMM models into ICM InfoWorks, the dry weather flow loadings are assigned to nodes. However, in ICM InfoWorks, dry we by Robert Dickinson 3 min read
+
+How do I find the min, max, and peak timings of hydraulic conduit results using SQL aggregate functions in ICM InfoWorks? A non-ruby article that employs ICM SQL to determine the minimum, maximum, count, sum, and peak timings of hydraulic conduit results at the upstream aA non-ruby article that employs ICM SQL to determine the minimum, maximum, count, sum, and peak timings of hydraulic conduit results at the upstream a by Robert Dickinson 5 min read
+
+Ten Tips on using OPENAI, Claude.AI, Copilot, for ICM Ruby Code, SWMM5 C Code, SWMM5+ Fortran Code and 20 SWMM5 PDF Files Hereâ€™s a summary of the ten tips shared: Claude.AI for Ruby Exchange PDF from Autodesk Water: Utilize Claude.AI to read and query the Ruby Exchange PDHereâ€™s a summary of the ten tips shared: Claude.AI for Ruby Exchange PDF from Autodesk Water: Utilize Claude.AI to read and query the Ruby Exchange PD by Robert Dickinson 4 min read
+
+Ten SWMM (SWMM4 or SWMM5) components in an ICM InfoWorks network or ICM Ten SWMM (SWMM4 or SWMM5) Components in an ICM InfoWorks network or ICM. One large addition (ICM SWMM for the SWMM 5.2+ Engine) and many hydrology optTen SWMM (SWMM4 or SWMM5) Components in an ICM InfoWorks network or ICM. One large addition (ICM SWMM for the SWMM 5.2+ Engine) and many hydrology opt by Robert Dickinson 2 min read
+
+What InfoSWMM Node, Link, and Subcatchment Graphs Teach You About the SWMM5 Engine The InfoSWMM engine through its graphs and tables shows the inner workings of the SWMM5 engine more than native SWMM5. Subcatchment Table: The subcatcThe InfoSWMM engine through its graphs and tables shows the inner workings of the SWMM5 engine more than native SWMM5. Subcatchment Table: The subcatc by Robert Dickinson 7 min read
+
+SWMM5 Groundwater vs ICM InfoWorks Ground Infiltration Model (GIM) Parameters Normally, the import of SWMM5 data to ICM InfoWorks is excellent but sometimes, in case of very different model parameters, there is no import conversNormally, the import of SWMM5 data to ICM InfoWorks is excellent but sometimes, in case of very different model parameters, there is no import convers by Robert Dickinson 8 min read
+
+How to import the Manhole Loads from Only One InfoSewer Scenario to the Subcatchments in ICM InfoWorks using Ruby This Ruby code is intended to speed up the transfer of sanitary load data from InfoSewer to ICM InfoWorks. This code simplifies data management operatThis Ruby code is intended to speed up the transfer of sanitary load data from InfoSewer to ICM InfoWorks. This code simplifies data management operat by Robert Dickinson 6 min read
+
+How to import the Manhole Loads from every InfoSewer Scenario to Subcatchments in ICM InfoWorks using Ruby This Ruby code is intended to speed up the transfer of sanitary load data from InfoSewer to ICM InfoWorks. This code simplifies data management operatThis Ruby code is intended to speed up the transfer of sanitary load data from InfoSewer to ICM InfoWorks. This code simplifies data management operat by Robert Dickinson 7 min read
+
+How to Import the Facility Manager Information from InfoSewer and InfoSWMM to an ICM InfoWorks Selection Set The purpose of this Ruby script is to import all of the facility sets from InfoSWMM and InfoSewer, as well as to create selection sets that can be useThe purpose of this Ruby script is to import all of the facility sets from InfoSWMM and InfoSewer, as well as to create selection sets that can be use by Robert Dickinson 5 min read
+
+How to make the ICM InfoWorks UX look a bit like InfoSewer (for Manhole loads) Bridging the gap between InfoWorks ICM and InfoSewer, this guide offers a hands-on approach to customizing the ICM InfoWorks UX, making it more familiBridging the gap between InfoWorks ICM and InfoSewer, this guide offers a hands-on approach to customizing the ICM InfoWorks UX, making it more famili by Robert Dickinson 2 min read
+
+Ruby Script for ICM InfoWorks and SWMM Networks to make any number of sides Polygons for Subcatchments ICM offers a Subcatchment tool that is designed to generate dummy, circular Subcatchment boundaries tailored to specific regions, as illustrated in FiICM offers a Subcatchment tool that is designed to generate dummy, circular Subcatchment boundaries tailored to specific regions, as illustrated in Fi by Robert Dickinson 4 min read
+
+Why ICM is a 1Dâ€“2D Integrated Catchment Model, Counting Tablesâ€”with Ruby (of course) Autodesk Water Infrastructure InfoWorks ICM Key Concepts (adapted from the Online Help file for ICM with Stats added by Rubyâ€”code at the bottom of thiAutodesk Water Infrastructure InfoWorks ICM Key Concepts (adapted from the Online Help file for ICM with Stats added by Rubyâ€”code at the bottom of thi by Robert Dickinson 13 min read
+
+Using Ruby to Add More Results Points to a Link in ICM InfoWorks ICM InfoWorks provides two result points at the upstream and downstream ends of each conduit, however, it supports more than just the minimum five comICM InfoWorks provides two result points at the upstream and downstream ends of each conduit, however, it supports more than just the minimum five com by Robert Dickinson 4 min read
+
+Using Ruby to Find Link Results Statistics and Select the Highest Flows in ICM InfoWorks Article Topic: Discover how to harness a Ruby script to calculate mean, min, max, and sum flows in InfoWorks and ICM SWMM links, and understand some oArticle Topic: Discover how to harness a Ruby script to calculate mean, min, max, and sum flows in InfoWorks and ICM SWMM links, and understand some o by Robert Dickinson 4 min read
+
+Using Ruby to find the Count, Mean, Max and Min of Everything in an ICM InfoWorks or SWMM Network When delving into the intricate process of comparing imported or transformed networks within ICM, discerning anomalies or unconventional data can ofteWhen delving into the intricate process of comparing imported or transformed networks within ICM, discerning anomalies or unconventional data can ofte by Robert Dickinson 3 min read
+
+Using Ruby to Compare the Current Network to a Background Network in ICM InfoWorks ICM (InfoWorks ICM) offers a valuable feature that allows users to maintain a current network alongside a background network. This functionality is paICM (InfoWorks ICM) offers a valuable feature that allows users to maintain a current network alongside a background network. This functionality is pa by Robert Dickinson 2 min read
+
+How to import the Scenarios from InfoSewer or InfoSWMM to ICM SWMM or ICM InfoWorks using Ruby Introduction. Why do we have to do this? The direct import of InfoSWMM to ICM SWMM only imports one scenario at a time. If we want to import all of thIntroduction. Why do we have to do this? The direct import of InfoSWMM to ICM SWMM only imports one scenario at a time. If we want to import all of th by Robert Dickinson 3 min read
+
+Using ChatGPT to Understand what I programmed in 1988 for SWMM4 Introduction Background for this: I recently had to revisit the numerical solution for SWMM4 Runoff as it is part of our software programs XPSWMM and Introduction Background for this: I recently had to revisit the numerical solution for SWMM4 Runoff as it is part of our software programs XPSWMM and by Robert Dickinson 6 min read
+
+Subcatchment Subarea Internal Routing in SWMM5, ICM SWMM, and ICM InfoWorks Networks - Key Parameters Subcatchment Subarea Routing in SWMM5, ICM SWMM, and ICM InfoWorks Networks: Testing with Examples 1/ Subarea Routing in SWMM5 In SWMM5, the routing oSubcatchment Subarea Routing in SWMM5, ICM SWMM, and ICM InfoWorks Networks: Testing with Examples 1/ Subarea Routing in SWMM5 In SWMM5, the routing o by Robert Dickinson 2 min read
+
+Oh my time step, oh my time step (for SWMM Models) Ruby for Link Lengths Introduction to CFL The CFL condition provides a criterion for stability in numerical simulations of wave propagation and other time-dependent problemIntroduction to CFL The CFL condition provides a criterion for stability in numerical simulations of wave propagation and other time-dependent problem by Robert Dickinson 7 min read
+
+Think Blue, Count Two SWMM's in ICM InfoWorks and SWMM Networks Some SWMM in an InfoWorks Network and Complete SWMM in an ICM SWMM Network ICM InfoWorks incorporates various runoff and loading function models from Some SWMM in an InfoWorks Network and Complete SWMM in an ICM SWMM Network ICM InfoWorks incorporates various runoff and loading function models from by Robert Dickinson 2 min read
+
+An Ant Analogy to Ruby and SQL scripts for ICM SWMM and ICM InfoWorks on our Github Why an Ant and Why Ruby and SQL? An ant and Ruby scripts for ICM are comparable in a number of intriguing ways: Efficiency and Strength: Just like antWhy an Ant and Why Ruby and SQL? An ant and Ruby scripts for ICM are comparable in a number of intriguing ways: Efficiency and Strength: Just like ant by Robert Dickinson 3 min read
+
+A Tale of Three Runoff Surfaces in SWMM5 and how they are used in InfoWorks SWMM Hydrology In SWMM5 and ICM SWMM, the modeling of runoff surfaces is intricately tied to the concept of percent imperviousness, particularly focusing on areas wiIn SWMM5 and ICM SWMM, the modeling of runoff surfaces is intricately tied to the concept of percent imperviousness, particularly focusing on areas wi by Robert Dickinson 2 min read
+
+Using Ruby to add Nodes to Subcatchments and Polygons in ICM InfoWorks and SWMM Networks This Ruby code to add nodes to selected polygons could be important and useful to InfoWorks ICM and SWMM modelers for a few reasons: Allows automated This Ruby code to add nodes to selected polygons could be important and useful to InfoWorks ICM and SWMM modelers for a few reasons: Allows automated by Robert Dickinson 4 min read
+
+Understanding SWMM5 through the Tables in C Code files text.h and keywords.h The inclusion of text strings in the C code of EPASWMM (Environmental Protection Agency's Storm Water Management Model) serves several essential purpoThe inclusion of text strings in the C code of EPASWMM (Environmental Protection Agency's Storm Water Management Model) serves several essential purpo by Robert Dickinson 3 min read
+
+ðŸ“Š A Saga of Input Data: SWMM's Input SW Tables ðŸ—‚ï¸ and InfoWorks HW Hydroworks Tables ðŸ—‚ï¸ ðŸ’§ with Ruby and SQL This article shows how to see the complexity differences between ICM InfoWorks and SWMM networks with Ruby code for showing all of the input parameterThis article shows how to see the complexity differences between ICM InfoWorks and SWMM networks with Ruby code for showing all of the input parameter by Robert Dickinson 26 min read
+
+How to Find Knowledge-Centered Service (KCS) Articles in the Online ICM Help File for InfoSewer, InfoSWMM and XPSWMM Conversions As part of our ongoing technological evolution and in response to user needs, we are transitioning from our legacy software platforms, XPSWMM, InfoSewAs part of our ongoing technological evolution and in response to user needs, we are transitioning from our legacy software platforms, XPSWMM, InfoSew by Robert Dickinson 2 min read
+
+A Tale of Tables ðŸ“š: Understanding Your InfoWorks ICM Network ðŸŒ by Harnessing the Power of SQL and Ruby ðŸ’»ðŸ” for Tabular Insight ðŸŒ Tables are the very foundation of ICM, acting as the structural backbone that supports the entire system. ðŸ“Š For InfoWorks, each table is distinctiðŸŒ Tables are the very foundation of ICM, acting as the structural backbone that supports the entire system. ðŸ“Š For InfoWorks, each table is distincti by Robert Dickinson 4 min read
+
+How can you use Ruby to find the number and types of objects in your ICM database? A notable feature of InfoWorks is its database for modeling objects and data. We show how you can count the objects in your DB using Ruby for an exampA notable feature of InfoWorks is its database for modeling objects and data. We show how you can count the objects in your DB using Ruby for an examp by Robert Dickinson 5 min read
+
+DB Tables for Sim Parameters in ICM InfoWorks and SWMM: Enhancing Understanding with SQL and Ruby A notable feature of InfoWorks is its utilization of tables. These tables are integrated across various components, including property sheets, the datA notable feature of InfoWorks is its utilization of tables. These tables are integrated across various components, including property sheets, the dat by Robert Dickinson 3 min read
+
+Nodes: the Doorway to your ICM InfoWorks Model The different types of nodes used in hydraulic modeling in ICM InfoWorks, enhanced with festive Christmas emojis for a bit of holiday cheer: Manhole ï¿½The different types of nodes used in hydraulic modeling in ICM InfoWorks, enhanced with festive Christmas emojis for a bit of holiday cheer: Manhole ï¿½ by Robert Dickinson 2 min read
+
+Worldwide Options for Hydrology for SuDS/LID/WSUD Modeling in InfoWorks ICM Ultimate or Standard Imagine your house, surrounded by biofiltration cells, rain gardens, a few swales, rain barrels to collect runoff, a green roof, an infiltration trencImagine your house, surrounded by biofiltration cells, rain gardens, a few swales, rain barrels to collect runoff, a green roof, an infiltration trenc by Robert Dickinson 1 min read
+
+From SWMM5 and ICM to InfoWater Pro 2024: Insights and Lessons from Daily Standups with my IWP Programming CoWorkers Introduction I participate in a daily stand-up meeting with my InfoWater Pro colleagues, a group brimming with DevOps and programming expertise. This Introduction I participate in a daily stand-up meeting with my InfoWater Pro colleagues, a group brimming with DevOps and programming expertise. This by Robert Dickinson 4 min read
+
+Creating a SWMM5 or ICM SWMM Summary Table from ICM InfoWorks Network Results Using Ruby Introduction The objective of the article: using Ruby scripts to create a SWMM5 Runoff Summary from ICM InfoWorks output and comparing it to standard Introduction The objective of the article: using Ruby scripts to create a SWMM5 Runoff Summary from ICM InfoWorks output and comparing it to standard by Robert Dickinson 8 min read
+
+Exploring EPASWMM5 Code Variables Through the Lens of Visual AI (w/Emoji) In this approach to understand the SWMM 5.2.4 C code, particularly the .h files, a visual representation using emojis was created. This project, execuIn this approach to understand the SWMM 5.2.4 C code, particularly the .h files, a visual representation using emojis was created. This project, execu by Robert Dickinson 16 min read
+
+SWMM 5 and ICM SWMM: A Powerful Duo for Urban Drainage Modeling, IMO SWMM 5 and ICM SWMM: A Powerful Duo for Urban Drainage Modeling ðŸ¤© My Basic SWMM5 Focused Premise SWMM 5 ðŸŒ§ï¸, a free program developed by the U.S. EnvSWMM 5 and ICM SWMM: A Powerful Duo for Urban Drainage Modeling ðŸ¤© My Basic SWMM5 Focused Premise SWMM 5 ðŸŒ§ï¸, a free program developed by the U.S. Env by Robert Dickinson 4 min read
+
+Mastering ICM SWMM / InfoWorks with Ruby: A Guide to the IWR (ICM Results File) Output, Identifying IWR Variables, and Comparing ICM Engines Are you the kind of person who skims the beginning just to see whether to read the entire thing? Youâ€™re in luck. Weâ€™ve prepared a three word, one sentAre you the kind of person who skims the beginning just to see whether to read the entire thing? Youâ€™re in luck. Weâ€™ve prepared a three word, one sent by Robert Dickinson 5 min read
+
+A graphical view of the nonlinear runoff processes in ICM SWMM, ICM InfoWorks (SWMM Hydrology), InfoSWMM and SWMM5 Nonlinear runoff processes in SWMM5 1. Three runoff surfaces a. Impervious with Depression Storage b. Pervious with Depression Storage c. Impervious wNonlinear runoff processes in SWMM5 1. Three runoff surfaces a. Impervious with Depression Storage b. Pervious with Depression Storage c. Impervious w by Robert Dickinson 3 min read
+
+Utilizing Ruby Scripting in InfoWorks ICM to Extract Output Data and Generate SWMM5 Calibration Files with the Assistance of GPT-4 We are using GPT-4, in conjunction with the SWMM5 help file, to help generate SWMM5 calibration files from InfoWorks ICM output data. The challenge arWe are using GPT-4, in conjunction with the SWMM5 help file, to help generate SWMM5 calibration files from InfoWorks ICM output data. The challenge ar by Robert Dickinson 9 min read
+
+ICM, Siphons, How to Model Sediment in a Siphon, ICM SWMM, SWMM5 Active and Passive Sediment Modeling in an ICM InfoWorks Network with a Siphon In this LinkedIn article, we're taking a unique approach: beginning at Active and Passive Sediment Modeling in an ICM InfoWorks Network with a Siphon In this LinkedIn article, we're taking a unique approach: beginning at by Robert Dickinson 10 min read
+
+Investigating Curve Number Approximations on an ICM InfoWorks 2D Infiltration Surface In InfoWorks ICM, subcatchments and 2D infiltration surfaces are used to model the infiltration processes, representing the portion of rainfall that iIn InfoWorks ICM, subcatchments and 2D infiltration surfaces are used to model the infiltration processes, representing the portion of rainfall that i by Robert Dickinson 5 min read
+
+Unlocking Advanced Data Analysis for SWMM5 with ChatGPT's Beta Version of GPT-4: A Possible Game-Changer for Students and Beginners What is GPT4 with Advanced Data Analysis and when was it added? On August 28, 2023, OpenAI introduced improvements to version 4 of GPT (chatGPT Plus) What is GPT4 with Advanced Data Analysis and when was it added? On August 28, 2023, OpenAI introduced improvements to version 4 of GPT (chatGPT Plus) by Robert Dickinson 14 min read
+
+Enhancing ICM InfoWorks & SWMM 1D Output: Elegant Ruby Scripts for Statistical Table Generation Introduction The Ruby code for ICM SWMM and ICM InfoWorks statistics for nodes, links and subcatchments are located on the Innovyze GitHub and are conIntroduction The Ruby code for ICM SWMM and ICM InfoWorks statistics for nodes, links and subcatchments are located on the Innovyze GitHub and are con by Robert Dickinson 6 min read
+
+InfoWorks ICM Example SQL Scripts for Flawless Import of InfoSewer Data These SQL scripts are part of the ODIC CFG Import process to convert or import InfoSewer model data to an ICM InfoWorks Network. The Innovyze GitHub hThese SQL scripts are part of the ODIC CFG Import process to convert or import InfoSewer model data to an ICM InfoWorks Network. The Innovyze GitHub h by Robert Dickinson 11 min read
+
+Navigating ICM InfoWorks' Population-Based vs. SWMM's Mean Flow-Based Dry Weather Flow in Sanitary Systems, With SQL Tips to Cope - Pars Prima Introduction to the Workaround ICM InfoWorks: The Population-Based Approach ICM InfoWorks offers a comprehensive solution for wastewater management wiIntroduction to the Workaround ICM InfoWorks: The Population-Based Approach ICM InfoWorks offers a comprehensive solution for wastewater management wi by Robert Dickinson 4 min read
+
+It's A Small Island - How A Work History Can be a Tangled Ball of Yarn if the Yarn is composed of SWMM Versions Now, 50 years is a long time, and time does not seem to go faster as you get older, which is good. If you look at this timeline, there are multiple inNow, 50 years is a long time, and time does not seem to go faster as you get older, which is good. If you look at this timeline, there are multiple in by Robert Dickinson 4 min read
+
+Autodesk Employee Perspective: Why I Personally Invest in the AEC Collection, ICM Standard and InfoDrainage Subscriptions I have a not-so-common relationship with Autodesk software, stemming from two distinct connections. Firstly, as an Autodesk employee, I have access toI have a not-so-common relationship with Autodesk software, stemming from two distinct connections. Firstly, as an Autodesk employee, I have access to by Robert Dickinson 8 min read
+
+Using ChatGPT for comparing Mass Balance Checks in InfoSewer, InfoSWMM, SWMM5, and ICM SWMM against ICM InfoWorks Networks' PRN File Using ChatGPT for comparing Mass Balance Checks in InfoSewer, InfoSWMM, SWMM5, and ICM SWMM against the ICM InfoWorks Networks' PRN File When comparinUsing ChatGPT for comparing Mass Balance Checks in InfoSewer, InfoSWMM, SWMM5, and ICM SWMM against the ICM InfoWorks Networks' PRN File When comparin by Robert Dickinson 8 min read
+
+Uncommon Synergy: Link-Node Hydraulic Modeling and NHL (Non-Hodgkin Lymphoma) T-Cell Cancer Treatment My Cancer Timeline for NHL T-Cell Lymphoma Spring 2021: Initial symptoms appeared - constant low-grade fever and small lumps on the neck. Covid tests My Cancer Timeline for NHL T-Cell Lymphoma Spring 2021: Initial symptoms appeared - constant low-grade fever and small lumps on the neck. Covid tests by Robert Dickinson 10 min read
+
+Harnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling Harnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling While I've previously discussed the capabilities of ICMHarnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling While I've previously discussed the capabilities of ICM by Robert Dickinson 6 min read
+
+Utilizing a Unified 2D Engine in both ICM InfoWorks and ICM SWMM Networks ICM InfoWorks 2D and ICM SWMM 2D comparison Hello to all the SSF infrastructure enthusiasts out there, Ever wondered how two different network systemsICM InfoWorks 2D and ICM SWMM 2D comparison Hello to all the SSF infrastructure enthusiasts out there, Ever wondered how two different network systems by Robert Dickinson 5 min read
+
+My Top 100 Reasons: Why ICM SWMM Triumphs Over Native SWMM 5, IMO - based on My 24-Year Voyage with EPASWMM5 My Top 100 Reasons: Why ICM SWMM Triumphs Over SWMM 5 - Insights from My 24-Year Voyage with EPASWMM5 and almost 50 years with SWMM in General I wanteMy Top 100 Reasons: Why ICM SWMM Triumphs Over SWMM 5 - Insights from My 24-Year Voyage with EPASWMM5 and almost 50 years with SWMM in General I wante by Robert Dickinson 5 min read
+
+Enhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection Enhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection In SWMM, the conduit lengthening time step parametEnhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection In SWMM, the conduit lengthening time step paramet by Robert Dickinson 4 min read
+
+Annotating and Unleashing the Power of RPT and Log Files in an ICM SWMM Network In the world of sanitary and stormwater modeling, data is our compass. It guides us, offering insights into the intricate dynamics of our systems. TwoIn the world of sanitary and stormwater modeling, data is our compass. It guides us, offering insights into the intricate dynamics of our systems. Two by Robert Dickinson 7 min read
+
+Unlocking the Power of Ruby with ChatGPT: Streamlining Subcatchment Analysis in InfoWorks ICM Network 1/ This code snippet performs the following tasks in the context of an InfoWorks ICM network (Note: The script is in subfolder 70 on my Github reposit1/ This code snippet performs the following tasks in the context of an InfoWorks ICM network (Note: The script is in subfolder 70 on my Github reposit by Robert Dickinson 6 min read
+
+Elephant Modeling Stories: Collaborative Insights into ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 for SSF Engineers - LI List (13*7, 91) An article list on LinkedIn dealing with ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 - Why and Elephant? Once upon a time, in a small village onAn article list on LinkedIn dealing with ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 - Why and Elephant? Once upon a time, in a small village on by Robert Dickinson 8 min read
+
+How to Import an SWMM5 file from PCSWMM and/or SWMM5 as a Model Group in ICM InfoWorks and SWMM Networks, Validate it and then Export back to SWMM5 SWMM5 Model The SWMM5 project summary includes the following components: 1 raingage, 168 subcatchments, no aquifers, snowpacks, or RDM hydrographs. ThSWMM5 Model The SWMM5 project summary includes the following components: 1 raingage, 168 subcatchments, no aquifers, snowpacks, or RDM hydrographs. Th by Robert Dickinson 4 min read
+
+Unlocking the Synergy of Ruby and SQL Scripting inside ICM: Streamlining InfoWorks and SWMM Network Management with a Deep Dive into Data Structures The Storm Water Management Model (SWMM) and InfoWorks networks share a common user experience (UX); similar data structures, output files, UX tools, aThe Storm Water Management Model (SWMM) and InfoWorks networks share a common user experience (UX); similar data structures, output files, UX tools, a by Robert Dickinson 8 min read
+
+Seamless Conversion from XP-SWMM to ICM InfoWorks and SWMM Networks: Unlock the Power of a Single XPX File for Dual Hydraulic Integration The goal is to streamline exporting data from XPSWMM and importing it into both ICM SWMM and ICM InfoWorks networks, enabling efficient model data manThe goal is to streamline exporting data from XPSWMM and importing it into both ICM SWMM and ICM InfoWorks networks, enabling efficient model data man by Robert Dickinson 4 min read
+
+Unleashing the Power of GPT4 and OpenAI: Enhancing EPA SWMM5 Test Model Building and Sensitivity Analysis The focus of our exploration is the capability of GPT4, OpenAI's latest language model, to comprehend and manipulate small SWMM5 INP files based on teThe focus of our exploration is the capability of GPT4, OpenAI's latest language model, to comprehend and manipulate small SWMM5 INP files based on te by Robert Dickinson 5 min read
+
+Using Ruby in InfoWorks ICM to create Network Statistics for Effective QA/QC of Imported Model Data Learn how to use Ruby in Infoworks ICM to look at network statistics and ensure the QA/QC of model data conversion is done well. Using Ruby's advancedLearn how to use Ruby in Infoworks ICM to look at network statistics and ensure the QA/QC of model data conversion is done well. Using Ruby's advanced by Robert Dickinson 12 min read
+
+Converting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby Converting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby Scripts This guide will take you through the import of an InfoSewer modeConverting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby Scripts This guide will take you through the import of an InfoSewer mode by Robert Dickinson 6 min read
+
+How to Use Tracer Water Quality for RDII, DWF, and Runoff in an InfoWorks ICM Network - Use SWMM5 Washoff The hydrology of combined sewer systems is extremely complex. Runoff, dry weather flow, or rainfall-dependent infiltration and inflow can all contribuThe hydrology of combined sewer systems is extremely complex. Runoff, dry weather flow, or rainfall-dependent infiltration and inflow can all contribu by Robert Dickinson 2 min read
+
+How to use the EPA Design Storm Wizard with InfoWorks ICM for Chicago, SCS, NOAA, and IDF Curves. The Design Storm Wizard install can be found on the openswmm thread at the following link: https://www.openswmm.org/Topic/32275/dstorm-a-design-storm-The Design Storm Wizard install can be found on the openswmm thread at the following link: https://www.openswmm.org/Topic/32275/dstorm-a-design-storm- by Robert Dickinson 2 min read
+
+Ruby Scripts for Customizing your ICM SWMM Networks ICM InfoWorks by Autodesk Innovyze is a powerful and complete software platform for analyzing, designing, and managing water, sewage, and stormwater sICM InfoWorks by Autodesk Innovyze is a powerful and complete software platform for analyzing, designing, and managing water, sewage, and stormwater s by Robert Dickinson 8 min read
+
+My 1991 @UF President of the Mayor's Council Certificate #SWMM 2,3,4 Diamond Village. UF - University of Florida - Gainesville Florida 1/ On the hunt for books I recently came across an award that @UF presented to me inDiamond Village. UF - University of Florida - Gainesville Florida 1/ On the hunt for books I recently came across an award that @UF presented to me in by Robert Dickinson 1 min read
+
+How Does RDII Work in SWMM5, InfoSWMM and InfoWorks ICM? RDII in SWMM5 from the SWMM5 Help File (Refactored) Unit Hydrographs Unit Hydrographs ðŸ“ˆðŸ’§ Unit Hydrographs (UHs) are pivotal instruments ðŸ› ï¸ in hydroRDII in SWMM5 from the SWMM5 Help File (Refactored) Unit Hydrographs Unit Hydrographs ðŸ“ˆðŸ’§ Unit Hydrographs (UHs) are pivotal instruments ðŸ› ï¸ in hydro by Robert Dickinson 5 min read
+
+New Product Pages at www.innnovyze.com for our SWMM related Products, InfoSWMM, XPSWMM, InfoSewer, and InfoWorks ICM Obviously, with my background in SWMM, I am partial to SWMM software and we have 4 good platforms for SWMM or partial SWMM modeling. InfoSewer and InfObviously, with my background in SWMM, I am partial to SWMM software and we have 4 good platforms for SWMM or partial SWMM modeling. InfoSewer and Inf by Robert Dickinson 1 min read
+
+New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013 New Features in Innovyze SWMM 14.7 New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013 More about EPA SWMM 5.1.013 https:/New Features in Innovyze SWMM 14.7 New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013 More about EPA SWMM 5.1.013 https:/ by Robert Dickinson 3 min read
+
+How to Use Population at a Node for DWF in SWMM5 and InfoSWMM instead of Mean DWF How to Use Population at a Node for DWF in SWMM5 and InfoSWMM The Storm Water Management Model (SWMM5) engine is a tool used to simulate and analyze tHow to Use Population at a Node for DWF in SWMM5 and InfoSWMM The Storm Water Management Model (SWMM5) engine is a tool used to simulate and analyze t by Robert Dickinson 2 min read
+
+New Features in InfoSWMM 14.6 and InfoSWMM SA New Features in Innovyze SWMM 14.6 Update 1 Added missing conduit type to RTC tables in DB Editor. Added the ability to use H2S in the SWMM5 TreatmentNew Features in Innovyze SWMM 14.6 Update 1 Added missing conduit type to RTC tables in DB Editor. Added the ability to use H2S in the SWMM5 Treatment by Robert Dickinson 2 min read
+
+New Help file for Innovyze InfoSWMM (InfoSWMM is an Arc Map Extension) The new help file for Innovyze InfoSWMM is based on the menu structure. I think it helps connect the tools, data, editing and great InfoSWMM features The new help file for Innovyze InfoSWMM is based on the menu structure. I think it helps connect the tools, data, editing and great InfoSWMM features by Robert Dickinson 1 min read
+
+How InfoSWMM and InfoSWMM SA 2D Link and 3D Node Graphics Help You Understand the Response of Your Network to Wet Weather Flow New InfoSWMM linked 2D Link and 3D Node graphics help you understand one of the most critical outputs in any Stormwater, Combined Sewershed or SanitarNew InfoSWMM linked 2D Link and 3D Node graphics help you understand one of the most critical outputs in any Stormwater, Combined Sewershed or Sanitar by Robert Dickinson 2 min read
+
+100 Tools for Modeling Hydrology/Hydraulics using Innovyze InfoSWMM_SA I appreciate both Twitter and LinkedIn for professional reasons. One of the newer features of Twitter are Twitter Moments which as described here is oI appreciate both Twitter and LinkedIn for professional reasons. One of the newer features of Twitter are Twitter Moments which as described here is o by Robert Dickinson 1 min read
+
+Tutorials for InfoSWMM Sustain Which Optimizes for #LIDs, #GI, #SuDS, #WSuDS on Small Runoff Surfaces InfoSWMM Sustain is a software tool designed for use by professionals in the field of watershed and stormwater engineering. It is specifically designeInfoSWMM Sustain is a software tool designed for use by professionals in the field of watershed and stormwater engineering. It is specifically designe by Robert Dickinson 1 min read
+
+Dynamic Wave Routing Options in #InfoSWMM and #SWMM5 compared to #InfoWorks_ICM and #InfoSewer LinkedIn is a popular social media platform that is commonly used by professionals to connect with each other and share information. However, LinkedInLinkedIn is a popular social media platform that is commonly used by professionals to connect with each other and share information. However, LinkedIn by Robert Dickinson 1 min read
+
+InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools One of the most powerful InfoSWMM, InfoSWMM SA and H2OMAP SWMM Application Tools from Innovyze is RDII Analyst. RDII Analyst will separate out the GroOne of the most powerful InfoSWMM, InfoSWMM SA and H2OMAP SWMM Application Tools from Innovyze is RDII Analyst. RDII Analyst will separate out the Gro by Robert Dickinson 15 min read
+
+What is the Purpose of InfoSWMM Sustain? Optimization for #LIDs, #GI, #SuDS, #WSuDS or small Runoff Surfaces The following is from the Innovyze Product Page for Sustain and the Sustain Help File. Designed in response to the needs of watershed and stormwater eThe following is from the Innovyze Product Page for Sustain and the Sustain Help File. Designed in response to the needs of watershed and stormwater e by Robert Dickinson 3 min read
+
+For Thesis Students: Visual INSTRUCTIONS FOR COMPILING the SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012 For Thesis Students: Visual INSTRUCTIONS FOR COMPILING SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012 ======================== The following is based For Thesis Students: Visual INSTRUCTIONS FOR COMPILING SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012 ======================== The following is based by Robert Dickinson 2 min read
+
+German Hydrology in InfoSWMM, InfoSWMM SA and H2OMAP SWMM 14.5 with Full SWMM5 LID and SuDs Modeling This blog describes how the German Runoff hydrology converts precipitation excess (rainfall and/or snowmelt less infiltration, evaporation, and initiaThis blog describes how the German Runoff hydrology converts precipitation excess (rainfall and/or snowmelt less infiltration, evaporation, and initia by Robert Dickinson 3 min read
+
+My Top Ten reasons for preferring InfoSWMM over SWMM 5 based on my years of experience with various versions of the Stormwater Management Model (SWMM) My Top 10 Reasons for preferring InfoSWMM over SWMM 5 based on my experience: Note - this is an update of my Innovyze blog from a few years ago http:/My Top 10 Reasons for preferring InfoSWMM over SWMM 5 based on my experience: Note - this is an update of my Innovyze blog from a few years ago http:/ by Robert Dickinson 3 min read
+
+My History with Various Versions of SWMM: SWMM3, SWMM4, XP-SWMM, SWMM5, SWMM5+, SWMM Networks in ICM and InfoSWMM - 2023 Update Subject: My History with Various Versions of SWMM: SWMM 2.5, SWMM3, SWMM4, SWMM5, SWMM5+, XPSWMM, Visual SWMM and InfoSWMM along with SWMM5 Features iSubject: My History with Various Versions of SWMM: SWMM 2.5, SWMM3, SWMM4, SWMM5, SWMM5+, XPSWMM, Visual SWMM and InfoSWMM along with SWMM5 Features i by Robert Dickinson 8 min read
+
+Advanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5 Advanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5 One of the most valuable tools in any simulation proAdvanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5 One of the most valuable tools in any simulation pro by Robert Dickinson 5 min read
+
+QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 6 - ICM 7.5 QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 5.5 or ICM 6, ICM 7, ICM 8+ The following section shows how the XP-SWMM file (MyXP.XQA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 5.5 or ICM 6, ICM 7, ICM 8+ The following section shows how the XP-SWMM file (MyXP.X by Robert Dickinson 4 min read 
