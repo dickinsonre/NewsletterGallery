@@ -623,5 +623,365 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "12 min read",
     imageUrl: historyCover,
     link: "https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G-zN?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    id: "linkedin-17",
+    title: "InfoSewer to ICM InfoWorks App (for AI and Humans)",
+    description: "An app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze InfoSewer.",
+    date: "1 week ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye"
+  },
+  {
+    id: "linkedin-18",
+    title: "EPA SWMM5 Inp File Reader App for Stats and Images of the Network Elements",
+    description: "A tool for water resources professionals to analyze SWMM input files and generate statistics and visualizations of network elements.",
+    date: "2 weeks ago",
+    readTime: "4 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye"
+  },
+  {
+    id: "linkedin-19",
+    title: "Level Up Your ICM InfoWorks Skills: Try This Interactive Technical Quiz App on Replit",
+    description: "An interactive quiz app for stormwater engineers to test their knowledge of ICM InfoWorks, covering unit conversions and advanced hydraulics.",
+    date: "2 weeks ago",
+    readTime: "2 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/level-up-icm-infoworks-skills-interactive-technical-quiz-robert-dickinson"
+  },
+  {
+    id: "linkedin-20",
+    title: "Level Up Your SWMM5 Skills: Try This Interactive Technical Quiz App on Replit",
+    description: "Test your expertise with an interactive quiz covering SWMM5 fundamentals, unit conversions, and advanced hydraulic concepts.",
+    date: "2 weeks ago",
+    readTime: "2 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/level-up-swmm5-skills-interactive-technical-quiz-robert-dickinson"
+  },
+  {
+    id: "linkedin-21",
+    title: "Revolutionizing Hydraulic Network Data Export: A Universal Ruby Script Tool for InfoWorks ICM and SWMM Networks",
+    description: "A comprehensive Ruby data exporter that adapts to your network type for SWMM and InfoWorks ICM data extraction.",
+    date: "2 weeks ago",
+    readTime: "3 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-universal-ruby-robert-dickinson"
+  },
+  {
+    id: "linkedin-22",
+    title: "Eight ICMs in One. ICM Ultimate, Sewer, Flood, and Viewer for InfoWorks and SWMM Networks",
+    description: "An overview of the evolution of ICM Standard into ICM Flood and ICM Sewer, and the capabilities of ICM Ultimate.",
+    date: "3 weeks ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-23",
+    title: "Bridging Decades: Reading InfoSewer Report RPT Output for ICM InfoWorks in 2030+",
+    description: "Solutions for accessing and interpreting InfoSewer output from legacy projects dating back decades.",
+    date: "3 weeks ago",
+    readTime: "2 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-24",
+    title: "Reviving 1988 SWMM4 Models with AI: A Seamless Transition to SWMM5",
+    description: "A guide to converting vintage SWMM4 models from 1988 to modern SWMM5 using AI-assisted techniques.",
+    date: "3 weeks ago",
+    readTime: "7 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-25",
+    title: "Converting ICM InfoWorks PRN Files to CFS Units with AI in 2025",
+    description: "Addressing unit conversion challenges in ICM InfoWorks with AI-powered solutions for PRN file analysis.",
+    date: "1 month ago",
+    readTime: "2 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson"
+  },
+  {
+    id: "linkedin-26",
+    title: "Exporting Up to 99 HW Conduit Parameters to CSV with Ruby in InfoWorks ICM",
+    description: "A Ruby script to export hw_conduits data to CSV format, simplifying data analysis for InfoWorks ICM projects.",
+    date: "1 month ago",
+    readTime: "3 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/exporting-99-hw-conduit-parameters-csv-ruby-infoworks-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-27",
+    title: "Extran1 and Extran2 from the Extran Manual for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks",
+    description: "A historical examination of Extran test files showing the continuity in stormwater modeling from 1980 to 2025.",
+    date: "1 month ago",
+    readTime: "8 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/extran1-extran2-extran-manual-ai-github-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-28",
+    title: "Example 7 of Extran Manual - Type 2 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks",
+    description: "Analysis of SWMM3 Extran3 Type 2 Pump test file as a historical reference for modern hydraulic modeling.",
+    date: "1 month ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-29",
+    title: "Example 6 of Extran Manual - Type 1 Pump for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks",
+    description: "Historical analysis of SWMM3 Extran3 Type 1 Pump test file and its relevance to modern SWMM5 modeling.",
+    date: "1 month ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-30",
+    title: "Extran 5 Storage Facility with Side Outlet Orifice for AI, GitHub, SWMM5, used in ICM SWMM and InfoWorks",
+    description: "Exploring the SWMM3 Extran3 side outlet orifice test file as a historical reference for hydraulic modeling.",
+    date: "1 month ago",
+    readTime: "9 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-robert-dickinson"
+  },
+  {
+    id: "linkedin-31",
+    title: "SWMM 44H Fortran Code from 2004 on GitHub",
+    description: "A GitHub repository preserving the SWMM 4 Fortran engine and associated files from Wayne C. Huber's version at Oregon State University.",
+    date: "1 month ago",
+    readTime: "2 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-2004-github-robert-dickinson"
+  },
+  {
+    id: "linkedin-32",
+    title: "The Many Avenues of Ruby Help in the ICM Online Help File—Hint for AI Usage",
+    description: "A guide to discovering Ruby help resources in the ICM online documentation for AI-assisted learning.",
+    date: "1 month ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-help-file-hint-ai-robert-dickinson"
+  },
+  {
+    id: "linkedin-33",
+    title: "Ruby Code for ICM InfoWorks and ICM SWMM Comparisons is now in 25 Folders on the Innovyze GitHub",
+    description: "A reorganized suite of Ruby code on the Innovyze GitHub with improved folder structure and expanded examples.",
+    date: "1 month ago",
+    readTime: "1 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-icm-swmm-comparisons-25-folders-robert-dickinson"
+  },
+  {
+    id: "linkedin-34",
+    title: "Running List of my LinkedIn Articles",
+    description: "A comprehensive index of 153+ LinkedIn articles covering SWMM history and water modeling expertise.",
+    date: "1 month ago",
+    readTime: "47 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G"
+  },
+  {
+    id: "linkedin-35",
+    title: "SWMM3 Weir Extran4 Test File for AI, GitHub, SWMM5, ICM",
+    description: "Historical significance and modern application of the SWMM3 weir test file in contemporary hydraulic modeling.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-36",
+    title: "Creating Complete SWMM5 Input Files Using AI Chain Prompting from SWMM5 Rules",
+    description: "A two-prompt strategy for generating complete SWMM5 input files using AI chain prompting techniques.",
+    date: "2 months ago",
+    readTime: "3 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-prompting-robert-dickinson"
+  },
+  {
+    id: "linkedin-37",
+    title: "100 Other AI-Related Locations for Learning ICM besides the ICM Technical Hub",
+    description: "A comprehensive guide to discovering 100+ alternative resources for learning InfoWorks ICM with AI assistance.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-technical-hub-robert-dickinson"
+  },
+  {
+    id: "linkedin-38",
+    title: "SWMM3 Orifice Extran3 Test File for AI, GitHub, SWMM5, ICM",
+    description: "Analyzing the historical significance of the SWMM3 orifice test file for modern hydraulic modeling applications.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/swmm3-orifice-extran3-test-file-ai-github-swmm5-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-39",
+    title: "InfoSewer Load Allocation Expertise: Test Yourself with 50 Questions for 2025 to 2050",
+    description: "A comprehensive 50-question quiz based on Innovyze's DWF Allocator to test understanding of load allocation features.",
+    date: "2 months ago",
+    readTime: "11 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-questions-robert-dickinson"
+  },
+  {
+    id: "linkedin-40",
+    title: "Diamond Village at the University of Florida and SWMM 2.5, 3, and 4 and XPSWMM",
+    description: "A case study of Diamond Village housing community and the stormwater modeling evolution across SWMM versions.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-2-5-3-4-xpswmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-41",
+    title: "Detecting and Preventing Invalid Hydraulic Solutions in SWMM 5",
+    description: "Techniques for identifying and preventing invalid hydraulic solutions in SWMM5 simulations using best practices.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-5-robert-dickinson"
+  },
+  {
+    id: "linkedin-42",
+    title: "Enhancing Subcatchment Connectivity in InfoWorks ICM: A Step-by-Step Guide Using Ruby Scripting",
+    description: "A comprehensive Ruby scripting guide for improving subcatchment connectivity and network analysis in InfoWorks ICM.",
+    date: "2 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-step-by-step-robert-dickinson"
+  },
+  {
+    id: "linkedin-43",
+    title: "Why You Should Not Import InfoSewer to InfoSWMM but Use the Newer AWI Ruby/ODIC Methodology with SQL",
+    description: "Best practices and newer methodologies for migrating InfoSewer models using AWI Ruby and SQL instead of direct import.",
+    date: "2 months ago",
+    readTime: "3 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/why-you-should-not-import-infosewer-infoswmm-newer-awi-methodology-robert-dickinson"
+  },
+  {
+    id: "linkedin-44",
+    title: "Introducing SWMM5+ - Journal of Environmental Engineering, 2024",
+    description: "An overview of the SWMM5+ project focusing on improving the computational efficiency of the EPA SWMM hydraulic solver.",
+    date: "2 months ago",
+    readTime: "1 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/introducing-swmm5-journal-environmental-engineering-2024-robert-dickinson"
+  },
+  {
+    id: "linkedin-45",
+    title: "The Steady State, EPS, and Kinematic, Dynamic Wave Options in InfoSewer, SWMM5, InfoSWMM, ICM SWMM, and ICM INFOWORKS",
+    description: "Understanding different hydraulic simulation methods and their applications across various water modeling platforms.",
+    date: "2 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-infosewer-robert-dickinson"
+  },
+  {
+    id: "linkedin-46",
+    title: "Ruby ICM InfoWorks vs. ICM SWMM Link Property Data Comparison",
+    description: "A Ruby script designed to compare link property data between ICM InfoWorks and ICM SWMM networks.",
+    date: "2 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-link-property-data-comparison-robert-dickinson"
+  },
+  {
+    id: "linkedin-47",
+    title: "Ruby ICM InfoWorks vs. ICM SWMM Node Property Data Comparison",
+    description: "A Ruby script for bridging the gap between ICM InfoWorks and ICM SWMM through node property analysis.",
+    date: "3 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-node-property-data-comparison-robert-dickinson"
+  },
+  {
+    id: "linkedin-48",
+    title: "Navigating the Landscape of Hydraulic Modeling: A Comparative Study of InfoSewer, ICM InfoWorks, and ICM SWMM",
+    description: "Exploring interoperability and comparative performance of InfoSewer, ICM InfoWorks, and ICM SWMM for steady state models.",
+    date: "3 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-robert-dickinson"
+  },
+  {
+    id: "linkedin-49",
+    title: "Deep Dive into Water Quality Buildup Washoff (BW) in ICM InfoWorks using the SWMM5 BW Options",
+    description: "Investigation of water quality modeling in ICM InfoWorks with all SWMM5 buildup washoff choices for runoff simulations.",
+    date: "3 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-50",
+    title: "How to Use the Graph/Report Output of InfoSewer/InfoSWMM to Make Observed Predicted Custom Graphs in ICM InfoWorks",
+    description: "A step-by-step guide to creating custom observed-predicted graphs in ICM InfoWorks using legacy software outputs.",
+    date: "3 months ago",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-graph-report-output-infosewer-infoswmm-custom-graphs-robert-dickinson"
+  },
+  {
+    id: "linkedin-51",
+    title: "Using Ruby for some InfoSWMM Subcatchment Manager Tools In ICM Infoworks",
+    description: "Leveraging Ruby scripting to implement InfoSWMM subcatchment management tools within ICM InfoWorks environments.",
+    date: "3 months ago",
+    readTime: "3 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-infoswmm-subcatchment-manager-tools-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-52",
+    title: "Using AI to Interpret the PRN file of ICM Infoworks for a person with a SWMM5 Background",
+    description: "A guide to understanding ICM InfoWorks PRN output files using AI assistance for SWMM5-experienced professionals.",
+    date: "3 months ago",
+    readTime: "6 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-background-robert-dickinson"
+  },
+  {
+    id: "linkedin-53",
+    title: "Streamlining ICM Workflow: Preserving User-Fields with Ruby Automation to CSV Files",
+    description: "A Ruby automation script to preserve ICM user fields to CSV format for enhanced workflow management.",
+    date: "3 months ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-automation-robert-dickinson"
+  },
+  {
+    id: "linkedin-54",
+    title: "Using Ruby to supplement Native ICM QM Tau or Shear Stress",
+    description: "A Ruby script to process ICM InfoWorks simulation results and supplement shear stress calculations using custom equations.",
+    date: "3 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-supplement-native-icm-qm-tau-shear-stress-robert-dickinson"
+  },
+  {
+    id: "linkedin-55",
+    title: "Using Ruby to Read the Steady State Report file of InfoSewer post 2025+",
+    description: "A Ruby script to parse and analyze InfoSewer steady state report files for modern workflow integration.",
+    date: "3 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-read-steady-state-report-file-infosewer-post-2025-robert-dickinson"
+  },
+  {
+    id: "linkedin-56",
+    title: "Using Ruby to Recreate the InfoSWMM Node Report Tables in ICM SWMM from any SWMM5 Report File",
+    description: "A Ruby script to recreate InfoSWMM-style node report tables from SWMM5 output in ICM SWMM environments.",
+    date: "3 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-node-report-tables-icm-swmm-robert-dickinson"
   }
 ];
