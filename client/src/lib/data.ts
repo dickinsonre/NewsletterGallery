@@ -1253,5 +1253,185 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "3 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/what-purpose-infoswmm-sustain-optimization-lids-gi-suds-robert-dickinson"
+  },
+  {
+    id: "linkedin-103",
+    title: "SWMM 5 and ICM: A Powerful Duo for Urban Drainage Modeling",
+    description: "Exploring the complementary strengths of SWMM 5 and ICM for comprehensive urban drainage system modeling.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/swmm-5-icm-powerful-duo-urban-drainage-modeling-imo-robert-dickinson-sagfe"
+  },
+  {
+    id: "linkedin-104",
+    title: "Mastering ICM SWMM and InfoWorks: A Ruby Guide to IWR Results Files",
+    description: "Comprehensive Ruby scripting guide for processing and analyzing IWR results files in ICM SWMM and InfoWorks.",
+    date: "6 months ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/mastering-icm-swmm-infoworks-ruby-guide-iwr-results-file-dickinson-5z9se"
+  },
+  {
+    id: "linkedin-105",
+    title: "A Graphical View of Nonlinear Runoff Processes in ICM SWMM and SWMM5",
+    description: "Visual analysis of nonlinear runoff processes and their representation in ICM SWMM and EPA SWMM5.",
+    date: "6 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/graphical-view-nonlinear-runoff-processes-icm-swmm-swmm5-dickinson-huvde"
+  },
+  {
+    id: "linkedin-106",
+    title: "Utilizing Ruby Scripting in InfoWorks ICM to Extract Output",
+    description: "Advanced techniques for using Ruby scripts to efficiently extract and process output data in InfoWorks ICM.",
+    date: "6 months ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/utilizing-ruby-scripting-infoworks-icm-extract-output-dickinson-qvq5e"
+  },
+  {
+    id: "linkedin-107",
+    title: "ICM Siphons: How to Model Sediment Siphon in SWMM and SWMM5",
+    description: "Detailed guide on modeling sediment siphons in ICM and EPA SWMM for combined sewer systems.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/icm-siphons-how-model-sediment-siphon-swmm-swmm5-robert-dickinson-i5lme"
+  },
+  {
+    id: "linkedin-108",
+    title: "Investigating Curve Number Approximations in ICM 2D",
+    description: "Analysis of curve number approximations and their application in ICM 2D flow routing.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/investigating-curve-number-approximations-icm-2d-robert-dickinson"
+  },
+  {
+    id: "linkedin-109",
+    title: "Unlocking Advanced Data Analysis of SWMM5 with ChatGPT's Beta GPT-4",
+    description: "Using GPT-4 and ChatGPT to perform advanced data analysis and automation on SWMM5 models.",
+    date: "6 months ago",
+    readTime: "6 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/unlocking-advanced-data-analysis-swmm5-chatgpts-beta-gpt-4-dickinson"
+  },
+  {
+    id: "linkedin-110",
+    title: "Enhancing ICM InfoWorks SWMM 1D Output with Elegant Ruby Tables",
+    description: "Creating elegant and informative data tables from ICM InfoWorks SWMM 1D output using Ruby scripts.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/enhancing-icm-infoworks-swmm-1d-output-elegant-ruby-table-dickinson"
+  },
+  {
+    id: "linkedin-111",
+    title: "InfoWorks ICM Example SQL Scripts for Flawless Import Data",
+    description: "Collection of SQL scripts and examples for ensuring data quality during InfoWorks ICM model imports.",
+    date: "6 months ago",
+    readTime: "7 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/infoworks-icm-example-sql-scripts-flawless-import-data-dickinson"
+  },
+  {
+    id: "linkedin-112",
+    title: "Navigating ICM InfoWorks: Population-Based vs SWMM's Mean DWF",
+    description: "Comparison of population-based and mean dry weather flow calculation methods in ICM InfoWorks.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/navigating-icm-infoworks-population-based-vs-swmms-mean-dickinson"
+  },
+  {
+    id: "linkedin-113",
+    title: "It's a Small Island: How Work History Can Be a Tangled Ball of Yarn",
+    description: "Personal reflections on career trajectory and professional development in water engineering.",
+    date: "6 months ago",
+    readTime: "3 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/its-small-island-how-work-history-can-tangled-ball-yarn-dickinson"
+  },
+  {
+    id: "linkedin-114",
+    title: "Autodesk Employee Perspective: Why I Personally Invest",
+    description: "Personal insights on working with Autodesk and investment perspectives on software solutions.",
+    date: "6 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/autodesk-employee-perspective-why-i-personally-invest-dickinson"
+  },
+  {
+    id: "linkedin-115",
+    title: "Using ChatGPT for Comparing Mass Balance Checks in InfoSewer",
+    description: "Leveraging ChatGPT to analyze and compare mass balance calculations in InfoSewer models.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/using-chatgpt-comparing-mass-balance-checks-infosewer-dickinson"
+  },
+  {
+    id: "linkedin-116",
+    title: "Uncommon Synergy: Link-Node Hydraulic Modeling and NHL",
+    description: "Exploring the unique synergy between link-node hydraulic modeling and advanced network analysis.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/uncommon-synergy-link-node-hydraulic-modeling-nhl-t-cell-dickinson"
+  },
+  {
+    id: "linkedin-117",
+    title: "Thesis Students: Visual Instructions for Compiling Using C",
+    description: "Comprehensive visual guide for thesis students on C language compilation and debugging techniques.",
+    date: "7 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/thesis-students-visual-instructions-compiling-using-c-dickinson"
+  },
+  {
+    id: "linkedin-118",
+    title: "German Hydrology: InfoSWMM 14.5, H2OMAP SWMM, Full SWMM5 LID",
+    description: "Application of InfoSWMM, H2OMAP SWMM and full SWMM5 LID capabilities in German hydrological modeling.",
+    date: "7 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/german-hydrology-infoswmm-145-h2omap-swmm-full-swmm5-lid-dickinson"
+  },
+  {
+    id: "linkedin-119",
+    title: "My Top Ten Reasons: Preferring InfoSWMM Over SWMM 5",
+    description: "Detailed ranking of the top 10 reasons why InfoSWMM offers advantages over native SWMM 5.",
+    date: "7 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/my-top-ten-reasons-preferring-infoswmm-over-swmm-5-based-dickinson"
+  },
+  {
+    id: "linkedin-120",
+    title: "My History with Various Versions of SWMM: SWMM3, SWMM4, SWMM5",
+    description: "Personal journey through the evolution of SWMM from version 3 through version 5 and beyond.",
+    date: "7 months ago",
+    readTime: "7 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson"
+  },
+  {
+    id: "linkedin-121",
+    title: "Advanced Calibration Graphs: Reference Graphical 13",
+    description: "Advanced techniques for creating and interpreting calibration graphs in hydrological modeling.",
+    date: "7 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/advanced-calibration-graphs-reference-graphical-13-robert-dickinson"
+  },
+  {
+    id: "linkedin-122",
+    title: "QA/QC Process for Import XP-SWMM Model to InfoWorks ICM",
+    description: "Comprehensive quality assurance and quality control procedures for importing XP-SWMM models to InfoWorks ICM.",
+    date: "7 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson"
   }
 ];
