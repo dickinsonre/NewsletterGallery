@@ -1433,5 +1433,194 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "6 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson"
+  },
+  {
+    id: "linkedin-123",
+    title: "InfoSewer, ICM InfoWorks App: AI and Humans",
+    description: "Exploring the integration of AI and human expertise in InfoSewer and ICM InfoWorks applications.",
+    date: "8 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye"
+  },
+  {
+    id: "linkedin-124",
+    title: "EPA SWMM5 INP File Reader App: Stats and Images",
+    description: "Tool for reading and analyzing EPA SWMM5 input files with statistics and visual network representations.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye"
+  },
+  {
+    id: "linkedin-125",
+    title: "Level Up Your ICM InfoWorks Skills: Try Interactive Quiz",
+    description: "Interactive quiz designed to test and enhance your ICM InfoWorks modeling knowledge.",
+    date: "8 months ago",
+    readTime: "8 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/level-up-your-icm-infoworks-skills-try-interactive-quiz-dickinson-qpj0e"
+  },
+  {
+    id: "linkedin-126",
+    title: "Level Up Your SWMM5 Skills: Try Interactive Technical Quiz",
+    description: "Interactive technical quiz to test and improve your EPA SWMM5 modeling expertise.",
+    date: "8 months ago",
+    readTime: "8 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/level-up-your-swmm5-skills-try-interactive-technical-quiz-dickinson-vfq7e"
+  },
+  {
+    id: "linkedin-127",
+    title: "Revolutionizing Hydraulic Network Data Export with Ruby Script",
+    description: "Advanced Ruby scripting techniques for exporting complex hydraulic network data efficiently.",
+    date: "8 months ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-ruby-script-dickinson-xwzqc"
+  },
+  {
+    id: "linkedin-128",
+    title: "Eight ICMs, One ICM: Ultimate Sewer Flood Viewer for SWMM",
+    description: "Comprehensive tool for viewing sewer flooding scenarios across multiple ICM instances.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-swmm-robert-dickinson-13bae"
+  },
+  {
+    id: "linkedin-129",
+    title: "Bridging Decades: Reading InfoSewer Report RPT Output in ICM",
+    description: "Guide to interpreting legacy InfoSewer RPT files and converting them for use in modern ICM workflows.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-dickinson-jyhue"
+  },
+  {
+    id: "linkedin-130",
+    title: "Reviving 1988 SWMM4 Models: AI Seamless Transition to SWMM5",
+    description: "Using AI to facilitate smooth conversion of vintage 1988 SWMM4 models to modern SWMM5.",
+    date: "8 months ago",
+    readTime: "7 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-dickinson-2b8je"
+  },
+  {
+    id: "linkedin-131",
+    title: "Converting ICM InfoWorks PRN Files to CFS Units with AI",
+    description: "AI-assisted technique for converting PRN file units from metric to CFS in ICM InfoWorks for 2025.",
+    date: "8 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson-37vre"
+  },
+  {
+    id: "linkedin-132",
+    title: "Exporting Up to 99 HW Conduit Parameters to CSV with Ruby",
+    description: "Ruby script for extracting and exporting up to 99 hardware conduit parameters to CSV format.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/exporting-up-99-hw-conduit-parameters-csv-ruby-icm-robert-dickinson-5pcye"
+  },
+  {
+    id: "linkedin-133",
+    title: "EXTRAN1 and EXTRAN2 from EXTRAN Manual with AI and GitHub",
+    description: "Detailed analysis of EXTRAN manual content with AI assistance and GitHub code examples for SWMM5.",
+    date: "8 months ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/extran1-extran2-from-extran-manual-ai-github-swmm5-used-dickinson-ds25e"
+  },
+  {
+    id: "linkedin-134",
+    title: "Example 7: EXTRAN Manual Type 2 Pump with AI and GitHub",
+    description: "Comprehensive walkthrough of Example 7 from EXTRAN manual covering Type 2 pump implementation.",
+    date: "8 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-dickinson-pj38e"
+  },
+  {
+    id: "linkedin-135",
+    title: "Example 6: EXTRAN Manual Type 1 Pump with AI and GitHub",
+    description: "Step-by-step guide to Example 6 from EXTRAN manual focusing on Type 1 pump configurations.",
+    date: "8 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-dickinson-gbbke"
+  },
+  {
+    id: "linkedin-136",
+    title: "EXTRAN 5: Storage Facility with Side Outlet Orifice with AI",
+    description: "Guide to EXTRAN 5 storage facility modeling including side outlet orifice configurations.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-dickinson-jh2ne"
+  },
+  {
+    id: "linkedin-137",
+    title: "SWMM 4.4H Fortran Code from 2004 on GitHub",
+    description: "Historical SWMM 4.4H Fortran source code from 2004 archived and explained on GitHub.",
+    date: "8 months ago",
+    readTime: "4 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-from-2004-github-robert-dickinson-rqume"
+  },
+  {
+    id: "linkedin-138",
+    title: "Many Avenues for Ruby Help in ICM: Online File Hint and AI Usage",
+    description: "Exploring multiple resources and techniques for learning and using Ruby in ICM environments.",
+    date: "8 months ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-filehint-ai-usage-robert-dickinson-fstne"
+  },
+  {
+    id: "linkedin-139",
+    title: "Ruby Code for ICM InfoWorks and SWMM Comparisons: Now 25 on GitHub",
+    description: "Collection of 25 Ruby scripts for comparing ICM InfoWorks and SWMM models available on GitHub.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-swmm-comparisons-now-25-github-dickinson-jh1re"
+  },
+  {
+    id: "linkedin-140",
+    title: "Running List of My LinkedIn Articles",
+    description: "Comprehensive running list of all LinkedIn articles and publications organized by topic.",
+    date: "8 months ago",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/running-list-my-linkedin-articles-robert-dickinson-phibe"
+  },
+  {
+    id: "linkedin-141",
+    title: "SWMM3 Weir and EXTRAN4 Test File with AI and GitHub",
+    description: "Analysis of SWMM3 weir components and EXTRAN4 test files with AI insights and GitHub resources.",
+    date: "8 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson-s0u9e"
+  },
+  {
+    id: "linkedin-142",
+    title: "Creating Complete SWMM5 Input Files Using AI Chain",
+    description: "Guide to using AI chain techniques to automatically generate complete and valid SWMM5 input files.",
+    date: "8 months ago",
+    readTime: "7 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-from-dickinson-grrre"
+  },
+  {
+    id: "linkedin-143",
+    title: "100 Other AI-Related Locations for Learning ICM Beyond Hub",
+    description: "Comprehensive guide to 100 AI and ICM learning resources outside of the official Hub.",
+    date: "8 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-hub-dickinson-xqpre"
   }
 ];
