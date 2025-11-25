@@ -983,5 +983,275 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "9 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/how-to-use-ruby-subcatchments-statistics-current-background-networks-robert-dickinson"
+  },
+  {
+    id: "linkedin-73",
+    title: "How to use SQL to see the SUDS or LID Usage for all Subcatchments in ICM InfoWorks and SWMM Networks",
+    description: "SQL queries to analyze Low Impact Development control usage across all subcatchments in water models.",
+    date: "5 months ago",
+    readTime: "6 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-sql-see-suds-lid-usage-all-subcatchments-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-74",
+    title: "Harnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling",
+    description: "Comprehensive guide to utilizing all 12 runoff surface options in ICM InfoWorks for sustainable drainage system design.",
+    date: "6 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/harnessing-full-potential-12-runoff-surfaces-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-75",
+    title: "Utilizing a Unified 2D Engine in both ICM InfoWorks and ICM SWMM Networks",
+    description: "ICM InfoWorks 2D and ICM SWMM 2D comparison for stormwater and sanitary flow modeling.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/utilizing-unified-2d-engine-both-icm-infoworks-icm-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-76",
+    title: "My Top 100 Reasons: Why ICM SWMM Triumphs Over Native SWMM 5, IMO",
+    description: "Insights from 24+ years of SWMM5 experience and 50 years with SWMM on why ICM SWMM is superior.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/my-top-100-reasons-why-icm-swmm-triumphs-over-native-robert-dickinson"
+  },
+  {
+    id: "linkedin-77",
+    title: "Enhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection",
+    description: "A guide to using Ruby scripts to optimize time step parameters in ICM SWMM networks for better simulation.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/enhancing-your-icm-swmm-network-simulation-leveraging-ruby-robert-dickinson"
+  },
+  {
+    id: "linkedin-78",
+    title: "Annotating and Unleashing the Power of RPT and Log Files in an ICM SWMM Network",
+    description: "Comprehensive guide to analyzing RPT and log files in ICM SWMM for model validation and optimization.",
+    date: "6 months ago",
+    readTime: "7 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/annotating-unleashing-power-rpt-log-files-icm-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-79",
+    title: "Unlocking the Power of Ruby with ChatGPT: Streamlining Subcatchment Analysis in InfoWorks ICM Network",
+    description: "Using Ruby scripts and ChatGPT to automate and optimize subcatchment analysis in InfoWorks ICM networks.",
+    date: "6 months ago",
+    readTime: "6 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/unlocking-power-ruby-chatgpt-streamlining-subcatchment-robert-dickinson"
+  },
+  {
+    id: "linkedin-80",
+    title: "Elephant Modeling Stories: Collaborative Insights into ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5",
+    description: "Collection of collaborative insights and stories on water modeling using ICM, Ruby, ChatGPT and SWMM5.",
+    date: "6 months ago",
+    readTime: "8 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/elephant-modeling-stories-collaborative-insights-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-81",
+    title: "How to Import an SWMM5 file from PCSWMM and/or SWMM5 as a Model Group in ICM InfoWorks and SWMM Networks",
+    description: "Step-by-step guide to importing SWMM5 files into ICM InfoWorks and SWMM networks, validating and exporting.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-import-swmm5-file-pcswmm-model-group-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-82",
+    title: "Unlocking the Synergy of Ruby and SQL Scripting inside ICM: Streamlining InfoWorks and SWMM Network Management",
+    description: "Deep dive into combining Ruby and SQL scripting for advanced network data structure management in ICM.",
+    date: "6 months ago",
+    readTime: "8 min read",
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/pulse/unlocking-synergy-ruby-sql-scripting-inside-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-83",
+    title: "Seamless Conversion from XP-SWMM to ICM InfoWorks and SWMM Networks",
+    description: "Guide to converting XP-SWMM models to ICM InfoWorks and SWMM networks for dual hydraulic integration.",
+    date: "6 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/seamless-conversion-xp-swmm-icm-infoworks-swmm-networks-robert-dickinson"
+  },
+  {
+    id: "linkedin-84",
+    title: "Unleashing the Power of GPT4 and OpenAI: Enhancing EPA SWMM5 Test Model Building and Sensitivity Analysis",
+    description: "Leveraging GPT4 and OpenAI to build and analyze EPA SWMM5 test models and perform sensitivity studies.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/unleashing-power-gpt4-openai-enhancing-epa-swmm5-test-robert-dickinson"
+  },
+  {
+    id: "linkedin-85",
+    title: "Using Ruby in InfoWorks ICM to create Network Statistics for Effective QA/QC of Imported Model Data",
+    description: "Comprehensive guide to using Ruby for network statistics and quality assurance of imported model data in InfoWorks ICM.",
+    date: "6 months ago",
+    readTime: "12 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-infoworks-icm-create-network-statistics-qaqc-robert-dickinson"
+  },
+  {
+    id: "linkedin-86",
+    title: "Converting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby",
+    description: "Complete guide to converting InfoSewer models to ICM InfoWorks networks using ODIC and Ruby scripts.",
+    date: "6 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/converting-infosewer-model-icm-infoworks-network-using-robert-dickinson"
+  },
+  {
+    id: "linkedin-87",
+    title: "How to Use Tracer Water Quality for RDII, DWF, and Runoff in an InfoWorks ICM Network",
+    description: "Guide to implementing SWMM5 washoff and tracer water quality for RDII, DWF and runoff analysis in InfoWorks ICM.",
+    date: "6 months ago",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-tracer-water-quality-rdii-dwf-runoff-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-88",
+    title: "How to use the EPA Design Storm Wizard with InfoWorks ICM for Chicago, SCS, NOAA, and IDF Curves",
+    description: "Tutorial on using the EPA Design Storm Wizard with InfoWorks ICM for various precipitation curve types.",
+    date: "6 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-epa-design-storm-wizard-infoworks-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-89",
+    title: "Ruby Scripts for Customizing your ICM SWMM Networks",
+    description: "Collection of Ruby scripts for customizing and optimizing ICM SWMM networks for specific applications.",
+    date: "6 months ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-scripts-customizing-your-icm-swmm-networks-robert-dickinson"
+  },
+  {
+    id: "linkedin-90",
+    title: "My 1991 @UF President of the Mayor's Council Certificate #SWMM",
+    description: "A personal reflection on receiving the 1991 President of the Mayor's Council Certificate at University of Florida.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/my-1991-uf-president-mayors-council-certificate-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-91",
+    title: "How Does RDII Work in SWMM5, InfoSWMM and InfoWorks ICM?",
+    description: "Comprehensive explanation of Rainfall-Dependent Infiltration and Inflow (RDII) across SWMM5 platforms.",
+    date: "6 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-does-rdii-work-swmm5-infoswmm-infoworks-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-92",
+    title: "New Product Pages at www.innovyze.com for SWMM related Products",
+    description: "Overview of new product pages for InfoSWMM, XPSWMM, InfoSewer, and InfoWorks ICM on Innovyze website.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/new-product-pages-www-innovyze-com-swmm-related-products-robert-dickinson"
+  },
+  {
+    id: "linkedin-93",
+    title: "New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013",
+    description: "Summary of new engine and GUI features available in InfoSWMM 14.7 based on EPA SWMM 5.1.013.",
+    date: "6 months ago",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/new-engine-gui-features-infoswmm-14-7-epa-swmm-5-1-013-robert-dickinson"
+  },
+  {
+    id: "linkedin-94",
+    title: "How to Use Population at a Node for DWF in SWMM5 and InfoSWMM instead of Mean DWF",
+    description: "Guide to using population-based dry weather flow calculations instead of mean DWF in SWMM5 models.",
+    date: "6 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-population-node-dwf-swmm5-infoswmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-95",
+    title: "New Features in InfoSWMM 14.6 and InfoSWMM SA",
+    description: "Overview of new features and improvements in InfoSWMM 14.6 and InfoSWMM Sustain & Analyze versions.",
+    date: "6 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/new-features-infoswmm-14-6-infoswmm-sa-robert-dickinson"
+  },
+  {
+    id: "linkedin-96",
+    title: "New Help file for Innovyze InfoSWMM (InfoSWMM is an Arc Map Extension)",
+    description: "Announcement of new help file for Innovyze InfoSWMM based on menu structure for better connectivity.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/new-help-file-innovyze-infoswmm-arc-map-extension-robert-dickinson"
+  },
+  {
+    id: "linkedin-97",
+    title: "How InfoSWMM and InfoSWMM SA 2D Link and 3D Node Graphics Help You Understand Network Response",
+    description: "Explanation of how linked 2D link and 3D node graphics in InfoSWMM help visualize network response to wet weather flow.",
+    date: "6 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-infoswmm-infoswmm-sa-2d-link-3d-node-graphics-understand-robert-dickinson"
+  },
+  {
+    id: "linkedin-98",
+    title: "100 Tools for Modeling Hydrology/Hydraulics using Innovyze InfoSWMM_SA",
+    description: "Comprehensive list of 100 tools and techniques for hydrological and hydraulic modeling using Innovyze InfoSWMM SA.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/100-tools-modeling-hydrology-hydraulics-using-innovyze-robert-dickinson"
+  },
+  {
+    id: "linkedin-99",
+    title: "Tutorials for InfoSWMM Sustain Which Optimizes for LIDs, GI, SuDS, WSuDS on Small Runoff Surfaces",
+    description: "Tutorial series for InfoSWMM Sustain optimization of Low Impact Development and green infrastructure on runoff surfaces.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/tutorials-infoswmm-sustain-optimizes-lids-gi-suds-wsusds-robert-dickinson"
+  },
+  {
+    id: "linkedin-100",
+    title: "Dynamic Wave Routing Options in InfoSWMM and SWMM5 compared to InfoWorks_ICM and InfoSewer",
+    description: "Comparison of dynamic wave routing capabilities across InfoSWMM, SWMM5, InfoWorks ICM and InfoSewer platforms.",
+    date: "6 months ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/dynamic-wave-routing-options-infoswmm-swmm5-compared-robert-dickinson"
+  },
+  {
+    id: "linkedin-101",
+    title: "InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools",
+    description: "Comprehensive guide to RDII Analyst 3.0 for separating groundwater, inflow and infiltration in stormwater systems.",
+    date: "6 months ago",
+    readTime: "15 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/infoswmm-infoswmm-sa-rdii-analyst-3-0-epa-ssoap-tools-robert-dickinson"
+  },
+  {
+    id: "linkedin-102",
+    title: "What is the Purpose of InfoSWMM Sustain? Optimization for LIDs, GI, SuDS, WSuDS or small Runoff Surfaces",
+    description: "Detailed explanation of InfoSWMM Sustain's purpose for optimizing sustainable drainage systems and green infrastructure.",
+    date: "6 months ago",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/what-purpose-infoswmm-sustain-optimization-lids-gi-suds-robert-dickinson"
   }
 ];

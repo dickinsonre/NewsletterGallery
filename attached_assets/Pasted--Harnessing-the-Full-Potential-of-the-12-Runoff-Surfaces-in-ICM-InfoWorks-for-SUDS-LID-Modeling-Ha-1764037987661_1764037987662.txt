@@ -1,0 +1,174 @@
+
+Harnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling
+Harnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling While I've previously discussed the capabilities of ICMHarnessing the Full Potential of the 12 Runoff Surfaces in ICM InfoWorks for SUDS/LID Modeling While I've previously discussed the capabilities of ICM
+by Robert Dickinson • 6 min read
+
+
+Utilizing a Unified 2D Engine in both ICM InfoWorks and ICM SWMM Networks
+ICM InfoWorks 2D and ICM SWMM 2D comparison Hello to all the SSF infrastructure enthusiasts out there, Ever wondered how two different network systemsICM InfoWorks 2D and ICM SWMM 2D comparison Hello to all the SSF infrastructure enthusiasts out there, Ever wondered how two different network systems
+by Robert Dickinson • 5 min read
+
+
+My Top 100 Reasons: Why ICM SWMM Triumphs Over Native SWMM 5, IMO - based on My 24-Year Voyage with EPASWMM5
+My Top 100 Reasons: Why ICM SWMM Triumphs Over SWMM 5 - Insights from My 24-Year Voyage with EPASWMM5 and almost 50 years with SWMM in General I wanteMy Top 100 Reasons: Why ICM SWMM Triumphs Over SWMM 5 - Insights from My 24-Year Voyage with EPASWMM5 and almost 50 years with SWMM in General I wante
+by Robert Dickinson • 5 min read
+
+
+Enhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection
+Enhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection In SWMM, the conduit lengthening time step parametEnhancing your ICM SWMM Network Simulation: Leveraging Ruby Scripts for Optimal Time Step Selection In SWMM, the conduit lengthening time step paramet
+by Robert Dickinson • 4 min read
+
+
+Annotating and Unleashing the Power of RPT and Log Files in an ICM SWMM Network
+In the world of sanitary and stormwater modeling, data is our compass. It guides us, offering insights into the intricate dynamics of our systems. TwoIn the world of sanitary and stormwater modeling, data is our compass. It guides us, offering insights into the intricate dynamics of our systems. Two
+by Robert Dickinson • 7 min read
+
+
+Unlocking the Power of Ruby with ChatGPT: Streamlining Subcatchment Analysis in InfoWorks ICM Network
+1/ This code snippet performs the following tasks in the context of an InfoWorks ICM network (Note: The script is in subfolder 70 on my Github reposit1/ This code snippet performs the following tasks in the context of an InfoWorks ICM network (Note: The script is in subfolder 70 on my Github reposit
+by Robert Dickinson • 6 min read
+
+
+Elephant Modeling Stories: Collaborative Insights into ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 for SSF Engineers - LI List (13*7, 91)
+An article list on LinkedIn dealing with ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 - Why and Elephant? Once upon a time, in a small village onAn article list on LinkedIn dealing with ICM InfoWorks, ICM SWMM, Ruby, ChatGPT, and SWMM5 - Why and Elephant? Once upon a time, in a small village on
+by Robert Dickinson • 8 min read
+
+
+How to Import an SWMM5 file from PCSWMM and/or SWMM5 as a Model Group in ICM InfoWorks and SWMM Networks, Validate it and then Export back to SWMM5
+SWMM5 Model The SWMM5 project summary includes the following components: 1 raingage, 168 subcatchments, no aquifers, snowpacks, or RDM hydrographs. ThSWMM5 Model The SWMM5 project summary includes the following components: 1 raingage, 168 subcatchments, no aquifers, snowpacks, or RDM hydrographs. Th
+by Robert Dickinson • 4 min read
+
+
+Unlocking the Synergy of Ruby and SQL Scripting inside ICM: Streamlining InfoWorks and SWMM Network Management with a Deep Dive into Data Structures
+The Storm Water Management Model (SWMM) and InfoWorks networks share a common user experience (UX); similar data structures, output files, UX tools, aThe Storm Water Management Model (SWMM) and InfoWorks networks share a common user experience (UX); similar data structures, output files, UX tools, a
+by Robert Dickinson • 8 min read
+
+
+Seamless Conversion from XP-SWMM to ICM InfoWorks and SWMM Networks: Unlock the Power of a Single XPX File for Dual Hydraulic Integration
+The goal is to streamline exporting data from XPSWMM and importing it into both ICM SWMM and ICM InfoWorks networks, enabling efficient model data manThe goal is to streamline exporting data from XPSWMM and importing it into both ICM SWMM and ICM InfoWorks networks, enabling efficient model data man
+by Robert Dickinson • 4 min read
+
+
+Unleashing the Power of GPT4 and OpenAI: Enhancing EPA SWMM5 Test Model Building and Sensitivity Analysis
+The focus of our exploration is the capability of GPT4, OpenAI's latest language model, to comprehend and manipulate small SWMM5 INP files based on teThe focus of our exploration is the capability of GPT4, OpenAI's latest language model, to comprehend and manipulate small SWMM5 INP files based on te
+by Robert Dickinson • 5 min read
+
+
+Using Ruby in InfoWorks ICM to create Network Statistics for Effective QA/QC of Imported Model Data
+Learn how to use Ruby in Infoworks ICM to look at network statistics and ensure the QA/QC of model data conversion is done well. Using Ruby's advancedLearn how to use Ruby in Infoworks ICM to look at network statistics and ensure the QA/QC of model data conversion is done well. Using Ruby's advanced
+by Robert Dickinson • 12 min read
+
+
+Converting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby
+Converting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby Scripts This guide will take you through the import of an InfoSewer modeConverting an InfoSewer Model to an ICM InfoWorks Network using ODIC and Ruby Scripts This guide will take you through the import of an InfoSewer mode
+by Robert Dickinson • 6 min read
+
+
+How to Use Tracer Water Quality for RDII, DWF, and Runoff in an InfoWorks ICM Network - Use SWMM5 Washoff
+The hydrology of combined sewer systems is extremely complex. Runoff, dry weather flow, or rainfall-dependent infiltration and inflow can all contribuThe hydrology of combined sewer systems is extremely complex. Runoff, dry weather flow, or rainfall-dependent infiltration and inflow can all contribu
+by Robert Dickinson • 3 min read
+
+
+How to use the EPA Design Storm Wizard with InfoWorks ICM for Chicago, SCS, NOAA, and IDF Curves.
+The Design Storm Wizard install can be found on the openswmm thread at the following link: https://www.openswmm.org/Topic/32275/dstorm-a-design-storm-The Design Storm Wizard install can be found on the openswmm thread at the following link: https://www.openswmm.org/Topic/32275/dstorm-a-design-storm-
+by Robert Dickinson • 2 min read
+
+
+Ruby Scripts for Customizing your ICM SWMM Networks
+ICM InfoWorks by Autodesk Innovyze is a powerful and complete software platform for analyzing, designing, and managing water, sewage, and stormwater sICM InfoWorks by Autodesk Innovyze is a powerful and complete software platform for analyzing, designing, and managing water, sewage, and stormwater s
+by Robert Dickinson • 8 min read
+
+
+My 1991 @UF President of the Mayor's Council Certificate #SWMM 2,3,4
+Diamond Village. UF - University of Florida - Gainesville Florida 1/ On the hunt for books I recently came across an award that @UF presented to me inDiamond Village. UF - University of Florida - Gainesville Florida 1/ On the hunt for books I recently came across an award that @UF presented to me in
+by Robert Dickinson • 1 min read
+
+
+How Does RDII Work in SWMM5, InfoSWMM and InfoWorks ICM?
+RDII in SWMM5 from the SWMM5 Help File (Refactored) Unit Hydrographs Unit Hydrographs 📈💧 Unit Hydrographs (UHs) are pivotal instruments 🛠️ in hydroRDII in SWMM5 from the SWMM5 Help File (Refactored) Unit Hydrographs Unit Hydrographs 📈💧 Unit Hydrographs (UHs) are pivotal instruments 🛠️ in hydro
+by Robert Dickinson • 5 min read
+
+
+New Product Pages at www.innnovyze.com for our SWMM related Products, InfoSWMM, XPSWMM, InfoSewer, and InfoWorks ICM
+Obviously, with my background in SWMM, I am partial to SWMM software and we have 4 good platforms for SWMM or partial SWMM modeling. InfoSewer and InfObviously, with my background in SWMM, I am partial to SWMM software and we have 4 good platforms for SWMM or partial SWMM modeling. InfoSewer and Inf
+by Robert Dickinson • 1 min read
+
+
+New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013
+New Features in Innovyze SWMM 14.7 New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013 More about EPA SWMM 5.1.013 https:/New Features in Innovyze SWMM 14.7 New Engine and GUI Features in InfoSWMM 14.7 which is based on EPA SWMM 5.1.013 More about EPA SWMM 5.1.013 https:/
+by Robert Dickinson • 3 min read
+
+
+How to Use Population at a Node for DWF in SWMM5 and InfoSWMM instead of Mean DWF
+How to Use Population at a Node for DWF in SWMM5 and InfoSWMM The Storm Water Management Model (SWMM5) engine is a tool used to simulate and analyze tHow to Use Population at a Node for DWF in SWMM5 and InfoSWMM The Storm Water Management Model (SWMM5) engine is a tool used to simulate and analyze t
+by Robert Dickinson • 2 min read
+
+
+New Features in InfoSWMM 14.6 and InfoSWMM SA
+New Features in Innovyze SWMM 14.6 Update 1 Added missing conduit type to RTC tables in DB Editor. Added the ability to use H2S in the SWMM5 TreatmentNew Features in Innovyze SWMM 14.6 Update 1 Added missing conduit type to RTC tables in DB Editor. Added the ability to use H2S in the SWMM5 Treatment
+by Robert Dickinson • 2 min read
+
+
+New Help file for Innovyze InfoSWMM (InfoSWMM is an Arc Map Extension)
+The new help file for Innovyze InfoSWMM is based on the menu structure. I think it helps connect the tools, data, editing and great InfoSWMM features The new help file for Innovyze InfoSWMM is based on the menu structure. I think it helps connect the tools, data, editing and great InfoSWMM features 
+by Robert Dickinson • 1 min read
+
+
+How InfoSWMM and InfoSWMM SA 2D Link and 3D Node Graphics Help You Understand the Response of Your Network to Wet Weather Flow
+New InfoSWMM linked 2D Link and 3D Node graphics help you understand one of the most critical outputs in any Stormwater, Combined Sewershed or SanitarNew InfoSWMM linked 2D Link and 3D Node graphics help you understand one of the most critical outputs in any Stormwater, Combined Sewershed or Sanitar
+by Robert Dickinson • 2 min read
+
+
+100 Tools for Modeling Hydrology/Hydraulics using Innovyze InfoSWMM_SA
+I appreciate both Twitter and LinkedIn for professional reasons. One of the newer features of Twitter are Twitter Moments which as described here is oI appreciate both Twitter and LinkedIn for professional reasons. One of the newer features of Twitter are Twitter Moments which as described here is o
+by Robert Dickinson • 1 min read
+
+
+Tutorials for InfoSWMM Sustain Which Optimizes for #LIDs, #GI, #SuDS, #WSuDS on Small Runoff Surfaces
+InfoSWMM Sustain is a software tool designed for use by professionals in the field of watershed and stormwater engineering. It is specifically designeInfoSWMM Sustain is a software tool designed for use by professionals in the field of watershed and stormwater engineering. It is specifically designe
+by Robert Dickinson • 1 min read
+
+
+Dynamic Wave Routing Options in #InfoSWMM and #SWMM5 compared to #InfoWorks_ICM and #InfoSewer
+LinkedIn is a popular social media platform that is commonly used by professionals to connect with each other and share information. However, LinkedInLinkedIn is a popular social media platform that is commonly used by professionals to connect with each other and share information. However, LinkedIn
+by Robert Dickinson • 1 min read
+
+
+InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools
+One of the most powerful InfoSWMM, InfoSWMM SA and H2OMAP SWMM Application Tools from Innovyze is RDII Analyst. RDII Analyst will separate out the GroOne of the most powerful InfoSWMM, InfoSWMM SA and H2OMAP SWMM Application Tools from Innovyze is RDII Analyst. RDII Analyst will separate out the Gro
+by Robert Dickinson • 15 min read
+
+
+What is the Purpose of InfoSWMM Sustain? Optimization for #LIDs, #GI, #SuDS, #WSuDS or small Runoff Surfaces
+The following is from the Innovyze Product Page for Sustain and the Sustain Help File. Designed in response to the needs of watershed and stormwater eThe following is from the Innovyze Product Page for Sustain and the Sustain Help File. Designed in response to the needs of watershed and stormwater e
+by Robert Dickinson • 3 min read
+
+
+For Thesis Students: Visual INSTRUCTIONS FOR COMPILING the SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012
+For Thesis Students: Visual INSTRUCTIONS FOR COMPILING SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012 ======================== The following is based For Thesis Students: Visual INSTRUCTIONS FOR COMPILING SWMM5.DLL USING MICROSOFT VISUAL C++ 2010/2012 ======================== The following is based 
+by Robert Dickinson • 2 min read
+
+
+German Hydrology in InfoSWMM, InfoSWMM SA and H2OMAP SWMM 14.5 with Full SWMM5 LID and SuDs Modeling
+This blog describes how the German Runoff hydrology converts precipitation excess (rainfall and/or snowmelt less infiltration, evaporation, and initiaThis blog describes how the German Runoff hydrology converts precipitation excess (rainfall and/or snowmelt less infiltration, evaporation, and initia
+by Robert Dickinson • 3 min read
+
+
+My Top Ten reasons for preferring InfoSWMM over SWMM 5 based on my years of experience with various versions of the Stormwater Management Model (SWMM)
+My Top 10 Reasons for preferring InfoSWMM over SWMM 5 based on my experience: Note - this is an update of my Innovyze blog from a few years ago http:/My Top 10 Reasons for preferring InfoSWMM over SWMM 5 based on my experience: Note - this is an update of my Innovyze blog from a few years ago http:/
+by Robert Dickinson • 3 min read
+
+
+My History with Various Versions of SWMM: SWMM3, SWMM4, XP-SWMM, SWMM5, SWMM5+, SWMM Networks in ICM and InfoSWMM - 2023 Update
+Subject: My History with Various Versions of SWMM: SWMM 2.5, SWMM3, SWMM4, SWMM5, SWMM5+, XPSWMM, Visual SWMM and InfoSWMM along with SWMM5 Features iSubject: My History with Various Versions of SWMM: SWMM 2.5, SWMM3, SWMM4, SWMM5, SWMM5+, XPSWMM, Visual SWMM and InfoSWMM along with SWMM5 Features i
+by Robert Dickinson • 8 min read
+
+
+Advanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5
+Advanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5 One of the most valuable tools in any simulation proAdvanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5 One of the most valuable tools in any simulation pro
+by Robert Dickinson • 5 min read
+
+
+QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 6 - ICM 7.5
+QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 5.5 or ICM 6, ICM 7, ICM 8+ The following section shows how the XP-SWMM file (MyXP.XQA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM 5.5 or ICM 6, ICM 7, ICM 8+ The following section shows how the XP-SWMM file (MyXP.X
+by Robert Dickinson • 4 min read
