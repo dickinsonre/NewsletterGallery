@@ -983,5 +983,149 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "4 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-node-report-tables-icm-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-57",
+    title: "How to Use Ruby to Read Problem Node and Links from the SWMM5 Report File and Add them as Selected Elements in ICM SWMM",
+    description: "A tutorial on using Ruby to identify problematic network elements and integrate them into ICM SWMM analysis tools.",
+    date: "3 months ago",
+    readTime: "3 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-ruby-read-problem-node-links-swmm5-report-file-robert-dickinson"
+  },
+  {
+    id: "linkedin-58",
+    title: "ICM SWMM and InfoDrainage share the same swmmsim.exe Engine SWMM 5.2.4, InfoSWMM uses an older version",
+    description: "A detailed explanation of the different SWMM engines used across Innovyze and Autodesk water modeling products.",
+    date: "3 months ago",
+    readTime: "10 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/icm-swmm-infodrainage-share-same-swmmsim-exe-engine-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-59",
+    title: "Using Ruby to Export ICM InfoWorks Node, Link, and Subcatchment Grid Data to Shapefiles",
+    description: "A Ruby script to export GIS data from ICM InfoWorks networks to shapefile format for external analysis.",
+    date: "4 months ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-node-link-subcatchment-grid-robert-dickinson"
+  },
+  {
+    id: "linkedin-60",
+    title: "Using Ruby to Export ICM InfoWorks User-Selected Link Results to a Custom CSV Folder",
+    description: "A script to streamline the export of user-selected link results from ICM InfoWorks to custom CSV files.",
+    date: "4 months ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-user-selected-link-results-csv-robert-dickinson"
+  },
+  {
+    id: "linkedin-61",
+    title: "23 Ruby Lessons in the ICM InfoWorks Online Help File from Autodesk",
+    description: "A guide to the 23 Ruby scripting lessons available in the InfoWorks ICM online help documentation.",
+    date: "4 months ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/23-ruby-lessons-icm-infoworks-online-help-file-autodesk-robert-dickinson"
+  },
+  {
+    id: "linkedin-62",
+    title: "How to use SWMM5 Buildup/Washoff in an ICM InfoWorks Network for Event Mean Concentrations (EMC)",
+    description: "A ten-step guide to implementing SWMM5 buildup and washoff processes for water quality analysis in ICM InfoWorks.",
+    date: "4 months ago",
+    readTime: "1 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-swmm5-buildup-washoff-icm-infoworks-network-emc-robert-dickinson"
+  },
+  {
+    id: "linkedin-63",
+    title: "Knowledge Assisted Theme Enhancements in ICM SWMM to Show InfoSWMM Like Map Displays for d/D and q/Q",
+    description: "Creating SQL-based theme enhancements in ICM SWMM to display hydraulic conditions similar to InfoSWMM interfaces.",
+    date: "4 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/knowledge-assisted-theme-enhancements-icm-swmm-show-infoswmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-64",
+    title: "Using Ruby to Recreate the InfoSWMM Link Report Tables in ICM SWMM from any SWMM5 Report File",
+    description: "A Ruby script to recreate InfoSWMM-style link report tables from SWMM5 output files in ICM SWMM.",
+    date: "4 months ago",
+    readTime: "8 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-link-report-tables-icm-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-65",
+    title: "Unhappy with some components of the LI Social Selling Index, I make up my own SSI+ Index",
+    description: "A critique of LinkedIn's Social Selling Index with proposed improvements based on professional networking observations.",
+    date: "4 months ago",
+    readTime: "2 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/unhappy-some-components-li-social-selling-index-i-make-up-own-robert-dickinson"
+  },
+  {
+    id: "linkedin-66",
+    title: "Using Ruby to Create Sensitivity Scenarios in ICM InfoWorks",
+    description: "A Ruby script for automating the creation of multiple sensitivity analysis scenarios in ICM InfoWorks networks.",
+    date: "4 months ago",
+    readTime: "4 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-create-sensitivity-scenarios-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-67",
+    title: "A Better Workflow for InfoSWMM to ICM SWMM Network Conversions for ALL InfoSWMM Scenarios",
+    description: "A streamlined process for importing InfoSWMM models with all scenarios and active elements into ICM SWMM networks.",
+    date: "5 months ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/better-workflow-infoswmm-icm-swmm-network-conversions-all-scenarios-robert-dickinson"
+  },
+  {
+    id: "linkedin-68",
+    title: "How to Use the USEPA SWMM-Climate Adjustment Tool with ICM InfoWorks, ICM SWMM, and Autodesk InfoDrainage",
+    description: "A guide to implementing EPA's climate adjustment tool for SWMM5 across various Autodesk water modeling platforms.",
+    date: "5 months ago",
+    readTime: "3 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-usepa-swmm-climate-adjustment-tool-icm-infoworks-robert-dickinson"
+  },
+  {
+    id: "linkedin-69",
+    title: "Curve Number or CNSWMM infiltration model for 2D simulations is now in ICM 2025.1",
+    description: "An overview of the new curve number infiltration feature available in ICM 2025.1 for 2D mesh simulations.",
+    date: "5 months ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/curve-number-cnswmm-infiltration-model-2d-simulations-now-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-70",
+    title: "Using Ruby to QA/QC InfoSWMM DWF Import to ICM SWMM",
+    description: "A Ruby script tutorial for verifying that dry weather flow imports from InfoSWMM to ICM SWMM are accurate.",
+    date: "5 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-qa-qc-infoswmm-dwf-import-icm-swmm-robert-dickinson"
+  },
+  {
+    id: "linkedin-71",
+    title: "Diagram GPT's for Seeing Connections in a SWMM5 Input File",
+    description: "Using GPT visualization tools to understand complex relationships between data sections in SWMM5 input files.",
+    date: "5 months ago",
+    readTime: "3 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/diagram-gpts-seeing-connections-swmm5-input-file-robert-dickinson"
+  },
+  {
+    id: "linkedin-72",
+    title: "How to use Ruby for Subcatchments Statistics using the Current and Background Networks in ICM",
+    description: "A comprehensive guide to analyzing subcatchment statistics and comparing networks using Ruby in ICM.",
+    date: "5 months ago",
+    readTime: "9 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/how-to-use-ruby-subcatchments-statistics-current-background-networks-robert-dickinson"
   }
 ];
