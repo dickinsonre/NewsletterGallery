@@ -1,5 +1,6 @@
 import { newsletters, linkedInArticles } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
+import { ArticleCard } from "@/components/article-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 import robertPhoto from "@assets/image_1763939729281.png";
 import headerImage from "@assets/image_1763937601766.png";
@@ -156,12 +157,9 @@ export default function Home() {
             {filteredArticles.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredArticles.map((article, index) => (
-                  <NewsletterCard 
+                  <ArticleCard 
                     key={article.id} 
-                    newsletter={{
-                      ...article,
-                      issueNumber: index + 1
-                    }} 
+                    article={article} 
                     index={index} 
                   />
                 ))}
