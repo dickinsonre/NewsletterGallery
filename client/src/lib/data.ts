@@ -481,150 +481,6 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
-    id: "linkedin-1",
-    title: "SWMM3 Test Files with AI and GitHub",
-    description: "Comprehensive collection and analysis of SWMM3 test files using AI and GitHub resources.",
-    date: "9 months ago",
-    readTime: "5 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/swmm3-test-files-ai-github-swmm5-icm-robert-dickinson-gqkoe"
-  },
-  {
-    id: "linkedin-2",
-    title: "InfoSewer Load Allocation Expertise: Test Yourself 50 Questions 2025",
-    description: "Interactive assessment to evaluate your expertise in InfoSewer load allocation methods.",
-    date: "9 months ago",
-    readTime: "10 min read",
-    imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-2025-dickinson-2wrae"
-  },
-  {
-    id: "linkedin-3",
-    title: "Diamond Village, University of Florida, SWMM 2,3,4, XPSWMM",
-    description: "Historical perspective on SWMM development and personal experiences with various SWMM versions.",
-    date: "9 months ago",
-    readTime: "3 min read",
-    imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje"
-  },
-  {
-    id: "linkedin-4",
-    title: "Detecting and Preventing Invalid Hydraulic Solutions in SWMM",
-    description: "Guide to identifying and fixing invalid hydraulic solution scenarios in SWMM models.",
-    date: "9 months ago",
-    readTime: "6 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee"
-  },
-  {
-    id: "linkedin-5",
-    title: "Enhancing Subcatchment Connectivity in InfoWorks ICM: A Comprehensive Guide",
-    description: "Best practices for managing and optimizing subcatchment connectivity in InfoWorks ICM models.",
-    date: "9 months ago",
-    readTime: "7 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-guide-dickinson-ifote"
-  },
-  {
-    id: "linkedin-6",
-    title: "Why You Should Import InfoSewer to InfoSWMM Using Newer AWI",
-    description: "Technical advantages of using newer AWI for migrating InfoSewer models to InfoSWMM.",
-    date: "9 months ago",
-    readTime: "4 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/why-you-should-import-infosewer-infoswmm-use-newer-awi-dickinson-1lyxe"
-  },
-  {
-    id: "linkedin-7",
-    title: "Introducing SWMM5 by R. Hodges, Sharior, and Ed Tiernan - 2024",
-    description: "Introduction to the latest SWMM5 developments and contributions from key researchers.",
-    date: "9 months ago",
-    readTime: "5 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/introducing-swmm5-br-hodges-sharior-ed-tiernan-e-2024-dickinson-p8eee"
-  },
-  {
-    id: "linkedin-8",
-    title: "Steady-State EPS, Kinematic, and Dynamic Wave Options in SWMM5",
-    description: "Comprehensive comparison of routing methods and wave approximation options in SWMM5.",
-    date: "9 months ago",
-    readTime: "5 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe"
-  },
-  {
-    id: "linkedin-9",
-    title: "Ruby: ICM InfoWorks vs SWMM Link Property Data",
-    description: "Comparative analysis of link properties between ICM InfoWorks and SWMM using Ruby.",
-    date: "9 months ago",
-    readTime: "6 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-link-property-data-robert-dickinson-uanie"
-  },
-  {
-    id: "linkedin-10",
-    title: "Ruby: ICM InfoWorks vs SWMM Node Property Data",
-    description: "Ruby-based comparison of node properties and parameters between ICM InfoWorks and SWMM.",
-    date: "9 months ago",
-    readTime: "6 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-node-property-data-robert-dickinson-rqlce"
-  },
-  {
-    id: "linkedin-11",
-    title: "Navigating the Landscape of Hydraulic Modeling: A Comparative Study",
-    description: "Deep dive into various hydraulic modeling approaches and their practical applications.",
-    date: "9 months ago",
-    readTime: "8 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-dickinson-meqqe"
-  },
-  {
-    id: "linkedin-12",
-    title: "Deep Dive: Water Quality Buildup and Washoff (BW) in ICM Using SWMM5",
-    description: "Advanced techniques for modeling water quality buildup and washoff processes in ICM.",
-    date: "9 months ago",
-    readTime: "7 min read",
-    imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-using-swmm5-dickinson-kpfuc"
-  },
-  {
-    id: "linkedin-13",
-    title: "How to Use GraphReport Output from InfoSewer/InfoSWMM to Make Custom Graphs",
-    description: "Guide to extracting and visualizing GraphReport output data for custom analysis.",
-    date: "9 months ago",
-    readTime: "5 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/how-use-graphreport-output-infosewerinfoswmm-make-custom-dickinson-80dwe"
-  },
-  {
-    id: "linkedin-14",
-    title: "Using Ruby: Some InfoSWMM Subcatchment Manager Tools in ICM",
-    description: "Ruby scripting techniques for managing subcatchment data in ICM from InfoSWMM sources.",
-    date: "9 months ago",
-    readTime: "6 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-some-infoswmm-subcatchment-manager-tools-icm-dickinson-fomle"
-  },
-  {
-    id: "linkedin-15",
-    title: "Using AI to Interpret PRN File from ICM InfoWorks as a Person from SWMM5",
-    description: "AI-assisted techniques for interpreting and analyzing PRN files from ICM InfoWorks perspective.",
-    date: "9 months ago",
-    readTime: "5 min read",
-    imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-dickinson-9ce6e"
-  },
-  {
-    id: "linkedin-16",
-    title: "Streamlining ICM Workflow: Preserving User Fields with Ruby",
-    description: "Ruby scripting strategies for maintaining custom user fields during ICM model operations.",
-    date: "9 months ago",
-    readTime: "6 min read",
-    imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde"
-  },
-  {
     id: "linkedin-17",
     title: "InfoSewer to ICM InfoWorks App (for AI and Humans)",
     description: "An app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze InfoSewer.",
@@ -1766,5 +1622,149 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "5 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-hub-dickinson-xqpre"
+  },
+  {
+    id: "linkedin-1",
+    title: "SWMM3 Test Files with AI and GitHub",
+    description: "Comprehensive collection and analysis of SWMM3 test files using AI and GitHub resources.",
+    date: "9 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/swmm3-test-files-ai-github-swmm5-icm-robert-dickinson-gqkoe"
+  },
+  {
+    id: "linkedin-2",
+    title: "InfoSewer Load Allocation Expertise: Test Yourself 50 Questions 2025",
+    description: "Interactive assessment to evaluate your expertise in InfoSewer load allocation methods.",
+    date: "9 months ago",
+    readTime: "10 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-2025-dickinson-2wrae"
+  },
+  {
+    id: "linkedin-3",
+    title: "Diamond Village, University of Florida, SWMM 2,3,4, XPSWMM",
+    description: "Historical perspective on SWMM development and personal experiences with various SWMM versions.",
+    date: "9 months ago",
+    readTime: "3 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje"
+  },
+  {
+    id: "linkedin-4",
+    title: "Detecting and Preventing Invalid Hydraulic Solutions in SWMM",
+    description: "Guide to identifying and fixing invalid hydraulic solution scenarios in SWMM models.",
+    date: "9 months ago",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee"
+  },
+  {
+    id: "linkedin-5",
+    title: "Enhancing Subcatchment Connectivity in InfoWorks ICM: A Comprehensive Guide",
+    description: "Best practices for managing and optimizing subcatchment connectivity in InfoWorks ICM models.",
+    date: "9 months ago",
+    readTime: "7 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-guide-dickinson-ifote"
+  },
+  {
+    id: "linkedin-6",
+    title: "Why You Should Import InfoSewer to InfoSWMM Using Newer AWI",
+    description: "Technical advantages of using newer AWI for migrating InfoSewer models to InfoSWMM.",
+    date: "9 months ago",
+    readTime: "4 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/why-you-should-import-infosewer-infoswmm-use-newer-awi-dickinson-1lyxe"
+  },
+  {
+    id: "linkedin-7",
+    title: "Introducing SWMM5 by R. Hodges, Sharior, and Ed Tiernan - 2024",
+    description: "Introduction to the latest SWMM5 developments and contributions from key researchers.",
+    date: "9 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/introducing-swmm5-br-hodges-sharior-ed-tiernan-e-2024-dickinson-p8eee"
+  },
+  {
+    id: "linkedin-8",
+    title: "Steady-State EPS, Kinematic, and Dynamic Wave Options in SWMM5",
+    description: "Comprehensive comparison of routing methods and wave approximation options in SWMM5.",
+    date: "9 months ago",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe"
+  },
+  {
+    id: "linkedin-9",
+    title: "Ruby: ICM InfoWorks vs SWMM Link Property Data",
+    description: "Comparative analysis of link properties between ICM InfoWorks and SWMM using Ruby.",
+    date: "9 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-link-property-data-robert-dickinson-uanie"
+  },
+  {
+    id: "linkedin-10",
+    title: "Ruby: ICM InfoWorks vs SWMM Node Property Data",
+    description: "Ruby-based comparison of node properties and parameters between ICM InfoWorks and SWMM.",
+    date: "9 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-node-property-data-robert-dickinson-rqlce"
+  },
+  {
+    id: "linkedin-11",
+    title: "Navigating the Landscape of Hydraulic Modeling: A Comparative Study",
+    description: "Deep dive into various hydraulic modeling approaches and their practical applications.",
+    date: "9 months ago",
+    readTime: "8 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-dickinson-meqqe"
+  },
+  {
+    id: "linkedin-12",
+    title: "Deep Dive: Water Quality Buildup and Washoff (BW) in ICM Using SWMM5",
+    description: "Advanced techniques for modeling water quality buildup and washoff processes in ICM.",
+    date: "9 months ago",
+    readTime: "7 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-using-swmm5-dickinson-kpfuc"
+  },
+  {
+    id: "linkedin-13",
+    title: "How to Use GraphReport Output from InfoSewer/InfoSWMM to Make Custom Graphs",
+    description: "Guide to extracting and visualizing GraphReport output data for custom analysis.",
+    date: "9 months ago",
+    readTime: "5 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/how-use-graphreport-output-infosewerinfoswmm-make-custom-dickinson-80dwe"
+  },
+  {
+    id: "linkedin-14",
+    title: "Using Ruby: Some InfoSWMM Subcatchment Manager Tools in ICM",
+    description: "Ruby scripting techniques for managing subcatchment data in ICM from InfoSWMM sources.",
+    date: "9 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-ruby-some-infoswmm-subcatchment-manager-tools-icm-dickinson-fomle"
+  },
+  {
+    id: "linkedin-15",
+    title: "Using AI to Interpret PRN File from ICM InfoWorks as a Person from SWMM5",
+    description: "AI-assisted techniques for interpreting and analyzing PRN files from ICM InfoWorks perspective.",
+    date: "9 months ago",
+    readTime: "5 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-dickinson-9ce6e"
+  },
+  {
+    id: "linkedin-16",
+    title: "Streamlining ICM Workflow: Preserving User Fields with Ruby",
+    description: "Ruby scripting strategies for maintaining custom user fields during ICM model operations.",
+    date: "9 months ago",
+    readTime: "6 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde"
   }
 ];
