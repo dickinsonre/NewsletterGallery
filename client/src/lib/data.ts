@@ -1785,7 +1785,7 @@ export const documents: Document[] = [
     description: "Guide to using InfoWorks ICM for stream restoration projects and water quality management.",
     pages: 8,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7341851176990109700"
   },
   {
     id: "doc-2",
@@ -1793,7 +1793,7 @@ export const documents: Document[] = [
     description: "Technical guide for importing and exporting SWMM5 models between ICM InfoWorks and ICM SWMM platforms.",
     pages: 23,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7317567641349431296"
   },
   {
     id: "doc-3",
@@ -1801,7 +1801,7 @@ export const documents: Document[] = [
     description: "Comprehensive historical account of the EPA SWMM development and evolution from inception to modern versions.",
     pages: 93,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7316974158104440833"
   },
   {
     id: "doc-4",
@@ -1809,7 +1809,7 @@ export const documents: Document[] = [
     description: "Statistical methodology for comparing SWMM5 and ICM model outputs using similarity indices.",
     pages: 21,
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7303115167335088129"
   },
   {
     id: "doc-5",
@@ -1817,7 +1817,7 @@ export const documents: Document[] = [
     description: "Technical approach to merging multiple SWMM networks into one unified model for regional analysis.",
     pages: 10,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7293387743257112576"
   },
   {
     id: "doc-6",
@@ -1825,7 +1825,7 @@ export const documents: Document[] = [
     description: "Historical perspective on legacy punch card methods for running early versions of SWMM models.",
     pages: 36,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7292368911352664066"
   },
   {
     id: "doc-7",
@@ -1833,7 +1833,7 @@ export const documents: Document[] = [
     description: "Official SWMM 4 documentation covering storage facility blocks and treatment processes in hydraulic routing.",
     pages: 212,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290929335908057088"
   },
   {
     id: "doc-8",
@@ -1841,7 +1841,7 @@ export const documents: Document[] = [
     description: "Complete SWMM 4 reference manual for runoff generation and transport processes through the network.",
     pages: 265,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290925832858910720"
   },
   {
     id: "doc-9",
@@ -1849,7 +1849,7 @@ export const documents: Document[] = [
     description: "Original SWMM Volume IV from 1971 containing the complete Fortran program listing and technical specifications.",
     pages: 248,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289673946839285760"
   },
   {
     id: "doc-10",
@@ -1857,7 +1857,7 @@ export const documents: Document[] = [
     description: "Original 1971 user manual for SWMM providing guidance on model setup and interpretation of results.",
     pages: 299,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289472094550016000"
   },
   {
     id: "doc-11",
@@ -1865,7 +1865,7 @@ export const documents: Document[] = [
     description: "Original 1971 EPA final report introducing the Storm Water Management Model and its theoretical foundation.",
     pages: 299,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289469326389043200"
   },
   {
     id: "doc-12",
@@ -1873,7 +1873,7 @@ export const documents: Document[] = [
     description: "Original 1971 verification and testing documentation for the first version of the SWMM model.",
     pages: 173,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289460627213828097"
   },
   {
     id: "doc-13",
@@ -1881,7 +1881,7 @@ export const documents: Document[] = [
     description: "1975 user guide for SWMM Version 2 focused on runoff calculations and watershed modeling.",
     pages: 107,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289457419078762496"
   },
   {
     id: "doc-14",
@@ -1889,7 +1889,7 @@ export const documents: Document[] = [
     description: "Technical addendum to SWMM 4 manual covering extended transportation and quality routing module.",
     pages: 202,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7284368762005250048"
   },
   {
     id: "doc-15",
@@ -1897,7 +1897,7 @@ export const documents: Document[] = [
     description: "Second part of SWMM3 technical documentation prepared for AI analysis and archival purposes.",
     pages: 242,
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283971378138021888"
   },
   {
     id: "doc-16",
@@ -1905,7 +1905,7 @@ export const documents: Document[] = [
     description: "Original 1981 SWMM3 technical documentation Part 1 covering model theory and application.",
     pages: 288,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283969724349050881"
   },
   {
     id: "doc-17",
@@ -1913,7 +1913,7 @@ export const documents: Document[] = [
     description: "Quality assurance test files and documentation for SWMM4 dry weather routing validation.",
     pages: 115,
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283944235534352384"
   },
   {
     id: "doc-18",
@@ -1921,7 +1921,7 @@ export const documents: Document[] = [
     description: "1981 Extran3 manual documenting the hydraulic foundation that evolved into modern SWMM5 routing methods.",
     pages: 240,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283819006690508800"
   },
   {
     id: "doc-19",
@@ -1929,7 +1929,7 @@ export const documents: Document[] = [
     description: "Technical seminar materials on water modeling and engineering practices presented at FSAWWA conference.",
     pages: 1,
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283147179139948547"
   },
   {
     id: "doc-20",
@@ -1937,6 +1937,6 @@ export const documents: Document[] = [
     description: "Comprehensive lecture materials on InfoSewer modeling covering hydraulic principles and practical applications.",
     pages: 142,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/in/robert-dickinson-899011/details/documents/"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7270858395350450176"
   }
 ];
