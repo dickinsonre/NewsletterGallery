@@ -26,6 +26,15 @@ export interface LinkedInArticle {
   link: string;
 }
 
+export interface Document {
+  id: string;
+  title: string;
+  description: string;
+  pages: number;
+  imageUrl: string;
+  link: string;
+}
+
 export const newsletters: Newsletter[] = [
   {
     id: "45",
@@ -1766,5 +1775,168 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "6 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde"
+  }
+];
+
+export const documents: Document[] = [
+  {
+    id: "doc-1",
+    title: "InfoWorks-ICM-for-Stream-Restoration",
+    description: "Guide to using InfoWorks ICM for stream restoration projects and water quality management.",
+    pages: 8,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/documents-icm-stream-restoration"
+  },
+  {
+    id: "doc-2",
+    title: "SWMM5 Import and Export in ICM InfoWorks and ICM SWMM",
+    description: "Technical guide for importing and exporting SWMM5 models between ICM InfoWorks and ICM SWMM platforms.",
+    pages: 23,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/swmm5-import-export-icm"
+  },
+  {
+    id: "doc-3",
+    title: "My Version of the USEPA SWMM History",
+    description: "Comprehensive historical account of the EPA SWMM development and evolution from inception to modern versions.",
+    pages: 93,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-history-usepa"
+  },
+  {
+    id: "doc-4",
+    title: "Bill James Similarity Index to Compare SWMM5 and ICM",
+    description: "Statistical methodology for comparing SWMM5 and ICM model outputs using similarity indices.",
+    pages: 21,
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/documents/bill-james-similarity-index"
+  },
+  {
+    id: "doc-5",
+    title: "Consolidating Multiple SWMM Networks into a Single Network",
+    description: "Technical approach to merging multiple SWMM networks into one unified model for regional analysis.",
+    pages: 10,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/consolidating-swmm-networks"
+  },
+  {
+    id: "doc-6",
+    title: "Using Punch Cards to Run SWMM 2 and SWMM3",
+    description: "Historical perspective on legacy punch card methods for running early versions of SWMM models.",
+    pages: 36,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/punch-cards-swmm-legacy"
+  },
+  {
+    id: "doc-7",
+    title: "SWMM 4 Manual Part 2 - Storage Treatment and Other Blocks",
+    description: "Official SWMM 4 documentation covering storage facility blocks and treatment processes in hydraulic routing.",
+    pages: 212,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/swmm4-manual-part2"
+  },
+  {
+    id: "doc-8",
+    title: "SWMM4 Manual 1 - Runoff and Transport Blocks",
+    description: "Complete SWMM 4 reference manual for runoff generation and transport processes through the network.",
+    pages: 265,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/swmm4-manual-part1"
+  },
+  {
+    id: "doc-9",
+    title: "SWMM Volume IV - Program Listing",
+    description: "Original SWMM Volume IV from 1971 containing the complete Fortran program listing and technical specifications.",
+    pages: 248,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-volume-iv-1971"
+  },
+  {
+    id: "doc-10",
+    title: "SWMM Volume III - User's Manual (September 1971)",
+    description: "Original 1971 user manual for SWMM providing guidance on model setup and interpretation of results.",
+    pages: 299,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-volume-iii-1971"
+  },
+  {
+    id: "doc-11",
+    title: "SWMM Volume I - Final Report (July 1971)",
+    description: "Original 1971 EPA final report introducing the Storm Water Management Model and its theoretical foundation.",
+    pages: 299,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-volume-i-1971"
+  },
+  {
+    id: "doc-12",
+    title: "SWMM Volume II - Verification and Testing (August 1971)",
+    description: "Original 1971 verification and testing documentation for the first version of the SWMM model.",
+    pages: 173,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-volume-ii-1971"
+  },
+  {
+    id: "doc-13",
+    title: "SWMM Version 2 Runoff Only User Manual (March 1975)",
+    description: "1975 user guide for SWMM Version 2 focused on runoff calculations and watershed modeling.",
+    pages: 107,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm-v2-manual-1975"
+  },
+  {
+    id: "doc-14",
+    title: "SWMM User's Manual Version 4: Extran Addendum",
+    description: "Technical addendum to SWMM 4 manual covering extended transportation and quality routing module.",
+    pages: 202,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/swmm4-extran-addendum"
+  },
+  {
+    id: "doc-15",
+    title: "SWMM3 PDF Part 2 for AI",
+    description: "Second part of SWMM3 technical documentation prepared for AI analysis and archival purposes.",
+    pages: 242,
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/documents/swmm3-part2-ai"
+  },
+  {
+    id: "doc-16",
+    title: "SWMM3 PDF from 1981 - Part 1",
+    description: "Original 1981 SWMM3 technical documentation Part 1 covering model theory and application.",
+    pages: 288,
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/documents/swmm3-part1-1981"
+  },
+  {
+    id: "doc-17",
+    title: "SWMM4 Files Used in the SWMM QA Report for DW Routing",
+    description: "Quality assurance test files and documentation for SWMM4 dry weather routing validation.",
+    pages: 115,
+    imageUrl: sqlCover,
+    link: "https://www.linkedin.com/documents/swmm4-qa-dw-routing"
+  },
+  {
+    id: "doc-18",
+    title: "Extran3 Manual - Origin in 1981 of SWMM5 Hydraulics",
+    description: "1981 Extran3 manual documenting the hydraulic foundation that evolved into modern SWMM5 routing methods.",
+    pages: 240,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/extran3-manual-1981"
+  },
+  {
+    id: "doc-19",
+    title: "FSAWWA MPMC Seminar on 1/31/25 in Tampa Florida",
+    description: "Technical seminar materials on water modeling and engineering practices presented at FSAWWA conference.",
+    pages: 1,
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/documents/fsawwa-mpmc-seminar-2025"
+  },
+  {
+    id: "doc-20",
+    title: "InfoSewer Lectures - Innovyze / Autodesk",
+    description: "Comprehensive lecture materials on InfoSewer modeling covering hydraulic principles and practical applications.",
+    pages: 142,
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/documents/infosewer-lectures-innovyze"
   }
 ];

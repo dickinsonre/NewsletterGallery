@@ -1,6 +1,7 @@
-import { newsletters, linkedInArticles } from "@/lib/data";
+import { newsletters, linkedInArticles, documents } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
+import { DocumentCard } from "@/components/document-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 import robertPhoto from "@assets/image_1763939729281.png";
 import headerImage from "@assets/image_1763937601766.png";
@@ -31,6 +32,11 @@ export default function Home() {
   const filteredArticles = linkedInArticles.filter(a => 
     a.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     a.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const filteredDocuments = documents.filter(d => 
+    d.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    d.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -130,9 +136,10 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">LinkedIn Articles</TabsTrigger>
+            <TabsTrigger value="documents" data-testid="tab-documents">Documents</TabsTrigger>
           </TabsList>
 
           <TabsContent value="newsletters" data-testid="content-newsletters">
@@ -167,6 +174,24 @@ export default function Home() {
             ) : (
               <div className="text-center py-20">
                 <p className="text-muted-foreground font-serif italic">No articles found matching your search.</p>
+              </div>
+            )}
+          </TabsContent>
+
+          <TabsContent value="documents" data-testid="content-documents">
+            {filteredDocuments.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredDocuments.map((document, index) => (
+                  <DocumentCard 
+                    key={document.id} 
+                    document={document} 
+                    index={index} 
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-20">
+                <p className="text-muted-foreground font-serif italic">No documents found matching your search.</p>
               </div>
             )}
           </TabsContent>
