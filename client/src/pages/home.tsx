@@ -62,7 +62,9 @@ export default function Home() {
           </div>
           
           <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground items-center">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Library</a>
+            <a href="/" className="text-foreground hover:text-primary transition-colors">Library</a>
+            
+            <a href="/docs" className="hover:text-primary transition-colors">Docs</a>
             
             <Dialog open={isAboutOpen} onOpenChange={setIsAboutOpen}>
               <DialogTrigger asChild>
