@@ -41,11 +41,10 @@ export default function Home() {
 
   return (
     <div 
-      className="min-h-screen w-full bg-repeat"
+      className="min-h-screen w-full"
       style={{ 
-        backgroundImage: `url(${bgTexture})`,
-        backgroundSize: '500px',
-        filter: 'hue-rotate(200deg) saturate(1.5)'
+        background: 'linear-gradient(135deg, #e0d5f0 0%, #c8b8e8 25%, #b0a0e0 50%, #98a0e8 75%, #a0b0f0 100%)',
+        backgroundAttachment: 'fixed'
       }}
     >
       {/* Header Section */}
