@@ -5,6 +5,7 @@ import { DocumentCard } from "@/components/document-card";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 import robertPhoto from "@assets/image_1763939729281.png";
 import headerImage from "@assets/image_1763937601766.png";
+import timeEngineerImage from "@assets/image_1764202682306.png";
 import { BookOpen, Search, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -111,6 +112,10 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center mb-16 space-y-8">
           <div className="w-full rounded-lg overflow-hidden shadow-2xl border border-border/50">
             <img src={headerImage} alt="Urban Watershed SWMM Modeling Expertise" className="w-full h-auto" />
+          </div>
+
+          <div className="w-full rounded-lg overflow-hidden shadow-2xl border border-border/50">
+            <img src={timeEngineerImage} alt="Time-Traveling Hydraulic Engineer" className="w-full h-auto" />
           </div>
 
           <div className="space-y-6">
