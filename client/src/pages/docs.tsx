@@ -1,6 +1,4 @@
 import { BookOpen } from "lucide-react";
-import docsImage from "@assets/image_1764202877693.png";
-import headerImage from "@assets/image_1763937601766.png";
 import bgTexture from "@assets/generated_images/warm,_textured_paper_background_for_a_library_website.png";
 
 export default function Docs() {
@@ -40,10 +38,6 @@ export default function Docs() {
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto">
             This section provides documentation and visual guides for the source code that powers this library.
           </p>
-
-          <div className="w-full rounded-lg overflow-hidden shadow-2xl border border-border/50">
-            <img src={docsImage} alt="Urban Watershed SWMM Modeling" className="w-full h-auto" />
-          </div>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
             <h3 className="text-2xl font-serif font-medium text-foreground">Architecture Overview</h3>
