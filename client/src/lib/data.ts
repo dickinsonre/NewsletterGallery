@@ -490,6 +490,33 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-14",
+    title: "Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM",
+    description: "A simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. Now with thousands of SWMM5 models imported into ICM.",
+    date: "3 days ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/using-icm-ruby-scripts-import-2k-swmm5-files-icm-robert-dickinson"
+  },
+  {
+    id: "linkedin-15",
+    title: "20K Words on ICM InfoWorks Ruby Scripting, Nano Banana Diagram Version",
+    description: "Detailed diagrams of engineering concepts made by Nano Banana, exploring Ruby scripting in ICM InfoWorks and X or Twitter.",
+    date: "4 days ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/20k-words-icm-infoworks-ruby-scripting-nano-banana-robert-dickinson"
+  },
+  {
+    id: "linkedin-16",
+    title: "An App for People Who Have Been Seeing the SWMM5 Report file for 1 - 50 Years",
+    description: "Part of the Vibe coding revolution - an app that helps fix a many-decades-long pain point for SWMM5 users viewing report files.",
+    date: "5 days ago",
+    readTime: "2 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/app-people-who-have-been-seeing-swmm5-report-file-robert-dickinson"
+  },
+  {
     id: "linkedin-17",
     title: "InfoSewer to ICM InfoWorks App (for AI and Humans)",
     description: "An app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze InfoSewer.",
