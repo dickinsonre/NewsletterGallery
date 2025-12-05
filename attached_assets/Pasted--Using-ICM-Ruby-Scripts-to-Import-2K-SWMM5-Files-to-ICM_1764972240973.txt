@@ -1,0 +1,29 @@
+
+Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM
+This is a simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. I now have thousands of SWMM5 models in ICM (somethingThis is a simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. I now have thousands of SWMM5 models in ICM (something
+by Robert Dickinson • 2 min read
+
+
+20K Words on ICM InfoWorks Ruby Scripting, Nano Banana Diagram Version
+You may have been seeing very detailed diagrams of engineering concepts here on LinkedIn and on X or Twitter. They are often or mostly made by Nano BaYou may have been seeing very detailed diagrams of engineering concepts here on LinkedIn and on X or Twitter. They are often or mostly made by Nano Ba
+by Robert Dickinson • 2 min read
+
+
+An App for People Who Have Been Seeing the SWMM5 Report file for 1 - 50 Years
+As I mentioned in previous articles, I like the Vibe coding revolution and make a lot of apps that help me or fix a many-decades-long pain point. The As I mentioned in previous articles, I like the Vibe coding revolution and make a lot of apps that help me or fix a many-decades-long pain point. The 
+by Robert Dickinson • 2 min read
+
+
+InfoSewer to ICM InfoWorks App (for AI and Humans)
+What is this, you may ask? It is an app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze InfWhat is this, you may ask? It is an app you can run on a desktop or cell phone to convert an InfoSewer model from the native DBF files of Innovyze Inf
+by Robert Dickinson • 2 min read
+
+
+EPA SWMM5 Inp File Reader App for Stats and Images of the Network Elements
+Introduction As a long-term water resources professional associated with SWMM, I found myself repeatedly hitting the same wall. I have a collection ofIntroduction As a long-term water resources professional associated with SWMM, I found myself repeatedly hitting the same wall. I have a collection of
+by Robert Dickinson • 4 min read
+
+
+Level Up Your ICM InfoWorks Skills: Try This Interactive Technical Quiz App on Replit
+Are you a stormwater engineer grappling with the intricacies of ICM InfoWorks? From unit conversions to advanced hydraulics like the Saint-Venant equaAre you a stormwater engineer grappling with the intricacies of ICM InfoWorks? From unit conversions to advanced hydraulics like the Saint-Venant equa
+by Robert Dickinson • 2 min read
