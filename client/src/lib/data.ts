@@ -37,6 +37,36 @@ export interface Document {
 
 export const newsletters: Newsletter[] = [
   {
+    id: "48",
+    title: "Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM",
+    description: "This 48th Edition of the newsletter is about the awesomeness of Ruby scripting in ICM InfoWorks. Now with thousands of SWMM5 models in ICM.",
+    date: "3 days ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/edition-48-using-icm-ruby-scripts-import-2k-swmm5-robert-dickinson",
+    issueNumber: 48
+  },
+  {
+    id: "47",
+    title: "20K Words on ICM InfoWorks Ruby Scripting, Nano Banana Diagram Version",
+    description: "Detailed diagrams of engineering concepts made by Nano Banana on LinkedIn and X or Twitter, exploring Ruby scripting in ICM InfoWorks.",
+    date: "4 days ago",
+    readTime: "2 min read",
+    imageUrl: rubyCover,
+    link: "https://www.linkedin.com/pulse/edition-47-20k-words-icm-infoworks-ruby-scripting-robert-dickinson",
+    issueNumber: 47
+  },
+  {
+    id: "46",
+    title: "An App for People Who Have Been Seeing the SWMM5 Report file for 1 - 50 Years",
+    description: "Part of the Vibe coding revolution - an app that helps fix a many-decades-long pain point for SWMM5 users viewing report files.",
+    date: "5 days ago",
+    readTime: "2 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/edition-46-app-people-seeing-swmm5-report-robert-dickinson",
+    issueNumber: 46
+  },
+  {
     id: "45",
     title: "ICM InfoWorks Simulation Parameters 100-Question Quiz",
     description: "Test your knowledge on simulation parameters within ICM InfoWorks. A comprehensive quiz for modelers.",
