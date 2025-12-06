@@ -1,6 +1,7 @@
 import { Document } from "@/lib/data";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ExternalLink, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -36,9 +37,16 @@ export function DocumentCard({ document, index }: DocumentCardProps) {
           <h3 className="text-xl font-serif font-medium leading-tight mb-3 text-foreground group-hover:text-primary transition-colors">
             {document.title}
           </h3>
-          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-3">
             {document.description}
           </p>
+          <div className="flex flex-wrap gap-1.5">
+            {document.categories.slice(0, 2).map((cat) => (
+              <Badge key={cat} variant="secondary" className="text-xs px-2 py-0.5 font-normal">
+                {cat}
+              </Badge>
+            ))}
+          </div>
         </CardContent>
         <CardFooter className="p-6 pt-0">
           <Button 

@@ -1,6 +1,7 @@
-import { LinkedInArticle } from "@/lib/data";
+import { LinkedInArticle, Difficulty } from "@/lib/data";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Clock, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -8,6 +9,18 @@ interface ArticleCardProps {
   article: LinkedInArticle;
   index: number;
 }
+
+const difficultyColors: Record<Difficulty, string> = {
+  beginner: "bg-green-500/20 text-green-700 border-green-500/30",
+  intermediate: "bg-yellow-500/20 text-yellow-700 border-yellow-500/30",
+  advanced: "bg-red-500/20 text-red-700 border-red-500/30"
+};
+
+const difficultyLabels: Record<Difficulty, string> = {
+  beginner: "Beginner",
+  intermediate: "Intermediate",
+  advanced: "Advanced"
+};
 
 export function ArticleCard({ article, index }: ArticleCardProps) {
   return (
@@ -27,6 +40,9 @@ export function ArticleCard({ article, index }: ArticleCardProps) {
           <div className="absolute top-4 left-4 z-20 bg-background/90 backdrop-blur px-3 py-1 text-xs font-serif tracking-wider rounded-full shadow-sm">
             ARTICLE #{index + 1}
           </div>
+          <div className={`absolute top-4 right-4 z-20 px-2 py-1 text-xs font-medium rounded-full border ${difficultyColors[article.difficulty]}`}>
+            {difficultyLabels[article.difficulty]}
+          </div>
         </CardHeader>
         <CardContent className="flex-grow p-6">
           <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3 font-medium tracking-wide uppercase">
@@ -42,9 +58,16 @@ export function ArticleCard({ article, index }: ArticleCardProps) {
           <h3 className="text-xl font-serif font-medium leading-tight mb-3 text-foreground group-hover:text-primary transition-colors">
             {article.title}
           </h3>
-          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-3">
             {article.description}
           </p>
+          <div className="flex flex-wrap gap-1.5">
+            {article.categories.slice(0, 2).map((cat) => (
+              <Badge key={cat} variant="secondary" className="text-xs px-2 py-0.5 font-normal">
+                {cat}
+              </Badge>
+            ))}
+          </div>
         </CardContent>
         <CardFooter className="p-6 pt-0">
           <Button 

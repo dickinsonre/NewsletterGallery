@@ -5,6 +5,20 @@ import historyCover from "@assets/generated_images/historical_timeline_of_swmm_e
 import aiCover from "@assets/generated_images/ai_and_machine_learning_integration.png";
 import sqlCover from "@assets/generated_images/sql_database_queries_and_data_extraction.png";
 
+export type Category = 
+  | "Ruby Scripting"
+  | "SWMM5"
+  | "ICM InfoWorks"
+  | "SQL/Data"
+  | "AI/ML"
+  | "History"
+  | "Migration"
+  | "Quiz"
+  | "Code Analysis"
+  | "Model Testing";
+
+export type Difficulty = "beginner" | "intermediate" | "advanced";
+
 export interface Newsletter {
   id: string;
   title: string;
@@ -14,6 +28,9 @@ export interface Newsletter {
   imageUrl: string;
   link: string;
   issueNumber: number;
+  categories: Category[];
+  difficulty: Difficulty;
+  keywords: string[];
 }
 
 export interface LinkedInArticle {
@@ -24,6 +41,9 @@ export interface LinkedInArticle {
   readTime: string;
   imageUrl: string;
   link: string;
+  categories: Category[];
+  difficulty: Difficulty;
+  keywords: string[];
 }
 
 export interface Document {
@@ -33,7 +53,77 @@ export interface Document {
   pages: number;
   imageUrl: string;
   link: string;
+  categories: Category[];
 }
+
+export const ALL_CATEGORIES: Category[] = [
+  "Ruby Scripting",
+  "SWMM5",
+  "ICM InfoWorks",
+  "SQL/Data",
+  "AI/ML",
+  "History",
+  "Migration",
+  "Quiz",
+  "Code Analysis",
+  "Model Testing"
+];
+
+export interface LearningPath {
+  id: string;
+  title: string;
+  description: string;
+  difficulty: Difficulty;
+  steps: { type: "newsletter" | "article"; id: string; title: string }[];
+}
+
+export const learningPaths: LearningPath[] = [
+  {
+    id: "beginner-swmm5",
+    title: "Getting Started with SWMM5",
+    description: "A beginner's journey through SWMM5 fundamentals, from basic concepts to running your first model.",
+    difficulty: "beginner",
+    steps: [
+      { type: "newsletter", id: "1", title: "SWMM5 Inside ICM InfoWorks" },
+      { type: "newsletter", id: "21", title: "100 SWMM5 Quiz Questions" },
+      { type: "newsletter", id: "37", title: "Classic SWMM5 Test Files" }
+    ]
+  },
+  {
+    id: "ruby-scripting",
+    title: "Ruby Scripting Mastery",
+    description: "Learn to automate ICM InfoWorks workflows with Ruby scripting, from basics to advanced data extraction.",
+    difficulty: "intermediate",
+    steps: [
+      { type: "newsletter", id: "36", title: "Ruby Resources for ICM" },
+      { type: "newsletter", id: "41", title: "Export to CSV with Ruby" },
+      { type: "newsletter", id: "43", title: "Statistics with Ruby Prompts" },
+      { type: "newsletter", id: "48", title: "Import 2K SWMM5 Files with Ruby" }
+    ]
+  },
+  {
+    id: "migration-guide",
+    title: "Model Migration Guide",
+    description: "Master the art of migrating models between InfoSewer, InfoSWMM, and ICM InfoWorks.",
+    difficulty: "intermediate",
+    steps: [
+      { type: "newsletter", id: "2", title: "Importing to ICM" },
+      { type: "newsletter", id: "23", title: "DWF Troubleshooting" },
+      { type: "newsletter", id: "30", title: "InfoSewer to ICM" }
+    ]
+  },
+  {
+    id: "advanced-hydraulics",
+    title: "Advanced Hydraulics & Code",
+    description: "Deep dive into hydraulic modeling, C code analysis, and advanced statistics.",
+    difficulty: "advanced",
+    steps: [
+      { type: "newsletter", id: "13", title: "C Code Hydraulics" },
+      { type: "newsletter", id: "14", title: "Statistics Deep Dive" },
+      { type: "newsletter", id: "26", title: "SQL for Results Analysis" }
+    ]
+  }
+];
 
 export const newsletters: Newsletter[] = [
   {
@@ -44,7 +134,10 @@ export const newsletters: Newsletter[] = [
     readTime: "2 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-48-using-icm-ruby-scripts-import-2k-swmm5-robert-dickinson",
-    issueNumber: 48
+    issueNumber: 48,
+    categories: ["Ruby Scripting", "ICM InfoWorks", "Migration"],
+    difficulty: "intermediate",
+    keywords: ["Ruby", "SWMM5", "import", "automation", "batch processing"]
   },
   {
     id: "47",
@@ -54,7 +147,10 @@ export const newsletters: Newsletter[] = [
     readTime: "2 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-47-20k-words-icm-infoworks-ruby-scripting-robert-dickinson",
-    issueNumber: 47
+    issueNumber: 47,
+    categories: ["Ruby Scripting", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["Ruby", "diagrams", "Nano Banana", "scripting", "visualization"]
   },
   {
     id: "46",
@@ -64,7 +160,10 @@ export const newsletters: Newsletter[] = [
     readTime: "2 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/edition-46-app-people-seeing-swmm5-report-robert-dickinson",
-    issueNumber: 46
+    issueNumber: 46,
+    categories: ["SWMM5", "AI/ML", "Code Analysis"],
+    difficulty: "beginner",
+    keywords: ["SWMM5", "report file", "app", "Vibe coding", "automation"]
   },
   {
     id: "45",
@@ -74,7 +173,10 @@ export const newsletters: Newsletter[] = [
     readTime: "10 min read",
     imageUrl: quizCover,
     link: "https://www.linkedin.com/pulse/icm-infoworks-simulation-parameters-100-question-quiz-dickinson-oh8ke",
-    issueNumber: 45
+    issueNumber: 45,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "44",
@@ -84,7 +186,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/ai-ruby-time-travel-prompts-swmm4-icm-infoworks-swmm5-dickinson-7cjse",
-    issueNumber: 44
+    issueNumber: 44,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "43",
@@ -94,7 +199,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-swmm-simple-statistics-ruby-dickinson-dxtre",
-    issueNumber: 43
+    issueNumber: 43,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "42",
@@ -104,7 +212,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-simple-statistics-network-ruby-dickinson-cnbve",
-    issueNumber: 42
+    issueNumber: 42,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "41",
@@ -114,7 +225,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-swmm-exporting-thousands-csv-dickinson-gcpce",
-    issueNumber: 41
+    issueNumber: 41,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "40",
@@ -124,7 +238,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-infoworks-icm-exporting-thousands-csv-ruby-dickinson-cov5c",
-    issueNumber: 40
+    issueNumber: 40,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "39",
@@ -134,7 +251,10 @@ export const newsletters: Newsletter[] = [
     readTime: "12 min read",
     imageUrl: historyCover,
     link: "https://www.linkedin.com/pulse/edition-40-history-swmm-from-1978-onwards-pdf-files-robert-dickinson-z9kje",
-    issueNumber: 39
+    issueNumber: 39,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "38",
@@ -144,7 +264,10 @@ export const newsletters: Newsletter[] = [
     readTime: "9 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/edition-39-swmm4-swmm5-ruby-ai-robert-dickinson-m31le",
-    issueNumber: 38
+    issueNumber: 38,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "37",
@@ -154,7 +277,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/edition-38-seven-classic-swmm5-hydraulics-test-files-from-dickinson-izrye",
-    issueNumber: 37
+    issueNumber: 37,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "36",
@@ -164,7 +290,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-37-ruby-scripting-resources-icm-swmm-help-files-dickinson-7safe",
-    issueNumber: 36
+    issueNumber: 36,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "35",
@@ -174,7 +303,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/edition-36-pdf-files-swmm1-swmm2-swmm3-swmm4-swmm5-ai-dickinson-juhke",
-    issueNumber: 35
+    issueNumber: 35,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "34",
@@ -184,7 +316,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/edition-35-swmm5-infosewer-icm-swmm-infoworks-ruby-water-dickinson-qbvye",
-    issueNumber: 34
+    issueNumber: 34,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "33",
@@ -194,7 +329,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-34-misc-ruby-tools-icm-infoworks-swmm-robert-dickinson-g7z5e",
-    issueNumber: 33
+    issueNumber: 33,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "32",
@@ -204,7 +342,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-33-using-ruby-make-icm-swmm-more-like-output-report-robert-8cuse",
-    issueNumber: 32
+    issueNumber: 32,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "31",
@@ -214,7 +355,10 @@ export const newsletters: Newsletter[] = [
     readTime: "4 min read",
     imageUrl: quizCover,
     link: "https://www.linkedin.com/pulse/how-epaswmm5-related-software-newsletter-organized-using-dickinson-6ybme",
-    issueNumber: 31
+    issueNumber: 31,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "30",
@@ -224,7 +368,10 @@ export const newsletters: Newsletter[] = [
     readTime: "10 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/edition-31-infosewer-icm-infoworks-using-odic-ruby-sql-dickinson-3e80e",
-    issueNumber: 30
+    issueNumber: 30,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "29",
@@ -234,7 +381,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-30-ruby-code-altering-2d-polygons-making-points-dickinson-xklwe",
-    issueNumber: 29
+    issueNumber: 29,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "28",
@@ -244,7 +394,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: historyCover,
     link: "https://www.linkedin.com/pulse/edition-29-from-1988-2024-swmms-incredible-54000-fold-dickinson-9chye",
-    issueNumber: 28
+    issueNumber: 28,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "27",
@@ -254,7 +407,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/edition-28-how-many-runoff-surfaces-do-i-actually-use-dickinson-h3jie",
-    issueNumber: 27
+    issueNumber: 27,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "26",
@@ -264,7 +420,10 @@ export const newsletters: Newsletter[] = [
     readTime: "9 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/edition-27-sql-all-icm-swmm-results-nodes-links-lids-input-dickinson-si1ye",
-    issueNumber: 26
+    issueNumber: 26,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "25",
@@ -274,7 +433,10 @@ export const newsletters: Newsletter[] = [
     readTime: "9 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/edition-26-sql-all-icm-infoworks-results-nodes-links-suds-dickinson-d7oae",
-    issueNumber: 25
+    issueNumber: 25,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "24",
@@ -284,7 +446,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/edition-25-icm-sql-functions-swmm-infoworks-robert-dickinson-q7qxe",
-    issueNumber: 24
+    issueNumber: 24,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "23",
@@ -294,7 +459,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/i-imported-infoswmm-icm-swmm-where-all-dwf-dry-flow-dickinson-r16qe",
-    issueNumber: 23
+    issueNumber: 23,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "22",
@@ -304,7 +472,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/swmm5-components-icm-infoworks-networks-robert-dickinson-aadee",
-    issueNumber: 22
+    issueNumber: 22,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "21",
@@ -314,7 +485,10 @@ export const newsletters: Newsletter[] = [
     readTime: "15 min read",
     imageUrl: quizCover,
     link: "https://www.linkedin.com/pulse/100-swmm5-quiz-questions-robert-dickinson-jonke",
-    issueNumber: 21
+    issueNumber: 21,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "20",
@@ -324,7 +498,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/seven-infoswmm-blogs-readers-years-2024-2030-robert-dickinson-aflue",
-    issueNumber: 20
+    issueNumber: 20,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "19",
@@ -334,7 +511,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: quizCover,
     link: "https://www.linkedin.com/pulse/summary-last-19-newsletter-edition-topics-robert-dickinson-wzn4e",
-    issueNumber: 19
+    issueNumber: 19,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "18",
@@ -344,7 +524,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/icm-ruby-read-infosewer-infoswmm-scenario-facilities-loads-dickinson-qnnme",
-    issueNumber: 18
+    issueNumber: 18,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "17",
@@ -354,7 +537,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: historyCover,
     link: "https://www.linkedin.com/pulse/from-legacy-future-recalling-engine-infosewer-icm-2030-dickinson-m269e",
-    issueNumber: 17
+    issueNumber: 17,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "16",
@@ -364,7 +550,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/infoswmm-graphical-tools-understanding-swmm5-icm-swmm-dickinson-gul2c",
-    issueNumber: 16
+    issueNumber: 16,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "15",
@@ -374,7 +563,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/embedded-posts-from-autodesk-water-infrastructures-one-dickinson-borge",
-    issueNumber: 15
+    issueNumber: 15,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "14",
@@ -384,7 +576,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/ruby-see-statistics-all-items-both-icm-infoworks-swmm-dickinson-ghvse",
-    issueNumber: 14
+    issueNumber: 14,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "13",
@@ -394,7 +589,10 @@ export const newsletters: Newsletter[] = [
     readTime: "10 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/story-c-code-link-hydraulics-swmm5-dwflowc-robert-dickinson-mvv3e",
-    issueNumber: 13
+    issueNumber: 13,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "12",
@@ -404,7 +602,10 @@ export const newsletters: Newsletter[] = [
     readTime: "9 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/story-c-code-node-hydraulics-swmm5-dynwavec-robert-dickinson-cgnte",
-    issueNumber: 12
+    issueNumber: 12,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "11",
@@ -414,7 +615,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/story-c-code-hydrology-swmm5-robert-dickinson-2x0we",
-    issueNumber: 11
+    issueNumber: 11,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "10",
@@ -424,7 +628,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: quizCover,
     link: "https://www.linkedin.com/pulse/blogs-modeling-components-general-sdsu-swmm5-robert-dickinson-xvfhe",
-    issueNumber: 10
+    issueNumber: 10,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "9",
@@ -434,7 +641,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/interesting-modeling-blogs-interesante-infoworks-icm-robert-dickinson-3gr8e",
-    issueNumber: 9
+    issueNumber: 9,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "8",
@@ -444,7 +654,10 @@ export const newsletters: Newsletter[] = [
     readTime: "5 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/roaming-around-singapore-commenting-drainage-features-dickinson-pchpe",
-    issueNumber: 8
+    issueNumber: 8,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "7",
@@ -454,7 +667,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/ruby-sql-infoworks-icm-swmm-networks-robert-dickinson-qvuwe",
-    issueNumber: 7
+    issueNumber: 7,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "6",
@@ -464,7 +680,10 @@ export const newsletters: Newsletter[] = [
     readTime: "11 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/deep-dive-inner-workings-xpswmm-swmm5-icm-through-lens-dickinson-ugoxe",
-    issueNumber: 6
+    issueNumber: 6,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "5",
@@ -474,7 +693,10 @@ export const newsletters: Newsletter[] = [
     readTime: "9 min read",
     imageUrl: sqlCover,
     link: "https://www.linkedin.com/pulse/deep-dive-inside-swmm5-using-tables-robert-dickinson-ukjfe",
-    issueNumber: 5
+    issueNumber: 5,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "4",
@@ -484,7 +706,10 @@ export const newsletters: Newsletter[] = [
     readTime: "6 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/seven-blogs-swmm-myself-autodesk-robert-dickinson-pyafe",
-    issueNumber: 4
+    issueNumber: 4,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "3",
@@ -494,7 +719,10 @@ export const newsletters: Newsletter[] = [
     readTime: "7 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/seven-blogs-chatgpt-swmm5-robert-dickinson-gqyxe",
-    issueNumber: 3
+    issueNumber: 3,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "2",
@@ -504,7 +732,10 @@ export const newsletters: Newsletter[] = [
     readTime: "11 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/seven-blogs-importing-infosewer-infoswmm-icm-robert-dickinson-bi47e",
-    issueNumber: 2
+    issueNumber: 2,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "1",
@@ -514,7 +745,10 @@ export const newsletters: Newsletter[] = [
     readTime: "8 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/swmm5-inside-icm-infoworks-robert-dickinson-b0tge",
-    issueNumber: 1
+    issueNumber: 1,
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   }
 ];
 
@@ -526,7 +760,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 days ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-icm-ruby-scripts-import-2k-swmm5-files-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-icm-ruby-scripts-import-2k-swmm5-files-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-15",
@@ -535,7 +772,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 days ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/20k-words-icm-infoworks-ruby-scripting-nano-banana-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/20k-words-icm-infoworks-ruby-scripting-nano-banana-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-16",
@@ -544,7 +784,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 days ago",
     readTime: "2 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/app-people-who-have-been-seeing-swmm5-report-file-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/app-people-who-have-been-seeing-swmm5-report-file-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-17",
@@ -553,7 +796,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 week ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye"
+    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-18",
@@ -562,7 +808,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 weeks ago",
     readTime: "4 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye"
+    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-19",
@@ -571,7 +820,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 weeks ago",
     readTime: "2 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/level-up-icm-infoworks-skills-interactive-technical-quiz-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/level-up-icm-infoworks-skills-interactive-technical-quiz-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-20",
@@ -580,7 +832,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 weeks ago",
     readTime: "2 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/level-up-swmm5-skills-interactive-technical-quiz-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/level-up-swmm5-skills-interactive-technical-quiz-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-21",
@@ -589,7 +844,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 weeks ago",
     readTime: "3 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-universal-ruby-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-universal-ruby-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-22",
@@ -598,7 +856,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 weeks ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-23",
@@ -607,7 +868,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 weeks ago",
     readTime: "2 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-24",
@@ -616,7 +880,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 weeks ago",
     readTime: "7 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-25",
@@ -625,7 +892,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "2 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-26",
@@ -634,7 +904,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "3 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/exporting-99-hw-conduit-parameters-csv-ruby-infoworks-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/exporting-99-hw-conduit-parameters-csv-ruby-infoworks-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-27",
@@ -643,7 +916,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "8 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/extran1-extran2-extran-manual-ai-github-swmm5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/extran1-extran2-extran-manual-ai-github-swmm5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-28",
@@ -652,7 +928,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-29",
@@ -661,7 +940,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-30",
@@ -670,7 +952,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "9 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-31",
@@ -679,7 +964,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "2 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-2004-github-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-2004-github-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-32",
@@ -688,7 +976,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-help-file-hint-ai-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-help-file-hint-ai-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-33",
@@ -697,7 +988,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "1 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-icm-swmm-comparisons-25-folders-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-icm-swmm-comparisons-25-folders-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-34",
@@ -706,7 +1000,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "1 month ago",
     readTime: "47 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G"
+    link: "https://www.linkedin.com/posts/robertdickinson_wayne-huber-icwmm-2020-talk-about-the-history-activity-7150973026879119360-G",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-35",
@@ -715,7 +1012,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-36",
@@ -724,7 +1024,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "3 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-prompting-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-prompting-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-37",
@@ -733,7 +1036,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-technical-hub-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-technical-hub-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-38",
@@ -742,7 +1048,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/swmm3-orifice-extran3-test-file-ai-github-swmm5-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/swmm3-orifice-extran3-test-file-ai-github-swmm5-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-39",
@@ -751,7 +1060,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "11 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-questions-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-questions-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-40",
@@ -760,7 +1072,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-2-5-3-4-xpswmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-2-5-3-4-xpswmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-41",
@@ -769,7 +1084,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-42",
@@ -778,7 +1096,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-step-by-step-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-step-by-step-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-43",
@@ -787,7 +1108,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "3 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/pulse/why-you-should-not-import-infosewer-infoswmm-newer-awi-methodology-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/why-you-should-not-import-infosewer-infoswmm-newer-awi-methodology-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-44",
@@ -796,7 +1120,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "1 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/introducing-swmm5-journal-environmental-engineering-2024-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/introducing-swmm5-journal-environmental-engineering-2024-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-45",
@@ -805,7 +1132,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-infosewer-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-infosewer-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-46",
@@ -814,7 +1144,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "2 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-link-property-data-comparison-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-link-property-data-comparison-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-47",
@@ -823,7 +1156,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-node-property-data-comparison-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-icm-swmm-node-property-data-comparison-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-48",
@@ -832,7 +1168,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-49",
@@ -841,7 +1180,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-50",
@@ -850,7 +1192,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "3 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-graph-report-output-infosewer-infoswmm-custom-graphs-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-graph-report-output-infosewer-infoswmm-custom-graphs-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-51",
@@ -859,7 +1204,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "3 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-infoswmm-subcatchment-manager-tools-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-infoswmm-subcatchment-manager-tools-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-52",
@@ -868,7 +1216,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "6 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-background-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-background-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-53",
@@ -877,7 +1228,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-automation-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-automation-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-54",
@@ -886,7 +1240,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-supplement-native-icm-qm-tau-shear-stress-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-supplement-native-icm-qm-tau-shear-stress-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-55",
@@ -895,7 +1252,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-read-steady-state-report-file-infosewer-post-2025-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-read-steady-state-report-file-infosewer-post-2025-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-56",
@@ -904,7 +1264,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-node-report-tables-icm-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-node-report-tables-icm-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-57",
@@ -913,7 +1276,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "3 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-ruby-read-problem-node-links-swmm5-report-file-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-ruby-read-problem-node-links-swmm5-report-file-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-58",
@@ -922,7 +1288,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "3 months ago",
     readTime: "10 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/icm-swmm-infodrainage-share-same-swmmsim-exe-engine-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/icm-swmm-infodrainage-share-same-swmmsim-exe-engine-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-59",
@@ -931,7 +1300,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-node-link-subcatchment-grid-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-node-link-subcatchment-grid-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-60",
@@ -940,7 +1312,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-user-selected-link-results-csv-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-export-icm-infoworks-user-selected-link-results-csv-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-61",
@@ -949,7 +1324,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "2 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/23-ruby-lessons-icm-infoworks-online-help-file-autodesk-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/23-ruby-lessons-icm-infoworks-online-help-file-autodesk-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-62",
@@ -958,7 +1336,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-swmm5-buildup-washoff-icm-infoworks-network-emc-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-swmm5-buildup-washoff-icm-infoworks-network-emc-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-63",
@@ -967,7 +1348,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/knowledge-assisted-theme-enhancements-icm-swmm-show-infoswmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/knowledge-assisted-theme-enhancements-icm-swmm-show-infoswmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-64",
@@ -976,7 +1360,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-link-report-tables-icm-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-recreate-infoswmm-link-report-tables-icm-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-65",
@@ -985,7 +1372,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "2 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/unhappy-some-components-li-social-selling-index-i-make-up-own-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/unhappy-some-components-li-social-selling-index-i-make-up-own-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-66",
@@ -994,7 +1384,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "4 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-create-sensitivity-scenarios-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-create-sensitivity-scenarios-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-67",
@@ -1003,7 +1396,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/better-workflow-infoswmm-icm-swmm-network-conversions-all-scenarios-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/better-workflow-infoswmm-icm-swmm-network-conversions-all-scenarios-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-68",
@@ -1012,7 +1408,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "3 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-usepa-swmm-climate-adjustment-tool-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-usepa-swmm-climate-adjustment-tool-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-69",
@@ -1021,7 +1420,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/curve-number-cnswmm-infiltration-model-2d-simulations-now-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/curve-number-cnswmm-infiltration-model-2d-simulations-now-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-70",
@@ -1030,7 +1432,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-qa-qc-infoswmm-dwf-import-icm-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-qa-qc-infoswmm-dwf-import-icm-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-71",
@@ -1039,7 +1444,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "3 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/diagram-gpts-seeing-connections-swmm5-input-file-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/diagram-gpts-seeing-connections-swmm5-input-file-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-72",
@@ -1048,7 +1456,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "9 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-ruby-subcatchments-statistics-current-background-networks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-ruby-subcatchments-statistics-current-background-networks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-73",
@@ -1057,7 +1468,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "5 months ago",
     readTime: "6 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-sql-see-suds-lid-usage-all-subcatchments-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-sql-see-suds-lid-usage-all-subcatchments-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-74",
@@ -1066,7 +1480,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/harnessing-full-potential-12-runoff-surfaces-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/harnessing-full-potential-12-runoff-surfaces-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-75",
@@ -1075,7 +1492,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/utilizing-unified-2d-engine-both-icm-infoworks-icm-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/utilizing-unified-2d-engine-both-icm-infoworks-icm-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-76",
@@ -1084,7 +1504,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/my-top-100-reasons-why-icm-swmm-triumphs-over-native-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/my-top-100-reasons-why-icm-swmm-triumphs-over-native-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-77",
@@ -1093,7 +1516,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/enhancing-your-icm-swmm-network-simulation-leveraging-ruby-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/enhancing-your-icm-swmm-network-simulation-leveraging-ruby-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-78",
@@ -1102,7 +1528,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/annotating-unleashing-power-rpt-log-files-icm-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/annotating-unleashing-power-rpt-log-files-icm-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-79",
@@ -1111,7 +1540,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/unlocking-power-ruby-chatgpt-streamlining-subcatchment-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/unlocking-power-ruby-chatgpt-streamlining-subcatchment-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-80",
@@ -1120,7 +1552,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/elephant-modeling-stories-collaborative-insights-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/elephant-modeling-stories-collaborative-insights-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-81",
@@ -1129,7 +1564,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-import-swmm5-file-pcswmm-model-group-icm-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-import-swmm5-file-pcswmm-model-group-icm-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-82",
@@ -1138,7 +1576,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/pulse/unlocking-synergy-ruby-sql-scripting-inside-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/unlocking-synergy-ruby-sql-scripting-inside-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-83",
@@ -1147,7 +1588,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/seamless-conversion-xp-swmm-icm-infoworks-swmm-networks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/seamless-conversion-xp-swmm-icm-infoworks-swmm-networks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-84",
@@ -1156,7 +1600,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/unleashing-power-gpt4-openai-enhancing-epa-swmm5-test-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/unleashing-power-gpt4-openai-enhancing-epa-swmm5-test-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-85",
@@ -1165,7 +1612,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "12 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-infoworks-icm-create-network-statistics-qaqc-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/using-ruby-infoworks-icm-create-network-statistics-qaqc-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-86",
@@ -1174,7 +1624,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/converting-infosewer-model-icm-infoworks-network-using-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/converting-infosewer-model-icm-infoworks-network-using-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-87",
@@ -1183,7 +1636,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "3 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-tracer-water-quality-rdii-dwf-runoff-infoworks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-tracer-water-quality-rdii-dwf-runoff-infoworks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-88",
@@ -1192,7 +1648,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-epa-design-storm-wizard-infoworks-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-epa-design-storm-wizard-infoworks-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-89",
@@ -1201,7 +1660,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-scripts-customizing-your-icm-swmm-networks-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/ruby-scripts-customizing-your-icm-swmm-networks-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-90",
@@ -1210,7 +1672,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/my-1991-uf-president-mayors-council-certificate-swmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/my-1991-uf-president-mayors-council-certificate-swmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-91",
@@ -1219,7 +1684,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-does-rdii-work-swmm5-infoswmm-infoworks-icm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-does-rdii-work-swmm5-infoswmm-infoworks-icm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-92",
@@ -1228,7 +1696,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/new-product-pages-www-innovyze-com-swmm-related-products-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/new-product-pages-www-innovyze-com-swmm-related-products-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-93",
@@ -1237,7 +1708,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "3 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/new-engine-gui-features-infoswmm-14-7-epa-swmm-5-1-013-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/new-engine-gui-features-infoswmm-14-7-epa-swmm-5-1-013-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-94",
@@ -1246,7 +1720,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-to-use-population-node-dwf-swmm5-infoswmm-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-to-use-population-node-dwf-swmm5-infoswmm-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-95",
@@ -1255,7 +1732,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/new-features-infoswmm-14-6-infoswmm-sa-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/new-features-infoswmm-14-6-infoswmm-sa-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-96",
@@ -1264,7 +1744,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/new-help-file-innovyze-infoswmm-arc-map-extension-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/new-help-file-innovyze-infoswmm-arc-map-extension-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-97",
@@ -1273,7 +1756,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/how-infoswmm-infoswmm-sa-2d-link-3d-node-graphics-understand-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/how-infoswmm-infoswmm-sa-2d-link-3d-node-graphics-understand-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-98",
@@ -1282,7 +1768,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/100-tools-modeling-hydrology-hydraulics-using-innovyze-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/100-tools-modeling-hydrology-hydraulics-using-innovyze-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-99",
@@ -1291,7 +1780,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/tutorials-infoswmm-sustain-optimizes-lids-gi-suds-wsusds-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/tutorials-infoswmm-sustain-optimizes-lids-gi-suds-wsusds-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-100",
@@ -1300,7 +1792,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "1 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/dynamic-wave-routing-options-infoswmm-swmm5-compared-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/dynamic-wave-routing-options-infoswmm-swmm5-compared-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-101",
@@ -1309,7 +1804,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "15 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/infoswmm-infoswmm-sa-rdii-analyst-3-0-epa-ssoap-tools-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/infoswmm-infoswmm-sa-rdii-analyst-3-0-epa-ssoap-tools-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-102",
@@ -1318,7 +1816,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "3 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/what-purpose-infoswmm-sustain-optimization-lids-gi-suds-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/what-purpose-infoswmm-sustain-optimization-lids-gi-suds-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-103",
@@ -1327,7 +1828,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/swmm-5-icm-powerful-duo-urban-drainage-modeling-imo-robert-dickinson-sagfe"
+    link: "https://www.linkedin.com/pulse/swmm-5-icm-powerful-duo-urban-drainage-modeling-imo-robert-dickinson-sagfe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-104",
@@ -1336,7 +1840,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/mastering-icm-swmm-infoworks-ruby-guide-iwr-results-file-dickinson-5z9se"
+    link: "https://www.linkedin.com/pulse/mastering-icm-swmm-infoworks-ruby-guide-iwr-results-file-dickinson-5z9se",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-105",
@@ -1345,7 +1852,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/graphical-view-nonlinear-runoff-processes-icm-swmm-swmm5-dickinson-huvde"
+    link: "https://www.linkedin.com/pulse/graphical-view-nonlinear-runoff-processes-icm-swmm-swmm5-dickinson-huvde",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-106",
@@ -1354,7 +1864,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/utilizing-ruby-scripting-infoworks-icm-extract-output-dickinson-qvq5e"
+    link: "https://www.linkedin.com/pulse/utilizing-ruby-scripting-infoworks-icm-extract-output-dickinson-qvq5e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-107",
@@ -1363,7 +1876,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/icm-siphons-how-model-sediment-siphon-swmm-swmm5-robert-dickinson-i5lme"
+    link: "https://www.linkedin.com/pulse/icm-siphons-how-model-sediment-siphon-swmm-swmm5-robert-dickinson-i5lme",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-108",
@@ -1372,7 +1888,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/investigating-curve-number-approximations-icm-2d-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/investigating-curve-number-approximations-icm-2d-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-109",
@@ -1381,7 +1900,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "6 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/unlocking-advanced-data-analysis-swmm5-chatgpts-beta-gpt-4-dickinson"
+    link: "https://www.linkedin.com/pulse/unlocking-advanced-data-analysis-swmm5-chatgpts-beta-gpt-4-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-110",
@@ -1390,7 +1912,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/enhancing-icm-infoworks-swmm-1d-output-elegant-ruby-table-dickinson"
+    link: "https://www.linkedin.com/pulse/enhancing-icm-infoworks-swmm-1d-output-elegant-ruby-table-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-111",
@@ -1399,7 +1924,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "7 min read",
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/pulse/infoworks-icm-example-sql-scripts-flawless-import-data-dickinson"
+    link: "https://www.linkedin.com/pulse/infoworks-icm-example-sql-scripts-flawless-import-data-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-112",
@@ -1408,7 +1936,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/navigating-icm-infoworks-population-based-vs-swmms-mean-dickinson"
+    link: "https://www.linkedin.com/pulse/navigating-icm-infoworks-population-based-vs-swmms-mean-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-113",
@@ -1417,7 +1948,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "3 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/its-small-island-how-work-history-can-tangled-ball-yarn-dickinson"
+    link: "https://www.linkedin.com/pulse/its-small-island-how-work-history-can-tangled-ball-yarn-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-114",
@@ -1426,7 +1960,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "2 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/autodesk-employee-perspective-why-i-personally-invest-dickinson"
+    link: "https://www.linkedin.com/pulse/autodesk-employee-perspective-why-i-personally-invest-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-115",
@@ -1435,7 +1972,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/using-chatgpt-comparing-mass-balance-checks-infosewer-dickinson"
+    link: "https://www.linkedin.com/pulse/using-chatgpt-comparing-mass-balance-checks-infosewer-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-116",
@@ -1444,7 +1984,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "6 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/uncommon-synergy-link-node-hydraulic-modeling-nhl-t-cell-dickinson"
+    link: "https://www.linkedin.com/pulse/uncommon-synergy-link-node-hydraulic-modeling-nhl-t-cell-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-117",
@@ -1453,7 +1996,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/thesis-students-visual-instructions-compiling-using-c-dickinson"
+    link: "https://www.linkedin.com/pulse/thesis-students-visual-instructions-compiling-using-c-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-118",
@@ -1462,7 +2008,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/german-hydrology-infoswmm-145-h2omap-swmm-full-swmm5-lid-dickinson"
+    link: "https://www.linkedin.com/pulse/german-hydrology-infoswmm-145-h2omap-swmm-full-swmm5-lid-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-119",
@@ -1471,7 +2020,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/my-top-ten-reasons-preferring-infoswmm-over-swmm-5-based-dickinson"
+    link: "https://www.linkedin.com/pulse/my-top-ten-reasons-preferring-infoswmm-over-swmm-5-based-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-120",
@@ -1480,7 +2032,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "7 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-121",
@@ -1489,7 +2044,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/advanced-calibration-graphs-reference-graphical-13-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/advanced-calibration-graphs-reference-graphical-13-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-122",
@@ -1498,7 +2056,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "7 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson"
+    link: "https://www.linkedin.com/pulse/qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-123",
@@ -1507,7 +2068,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye"
+    link: "https://www.linkedin.com/pulse/infosewer-icm-infoworks-app-ai-humans-robert-dickinson-nhuye",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-124",
@@ -1516,7 +2080,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye"
+    link: "https://www.linkedin.com/pulse/epa-swmm5-inp-file-reader-app-stats-images-network-robert-dickinson-6o7ye",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-125",
@@ -1525,7 +2092,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "8 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/level-up-your-icm-infoworks-skills-try-interactive-quiz-dickinson-qpj0e"
+    link: "https://www.linkedin.com/pulse/level-up-your-icm-infoworks-skills-try-interactive-quiz-dickinson-qpj0e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-126",
@@ -1534,7 +2104,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "8 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/level-up-your-swmm5-skills-try-interactive-technical-quiz-dickinson-vfq7e"
+    link: "https://www.linkedin.com/pulse/level-up-your-swmm5-skills-try-interactive-technical-quiz-dickinson-vfq7e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-127",
@@ -1543,7 +2116,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-ruby-script-dickinson-xwzqc"
+    link: "https://www.linkedin.com/pulse/revolutionizing-hydraulic-network-data-export-ruby-script-dickinson-xwzqc",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-128",
@@ -1552,7 +2128,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-swmm-robert-dickinson-13bae"
+    link: "https://www.linkedin.com/pulse/eight-icms-one-icm-ultimate-sewer-flood-viewer-swmm-robert-dickinson-13bae",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-129",
@@ -1561,7 +2140,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-dickinson-jyhue"
+    link: "https://www.linkedin.com/pulse/bridging-decades-reading-infosewer-report-rpt-output-icm-dickinson-jyhue",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-130",
@@ -1570,7 +2152,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "7 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-dickinson-2b8je"
+    link: "https://www.linkedin.com/pulse/reviving-1988-swmm4-models-ai-seamless-transition-swmm5-dickinson-2b8je",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-131",
@@ -1579,7 +2164,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson-37vre"
+    link: "https://www.linkedin.com/pulse/converting-icm-infoworks-prn-files-cfs-units-ai-2025-robert-dickinson-37vre",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-132",
@@ -1588,7 +2176,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/exporting-up-99-hw-conduit-parameters-csv-ruby-icm-robert-dickinson-5pcye"
+    link: "https://www.linkedin.com/pulse/exporting-up-99-hw-conduit-parameters-csv-ruby-icm-robert-dickinson-5pcye",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-133",
@@ -1597,7 +2188,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "8 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/extran1-extran2-from-extran-manual-ai-github-swmm5-used-dickinson-ds25e"
+    link: "https://www.linkedin.com/pulse/extran1-extran2-from-extran-manual-ai-github-swmm5-used-dickinson-ds25e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-134",
@@ -1606,7 +2200,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-dickinson-pj38e"
+    link: "https://www.linkedin.com/pulse/example-7-extran-manual-type-2-pump-ai-github-swmm5-dickinson-pj38e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-135",
@@ -1615,7 +2212,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-dickinson-gbbke"
+    link: "https://www.linkedin.com/pulse/example-6-extran-manual-type-1-pump-ai-github-swmm5-dickinson-gbbke",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-136",
@@ -1624,7 +2224,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-dickinson-jh2ne"
+    link: "https://www.linkedin.com/pulse/extran-5-storage-facility-side-outlet-orifice-ai-github-dickinson-jh2ne",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-137",
@@ -1633,7 +2236,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "4 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-from-2004-github-robert-dickinson-rqume"
+    link: "https://www.linkedin.com/pulse/swmm-44h-fortran-code-from-2004-github-robert-dickinson-rqume",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-138",
@@ -1642,7 +2248,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "7 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-filehint-ai-usage-robert-dickinson-fstne"
+    link: "https://www.linkedin.com/pulse/many-avenues-ruby-help-icm-online-filehint-ai-usage-robert-dickinson-fstne",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-139",
@@ -1651,7 +2260,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-swmm-comparisons-now-25-github-dickinson-jh1re"
+    link: "https://www.linkedin.com/pulse/ruby-code-icm-infoworks-swmm-comparisons-now-25-github-dickinson-jh1re",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-140",
@@ -1660,7 +2272,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "3 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/running-list-my-linkedin-articles-robert-dickinson-phibe"
+    link: "https://www.linkedin.com/pulse/running-list-my-linkedin-articles-robert-dickinson-phibe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-141",
@@ -1669,7 +2284,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson-s0u9e"
+    link: "https://www.linkedin.com/pulse/swmm3-weir-extran4-test-file-ai-github-swmm5-icm-robert-dickinson-s0u9e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-142",
@@ -1678,7 +2296,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "7 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-from-dickinson-grrre"
+    link: "https://www.linkedin.com/pulse/creating-complete-swmm5-input-files-using-ai-chain-from-dickinson-grrre",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-143",
@@ -1687,7 +2308,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "8 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-hub-dickinson-xqpre"
+    link: "https://www.linkedin.com/pulse/100-other-ai-related-locations-learning-icm-besides-hub-dickinson-xqpre",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-1",
@@ -1696,7 +2320,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/swmm3-test-files-ai-github-swmm5-icm-robert-dickinson-gqkoe"
+    link: "https://www.linkedin.com/pulse/swmm3-test-files-ai-github-swmm5-icm-robert-dickinson-gqkoe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-2",
@@ -1705,7 +2332,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "10 min read",
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-2025-dickinson-2wrae"
+    link: "https://www.linkedin.com/pulse/infosewer-load-allocation-expertise-test-yourself-50-2025-dickinson-2wrae",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-3",
@@ -1714,7 +2344,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "3 min read",
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje"
+    link: "https://www.linkedin.com/pulse/diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-4",
@@ -1723,7 +2356,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee"
+    link: "https://www.linkedin.com/pulse/detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-5",
@@ -1732,7 +2368,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "7 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-guide-dickinson-ifote"
+    link: "https://www.linkedin.com/pulse/enhancing-subcatchment-connectivity-infoworks-icm-guide-dickinson-ifote",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-6",
@@ -1741,7 +2380,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "4 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/why-you-should-import-infosewer-infoswmm-use-newer-awi-dickinson-1lyxe"
+    link: "https://www.linkedin.com/pulse/why-you-should-import-infosewer-infoswmm-use-newer-awi-dickinson-1lyxe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-7",
@@ -1750,7 +2392,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/introducing-swmm5-br-hodges-sharior-ed-tiernan-e-2024-dickinson-p8eee"
+    link: "https://www.linkedin.com/pulse/introducing-swmm5-br-hodges-sharior-ed-tiernan-e-2024-dickinson-p8eee",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-8",
@@ -1759,7 +2404,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe"
+    link: "https://www.linkedin.com/pulse/steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-9",
@@ -1768,7 +2416,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-link-property-data-robert-dickinson-uanie"
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-link-property-data-robert-dickinson-uanie",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-10",
@@ -1777,7 +2428,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-node-property-data-robert-dickinson-rqlce"
+    link: "https://www.linkedin.com/pulse/ruby-icm-infoworks-vs-swmm-node-property-data-robert-dickinson-rqlce",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-11",
@@ -1786,7 +2440,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "8 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-dickinson-meqqe"
+    link: "https://www.linkedin.com/pulse/navigating-landscape-hydraulic-modeling-comparative-study-dickinson-meqqe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-12",
@@ -1795,7 +2452,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "7 min read",
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-using-swmm5-dickinson-kpfuc"
+    link: "https://www.linkedin.com/pulse/deep-dive-water-quality-buildup-washoff-bw-icm-using-swmm5-dickinson-kpfuc",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-13",
@@ -1804,7 +2464,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/how-use-graphreport-output-infosewerinfoswmm-make-custom-dickinson-80dwe"
+    link: "https://www.linkedin.com/pulse/how-use-graphreport-output-infosewerinfoswmm-make-custom-dickinson-80dwe",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-14",
@@ -1813,7 +2476,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/using-ruby-some-infoswmm-subcatchment-manager-tools-icm-dickinson-fomle"
+    link: "https://www.linkedin.com/pulse/using-ruby-some-infoswmm-subcatchment-manager-tools-icm-dickinson-fomle",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-15",
@@ -1822,7 +2488,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-dickinson-9ce6e"
+    link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-dickinson-9ce6e",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
     id: "linkedin-16",
@@ -1831,7 +2500,10 @@ export const linkedInArticles: LinkedInArticle[] = [
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
-    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde"
+    link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["SWMM", "modeling", "hydraulics"]
   }
 ];
 
@@ -1842,7 +2514,8 @@ export const documents: Document[] = [
     description: "Guide to using InfoWorks ICM for stream restoration projects and water quality management.",
     pages: 8,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7341851176990109700"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7341851176990109700",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-2",
@@ -1850,7 +2523,8 @@ export const documents: Document[] = [
     description: "Technical guide for importing and exporting SWMM5 models between ICM InfoWorks and ICM SWMM platforms.",
     pages: 23,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7317567641349431296"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7317567641349431296",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-3",
@@ -1858,7 +2532,8 @@ export const documents: Document[] = [
     description: "Comprehensive historical account of the EPA SWMM development and evolution from inception to modern versions.",
     pages: 93,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7316974158104440833"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7316974158104440833",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-4",
@@ -1866,7 +2541,8 @@ export const documents: Document[] = [
     description: "Statistical methodology for comparing SWMM5 and ICM model outputs using similarity indices.",
     pages: 21,
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7303115167335088129"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7303115167335088129",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-5",
@@ -1874,7 +2550,8 @@ export const documents: Document[] = [
     description: "Technical approach to merging multiple SWMM networks into one unified model for regional analysis.",
     pages: 10,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7293387743257112576"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7293387743257112576",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-6",
@@ -1882,7 +2559,8 @@ export const documents: Document[] = [
     description: "Historical perspective on legacy punch card methods for running early versions of SWMM models.",
     pages: 36,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7292368911352664066"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7292368911352664066",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-7",
@@ -1890,7 +2568,8 @@ export const documents: Document[] = [
     description: "Official SWMM 4 documentation covering storage facility blocks and treatment processes in hydraulic routing.",
     pages: 212,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290929335908057088"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290929335908057088",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-8",
@@ -1898,7 +2577,8 @@ export const documents: Document[] = [
     description: "Complete SWMM 4 reference manual for runoff generation and transport processes through the network.",
     pages: 265,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290925832858910720"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7290925832858910720",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-9",
@@ -1906,7 +2586,8 @@ export const documents: Document[] = [
     description: "Original SWMM Volume IV from 1971 containing the complete Fortran program listing and technical specifications.",
     pages: 248,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289673946839285760"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289673946839285760",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-10",
@@ -1914,7 +2595,8 @@ export const documents: Document[] = [
     description: "Original 1971 user manual for SWMM providing guidance on model setup and interpretation of results.",
     pages: 299,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289472094550016000"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289472094550016000",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-11",
@@ -1922,7 +2604,8 @@ export const documents: Document[] = [
     description: "Original 1971 EPA final report introducing the Storm Water Management Model and its theoretical foundation.",
     pages: 299,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289469326389043200"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289469326389043200",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-12",
@@ -1930,7 +2613,8 @@ export const documents: Document[] = [
     description: "Original 1971 verification and testing documentation for the first version of the SWMM model.",
     pages: 173,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289460627213828097"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289460627213828097",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-13",
@@ -1938,7 +2622,8 @@ export const documents: Document[] = [
     description: "1975 user guide for SWMM Version 2 focused on runoff calculations and watershed modeling.",
     pages: 107,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289457419078762496"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7289457419078762496",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-14",
@@ -1946,7 +2631,8 @@ export const documents: Document[] = [
     description: "Technical addendum to SWMM 4 manual covering extended transportation and quality routing module.",
     pages: 202,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7284368762005250048"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7284368762005250048",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-15",
@@ -1954,7 +2640,8 @@ export const documents: Document[] = [
     description: "Second part of SWMM3 technical documentation prepared for AI analysis and archival purposes.",
     pages: 242,
     imageUrl: aiCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283971378138021888"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283971378138021888",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-16",
@@ -1962,7 +2649,8 @@ export const documents: Document[] = [
     description: "Original 1981 SWMM3 technical documentation Part 1 covering model theory and application.",
     pages: 288,
     imageUrl: historyCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283969724349050881"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283969724349050881",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-17",
@@ -1970,7 +2658,8 @@ export const documents: Document[] = [
     description: "Quality assurance test files and documentation for SWMM4 dry weather routing validation.",
     pages: 115,
     imageUrl: sqlCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283944235534352384"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283944235534352384",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-18",
@@ -1978,7 +2667,8 @@ export const documents: Document[] = [
     description: "1981 Extran3 manual documenting the hydraulic foundation that evolved into modern SWMM5 routing methods.",
     pages: 240,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283819006690508800"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283819006690508800",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-19",
@@ -1986,7 +2676,8 @@ export const documents: Document[] = [
     description: "Technical seminar materials on water modeling and engineering practices presented at FSAWWA conference.",
     pages: 1,
     imageUrl: quizCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283147179139948547"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7283147179139948547",
+    categories: ["SWMM5", "ICM InfoWorks"]
   },
   {
     id: "doc-20",
@@ -1994,6 +2685,7 @@ export const documents: Document[] = [
     description: "Comprehensive lecture materials on InfoSewer modeling covering hydraulic principles and practical applications.",
     pages: 142,
     imageUrl: icmCover,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7270858395350450176"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7270858395350450176",
+    categories: ["SWMM5", "ICM InfoWorks"]
   }
 ];
