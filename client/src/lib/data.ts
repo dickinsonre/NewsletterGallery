@@ -2470,40 +2470,40 @@ export const linkedInArticles: LinkedInArticle[] = [
     keywords: ["SWMM", "modeling", "hydraulics"]
   },
   {
-    id: "linkedin-14",
+    id: "linkedin-144",
     title: "Using Ruby: Some InfoSWMM Subcatchment Manager Tools in ICM",
     description: "Ruby scripting techniques for managing subcatchment data in ICM from InfoSWMM sources.",
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/using-ruby-some-infoswmm-subcatchment-manager-tools-icm-dickinson-fomle",
-    categories: ["SWMM5", "ICM InfoWorks"],
+    categories: ["Ruby Scripting", "ICM InfoWorks"],
     difficulty: "intermediate",
-    keywords: ["SWMM", "modeling", "hydraulics"]
+    keywords: ["Ruby", "subcatchment", "InfoSWMM", "data management"]
   },
   {
-    id: "linkedin-15",
+    id: "linkedin-145",
     title: "Using AI to Interpret PRN File from ICM InfoWorks as a Person from SWMM5",
     description: "AI-assisted techniques for interpreting and analyzing PRN files from ICM InfoWorks perspective.",
     date: "9 months ago",
     readTime: "5 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/using-ai-interpret-prn-file-icm-infoworks-person-swmm5-dickinson-9ce6e",
-    categories: ["SWMM5", "ICM InfoWorks"],
+    categories: ["AI/ML", "ICM InfoWorks"],
     difficulty: "intermediate",
-    keywords: ["SWMM", "modeling", "hydraulics"]
+    keywords: ["AI", "PRN file", "interpretation", "analysis"]
   },
   {
-    id: "linkedin-16",
+    id: "linkedin-146",
     title: "Streamlining ICM Workflow: Preserving User Fields with Ruby",
     description: "Ruby scripting strategies for maintaining custom user fields during ICM model operations.",
     date: "9 months ago",
     readTime: "6 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/streamlining-icm-workflow-preserving-user-fields-ruby-dickinson-hyjde",
-    categories: ["SWMM5", "ICM InfoWorks"],
+    categories: ["Ruby Scripting", "ICM InfoWorks"],
     difficulty: "intermediate",
-    keywords: ["SWMM", "modeling", "hydraulics"]
+    keywords: ["Ruby", "user fields", "workflow", "automation"]
   }
 ];
 
