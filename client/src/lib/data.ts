@@ -127,6 +127,19 @@ export const learningPaths: LearningPath[] = [
 
 export const newsletters: Newsletter[] = [
   {
+    id: "49",
+    title: "EPASWMM5 and EPANET INP File Data Section Educational Tool",
+    description: "This newsletter is about an app that shows you the inp file data sections of SWMM5 and EPANET with all of the parameters for educational purposes.",
+    date: "1 day ago",
+    readTime: "2 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/edition-49-epaswmm5-epanet-inp-file-data-section-robert-dickinson",
+    issueNumber: 49,
+    categories: ["SWMM5", "Code Analysis"],
+    difficulty: "beginner",
+    keywords: ["SWMM5", "EPANET", "INP file", "data sections", "educational tool"]
+  },
+  {
     id: "48",
     title: "Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM",
     description: "This 48th Edition of the newsletter is about the awesomeness of Ruby scripting in ICM InfoWorks. Now with thousands of SWMM5 models in ICM.",
