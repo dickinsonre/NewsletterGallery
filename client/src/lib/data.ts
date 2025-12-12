@@ -754,6 +754,18 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-147",
+    title: "Using 31 Chaotic Systems with Almost Infinite Possibilities to Make SWMM5 Networks",
+    description: "The problem with using 50 year old simple models or even test models that started out as real models as we did in the SWMM5 redevelopment project.",
+    date: "1 day ago",
+    readTime: "4 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/using-31-chaotic-systems-almost-infinite-possibilities-dickinson",
+    categories: ["SWMM5", "Model Testing"],
+    difficulty: "advanced",
+    keywords: ["chaotic systems", "SWMM5", "network generation", "test models"]
+  },
+  {
     id: "linkedin-14",
     title: "Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM",
     description: "A simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. Now with thousands of SWMM5 models imported into ICM.",
@@ -761,9 +773,9 @@ export const linkedInArticles: LinkedInArticle[] = [
     readTime: "2 min read",
     imageUrl: rubyCover,
     link: "https://www.linkedin.com/pulse/using-icm-ruby-scripts-import-2k-swmm5-files-icm-robert-dickinson",
-    categories: ["SWMM5", "ICM InfoWorks"],
+    categories: ["Ruby Scripting", "ICM InfoWorks"],
     difficulty: "intermediate",
-    keywords: ["SWMM", "modeling", "hydraulics"]
+    keywords: ["Ruby", "SWMM5", "import", "automation"]
   },
   {
     id: "linkedin-15",
