@@ -127,10 +127,23 @@ export const learningPaths: LearningPath[] = [
 
 export const newsletters: Newsletter[] = [
   {
+    id: "50",
+    title: "An App to Read and Create 3000 Informative Charts and Tables from the SWMM5 Report File",
+    description: "There is quite a long backstory on this app. I started working on SWMM 2.5 programming in 1978 using punch cards to run the model and voluminous print outputs.",
+    date: "1 day ago",
+    readTime: "2 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/edition-50-app-read-create-3000-informative-charts-robert-dickinson",
+    issueNumber: 50,
+    categories: ["SWMM5", "Code Analysis"],
+    difficulty: "beginner",
+    keywords: ["SWMM5", "report file", "charts", "tables", "visualization", "app"]
+  },
+  {
     id: "49",
     title: "EPASWMM5 and EPANET INP File Data Section Educational Tool",
     description: "This newsletter is about an app that shows you the inp file data sections of SWMM5 and EPANET with all of the parameters for educational purposes.",
-    date: "1 day ago",
+    date: "3 days ago",
     readTime: "2 min read",
     imageUrl: icmCover,
     link: "https://www.linkedin.com/pulse/edition-49-epaswmm5-epanet-inp-file-data-section-robert-dickinson",
