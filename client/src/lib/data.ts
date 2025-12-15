@@ -780,10 +780,22 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-149",
+    title: "When Hyperbolic Geometry Meets Urban Drainage: Making Beautiful Subcatchments",
+    description: "I've been exploring an unusual intersection: hyperbolic geometry and hydrological modeling. The result is a web-based tool that generates subcatchments.",
+    date: "1 day ago",
+    readTime: "1 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/when-hyperbolic-geometry-meets-urban-drainage-making-dickinson",
+    categories: ["SWMM5", "AI/ML"],
+    difficulty: "intermediate",
+    keywords: ["hyperbolic geometry", "subcatchments", "hydrological modeling", "web tool"]
+  },
+  {
     id: "linkedin-148",
     title: "An App to Read and Create 3000 Informative Charts and Tables from the SWMM5 Report File",
     description: "There is quite a long backstory on this app. I started working on SWMM 2.5 programming in 1978 using punch cards to run the model and voluminous print outputs.",
-    date: "1 day ago",
+    date: "2 days ago",
     readTime: "2 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/app-read-create-3000-informative-charts-tables-swmm5-dickinson",
