@@ -56,6 +56,15 @@ export interface Document {
   categories: Category[];
 }
 
+export interface LinkedInPost {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  link: string;
+  categories: Category[];
+}
+
 export const ALL_CATEGORIES: Category[] = [
   "Ruby Scripting",
   "SWMM5",
@@ -2749,5 +2758,16 @@ export const documents: Document[] = [
     imageUrl: icmCover,
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7270858395350450176",
     categories: ["SWMM5", "ICM InfoWorks"]
+  }
+];
+
+export const linkedInPosts: LinkedInPost[] = [
+  {
+    id: "post-1",
+    title: "InfoDrainage Webinar: Green Infrastructure Design",
+    description: "The InfoDrainage webinar demonstrates how to design green infrastructure solutions for urban stormwater management.",
+    date: "1 day ago",
+    link: "https://www.linkedin.com/posts/robertdickinson_the-infodrainage-webinar-demonstrates-how-activity-7417658210431475712-RC2S",
+    categories: ["ICM InfoWorks", "SWMM5"]
   }
 ];

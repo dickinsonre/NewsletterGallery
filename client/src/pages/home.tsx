@@ -1,7 +1,8 @@
-import { newsletters, linkedInArticles, documents, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
+import { PostCard } from "@/components/post-card";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
 import { BookOpen, Search, GraduationCap, Filter, X } from "lucide-react";
@@ -46,6 +47,13 @@ export default function Home() {
     const matchesSearch = d.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       d.description.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = !selectedCategory || d.categories.includes(selectedCategory);
+    return matchesSearch && matchesCategory;
+  });
+
+  const filteredPosts = linkedInPosts.filter(p => {
+    const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      p.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory = !selectedCategory || p.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
   });
 
@@ -213,9 +221,10 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12">
+          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-5 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">Articles</TabsTrigger>
+            <TabsTrigger value="posts" data-testid="tab-posts">Posts</TabsTrigger>
             <TabsTrigger value="documents" data-testid="tab-documents">Documents</TabsTrigger>
             <TabsTrigger value="paths" data-testid="tab-paths">
               <GraduationCap className="w-4 h-4 mr-1" /> Paths
@@ -254,6 +263,24 @@ export default function Home() {
             ) : (
               <div className="text-center py-20">
                 <p className="text-muted-foreground font-serif italic">No articles found matching your search.</p>
+              </div>
+            )}
+          </TabsContent>
+
+          <TabsContent value="posts" data-testid="content-posts">
+            {filteredPosts.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredPosts.map((post, index) => (
+                  <PostCard 
+                    key={post.id} 
+                    post={post} 
+                    index={index} 
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-20">
+                <p className="text-muted-foreground font-serif italic">No posts found matching your search.</p>
               </div>
             )}
           </TabsContent>
