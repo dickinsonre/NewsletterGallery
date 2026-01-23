@@ -5,7 +5,7 @@ import { DocumentCard } from "@/components/document-card";
 import { PostCard } from "@/components/post-card";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -28,13 +28,15 @@ export default function Home() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("newsletters");
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
+  const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const filteredNewsletters = newsletters.filter(n => {
     const matchesSearch = n.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       n.description.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = !selectedCategory || n.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
-  });
+  }).sort((a, b) => sortOrder === "oldest" ? a.issueNumber - b.issueNumber : b.issueNumber - a.issueNumber);
 
   const filteredArticles = linkedInArticles.filter(a => {
     const matchesSearch = a.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -164,57 +166,124 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto px-4 py-12 max-w-6xl">
-        {/* Hero / Intro */}
-        <div className="max-w-4xl mx-auto text-center mb-16 space-y-8">
-          <div className="w-full rounded-lg overflow-hidden shadow-2xl border border-border/50">
-            <img src={timeEngineerImage} alt="Time-Traveling Hydraulic Engineer" className="w-full h-auto" />
+        {/* Hero Section - Redesigned for clarity */}
+        <div className="max-w-5xl mx-auto mb-16">
+          {/* Author Introduction */}
+          <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-8 mb-8">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-24 h-24 rounded-full border-4 border-primary/20 shadow-lg overflow-hidden">
+                  <img src={robertPhoto} alt="Robert Dickinson" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div className="text-center md:text-left flex-grow">
+                <h1 className="text-2xl font-serif font-bold mb-2">The Robert Dickinson Archive</h1>
+                <p className="text-muted-foreground mb-3">
+                  <span className="font-medium text-foreground">50+ years of SWMM expertise</span> — from punch cards in 1978 to modern ICM InfoWorks. 
+                  A searchable repository of technical insights on hydraulic modeling.
+                </p>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs">
+                  <Badge variant="secondary">Autodesk Water Technologist</Badge>
+                  <Badge variant="secondary">17+ yrs at Innovyze</Badge>
+                  <Badge variant="secondary">{newsletters.length} Newsletters</Badge>
+                  <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-serif font-medium text-foreground leading-tight">
-              A collection of thoughts on stormwater, modeling, and engineering history from an ICM and SWMM5 perspective
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Explore the archive of newsletters by Robert Dickinson. A digital library dedicated to understanding 
-              the complex systems of water management and the software that powers them.
-            </p>
-            
-            <div className="relative max-w-md mx-auto pt-4">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <Input 
-                placeholder="Search the archives..." 
-                className="pl-10 bg-background/50 border-primary/20 focus-visible:ring-primary/20 font-serif"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                data-testid="input-search"
-              />
+          {/* Start Here - Quick Paths */}
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-2 mb-4">
+              <GraduationCap className="w-5 h-5 text-primary" />
+              <h2 className="font-serif font-medium text-lg">Start Here</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <button 
+                onClick={() => { setActiveTab("paths"); }}
+                className="text-left p-4 bg-background/80 rounded-lg border border-border hover:border-primary/50 transition-all group"
+                data-testid="button-start-learning-paths"
+              >
+                <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">New to SWMM5?</h3>
+                <p className="text-sm text-muted-foreground">Start with the fundamentals and build your knowledge step by step.</p>
+                <span className="text-xs text-primary mt-2 inline-flex items-center gap-1">View Learning Paths <ArrowRight className="w-3 h-3" /></span>
+              </button>
+              <button 
+                onClick={() => { setSelectedCategory("Ruby Scripting"); setActiveTab("newsletters"); }}
+                className="text-left p-4 bg-background/80 rounded-lg border border-border hover:border-primary/50 transition-all group"
+                data-testid="button-start-ruby"
+              >
+                <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Ruby Scripting</h3>
+                <p className="text-sm text-muted-foreground">Automate ICM workflows with powerful Ruby scripts.</p>
+                <span className="text-xs text-primary mt-2 inline-flex items-center gap-1">Browse Ruby Content <ArrowRight className="w-3 h-3" /></span>
+              </button>
+              <button 
+                onClick={() => { setSortOrder("oldest"); setActiveTab("newsletters"); }}
+                className="text-left p-4 bg-background/80 rounded-lg border border-border hover:border-primary/50 transition-all group"
+                data-testid="button-start-edition-1"
+              >
+                <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Read from Edition #1</h3>
+                <p className="text-sm text-muted-foreground">Start from the beginning: "SWMM5 Inside ICM InfoWorks".</p>
+                <span className="text-xs text-primary mt-2 inline-flex items-center gap-1">Start from Beginning <ArrowRight className="w-3 h-3" /></span>
+              </button>
+            </div>
+          </div>
+
+          {/* Search and Filters */}
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <div className="relative flex-grow max-w-md">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <Input 
+                  placeholder="Search by title, topic, or keyword..." 
+                  className="pl-10 bg-background/50 border-primary/20 focus-visible:ring-primary/20"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  data-testid="input-search"
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <SortAsc className="w-4 h-4 text-muted-foreground" />
+                <select 
+                  value={sortOrder} 
+                  onChange={(e) => setSortOrder(e.target.value as "newest" | "oldest")}
+                  className="text-sm bg-background border border-border rounded-md px-3 py-2"
+                  data-testid="select-sort-order"
+                >
+                  <option value="newest">Newest First</option>
+                  <option value="oldest">Oldest First (Recommended for Learning)</option>
+                </select>
+              </div>
             </div>
 
-            {/* Category Filters */}
-            <div className="flex flex-wrap justify-center gap-2 pt-6">
-              {ALL_CATEGORIES.map((cat) => (
-                <Button
-                  key={cat}
-                  variant={selectedCategory === cat ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setSelectedCategory(selectedCategory === cat ? null : cat)}
-                  className="text-xs"
-                  data-testid={`filter-${cat.toLowerCase().replace(/[^a-z]/g, '-')}`}
-                >
-                  {cat}
-                </Button>
-              ))}
-              {(selectedCategory || searchQuery) && (
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={clearFilters}
-                  className="text-xs text-muted-foreground"
-                  data-testid="button-clear-filters"
-                >
-                  <X className="w-3 h-3 mr-1" /> Clear
-                </Button>
-              )}
+            {/* Category Filters - More Prominent */}
+            <div className="bg-card/40 rounded-lg p-4 border border-border">
+              <div className="flex items-center gap-2 mb-3">
+                <Filter className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm font-medium">Filter by Topic:</span>
+                {selectedCategory && (
+                  <Badge variant="default" className="ml-2">
+                    {selectedCategory}
+                    <button onClick={() => setSelectedCategory(null)} className="ml-1">
+                      <X className="w-3 h-3" />
+                    </button>
+                  </Badge>
+                )}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {ALL_CATEGORIES.map((cat) => (
+                  <Button
+                    key={cat}
+                    variant={selectedCategory === cat ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setSelectedCategory(selectedCategory === cat ? null : cat)}
+                    className={`text-xs transition-all ${selectedCategory === cat ? 'ring-2 ring-primary/50' : 'hover:bg-primary/10'}`}
+                    data-testid={`filter-${cat.toLowerCase().replace(/[^a-z]/g, '-')}`}
+                  >
+                    {cat}
+                  </Button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -232,16 +301,70 @@ export default function Home() {
           </TabsList>
 
           <TabsContent value="newsletters" data-testid="content-newsletters">
-            {filteredNewsletters.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredNewsletters.map((newsletter, index) => (
-                  <NewsletterCard 
-                    key={newsletter.id} 
-                    newsletter={newsletter} 
-                    index={index} 
-                  />
-                ))}
+            <div className="flex justify-between items-center mb-6">
+              <p className="text-sm text-muted-foreground">{filteredNewsletters.length} newsletters</p>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-muted-foreground">View:</span>
+                <Button
+                  variant={viewMode === "grid" ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setViewMode("grid")}
+                  className="h-8 w-8 p-0"
+                  data-testid="button-view-grid"
+                >
+                  <LayoutGrid className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant={viewMode === "list" ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setViewMode("list")}
+                  className="h-8 w-8 p-0"
+                  data-testid="button-view-list"
+                >
+                  <List className="w-4 h-4" />
+                </Button>
               </div>
+            </div>
+            {filteredNewsletters.length > 0 ? (
+              viewMode === "grid" ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredNewsletters.map((newsletter, index) => (
+                    <NewsletterCard 
+                      key={newsletter.id} 
+                      newsletter={newsletter} 
+                      index={index} 
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-2 bg-card/50 rounded-lg border border-border p-4">
+                  {filteredNewsletters.map((newsletter) => (
+                    <a 
+                      key={newsletter.id}
+                      href={newsletter.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 rounded-md hover:bg-primary/5 transition-colors group"
+                    >
+                      <div className="flex items-center gap-4 flex-grow min-w-0">
+                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded shrink-0">
+                          #{newsletter.issueNumber}
+                        </span>
+                        <div className="min-w-0 flex-grow">
+                          <h4 className="font-medium text-sm group-hover:text-primary transition-colors truncate">
+                            {newsletter.title}
+                          </h4>
+                          <p className="text-xs text-muted-foreground truncate">{newsletter.description}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3 shrink-0 ml-4">
+                        <Badge variant="outline" className="text-xs hidden sm:inline-flex">{newsletter.categories[0]}</Badge>
+                        <span className="text-xs text-muted-foreground hidden md:inline">{newsletter.date}</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              )
             ) : (
               <div className="text-center py-20">
                 <p className="text-muted-foreground font-serif italic">No newsletters found matching your search.</p>

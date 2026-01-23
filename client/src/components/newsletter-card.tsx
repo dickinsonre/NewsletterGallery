@@ -1,8 +1,8 @@
 import { Newsletter, Difficulty } from "@/lib/data";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Clock, Calendar, GraduationCap } from "lucide-react";
+import { ExternalLink, Clock, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface NewsletterCardProps {
@@ -11,9 +11,9 @@ interface NewsletterCardProps {
 }
 
 const difficultyColors: Record<Difficulty, string> = {
-  beginner: "bg-green-500/20 text-green-700 border-green-500/30",
-  intermediate: "bg-yellow-500/20 text-yellow-700 border-yellow-500/30",
-  advanced: "bg-red-500/20 text-red-700 border-red-500/30"
+  beginner: "bg-green-500/20 text-green-700 dark:text-green-400 border-green-500/30",
+  intermediate: "bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 border-yellow-500/30",
+  advanced: "bg-red-500/20 text-red-700 dark:text-red-400 border-red-500/30"
 };
 
 const difficultyLabels: Record<Difficulty, string> = {
@@ -27,25 +27,36 @@ export function NewsletterCard({ newsletter, index }: NewsletterCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.3) }}
     >
-      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border-none bg-card/50 backdrop-blur-sm hover:bg-card">
-        <CardHeader className="p-0 overflow-hidden rounded-t-lg relative aspect-[4/3]">
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
-          <img 
-            src={newsletter.imageUrl} 
-            alt={newsletter.title}
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute top-4 left-4 z-20 bg-background/90 backdrop-blur px-3 py-1 text-xs font-serif tracking-wider rounded-full shadow-sm">
-            EDITION #{newsletter.issueNumber}
+      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30">
+        <CardContent className="flex-grow p-5">
+          <div className="flex items-center justify-between mb-3">
+            <span className="bg-primary/10 text-primary px-2 py-1 text-xs font-medium rounded">
+              Edition #{newsletter.issueNumber}
+            </span>
+            <span className={`px-2 py-1 text-xs font-medium rounded border ${difficultyColors[newsletter.difficulty]}`}>
+              {difficultyLabels[newsletter.difficulty]}
+            </span>
           </div>
-          <div className={`absolute top-4 right-4 z-20 px-2 py-1 text-xs font-medium rounded-full border ${difficultyColors[newsletter.difficulty]}`}>
-            {difficultyLabels[newsletter.difficulty]}
+          
+          <h3 className="text-lg font-serif font-semibold leading-snug mb-2 text-foreground group-hover:text-primary transition-colors line-clamp-2">
+            {newsletter.title}
+          </h3>
+          
+          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4">
+            {newsletter.description}
+          </p>
+          
+          <div className="flex flex-wrap gap-1.5 mb-3">
+            {newsletter.categories.slice(0, 2).map((cat) => (
+              <Badge key={cat} variant="outline" className="text-xs px-2 py-0.5 font-normal">
+                {cat}
+              </Badge>
+            ))}
           </div>
-        </CardHeader>
-        <CardContent className="flex-grow p-6">
-          <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3 font-medium tracking-wide uppercase">
+          
+          <div className="flex items-center gap-3 text-xs text-muted-foreground">
             <span className="flex items-center gap-1">
               <Calendar className="w-3 h-3" />
               {newsletter.date}
@@ -55,28 +66,16 @@ export function NewsletterCard({ newsletter, index }: NewsletterCardProps) {
               {newsletter.readTime}
             </span>
           </div>
-          <h3 className="text-xl font-serif font-medium leading-tight mb-3 text-foreground group-hover:text-primary transition-colors">
-            {newsletter.title}
-          </h3>
-          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-3">
-            {newsletter.description}
-          </p>
-          <div className="flex flex-wrap gap-1.5">
-            {newsletter.categories.slice(0, 2).map((cat) => (
-              <Badge key={cat} variant="secondary" className="text-xs px-2 py-0.5 font-normal">
-                {cat}
-              </Badge>
-            ))}
-          </div>
         </CardContent>
-        <CardFooter className="p-6 pt-0">
+        <CardFooter className="p-5 pt-0">
           <Button 
             asChild 
             variant="outline" 
-            className="w-full gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 border-primary/20 hover:border-primary"
+            size="sm"
+            className="w-full gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
           >
             <a href={newsletter.link} target="_blank" rel="noopener noreferrer">
-              Read Article <ExternalLink className="w-4 h-4 ml-1 opacity-50 group-hover:opacity-100" />
+              Read on LinkedIn <ExternalLink className="w-3 h-3 ml-1" />
             </a>
           </Button>
         </CardFooter>
