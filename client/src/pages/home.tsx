@@ -1,11 +1,12 @@
-import { newsletters, linkedInArticles, documents, linkedInPosts, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
 import { PostCard } from "@/components/post-card";
+import { ToolCard } from "@/components/tool-card";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -290,11 +291,14 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-5 mb-12">
+          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-6 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">Articles</TabsTrigger>
             <TabsTrigger value="posts" data-testid="tab-posts">Posts</TabsTrigger>
             <TabsTrigger value="documents" data-testid="tab-documents">Documents</TabsTrigger>
+            <TabsTrigger value="tools" data-testid="tab-tools">
+              <Wrench className="w-4 h-4 mr-1" /> Tools
+            </TabsTrigger>
             <TabsTrigger value="paths" data-testid="tab-paths">
               <GraduationCap className="w-4 h-4 mr-1" /> Paths
             </TabsTrigger>
@@ -424,6 +428,23 @@ export default function Home() {
                 <p className="text-muted-foreground font-serif italic">No documents found matching your search.</p>
               </div>
             )}
+          </TabsContent>
+
+          <TabsContent value="tools" data-testid="content-tools">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-serif font-medium mb-2">Scripts & Utilities</h3>
+                <p className="text-muted-foreground">Practical tools for SWMM5 and ICM automation. Copy code snippets or download full scripts.</p>
+                <Badge variant="secondary" className="mt-3 bg-yellow-500/20 text-yellow-600 dark:text-yellow-400">
+                  Beta - More tools coming soon
+                </Badge>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {tools.map((tool) => (
+                  <ToolCard key={tool.id} tool={tool} />
+                ))}
+              </div>
+            </div>
           </TabsContent>
 
           <TabsContent value="paths" data-testid="content-paths">

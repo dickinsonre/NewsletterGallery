@@ -65,6 +65,21 @@ export interface LinkedInPost {
   categories: Category[];
 }
 
+export type ToolStatus = "stable" | "beta" | "alpha";
+
+export interface Tool {
+  id: string;
+  title: string;
+  description: string;
+  language: "Python" | "Ruby" | "JavaScript" | "SQL" | "JSON";
+  status: ToolStatus;
+  version: string;
+  downloadUrl?: string;
+  githubUrl?: string;
+  codePreview: string;
+  categories: Category[];
+}
+
 export const ALL_CATEGORIES: Category[] = [
   "Ruby Scripting",
   "SWMM5",
@@ -2769,5 +2784,68 @@ export const linkedInPosts: LinkedInPost[] = [
     date: "1 day ago",
     link: "https://www.linkedin.com/posts/robertdickinson_the-infodrainage-webinar-demonstrates-how-activity-7417658210431475712-RC2S",
     categories: ["ICM InfoWorks", "SWMM5"]
+  }
+];
+
+export const tools: Tool[] = [
+  {
+    id: "tool-1",
+    title: "SWMM5 Output Parser",
+    description: "Python library for parsing SWMM5 binary output files (.out). Extract node depths, link flows, and system statistics programmatically.",
+    language: "Python",
+    status: "beta",
+    version: "0.2.0",
+    codePreview: "import swmm_output_parser as sop\n\n# Parse a SWMM5 output file\nresults = sop.parse(\"model.out\")\n\n# Get node depths over time\nnode_depths = results.get_node_series(\"J1\", \"depth\")\n\n# Export to pandas DataFrame\ndf = results.to_dataframe()",
+    categories: ["SWMM5", "Code Analysis"]
+  },
+  {
+    id: "tool-2",
+    title: "ICM Ruby Network Iterator",
+    description: "Ruby script template for iterating through all network objects in ICM InfoWorks. Copy, modify, or analyze conduits, nodes, and subcatchments.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# ICM Ruby Script: Network Object Iterator\nnet = WSApplication.current_network\n\n# Iterate all conduits\nnet.row_objects('hw_conduit').each do |conduit|\n  puts \"Conduit: \" + conduit.id.to_s\n  puts \"  Length: \" + conduit.conduit_length.to_s\n  puts \"  US Node: \" + conduit.us_node_id.to_s\nend\n\n# Iterate all nodes\nnet.row_objects('hw_node').each do |node|\n  puts \"Node: \" + node.id.to_s + \", Invert: \" + node.invert.to_s\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-3",
+    title: "SWMM-JSON Schema",
+    description: "JSON schema definition for representing SWMM5 models in a portable, machine-readable format. Useful for model conversion and API development.",
+    language: "JSON",
+    status: "alpha",
+    version: "0.1.0",
+    codePreview: "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"SWMM5 Model\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"junctions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": { \"type\": \"string\" },\n          \"elevation\": { \"type\": \"number\" },\n          \"maxDepth\": { \"type\": \"number\" }\n        }\n      }\n    }\n  }\n}",
+    categories: ["SWMM5", "Code Analysis"]
+  },
+  {
+    id: "tool-4",
+    title: "ICM SQL Query Library",
+    description: "Collection of SQL queries for extracting data from ICM models. Ready-to-use queries for common reporting and analysis tasks.",
+    language: "SQL",
+    status: "stable",
+    version: "1.2.0",
+    codePreview: "-- Get all conduits with capacity issues\nSELECT \n  id,\n  us_node_id,\n  ds_node_id,\n  conduit_length,\n  diameter\nFROM hw_conduit\nWHERE max_flow_ratio > 1.0\nORDER BY max_flow_ratio DESC;\n\n-- Sum subcatchment areas by land use\nSELECT \n  land_use,\n  SUM(area) as total_area,\n  COUNT(*) as count\nFROM hw_subcatchment\nGROUP BY land_use;",
+    categories: ["SQL/Data", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-5",
+    title: "SWMM INP File Validator",
+    description: "Python script to validate SWMM5 input files (.inp) before running simulations. Catches common errors like missing links or invalid references.",
+    language: "Python",
+    status: "beta",
+    version: "0.3.0",
+    codePreview: "from swmm_validator import validate_inp\n\n# Validate an input file\nerrors, warnings = validate_inp(\"model.inp\")\n\n# Check for issues\nif errors:\n    print(\"Errors found:\")\n    for e in errors:\n        print(f\"  Line {e.line}: {e.message}\")\n\nif warnings:\n    print(\"Warnings:\")\n    for w in warnings:\n        print(f\"  {w.message}\")",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-6",
+    title: "Ruby Batch Simulation Runner",
+    description: "Ruby script for running multiple ICM simulations with different scenarios. Automate sensitivity analysis and parameter sweeps.",
+    language: "Ruby",
+    status: "beta",
+    version: "0.5.0",
+    codePreview: "# ICM Ruby: Batch Simulation Runner\nscenarios = [\"base\", \"future_2050\", \"climate_change\"]\nrainfall_events = [\"2yr\", \"10yr\", \"100yr\"]\n\nscenarios.each do |scenario|\n  rainfall_events.each do |event|\n    # Load scenario\n    net = load_scenario(scenario)\n    \n    # Set rainfall\n    net.set_rainfall(event)\n    \n    # Run simulation\n    run_name = scenario + \"_\" + event\n    net.run_simulation(run_name)\n    \n    puts \"Completed: \" + run_name\n  end\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks", "Model Testing"]
   }
 ];
