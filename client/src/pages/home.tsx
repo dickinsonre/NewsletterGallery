@@ -180,15 +180,27 @@ export default function Home() {
               <div className="text-center md:text-left flex-grow">
                 <h1 className="text-2xl font-serif font-bold mb-2">The Robert Dickinson Archive</h1>
                 <p className="text-muted-foreground mb-3">
-                  <span className="font-medium text-foreground">50+ years of SWMM expertise</span> — from punch cards in 1978 to modern ICM InfoWorks. 
-                  A searchable repository of technical insights on hydraulic modeling.
+                  <span className="font-medium text-foreground">50+ years documenting stormwater modeling</span> — from SWMM 2.5 punch cards in 1978 to AI-integrated ICM InfoWorks today. 
+                  This living archive captures decades of hydraulic engineering knowledge, Ruby scripting techniques, and the untold history of urban drainage software.
                 </p>
-                <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs">
+                <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs mb-3">
                   <Badge variant="secondary">Autodesk Water Technologist</Badge>
                   <Badge variant="secondary">17+ yrs at Innovyze</Badge>
                   <Badge variant="secondary">{newsletters.length} Newsletters</Badge>
                   <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
+                  <Badge variant="secondary">{tools.length} Tools</Badge>
                 </div>
+                {/* Quick Glossary */}
+                <details className="text-xs">
+                  <summary className="cursor-pointer text-primary hover:underline">What is SWMM5? ICM? New here? Quick glossary...</summary>
+                  <div className="mt-2 p-3 bg-background/80 rounded-md border border-border space-y-1 text-muted-foreground">
+                    <p><strong className="text-foreground">SWMM5</strong> — Storm Water Management Model (EPA). The gold standard for urban drainage simulation.</p>
+                    <p><strong className="text-foreground">ICM InfoWorks</strong> — Integrated Catchment Modeling software by Autodesk for sewer/stormwater networks.</p>
+                    <p><strong className="text-foreground">Ruby Scripting</strong> — Automation language built into ICM for batch processing and custom workflows.</p>
+                    <p><strong className="text-foreground">LIDs/SUDS</strong> — Low Impact Development / Sustainable Urban Drainage Systems (green infrastructure).</p>
+                    <p><strong className="text-foreground">Extran</strong> — The dynamic wave routing module in SWMM for pipe flow simulation.</p>
+                  </div>
+                </details>
               </div>
             </div>
           </div>
@@ -227,6 +239,40 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">Start from the beginning: "SWMM5 Inside ICM InfoWorks".</p>
                 <span className="text-xs text-primary mt-2 inline-flex items-center gap-1">Start from Beginning <ArrowRight className="w-3 h-3" /></span>
               </button>
+            </div>
+          </div>
+
+          {/* Essential Reads - Most Important for Newcomers */}
+          <div className="bg-card/40 border border-border rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-2 mb-4">
+              <BookOpen className="w-5 h-5 text-primary" />
+              <h2 className="font-serif font-medium text-lg">Essential Reads</h2>
+              <Badge variant="outline" className="text-xs">Start with these</Badge>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                { num: 1, title: "SWMM5 Inside ICM InfoWorks", why: "The foundation - where it all begins" },
+                { num: 36, title: "Ruby Resources for ICM InfoWorks", why: "Essential scripting reference" },
+                { num: 21, title: "100 SWMM5 Quiz Questions", why: "Test your knowledge" },
+                { num: 47, title: "Ruby and ICM Exchange Tables", why: "Data extraction mastery" },
+                { num: 30, title: "SWMM5 1D Polygon Networks", why: "Advanced network modeling" },
+                { num: 48, title: "ICM SWMM5 Networks with Ruby", why: "Ruby scripting deep dive" },
+              ].map((item) => (
+                <a
+                  key={item.num}
+                  href={newsletters.find(n => n.issueNumber === item.num)?.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 p-3 rounded-lg bg-background/60 hover:bg-primary/5 border border-transparent hover:border-primary/20 transition-all group"
+                  data-testid={`essential-read-${item.num}`}
+                >
+                  <span className="text-lg font-bold text-primary/70 group-hover:text-primary transition-colors">#{item.num}</span>
+                  <div className="min-w-0">
+                    <h4 className="font-medium text-sm leading-tight group-hover:text-primary transition-colors line-clamp-2">{item.title}</h4>
+                    <p className="text-xs text-muted-foreground mt-1">{item.why}</p>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
 
