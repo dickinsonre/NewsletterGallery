@@ -6,7 +6,7 @@ import { PostCard } from "@/components/post-card";
 import { ToolCard } from "@/components/tool-card";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -32,30 +32,42 @@ export default function Home() {
   const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
+  const searchLower = searchQuery.toLowerCase();
+  
   const filteredNewsletters = newsletters.filter(n => {
-    const matchesSearch = n.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      n.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = !searchQuery || 
+      n.title.toLowerCase().includes(searchLower) ||
+      n.description.toLowerCase().includes(searchLower) ||
+      n.keywords?.some(k => k.toLowerCase().includes(searchLower)) ||
+      n.categories.some(c => c.toLowerCase().includes(searchLower));
     const matchesCategory = !selectedCategory || n.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
   }).sort((a, b) => sortOrder === "oldest" ? a.issueNumber - b.issueNumber : b.issueNumber - a.issueNumber);
 
   const filteredArticles = linkedInArticles.filter(a => {
-    const matchesSearch = a.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      a.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = !searchQuery ||
+      a.title.toLowerCase().includes(searchLower) ||
+      a.description.toLowerCase().includes(searchLower) ||
+      a.keywords?.some(k => k.toLowerCase().includes(searchLower)) ||
+      a.categories.some(c => c.toLowerCase().includes(searchLower));
     const matchesCategory = !selectedCategory || a.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
   });
 
   const filteredDocuments = documents.filter(d => {
-    const matchesSearch = d.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      d.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = !searchQuery ||
+      d.title.toLowerCase().includes(searchLower) ||
+      d.description.toLowerCase().includes(searchLower) ||
+      d.categories.some(c => c.toLowerCase().includes(searchLower));
     const matchesCategory = !selectedCategory || d.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
   });
 
   const filteredPosts = linkedInPosts.filter(p => {
-    const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = !searchQuery ||
+      p.title.toLowerCase().includes(searchLower) ||
+      p.description.toLowerCase().includes(searchLower) ||
+      p.categories.some(c => c.toLowerCase().includes(searchLower));
     const matchesCategory = !selectedCategory || p.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
   });
@@ -190,15 +202,38 @@ export default function Home() {
                   <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
                   <Badge variant="secondary">{tools.length} Tools</Badge>
                 </div>
-                {/* Quick Glossary */}
-                <details className="text-xs">
+                {/* Quick Glossary with Linkable Terms */}
+                <details className="text-xs" id="glossary">
                   <summary className="cursor-pointer text-primary hover:underline">What is SWMM5? ICM? New here? Quick glossary...</summary>
-                  <div className="mt-2 p-3 bg-background/80 rounded-md border border-border space-y-1 text-muted-foreground">
-                    <p><strong className="text-foreground">SWMM5</strong> — Storm Water Management Model (EPA). The gold standard for urban drainage simulation.</p>
-                    <p><strong className="text-foreground">ICM InfoWorks</strong> — Integrated Catchment Modeling software by Autodesk for sewer/stormwater networks.</p>
-                    <p><strong className="text-foreground">Ruby Scripting</strong> — Automation language built into ICM for batch processing and custom workflows.</p>
-                    <p><strong className="text-foreground">LIDs/SUDS</strong> — Low Impact Development / Sustainable Urban Drainage Systems (green infrastructure).</p>
-                    <p><strong className="text-foreground">Extran</strong> — The dynamic wave routing module in SWMM for pipe flow simulation.</p>
+                  <div className="mt-2 p-3 bg-background/80 rounded-md border border-border space-y-2 text-muted-foreground">
+                    <p id="term-swmm5" className="scroll-mt-24">
+                      <strong className="text-foreground">SWMM5</strong> — Storm Water Management Model (EPA). The gold standard for urban drainage simulation.
+                      <a href={newsletters.find(n => n.issueNumber === 1)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #1)</a>
+                    </p>
+                    <p id="term-icm" className="scroll-mt-24">
+                      <strong className="text-foreground">ICM InfoWorks</strong> — Integrated Catchment Modeling software by Autodesk for sewer/stormwater networks.
+                      <a href={newsletters.find(n => n.issueNumber === 2)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #2)</a>
+                    </p>
+                    <p id="term-ruby" className="scroll-mt-24">
+                      <strong className="text-foreground">Ruby Scripting</strong> — Automation language built into ICM for batch processing and custom workflows.
+                      <a href={newsletters.find(n => n.issueNumber === 36)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #36)</a>
+                    </p>
+                    <p id="term-lids" className="scroll-mt-24">
+                      <strong className="text-foreground">LIDs/SUDS</strong> — Low Impact Development / Sustainable Urban Drainage Systems (green infrastructure).
+                      <a href={newsletters.find(n => n.issueNumber === 6)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #6)</a>
+                    </p>
+                    <p id="term-extran" className="scroll-mt-24">
+                      <strong className="text-foreground">Extran</strong> — The dynamic wave routing module in SWMM for pipe flow simulation.
+                      <a href={newsletters.find(n => n.issueNumber === 13)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #13)</a>
+                    </p>
+                    <p id="term-dwf" className="scroll-mt-24">
+                      <strong className="text-foreground">DWF</strong> — Dry Weather Flow. Base sanitary flow in sewer systems when there's no rain.
+                      <a href={newsletters.find(n => n.issueNumber === 23)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #23)</a>
+                    </p>
+                    <p id="term-rdii" className="scroll-mt-24">
+                      <strong className="text-foreground">RDII</strong> — Rainfall-Derived Inflow & Infiltration. Stormwater entering sanitary sewers.
+                      <a href={newsletters.find(n => n.issueNumber === 7)?.link} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline text-xs">(See Edition #7)</a>
+                    </p>
                   </div>
                 </details>
               </div>
@@ -556,8 +591,48 @@ export default function Home() {
           </TabsContent>
         </Tabs>
 
+        {/* Newsletter Signup */}
+        <div className="mt-16 bg-primary/10 border border-primary/20 rounded-xl p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <div className="bg-primary/20 p-3 rounded-full">
+              <Mail className="w-6 h-6 text-primary" />
+            </div>
+          </div>
+          <h3 className="font-serif text-xl font-medium mb-2">Stay Updated</h3>
+          <p className="text-muted-foreground mb-4 max-w-md mx-auto">
+            Get notified when Edition #51 drops. Join fellow stormwater modelers and Ruby scripting enthusiasts.
+          </p>
+          <form 
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.target as HTMLFormElement;
+              const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+              if (email) {
+                localStorage.setItem('newsletter_subscriber', email);
+                alert('Thanks for subscribing! You will be notified of new editions.');
+                form.reset();
+              }
+            }}
+          >
+            <Input 
+              type="email" 
+              name="email"
+              placeholder="your@email.com" 
+              className="flex-grow bg-background/80"
+              data-testid="input-newsletter-email"
+              required
+            />
+            <Button type="submit" className="gap-2" data-testid="button-subscribe">
+              <Send className="w-4 h-4" />
+              Subscribe
+            </Button>
+          </form>
+          <p className="text-xs text-muted-foreground mt-3">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+
         {/* Footer */}
-        <footer className="mt-24 border-t border-border/40 pt-12 pb-8 text-center space-y-4">
+        <footer className="mt-12 border-t border-border/40 pt-12 pb-8 text-center space-y-4">
           <p className="font-serif text-2xl italic text-primary/80">EPASWMM5 Related Software Library</p>
           <p className="text-sm text-muted-foreground">
             &copy; 2025 Robert Dickinson. All rights reserved. <br />
