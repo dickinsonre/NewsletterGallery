@@ -4,6 +4,7 @@ import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
 import { PostCard } from "@/components/post-card";
 import { ToolCard } from "@/components/tool-card";
+import { GlobalSearch } from "@/components/global-search";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
 import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink } from "lucide-react";
@@ -313,13 +314,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Search and Filters */}
+          {/* Global Search */}
+          <div className="mb-8">
+            <GlobalSearch />
+          </div>
+
+          {/* Tab Filters */}
           <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
               <div className="relative flex-grow max-w-md">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input 
-                  placeholder="Search by title, topic, or keyword..." 
+                  placeholder="Filter current tab..." 
                   className="pl-10 bg-background/50 border-primary/20 focus-visible:ring-primary/20"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
