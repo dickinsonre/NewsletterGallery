@@ -2778,10 +2778,18 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-2",
+    title: "Artificial and Constructed Wetlands: Sustainable Stormwater Solutions",
+    description: "Exploring the use of artificial and constructed wetlands as sustainable approaches to stormwater management and water quality treatment.",
+    date: "Today",
+    link: "https://www.linkedin.com/posts/robertdickinson_artificial-and-constructed-wetlands-sustainable-activity-7420525986594607104-vUi4",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
     id: "post-1",
     title: "InfoDrainage Webinar: Green Infrastructure Design",
     description: "The InfoDrainage webinar demonstrates how to design green infrastructure solutions for urban stormwater management.",
-    date: "1 day ago",
+    date: "3 days ago",
     link: "https://www.linkedin.com/posts/robertdickinson_the-infodrainage-webinar-demonstrates-how-activity-7417658210431475712-RC2S",
     categories: ["ICM InfoWorks", "SWMM5"]
   }
