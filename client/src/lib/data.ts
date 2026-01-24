@@ -804,10 +804,22 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-150",
+    title: "What Kind of Hydraulic Modeller (Modeler) Are You? Discover Your Modeling Style",
+    description: "A fun exploration of the different types of hydraulic modelers in the water industry. Discover your modeling personality and approach to stormwater and sewer modeling.",
+    date: "Today",
+    readTime: "5 min read",
+    imageUrl: quizCover,
+    link: "https://www.linkedin.com/pulse/what-kind-hydraulic-modeller-modeler-you-discover-your-dickinson-nr85e",
+    categories: ["SWMM5", "ICM InfoWorks", "Quiz"],
+    difficulty: "beginner",
+    keywords: ["hydraulic modeling", "modeler types", "personality", "water industry", "career"]
+  },
+  {
     id: "linkedin-149",
     title: "When Hyperbolic Geometry Meets Urban Drainage: Making Beautiful Subcatchments",
     description: "I've been exploring an unusual intersection: hyperbolic geometry and hydrological modeling. The result is a web-based tool that generates subcatchments.",
-    date: "1 day ago",
+    date: "2 days ago",
     readTime: "1 min read",
     imageUrl: aiCover,
     link: "https://www.linkedin.com/pulse/when-hyperbolic-geometry-meets-urban-drainage-making-dickinson",
