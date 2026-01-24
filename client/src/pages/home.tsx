@@ -6,7 +6,7 @@ import { PostCard } from "@/components/post-card";
 import { ToolCard } from "@/components/tool-card";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -525,6 +525,46 @@ export default function Home() {
                   <ToolCard key={tool.id} tool={tool} />
                 ))}
               </div>
+              
+              {/* GitHub Community Section */}
+              <div className="mt-12 bg-card/60 border border-border rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gray-900 dark:bg-white p-2 rounded-lg">
+                    <Github className="w-5 h-5 text-white dark:text-gray-900" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Community Scripts Repository</h4>
+                    <p className="text-sm text-muted-foreground">Share your Ruby scripts, SQL queries, and utilities with the community</p>
+                  </div>
+                </div>
+                <div className="bg-background/80 rounded-lg p-4 border border-border">
+                  <p className="text-sm mb-4 text-muted-foreground">
+                    We're building a community repository for SWMM5 and ICM scripts! Submit your own Ruby scripts, SQL queries, or Python utilities. The best contributions will be featured on this site.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <a 
+                      href="https://github.com/SWMM5-ICM-Scripts" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+                      data-testid="link-github-repo"
+                    >
+                      <Github className="w-4 h-4" />
+                      View on GitHub
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                    <a 
+                      href="https://github.com/SWMM5-ICM-Scripts/issues/new" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-lg hover:bg-muted transition-colors text-sm"
+                      data-testid="link-submit-script"
+                    >
+                      Submit Your Script
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </TabsContent>
 
@@ -591,17 +631,66 @@ export default function Home() {
           </TabsContent>
         </Tabs>
 
-        {/* Newsletter Signup */}
-        <div className="mt-16 bg-primary/10 border border-primary/20 rounded-xl p-8 text-center">
-          <div className="flex justify-center mb-4">
-            <div className="bg-primary/20 p-3 rounded-full">
-              <Mail className="w-6 h-6 text-primary" />
+        {/* Ask a Question */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-card/60 border border-border rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-primary/20 p-2 rounded-full">
+                <MessageCircleQuestion className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-serif text-lg font-medium">Ask a Question</h3>
             </div>
+            <p className="text-sm text-muted-foreground mb-4">
+              Have a question about SWMM5, Ruby scripting, or ICM? Your questions could inspire the next newsletter edition!
+            </p>
+            <form 
+              className="space-y-3"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.target as HTMLFormElement;
+                const name = (form.elements.namedItem('name') as HTMLInputElement).value;
+                const question = (form.elements.namedItem('question') as HTMLTextAreaElement).value;
+                const subject = encodeURIComponent(`SWMM5/ICM Question from ${name}`);
+                const body = encodeURIComponent(`Name: ${name}\n\nQuestion:\n${question}`);
+                window.location.href = `mailto:robert.dickinson@gmail.com?subject=${subject}&body=${body}`;
+              }}
+            >
+              <Input 
+                type="text" 
+                name="name"
+                placeholder="Your name" 
+                className="bg-background/80"
+                data-testid="input-question-name"
+                required
+              />
+              <textarea 
+                name="question"
+                placeholder="What would you like to know about SWMM5, ICM, or Ruby scripting?"
+                className="w-full min-h-[100px] px-3 py-2 text-sm rounded-md border border-input bg-background/80 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                data-testid="input-question-text"
+                required
+              />
+              <Button type="submit" variant="outline" className="w-full gap-2" data-testid="button-send-question">
+                <Send className="w-4 h-4" />
+                Send Question
+              </Button>
+            </form>
+            <p className="text-xs text-muted-foreground mt-3 text-center">
+              Questions may be featured in "Your Top Questions Answered" editions
+            </p>
           </div>
-          <h3 className="font-serif text-xl font-medium mb-2">Stay Updated</h3>
-          <p className="text-muted-foreground mb-4 max-w-md mx-auto">
-            Get notified when Edition #51 drops. Join fellow stormwater modelers and Ruby scripting enthusiasts.
-          </p>
+
+          {/* Newsletter Signup */}
+          <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 flex flex-col">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-primary/20 p-2 rounded-full">
+                <Mail className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-serif text-lg font-medium">Stay Updated</h3>
+            </div>
+            <p className="text-sm text-muted-foreground mb-4 flex-grow">
+              Get notified when Edition #51 drops. Join fellow stormwater modelers and Ruby scripting enthusiasts.
+            </p>
           <form 
             className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
             onSubmit={(e) => {
@@ -628,7 +717,8 @@ export default function Home() {
               Subscribe
             </Button>
           </form>
-          <p className="text-xs text-muted-foreground mt-3">No spam, ever. Unsubscribe anytime.</p>
+          <p className="text-xs text-muted-foreground mt-3 text-center">No spam, ever. Unsubscribe anytime.</p>
+          </div>
         </div>
 
         {/* Footer */}

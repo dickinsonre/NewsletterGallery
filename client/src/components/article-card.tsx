@@ -2,8 +2,9 @@ import { LinkedInArticle, Difficulty } from "@/lib/data";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Clock, Calendar } from "lucide-react";
+import { ExternalLink, Clock, Calendar, ThumbsUp, ThumbsDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 interface ArticleCardProps {
   article: LinkedInArticle;
@@ -23,6 +24,22 @@ const difficultyLabels: Record<Difficulty, string> = {
 };
 
 export function ArticleCard({ article, index }: ArticleCardProps) {
+  const [feedback, setFeedback] = useState<"helpful" | "not-helpful" | null>(null);
+  
+  useEffect(() => {
+    const stored = localStorage.getItem(`feedback-article-${article.id}`);
+    if (stored) setFeedback(stored as "helpful" | "not-helpful");
+  }, [article.id]);
+  
+  const handleFeedback = (type: "helpful" | "not-helpful") => {
+    if (feedback === type) {
+      localStorage.removeItem(`feedback-article-${article.id}`);
+      setFeedback(null);
+    } else {
+      localStorage.setItem(`feedback-article-${article.id}`, type);
+      setFeedback(type);
+    }
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -67,7 +84,7 @@ export function ArticleCard({ article, index }: ArticleCardProps) {
             </span>
           </div>
         </CardContent>
-        <CardFooter className="p-5 pt-0">
+        <CardFooter className="p-5 pt-0 flex flex-col gap-3">
           <Button 
             asChild 
             variant="outline" 
@@ -78,6 +95,24 @@ export function ArticleCard({ article, index }: ArticleCardProps) {
               Read on LinkedIn <ExternalLink className="w-3 h-3 ml-1" />
             </a>
           </Button>
+          <div className="flex items-center justify-center gap-2 w-full">
+            <span className="text-xs text-muted-foreground">Helpful?</span>
+            <button
+              onClick={() => handleFeedback("helpful")}
+              className={`p-1.5 rounded-md transition-all ${feedback === "helpful" ? "bg-green-500/20 text-green-600" : "hover:bg-muted text-muted-foreground"}`}
+              data-testid={`feedback-helpful-article-${article.id}`}
+            >
+              <ThumbsUp className="w-3.5 h-3.5" />
+            </button>
+            <button
+              onClick={() => handleFeedback("not-helpful")}
+              className={`p-1.5 rounded-md transition-all ${feedback === "not-helpful" ? "bg-red-500/20 text-red-600" : "hover:bg-muted text-muted-foreground"}`}
+              data-testid={`feedback-not-helpful-article-${article.id}`}
+            >
+              <ThumbsDown className="w-3.5 h-3.5" />
+            </button>
+            {feedback && <span className="text-xs text-muted-foreground ml-1">Thanks!</span>}
+          </div>
         </CardFooter>
       </Card>
     </motion.div>
