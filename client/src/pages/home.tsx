@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { useTheme, colorSchemes } from "@/components/theme-provider";
 import { useState } from "react";
 import {
   Dialog,
@@ -25,6 +26,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export default function Home() {
+  const { colorScheme } = useTheme();
   const [searchQuery, setSearchQuery] = useState("");
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("newsletters");
@@ -79,9 +81,9 @@ export default function Home() {
 
   return (
     <div 
-      className="min-h-screen w-full"
+      className="min-h-screen w-full transition-all duration-500"
       style={{ 
-        background: 'linear-gradient(135deg, #e0d5f0 0%, #c8b8e8 25%, #b0a0e0 50%, #98a0e8 75%, #a0b0f0 100%)',
+        background: colorSchemes[colorScheme].gradient,
         backgroundAttachment: 'fixed'
       }}
     >
