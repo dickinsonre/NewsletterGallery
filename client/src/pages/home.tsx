@@ -494,41 +494,59 @@ export default function Home() {
           </TabsContent>
 
           <TabsContent value="paths" data-testid="content-paths">
-            <div className="max-w-4xl mx-auto space-y-8">
+            <div className="max-w-5xl mx-auto space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-serif font-medium mb-2">Learning Pathways</h3>
-                <p className="text-muted-foreground">Structured learning paths to guide your journey through stormwater modeling.</p>
+                <h3 className="text-2xl font-serif font-medium mb-2">Guided Learning Pathways</h3>
+                <p className="text-muted-foreground">Step-by-step sequences curated for different skill levels. Click each step to read.</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-6">
                 {learningPaths.map((path) => (
-                  <Card key={path.id} className="bg-card/50 backdrop-blur-sm hover:bg-card transition-colors">
+                  <Card key={path.id} className="bg-card/50 backdrop-blur-sm" data-testid={`path-${path.id}`}>
                     <CardHeader>
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-wrap items-center gap-2 mb-2">
                         <Badge 
                           variant="outline" 
                           className={
-                            path.difficulty === "beginner" ? "bg-green-500/20 text-green-700 border-green-500/30" :
-                            path.difficulty === "intermediate" ? "bg-yellow-500/20 text-yellow-700 border-yellow-500/30" :
-                            "bg-red-500/20 text-red-700 border-red-500/30"
+                            path.difficulty === "beginner" ? "bg-green-500/20 text-green-700 dark:text-green-400 border-green-500/30" :
+                            path.difficulty === "intermediate" ? "bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 border-yellow-500/30" :
+                            "bg-red-500/20 text-red-700 dark:text-red-400 border-red-500/30"
                           }
                         >
                           {path.difficulty.charAt(0).toUpperCase() + path.difficulty.slice(1)}
                         </Badge>
-                        <span className="text-xs text-muted-foreground">{path.steps.length} steps</span>
+                        <Badge variant="secondary" className="text-xs">{path.steps.length} steps</Badge>
+                        <Badge variant="outline" className="text-xs">{path.estimatedTime}</Badge>
                       </div>
-                      <CardTitle className="font-serif text-lg">{path.title}</CardTitle>
-                      <CardDescription>{path.description}</CardDescription>
+                      <CardTitle className="font-serif text-xl">{path.title}</CardTitle>
+                      <CardDescription className="text-sm">{path.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <ol className="space-y-2">
-                        {path.steps.map((step, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-sm">
-                            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-medium">
-                              {idx + 1}
-                            </span>
-                            <span className="text-muted-foreground pt-0.5">{step.title}</span>
-                          </li>
-                        ))}
+                      <ol className="space-y-3">
+                        {path.steps.map((step, idx) => {
+                          const newsletter = newsletters.find(n => n.issueNumber.toString() === step.id);
+                          return (
+                            <li key={idx}>
+                              <a 
+                                href={newsletter?.link || "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start gap-4 p-3 rounded-lg bg-background/60 hover:bg-primary/5 border border-transparent hover:border-primary/20 transition-all group"
+                                data-testid={`path-step-${path.id}-${idx}`}
+                              >
+                                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                                  {idx + 1}
+                                </span>
+                                <div className="flex-grow min-w-0">
+                                  <h4 className="font-medium text-sm group-hover:text-primary transition-colors">
+                                    Edition #{step.id}: {step.title}
+                                  </h4>
+                                  <p className="text-xs text-muted-foreground mt-0.5">{step.why}</p>
+                                </div>
+                                <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
+                              </a>
+                            </li>
+                          );
+                        })}
                       </ol>
                     </CardContent>
                   </Card>

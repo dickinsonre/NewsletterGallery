@@ -98,53 +98,62 @@ export interface LearningPath {
   title: string;
   description: string;
   difficulty: Difficulty;
-  steps: { type: "newsletter" | "article"; id: string; title: string }[];
+  estimatedTime: string;
+  steps: { type: "newsletter" | "article"; id: string; title: string; why: string }[];
 }
 
 export const learningPaths: LearningPath[] = [
   {
     id: "beginner-swmm5",
     title: "Getting Started with SWMM5",
-    description: "A beginner's journey through SWMM5 fundamentals, from basic concepts to running your first model.",
+    description: "A beginner's journey through SWMM5 fundamentals. Start here if you're new to urban drainage modeling.",
     difficulty: "beginner",
+    estimatedTime: "2-3 hours",
     steps: [
-      { type: "newsletter", id: "1", title: "SWMM5 Inside ICM InfoWorks" },
-      { type: "newsletter", id: "21", title: "100 SWMM5 Quiz Questions" },
-      { type: "newsletter", id: "37", title: "Classic SWMM5 Test Files" }
+      { type: "newsletter", id: "1", title: "SWMM5 Inside ICM InfoWorks", why: "Understand the foundation - how SWMM5 works within ICM" },
+      { type: "newsletter", id: "39", title: "History of SWMM", why: "Learn where it all began and how SWMM evolved" },
+      { type: "newsletter", id: "21", title: "100 SWMM5 Quiz Questions", why: "Test your understanding with real quiz questions" },
+      { type: "newsletter", id: "37", title: "Classic SWMM5 Test Files", why: "Practice with actual test models used by experts" }
     ]
   },
   {
     id: "ruby-scripting",
     title: "Ruby Scripting Mastery",
-    description: "Learn to automate ICM InfoWorks workflows with Ruby scripting, from basics to advanced data extraction.",
+    description: "Learn to automate ICM InfoWorks workflows. Ruby scripting is the key to productivity.",
     difficulty: "intermediate",
+    estimatedTime: "4-5 hours",
     steps: [
-      { type: "newsletter", id: "36", title: "Ruby Resources for ICM" },
-      { type: "newsletter", id: "41", title: "Export to CSV with Ruby" },
-      { type: "newsletter", id: "43", title: "Statistics with Ruby Prompts" },
-      { type: "newsletter", id: "48", title: "Import 2K SWMM5 Files with Ruby" }
+      { type: "newsletter", id: "36", title: "Ruby Resources for ICM", why: "Your reference guide to all Ruby capabilities" },
+      { type: "newsletter", id: "41", title: "Export to CSV with Ruby", why: "Start with a practical, useful script" },
+      { type: "newsletter", id: "47", title: "Ruby and ICM Exchange Tables", why: "Master data extraction from models" },
+      { type: "newsletter", id: "43", title: "Statistics with Ruby Prompts", why: "Combine Ruby with AI for advanced analysis" },
+      { type: "newsletter", id: "48", title: "Import 2K SWMM5 Files with Ruby", why: "Handle bulk operations like a pro" }
     ]
   },
   {
     id: "migration-guide",
     title: "Model Migration Guide",
-    description: "Master the art of migrating models between InfoSewer, InfoSWMM, and ICM InfoWorks.",
+    description: "Moving from InfoSewer or InfoSWMM to ICM? This path covers the essential migration steps.",
     difficulty: "intermediate",
+    estimatedTime: "3-4 hours",
     steps: [
-      { type: "newsletter", id: "2", title: "Importing to ICM" },
-      { type: "newsletter", id: "23", title: "DWF Troubleshooting" },
-      { type: "newsletter", id: "30", title: "InfoSewer to ICM" }
+      { type: "newsletter", id: "2", title: "Importing to ICM", why: "Learn the import process and common pitfalls" },
+      { type: "newsletter", id: "23", title: "DWF Troubleshooting", why: "Fix dry weather flow issues post-migration" },
+      { type: "newsletter", id: "30", title: "InfoSewer to ICM", why: "Specific techniques for InfoSewer migrations" },
+      { type: "newsletter", id: "35", title: "Report File Migration", why: "Ensure your reports transfer correctly" }
     ]
   },
   {
     id: "advanced-hydraulics",
     title: "Advanced Hydraulics & Code",
-    description: "Deep dive into hydraulic modeling, C code analysis, and advanced statistics.",
+    description: "Deep dive into the C code, hydraulic equations, and internal workings of SWMM5.",
     difficulty: "advanced",
+    estimatedTime: "5-6 hours",
     steps: [
-      { type: "newsletter", id: "13", title: "C Code Hydraulics" },
-      { type: "newsletter", id: "14", title: "Statistics Deep Dive" },
-      { type: "newsletter", id: "26", title: "SQL for Results Analysis" }
+      { type: "newsletter", id: "13", title: "C Code Link Hydraulics", why: "Understand DWFLOWC - the heart of pipe routing" },
+      { type: "newsletter", id: "12", title: "C Code Node Hydraulics", why: "Learn DYNWAVEC for junction calculations" },
+      { type: "newsletter", id: "14", title: "Statistics Deep Dive", why: "Advanced statistical analysis techniques" },
+      { type: "newsletter", id: "26", title: "SQL for Results Analysis", why: "Query simulation results like a database" }
     ]
   }
 ];
