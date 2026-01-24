@@ -706,9 +706,9 @@ export default function Home() {
               const form = e.target as HTMLFormElement;
               const email = (form.elements.namedItem('email') as HTMLInputElement).value;
               if (email) {
-                localStorage.setItem('newsletter_subscriber', email);
-                alert('Thanks for subscribing! You will be notified of new editions.');
-                form.reset();
+                const subject = encodeURIComponent('New Newsletter Subscriber');
+                const body = encodeURIComponent(`New subscriber request:\n\nEmail: ${email}\n\nPlease add them to your newsletter list.`);
+                window.location.href = `mailto:robert.dickinson@gmail.com?subject=${subject}&body=${body}`;
               }
             }}
           >
