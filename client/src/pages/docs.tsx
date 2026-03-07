@@ -1,11 +1,16 @@
-import { BookOpen, Newspaper, FileText, FolderOpen, Filter, GraduationCap, Moon, Search, Tag } from "lucide-react";
+import { BookOpen, Newspaper, FileText, FolderOpen, Filter, GraduationCap, Moon, Search, Tag, AppWindow, Wrench, Brain, Route, MessageCircleQuestion, Palette } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { useTheme, colorSchemes } from "@/components/theme-provider";
 
 export default function Docs() {
+  const { colorScheme } = useTheme();
+  const currentGradient = colorSchemes[colorScheme].gradient;
+
   return (
     <div 
       className="min-h-screen w-full"
       style={{ 
-        background: 'linear-gradient(135deg, #e0d5f0 0%, #c8b8e8 25%, #b0a0e0 50%, #98a0e8 75%, #a0b0f0 100%)',
+        background: currentGradient,
         backgroundAttachment: 'fixed'
       }}
     >
@@ -24,6 +29,7 @@ export default function Docs() {
           <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground items-center">
             <a href="/" className="hover:text-primary transition-colors">Library</a>
             <a href="/docs" className="text-primary">Docs</a>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
@@ -40,7 +46,7 @@ export default function Docs() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
             <h3 className="text-2xl font-serif font-medium text-foreground">About This Library</h3>
             <p className="text-muted-foreground leading-relaxed">
-              This digital library showcases over 17 years of expertise in stormwater modeling, hydraulic analysis, and water infrastructure software development. Created by Robert Dickinson, Autodesk Water Technologist, the collection spans topics from SWMM5 fundamentals to advanced Ruby scripting for ICM InfoWorks automation.
+              This digital library showcases 53+ years of expertise in stormwater modeling, hydraulic analysis, and water infrastructure software development. Created by Robert Dickinson, Autodesk Water Technologist, the collection spans topics from SWMM5 fundamentals to advanced Ruby scripting for ICM InfoWorks automation, XPSWMM model conversion, and InfoSewer/InfoSWMM migration.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The library serves as a comprehensive resource for engineers, modelers, and students looking to deepen their understanding of stormwater management software and techniques.
@@ -50,27 +56,37 @@ export default function Docs() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-6">
             <h3 className="text-2xl font-serif font-medium text-foreground">Content Organization</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Content is organized into three main sections, each accessible via tabs on the home page:
+              Content is organized into eight main sections, each accessible via tabs on the home page:
             </p>
             
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <div className="bg-background/50 rounded-lg p-4 space-y-2">
                 <div className="flex items-center gap-2 text-primary">
                   <Newspaper className="w-5 h-5" />
                   <span className="font-medium">Newsletters</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  48 editions of "The Time-Traveling Hydraulic Engineer" covering SWMM5 history, ICM techniques, Ruby scripting, and AI integration.
+                  58 editions of "The Time-Traveling Hydraulic Engineer" covering SWMM5 history, ICM techniques, Ruby scripting, and AI integration.
                 </p>
               </div>
               
               <div className="bg-background/50 rounded-lg p-4 space-y-2">
                 <div className="flex items-center gap-2 text-primary">
                   <FileText className="w-5 h-5" />
-                  <span className="font-medium">LinkedIn Articles</span>
+                  <span className="font-medium">Articles</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  146 technical articles covering specific modeling scenarios, code examples, quiz questions, and practical tutorials.
+                  154 LinkedIn technical articles covering specific modeling scenarios, code examples, quiz questions, and practical tutorials.
+                </p>
+              </div>
+
+              <div className="bg-background/50 rounded-lg p-4 space-y-2">
+                <div className="flex items-center gap-2 text-primary">
+                  <MessageCircleQuestion className="w-5 h-5" />
+                  <span className="font-medium">Posts</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Short-form LinkedIn posts with quick tips, insights, and community discussions on stormwater modeling topics.
                 </p>
               </div>
               
@@ -80,7 +96,47 @@ export default function Docs() {
                   <span className="font-medium">Documents</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Technical PDFs and reference guides for model migration, stream restoration, and SWMM5 import/export procedures.
+                  20 technical PDFs and reference guides for model migration, stream restoration, and SWMM5 import/export procedures.
+                </p>
+              </div>
+
+              <div className="bg-background/50 rounded-lg p-4 space-y-2">
+                <div className="flex items-center gap-2 text-primary">
+                  <AppWindow className="w-5 h-5" />
+                  <span className="font-medium">Apps</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  13 featured web applications for SWMM5 simulation, model conversion, code analysis, and interactive exploration.
+                </p>
+              </div>
+
+              <div className="bg-background/50 rounded-lg p-4 space-y-2">
+                <div className="flex items-center gap-2 text-primary">
+                  <Wrench className="w-5 h-5" />
+                  <span className="font-medium">Tools</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  45 scripts, calculators, and Claude artifacts including Manning's equation explorers, HEC-22 inlet calculators, Ruby exporters, and more.
+                </p>
+              </div>
+
+              <div className="bg-background/50 rounded-lg p-4 space-y-2">
+                <div className="flex items-center gap-2 text-primary">
+                  <Brain className="w-5 h-5" />
+                  <span className="font-medium">Quiz</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  30 quiz questions across 6 categories and 3 difficulty levels to test your knowledge of SWMM5, hydraulics, ICM, and Ruby scripting.
+                </p>
+              </div>
+
+              <div className="bg-background/50 rounded-lg p-4 space-y-2">
+                <div className="flex items-center gap-2 text-primary">
+                  <Route className="w-5 h-5" />
+                  <span className="font-medium">Learning Paths</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Curated step-by-step learning sequences for beginners through advanced users, with estimated times and rationale for each step.
                 </p>
               </div>
             </div>
@@ -90,6 +146,18 @@ export default function Docs() {
             <h3 className="text-2xl font-serif font-medium text-foreground">Features</h3>
             
             <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Search className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground">Global Search</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Powerful search across all content types with relevance scoring, multi-word matching, type/category/difficulty filters with counts, keyboard navigation, and smart snippets highlighting matched terms.
+                  </p>
+                </div>
+              </div>
+
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Tag className="w-5 h-5 text-primary" />
@@ -128,24 +196,24 @@ export default function Docs() {
               
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Search className="w-5 h-5 text-primary" />
+                  <Palette className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground">Search & Filter</h4>
+                  <h4 className="font-medium text-foreground">11 Color Themes</h4>
                   <p className="text-sm text-muted-foreground">
-                    Use the search bar to find content by title, description, or keywords. Combine with category filters to narrow down results quickly.
+                    Choose from 11 color themes: Water Blue, Forest Green, Sunset Orange, Deep Ocean, Lavender Dreams, Classic Gray, Dark Mode, EPA, UF Gators, OSU Buckeyes, and Auburn Tigers. Toggle dark/light mode separately or use the dedicated Dark Mode theme. Your preferences are saved for future visits.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Moon className="w-5 h-5 text-primary" />
+                  <Brain className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground">Dark Mode</h4>
+                  <h4 className="font-medium text-foreground">Interactive Quiz</h4>
                   <p className="text-sm text-muted-foreground">
-                    Toggle between light and dark themes using the sun/moon icon in the navigation bar. Your preference is saved for future visits.
+                    Test your knowledge with 30 questions across SWMM5 Fundamentals, Hydraulics & Hydrology, ICM InfoWorks, Ruby Scripting, Model Testing, and History. Tracks your high score with localStorage.
                   </p>
                 </div>
               </div>
@@ -158,9 +226,10 @@ export default function Docs() {
               <div className="space-y-2">
                 <h4 className="font-medium text-foreground text-sm uppercase tracking-wider">SWMM5 & Hydraulics</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Storm Water Management Model history & evolution</li>
+                  <li>• Storm Water Management Model history & evolution (SWMM1-SWMM5)</li>
                   <li>• Hydraulic engine internals and C code analysis</li>
-                  <li>• Flow routing algorithms and hydrology</li>
+                  <li>• Dynamic wave routing & Saint-Venant equations</li>
+                  <li>• Manning's equation, SCS methods, and design storms</li>
                   <li>• Classic test files and validation</li>
                 </ul>
               </div>
@@ -171,24 +240,27 @@ export default function Docs() {
                   <li>• Ruby scripting for automation</li>
                   <li>• SQL queries for data extraction</li>
                   <li>• Results analysis and reporting</li>
+                  <li>• Manhole and inlet design</li>
                 </ul>
               </div>
               <div className="space-y-2">
-                <h4 className="font-medium text-foreground text-sm uppercase tracking-wider">Model Migration</h4>
+                <h4 className="font-medium text-foreground text-sm uppercase tracking-wider">XPSWMM & Migration</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• XP-SWMM file reading and conversion</li>
                   <li>• InfoSewer to ICM migration</li>
                   <li>• InfoSWMM to ICM conversion</li>
                   <li>• SWMM5 import/export procedures</li>
-                  <li>• DWF troubleshooting guides</li>
+                  <li>• MIKE+/MOUSE model data conversion</li>
                 </ul>
               </div>
               <div className="space-y-2">
                 <h4 className="font-medium text-foreground text-sm uppercase tracking-wider">Advanced Topics</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• AI and machine learning integration</li>
-                  <li>• Statistical analysis methods</li>
+                  <li>• HEC-22 inlet design & FHWA culverts</li>
+                  <li>• RDII R-T-K parameter estimation</li>
+                  <li>• Calibration visualization and statistics</li>
                   <li>• Batch processing and automation</li>
-                  <li>• Quiz questions for self-assessment</li>
                 </ul>
               </div>
             </div>
@@ -198,9 +270,8 @@ export default function Docs() {
             <h3 className="text-2xl font-serif font-medium text-foreground">Technology Stack</h3>
             <ul className="text-muted-foreground leading-relaxed space-y-2">
               <li>• <strong>Frontend:</strong> React 18 with TypeScript for type-safe development</li>
-              <li>• <strong>Styling:</strong> Tailwind CSS with custom water-themed color palette</li>
+              <li>• <strong>Styling:</strong> Tailwind CSS with 11 custom color themes</li>
               <li>• <strong>Components:</strong> Radix UI primitives with Shadcn/ui styling</li>
-              <li>• <strong>Animations:</strong> Framer Motion for smooth transitions</li>
               <li>• <strong>Routing:</strong> Wouter for lightweight client-side navigation</li>
               <li>• <strong>State:</strong> TanStack Query for server state management</li>
               <li>• <strong>Backend:</strong> Express.js with Node.js</li>
@@ -211,10 +282,13 @@ export default function Docs() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
             <h3 className="text-2xl font-serif font-medium text-foreground">Getting Started</h3>
             <ol className="text-muted-foreground leading-relaxed space-y-3 list-decimal list-inside">
-              <li><strong>Browse the Library:</strong> Start on the home page and explore newsletters, articles, or documents using the tabs.</li>
-              <li><strong>Use Filters:</strong> Click category buttons to filter content by topic. Use the search bar for keyword searches.</li>
+              <li><strong>Browse the Library:</strong> Start on the home page and explore newsletters, articles, posts, documents, apps, tools, quiz, or learning paths using the tabs.</li>
+              <li><strong>Use Global Search:</strong> Press the search bar at the top to search across all content types with smart filtering and keyboard navigation.</li>
+              <li><strong>Filter by Category:</strong> Click category buttons to filter content by topic within any tab.</li>
               <li><strong>Try Learning Paths:</strong> If you're new to SWMM5 or want structured learning, check the Learning Paths tab for curated sequences.</li>
-              <li><strong>Adjust Theme:</strong> Use the theme toggle in the navigation to switch between light and dark modes.</li>
+              <li><strong>Take the Quiz:</strong> Test your knowledge with 30 questions across 6 categories in the Quiz tab.</li>
+              <li><strong>Explore Apps:</strong> Try out 13 featured web applications for simulation, conversion, and analysis in the Apps tab.</li>
+              <li><strong>Choose a Theme:</strong> Use the palette icon in the navigation to pick from 11 color themes, or toggle dark/light mode with the sun/moon icon.</li>
               <li><strong>Subscribe:</strong> Click "Subscribe" in the navigation to follow the newsletter on LinkedIn for new editions.</li>
             </ol>
           </div>

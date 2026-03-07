@@ -2975,6 +2975,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-3",
+    title: "Super SUDS Diagrams in Autodesk Water",
+    description: "Showcasing the impressive SUDS (Sustainable Urban Drainage Systems) diagrams available in Autodesk Water software for green infrastructure design and visualization.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_super-suds-diagrams-in-this-autodesk-water-activity-7435427149479751680-CkNm",
+    categories: ["ICM InfoWorks", "SWMM5"]
+  },
+  {
     id: "post-2",
     title: "Artificial and Constructed Wetlands: Sustainable Stormwater Solutions",
     description: "Exploring the use of artificial and constructed wetlands as sustainable approaches to stormwater management and water quality treatment.",
