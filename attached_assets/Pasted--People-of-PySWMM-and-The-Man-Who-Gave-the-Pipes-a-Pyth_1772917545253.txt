@@ -1,0 +1,49 @@
+
+People of PySWMM and The Man Who Gave the Pipes a Python Voice
+The Man Who Gave the Pipes a Python Voice A brief history of how one engineer connected a fifty-year-old government program to the future of intelligeThe Man Who Gave the Pipes a Python Voice A brief history of how one engineer connected a fifty-year-old government program to the future of intellige
+by Robert Dickinson • 9 min read
+
+
+SWMM1 to SWMM5 Documentation Archive and Explorer (1970 to 2026)
+The SWMM Documentation Archive and Explorer is a web application that organizes, preserves, and makes searchable over five decades of EPA Storm Water The SWMM Documentation Archive and Explorer is a web application that organizes, preserves, and makes searchable over five decades of EPA Storm Water 
+by Robert Dickinson • 9 min read
+
+
+From 53 Chapters in 5 PDF Files to One Search Box: Making the SWMM5 Manuals More Usable and connected to ICM InfoWorks
+After four decades of working with EPA's Storm Water Management Model, I got tired of the same workflow every engineer knows: open an 800-page PDF, hiAfter four decades of working with EPA's Storm Water Management Model, I got tired of the same workflow every engineer knows: open an 800-page PDF, hi
+by Robert Dickinson • 6 min read
+
+
+Could you rebuild your ICM InfoWorks model from results (the IWR file) alone?
+By Robert Dickinson • Autodesk Water Technologist • SWMM5.org Here's a question that stumped me today "If all you had was the IWR results file, could By Robert Dickinson • Autodesk Water Technologist • SWMM5.org Here's a question that stumped me today "If all you had was the IWR results file, could 
+by Robert Dickinson • 5 min read
+
+
+What Kind of Hydraulic Modeller or Modeler Are You? Discover Your ICM InfoWorks Personality Type
+`🌊 What Kind of Hydraulic Modeller Are You? Discover Your ICM Personality Type Ever wondered why some modellers obsess over every manhole detail whil`🌊 What Kind of Hydraulic Modeller Are You? Discover Your ICM Personality Type Ever wondered why some modellers obsess over every manhole detail whil
+by Robert Dickinson • 3 min read
+
+
+When Hyperbolic Geometry Meets Urban Drainage: Making Beautiful Subcatchments
+I've been exploring an unusual intersection: hyperbolic geometry and hydrological modeling. The result is a web-based tool that generates subcatchmentI've been exploring an unusual intersection: hyperbolic geometry and hydrological modeling. The result is a web-based tool that generates subcatchment
+by Robert Dickinson • 1 min read
+
+
+An App to Read and Create 3000 Informative Charts and Tables from the SWMM5 Report File
+There is quite a long backstory on this app. I started working on SWMM 2.5 programming in 1978 using punch cards to run the model and voluminous printThere is quite a long backstory on this app. I started working on SWMM 2.5 programming in 1978 using punch cards to run the model and voluminous print
+by Robert Dickinson • 2 min read
+
+
+Using 31 Chaotic Systems with Almost Infinite Possibilities to Make SWMM5 Networks
+The problem with using 50 year old simple models or even test models that started out as real models as we did in the SWMM5 redevelopment project are The problem with using 50 year old simple models or even test models that started out as real models as we did in the SWMM5 redevelopment project are 
+by Robert Dickinson • 4 min read
+
+
+EPASWMM5 and EPANET INP File Data Section Educational Tool
+This is an app that I always wanted to make - it shows you the inp file data sections of SWMM5 and EPANET with all of the parameters, examples and tipThis is an app that I always wanted to make - it shows you the inp file data sections of SWMM5 and EPANET with all of the parameters, examples and tip
+by Robert Dickinson • 2 min read
+
+
+Using ICM Ruby Scripts to Import 2K SWMM5 Files to ICM
+This is a simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. I now have thousands of SWMM5 models in ICM (somethingThis is a simple yet powerful article about the awesomeness of Ruby scripting in ICM InfoWorks. I now have thousands of SWMM5 models in ICM (something
+by Robert Dickinson • 2 min read

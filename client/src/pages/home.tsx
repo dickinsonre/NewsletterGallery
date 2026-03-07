@@ -697,7 +697,7 @@ export default function Home() {
               <h3 className="font-serif text-lg font-medium">Stay Updated</h3>
             </div>
             <p className="text-sm text-muted-foreground mb-4 flex-grow">
-              Get notified when Edition #51 drops. Join fellow stormwater modelers and Ruby scripting enthusiasts.
+              Get notified when Edition #59 drops. Join fellow stormwater modelers and Ruby scripting enthusiasts.
             </p>
           <form 
             className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
