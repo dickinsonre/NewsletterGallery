@@ -94,11 +94,12 @@ export interface Tool {
   id: string;
   title: string;
   description: string;
-  language: "Python" | "Ruby" | "JavaScript" | "SQL" | "JSON";
+  language: "Python" | "Ruby" | "JavaScript" | "SQL" | "JSON" | "HTML" | "React" | "Markdown";
   status: ToolStatus;
   version: string;
   downloadUrl?: string;
   githubUrl?: string;
+  artifactUrl?: string;
   codePreview: string;
   categories: Category[];
 }
@@ -3171,5 +3172,395 @@ export const tools: Tool[] = [
     version: "0.5.0",
     codePreview: "# ICM Ruby: Batch Simulation Runner\nscenarios = [\"base\", \"future_2050\", \"climate_change\"]\nrainfall_events = [\"2yr\", \"10yr\", \"100yr\"]\n\nscenarios.each do |scenario|\n  rainfall_events.each do |event|\n    # Load scenario\n    net = load_scenario(scenario)\n    \n    # Set rainfall\n    net.set_rainfall(event)\n    \n    # Run simulation\n    run_name = scenario + \"_\" + event\n    net.run_simulation(run_name)\n    \n    puts \"Completed: \" + run_name\n  end\nend",
     categories: ["Ruby Scripting", "ICM InfoWorks", "Model Testing"]
+  },
+  {
+    id: "tool-7",
+    title: "Manning's Equation Explorer",
+    description: "Interactive visualization of Manning's equation for open channel flow. Adjust roughness, slope, and geometry to see flow velocity and discharge in real time.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Manning's Equation: V = (1/n) * R^(2/3) * S^(1/2)\n// Q = A * V\n// Where:\n//   n = Manning's roughness coefficient\n//   R = hydraulic radius (A/P)\n//   S = channel slope\n//   A = cross-sectional area\n//   P = wetted perimeter",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-8",
+    title: "HEC-22 Inlet Explorer",
+    description: "Interactive HEC-22 storm drain inlet capacity calculator. Explore grate, curb, and combination inlet types with real-time flow interception analysis.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "<!-- HEC-22 Inlet Types -->\n<!-- Grate Inlet: Qi = E * Q -->\n<!-- Curb Inlet: Qi = C * L * d^1.67 -->\n<!-- Combination: Qi = Qgrate + Qcurb -->\n<!-- Bypass Flow: Qb = Q - Qi -->",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-9",
+    title: "ICM SQL Cookbook",
+    description: "Ready-to-use SQL query collection for ICM InfoWorks. Extract network data, run QA/QC checks, generate reports, and analyze simulation results.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "-- Find conduits with slope < 0.1%\nSELECT id, us_node_id, ds_node_id,\n  (us_invert - ds_invert) / conduit_length * 100 AS slope_pct\nFROM hw_conduit\nWHERE (us_invert - ds_invert) / conduit_length < 0.001\nORDER BY slope_pct;",
+    categories: ["SQL/Data", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-10",
+    title: "SWMM5 to IDDX Converter",
+    description: "Convert SWMM5 INP files to IDDX format for import into ICM InfoWorks. Handles junctions, conduits, subcatchments, and rain gages.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Conversion Pipeline:\n// 1. Parse SWMM5 .INP sections\n// 2. Map SWMM5 objects to ICM equivalents\n// 3. Transform coordinates and units\n// 4. Generate IDDX XML output\n// Supported: Junctions, Conduits, Subcatchments",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-11",
+    title: "SCS Rainfall & Curve Number Calculator",
+    description: "Interactive SCS (NRCS) rainfall-runoff calculator with curve number lookup. Compute runoff depth, peak discharge, and hydrographs for design storms.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// SCS Runoff Equation:\n// Q = (P - Ia)^2 / (P - Ia + S)\n// S = (1000/CN) - 10\n// Ia = 0.2 * S (initial abstraction)\n// Where:\n//   P = precipitation depth (inches)\n//   CN = curve number (0-100)\n//   Q = runoff depth (inches)",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-12",
+    title: "Vibe Coding Assessment",
+    description: "Interactive assessment tool for evaluating coding proficiency in water modeling automation. Test your skills in Python, Ruby, and SQL for SWMM5/ICM workflows.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Assessment Categories:\n// 1. Python scripting for SWMM5\n// 2. Ruby automation for ICM\n// 3. SQL queries for network analysis\n// 4. Data visualization techniques\n// 5. Model QA/QC workflows",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-13",
+    title: "ICM Network Converter",
+    description: "Convert between ICM InfoWorks network formats. Transform model data between different ICM versions and exchange formats.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// ICM Network Format Converter\n// Supported conversions:\n// - ICM CSV to Exchange format\n// - Exchange to SWMM5 INP\n// - Network object mapping\n// - Coordinate system transforms",
+    categories: ["ICM InfoWorks", "SWMM5"]
+  },
+  {
+    id: "tool-14",
+    title: "Mike Urban / MIKE+ Suibing Converter",
+    description: "Tool for converting Mike Urban (MOUSE/MIKE+) model data. Bridge DHI's integrated water modeling platform with other formats.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// MOUSE/MIKE+ Data Conversion\n// Supported elements:\n// - Manholes and pipe networks\n// - Catchment definitions\n// - Boundary conditions\n// - Cross-section profiles\n// - Pump and weir structures",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-15",
+    title: "HNRA Simulator v2",
+    description: "Hydraulic Network Routing Algorithm simulator. Visualize how flow routing works through drainage networks step by step.",
+    language: "HTML",
+    status: "stable",
+    version: "2.0.0",
+    codePreview: "// HNRA Flow Routing Steps:\n// 1. Initialize node/link states\n// 2. Compute lateral inflows\n// 3. Route flow through links\n// 4. Update node water levels\n// 5. Check convergence criteria\n// 6. Advance to next timestep",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-16",
+    title: "SWMM5 Simulator",
+    description: "Browser-based SWMM5 simulation visualization. Watch how the SWMM5 engine processes rainfall through a drainage network in real time.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// SWMM5 Simulation Engine Steps:\n// 1. Read rainfall hyetograph\n// 2. Compute runoff (RUNOFF block)\n// 3. Route flow (EXTRAN block)\n// 4. Apply controls/rules\n// 5. Update system state\n// 6. Write output timestep",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-17",
+    title: "Design Storm Equations Reference",
+    description: "Comprehensive reference for design storm equations including IDF curves, SCS Type distributions, Chicago storms, and Huff distributions.",
+    language: "Markdown",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# Design Storm Equations\n## IDF Curve: i = a / (t + b)^c\n## SCS Type II: P(t)/P24 = cumulative ratio\n## Chicago Storm: symmetric about peak\n## Return periods: 2, 5, 10, 25, 50, 100 yr",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-18",
+    title: "HEC-HMS API Explorer",
+    description: "Interactive explorer for HEC-HMS hydrologic modeling methods. Compare SCS, Clark, Snyder unit hydrograph approaches and loss methods.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// HEC-HMS Methods:\n// Loss: SCS CN, Green-Ampt, Initial+Constant\n// Transform: SCS UH, Clark, Snyder, ModClark\n// Baseflow: Constant, Exponential, Linear\n// Routing: Muskingum, Lag, Kinematic Wave",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-19",
+    title: "RDII R-Value Infographic Generator",
+    description: "Generate visual infographics explaining RDII (Rainfall-Derived Inflow & Infiltration) R-T-K parameters and their physical meaning.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// RDII Triangle Hydrograph Parameters:\n// R = fraction of rainfall volume\n// T = time to peak (hours)\n// K = ratio of recession to time-to-peak\n// Unit Hydrograph: Q(t) = R * A * P / T\n// Three triangles: fast, medium, slow response",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-20",
+    title: "Factors of 1729 Explorer",
+    description: "Mathematical exploration of the Hardy-Ramanujan number 1729 and its properties. An interactive number theory tool.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// 1729 = 1^3 + 12^3 = 9^3 + 10^3\n// The smallest number expressible as the\n// sum of two cubes in two different ways\n// (Hardy-Ramanujan Number)\n// Factors: 7 × 13 × 19",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-21",
+    title: "ModelFlow Dashboard",
+    description: "Visual dashboard for monitoring and comparing model simulation results. Track key performance indicators across multiple model runs.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// ModelFlow KPIs:\n// - Peak flow comparison\n// - Volume balance checks\n// - Continuity errors\n// - Node flooding summary\n// - Conduit capacity utilization\n// - Runtime performance metrics",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-22",
+    title: "Calibration Visualizer",
+    description: "Interactive tool for visualizing model calibration results. Compare observed vs. simulated hydrographs with goodness-of-fit statistics.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Calibration Statistics:\n// NSE = Nash-Sutcliffe Efficiency\n// RMSE = Root Mean Square Error\n// PBIAS = Percent Bias\n// R² = Coefficient of Determination\n// KGE = Kling-Gupta Efficiency\n// Compare observed vs simulated flows",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-23",
+    title: "SWMM5 INP Generator",
+    description: "Generate SWMM5 input files programmatically. Define network topology, subcatchments, and simulation options through an interactive builder.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "[TITLE]\nGenerated by SWMM5 INP Generator\n\n[OPTIONS]\nFLOW_UNITS  CFS\nINFILTRATION  GREEN_AMPT\nROUTING_MODEL  DYNWAVE\nSTART_DATE  01/01/2024\nEND_DATE  01/02/2024\nREPORT_STEP  00:05:00",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-24",
+    title: "ICM SWMM Inlet Designer",
+    description: "Interactive inlet design tool for ICM SWMM models. Configure grate, curb, and slot inlet parameters with capacity calculations.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// ICM SWMM Inlet Types:\n// Type 1: Grate inlet (on-grade)\n// Type 2: Curb opening inlet\n// Type 3: Combination inlet\n// Type 4: Slot inlet\n// Capacity = f(geometry, slope, spread)",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-25",
+    title: "FHWA Culvert Simulator",
+    description: "Federal Highway Administration culvert hydraulics simulator. Analyze inlet and outlet control, compute headwater, and check performance under HW/D criteria.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// FHWA Culvert Analysis:\n// Inlet Control: HW/D = f(Q/AD^0.5)\n// Outlet Control: HW = H + ho - LS\n// Shapes: Circular, Box, Arch, Elliptical\n// Materials: Concrete, CMP, HDPE, Steel\n// Check: HW/D < allowable ratio",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-26",
+    title: "Manhole Flooding Simulator",
+    description: "Visualize manhole flooding mechanics. See how surcharging develops, water rises through the shaft, and surface flooding occurs during storm events.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Manhole Flooding Stages:\n// 1. Free surface flow in pipes\n// 2. Surcharging begins (HGL > crown)\n// 3. Water rises in manhole shaft\n// 4. Surcharge to ground level\n// 5. Surface flooding (ponding)\n// Volume = shaft_area * (HGL - ground)",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-27",
+    title: "XP-SWMM File Reader",
+    description: "Parse and analyze XP-SWMM .xp model files. Extract network elements, parameters, and convert to other formats.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// XP-SWMM File Sections:\n// NODE: Junction definitions\n// LINK: Conduit/channel data\n// CATCHMENT: Subcatchment areas\n// RAINFALL: Rain gage data\n// CONTROL: Pump/weir rules\n// Parse .xp → extract → convert",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-28",
+    title: "ICM Manhole Simulator",
+    description: "Interactive visualization of ICM manhole hydraulics including shaft geometry, benching, head losses, and chamber configurations.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// ICM Manhole Parameters:\n// - Shaft area and shape\n// - Chamber area (can differ from shaft)\n// - Benching type (full, half, none)\n// - Head loss coefficient\n// - Ground level and cover level\n// - Flood type (sealed, grate, open)",
+    categories: ["ICM InfoWorks", "Model Testing"]
+  },
+  {
+    id: "tool-29",
+    title: "RTK MicroGPT v2",
+    description: "AI-powered assistant for RDII R-T-K parameter estimation. Input rainfall and flow data to get suggested unit hydrograph parameters.",
+    language: "HTML",
+    status: "beta",
+    version: "2.0.0",
+    codePreview: "// RTK Parameter Estimation:\n// Fast Response:  R1=0.02, T1=1hr, K1=2.0\n// Medium Response: R2=0.03, T2=3hr, K2=3.0\n// Slow Response:  R3=0.01, T3=8hr, K3=4.0\n// Total R = R1 + R2 + R3 ≤ 1.0\n// AI suggests based on basin characteristics",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-30",
+    title: "Manning's MicroGPT",
+    description: "AI-assisted Manning's equation calculator with intelligent roughness coefficient suggestions based on channel description and material.",
+    language: "React",
+    status: "beta",
+    version: "1.0.0",
+    codePreview: "// Manning's n Suggestions (AI-assisted):\n// Concrete pipe: n = 0.013\n// Corrugated metal: n = 0.024\n// Natural channel: n = 0.035-0.050\n// Grass-lined: n = 0.030-0.040\n// PVC/HDPE: n = 0.010-0.012",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-31",
+    title: "Spatial Analysis Proposal Generator",
+    description: "Generate spatial analysis proposals for stormwater modeling projects. Template for GIS-integrated hydraulic model development.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Spatial Analysis Components:\n// 1. DEM processing & watershed delineation\n// 2. Land use / imperviousness mapping\n// 3. Soil type classification (HSG)\n// 4. Drainage network extraction\n// 5. Subcatchment delineation\n// 6. Parameter estimation from GIS",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-32",
+    title: "Yarra Network Design Report",
+    description: "Interactive report viewer for the Yarra drainage network design. Explore network layout, design criteria, and capacity analysis results.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Yarra Network Design Criteria:\n// - Minor system: 10-year ARI\n// - Major system: 100-year ARI\n// - Freeboard: 300mm minimum\n// - Velocity limits: 0.6-4.0 m/s\n// - d/D ratio check for self-cleansing",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-33",
+    title: "LA County Rational Method Calculator",
+    description: "Los Angeles County modified rational method calculator. Compute peak flows using LA County hydrology manual methodology and C coefficients.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// LA County Rational Method:\n// Q = C * I * A (peak flow in CFS)\n// C = runoff coefficient (weighted)\n// I = rainfall intensity (in/hr)\n// A = drainage area (acres)\n// Uses LA County IDF curves\n// Modified for urbanized watersheds",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-34",
+    title: "LA County Modified Rational for ICM",
+    description: "Ruby script implementing LA County's modified rational method within ICM InfoWorks. Automate hydrologic calculations for LA County projects.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# LA County Modified Rational Method for ICM\nnet = WSApplication.current_network\n\nnet.row_objects('hw_subcatchment').each do |sc|\n  area_acres = sc.area * 2.47105  # ha to acres\n  c_value = sc.user_number_1  # runoff coefficient\n  tc = sc.time_of_concentration\n  intensity = la_county_idf(tc, return_period)\n  q_peak = c_value * intensity * area_acres\n  puts \"#{sc.id}: Q = #{q_peak.round(2)} cfs\"\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-35",
+    title: "SWMM Dynamic Wave Explainer",
+    description: "Visual step-by-step explanation of SWMM5's dynamic wave routing algorithm. Understand how the Saint-Venant equations are solved numerically.",
+    language: "React",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// SWMM5 Dynamic Wave Routing:\n// Continuity: ∂A/∂t + ∂Q/∂x = q\n// Momentum: ∂Q/∂t + ∂(Q²/A)/∂x + gA∂H/∂x + gASf = 0\n// Solution: Modified Euler method\n// Courant condition: Δt ≤ Δx / (V + c)\n// Successive approximation for convergence",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-36",
+    title: "Export to SWMM5 Exchange (Ruby)",
+    description: "Ruby script for exporting ICM network data to SWMM5 exchange format. Automate model conversion from ICM to EPA SWMM5.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# Export ICM Network to SWMM5 Format\nnet = WSApplication.current_network\noutput = File.open('export.inp', 'w')\n\noutput.puts '[JUNCTIONS]'\nnet.row_objects('hw_node').each do |node|\n  output.puts \"#{node.id}  #{node.invert}  #{node.max_depth}\"\nend\n\noutput.puts '[CONDUITS]'\nnet.row_objects('hw_conduit').each do |link|\n  output.puts \"#{link.id}  #{link.us_node_id}  #{link.ds_node_id}\"\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks", "SWMM5"]
+  },
+  {
+    id: "tool-37",
+    title: "InfoSWMM/H2OMAP Import Exchange (Ruby)",
+    description: "Ruby scripts for importing InfoSWMM and H2OMAP SWMM model data into ICM InfoWorks via the exchange format.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# Import InfoSWMM/H2OMAP data into ICM\nnet = WSApplication.current_network\n\n# Read InfoSWMM export CSV\nCSV.foreach('infosewer_export.csv', headers: true) do |row|\n  node = net.create_row_object('hw_node')\n  node.id = row['ID']\n  node.x = row['X'].to_f\n  node.y = row['Y'].to_f\n  node.invert = row['INVERT'].to_f\n  node.write\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-38",
+    title: "SWMM5 Input File Format Documentation",
+    description: "Complete reference documentation for the SWMM5 INP file format. Every section, keyword, and parameter explained with examples.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "[JUNCTIONS]\n;;Name  Elevation  MaxDepth  InitDepth  SurDepth  Aponded\nJ1     100.0      6.0       0.0        0.0       0\nJ2     95.0       8.0       0.0        0.0       0\n\n[CONDUITS]\n;;Name  FromNode  ToNode  Length  Roughness  InOffset  OutOffset",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-39",
+    title: "SWMM5 Force Mains Modeling App",
+    description: "Interactive tool for modeling force mains (pressurized pipes) in SWMM5. Configure Hazen-Williams or Darcy-Weisbach parameters.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Force Main Equations:\n// Hazen-Williams: V = k * C * R^0.63 * S^0.54\n// Darcy-Weisbach: hf = f * L/D * V²/(2g)\n// SWMM5 [CONDUITS] FORCE_MAIN option\n// Transition: free surface ↔ pressurized\n// C factors: New CI=130, Old CI=100, DIP=140",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-40",
+    title: "ICM Results Field Exporter",
+    description: "Ruby script for exporting simulation results from ICM InfoWorks. Extract time series data for nodes, links, and subcatchments to CSV.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# Export ICM Results to CSV\nnet = WSApplication.current_network\nresults = net.current_timestep_results\n\n# Export node results\nCSV.open('node_results.csv', 'w') do |csv|\n  csv << ['Node_ID', 'Depth', 'Head', 'Flood_Volume']\n  net.row_objects('hw_node').each do |node|\n    csv << [node.id, node.result('depthnode'),\n            node.result('headnode'), node.result('floodvol')]\n  end\nend",
+    categories: ["Ruby Scripting", "ICM InfoWorks"]
+  },
+  {
+    id: "tool-41",
+    title: "InfoSewer RPT File Reader",
+    description: "Parse InfoSewer report (.RPT) files and extract simulation results. Convert InfoSewer output for analysis or import into ICM.",
+    language: "Ruby",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "# InfoSewer RPT File Parser\nrpt_data = File.readlines('model.rpt')\n\n# Parse node results section\nin_node_section = false\nrpt_data.each do |line|\n  if line.include?('Node Results')\n    in_node_section = true\n    next\n  end\n  if in_node_section && line.strip.length > 0\n    parts = line.split\n    puts \"Node: #{parts[0]}, MaxDepth: #{parts[1]}\"\n  end\nend",
+    categories: ["ICM InfoWorks", "SWMM5"]
+  },
+  {
+    id: "tool-42",
+    title: "Conference Presentation Guide",
+    description: "Best practices and templates for presenting stormwater modeling results at technical conferences. Structure, visuals, and delivery tips.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Presentation Structure:\n// 1. Problem Statement (2 min)\n// 2. Model Setup & Data (3 min)\n// 3. Calibration Results (5 min)\n// 4. Scenario Analysis (5 min)\n// 5. Conclusions & Recommendations (3 min)\n// 6. Q&A (2 min)\n// Total: 20 minutes",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-43",
+    title: "InfoWorks ICM vs HEC-RAS Comparison",
+    description: "Detailed side-by-side comparison of InfoWorks ICM and HEC-RAS capabilities, equations, and use cases for hydraulic modeling.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// Feature Comparison:\n// ICM: Full Saint-Venant, 1D/2D coupled\n// HEC-RAS: 1D steady/unsteady, 2D diffusion wave\n// ICM: Integrated hydrology + hydraulics\n// HEC-RAS: Separate HMS for hydrology\n// ICM: Ruby scripting automation\n// HEC-RAS: HEC-DSSVue, RAS Mapper",
+    categories: ["ICM InfoWorks", "SWMM5"]
+  },
+  {
+    id: "tool-44",
+    title: "RUNOFF & EXTRAN in XP-SWMM",
+    description: "Documentation of RUNOFF and EXTRAN computational blocks as implemented in XP-SWMM. Understand how XP-SWMM processes hydrology and hydraulics.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "// XP-SWMM Computational Blocks:\n// RUNOFF: Nonlinear reservoir + kinematic wave\n//   - Horton/Green-Ampt infiltration\n//   - Depression storage\n//   - Overland flow routing\n// EXTRAN: Dynamic wave (Saint-Venant)\n//   - Surcharging algorithm\n//   - Orifice/weir/pump elements",
+    categories: ["SWMM5", "Model Testing"]
+  },
+  {
+    id: "tool-45",
+    title: "Visual SWMM Fortran Input Format",
+    description: "Reference documentation for the original Visual SWMM Fortran-era input file format. Historical reference for legacy model conversion.",
+    language: "HTML",
+    status: "stable",
+    version: "1.0.0",
+    codePreview: "C  VISUAL SWMM FORTRAN INPUT FORMAT\nC  Card Group A1: Title cards\nC  Card Group B1: Analysis options\nC  Card Group C1: Subcatchment data\nC  Card Group D1: Channel/conduit data\nC  Card Group E1: Storage junction data\nC  Fixed-column format (legacy Fortran I/O)",
+    categories: ["SWMM5", "Model Testing"]
   }
 ];

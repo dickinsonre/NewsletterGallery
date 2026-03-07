@@ -1,0 +1,284 @@
+
+mannings_explorer.jsx
+Last edited 9 hours ago・Published
+hec22-inlet-explorer.html
+Last edited 1 day ago・Published
+icm-sql-cookbook.html
+Last edited 1 day ago・Published
+swmm5_to_iddx_converter.html
+Last edited 1 day ago・Published
+scs-rainfall-curve-number.jsx
+8
+scs-rainfall-curve-number.jsx
+Last edited 3 days ago・Published
+scs-rainfall-curve-number.jsx
+Last edited 3 days ago・Published
+vibe-coding-assessment.jsx
+Last edited 4 days ago・Published
+icm_converter.html
+Last edited 4 days ago
+MikeSuibing.html
+Last edited 9 days ago・Published
+hnra_simulator_v2.html
+Last edited 9 days ago・Published
+swmm5_simulator.html
+Last edited 9 days ago・Published
+
+design_storm_equations.md
+Last edited 10 days ago・Published
+
+Advancing SWMM5: Calgary's Call to Action for Modernizing Stormwater Modeling
+Last edited 10 days ago
+hec-hms-api.jsx
+Last edited 11 days ago・Published
+rdii-rvalue-infographic.jsx
+Last edited 13 days ago・Published
+factors-of-1729.html
+Last edited 13 days ago・Published
+modelflow-dashboard.jsx
+Last edited 15 days ago・Published
+calibration-viz.jsx
+Last edited 15 days ago・Published
+swmm5_generator.html
+Last edited 15 days ago・Published
+icm-swmm-inlet.html
+Last edited 15 days ago・Published
+fhwa-culvert-simulator.jsx
+Last edited 16 days ago・Published
+manhole-flooding-simulator.jsx
+Last edited 16 days ago・Published
+xpswmm_reader.html
+Last edited 16 days ago・Published
+icm-manhole-simulator.jsx
+Last edited 16 days ago・Published
+life-countdown.html
+Last edited 17 days ago・Published
+rtk-microgpt-v2.html
+Last edited 19 days ago・Published
+mannings-microgpt.jsx
+Last edited 19 days ago・Published
+spatial-analysis-proposal.html
+Last edited 21 days ago・Published
+yarra_network_design_report.html
+Last edited 22 days ago・Published
+la_county_rational_calculator.html
+Last edited 1 month ago・Published
+la_county_modified_rational_icm.rb
+Last edited 1 month ago・Published
+swmm-dynamic-wave-explainer.jsx
+Last edited 2 months ago・Published
+RTK ICM Exchange JSON Template
+Last edited 4 months ago
+RTK RDII Analysis Script for ICM InfoWorks
+Last edited 4 months ago
+Export_to_SWMM5_Exchange.rb
+Last edited 4 months ago
+Export_to_SWMM5_UI.rb
+Last edited 4 months ago
+
+XP-SWMM Reader Documentation
+Last edited 4 months ago
+XP-SWMM File Reader
+Last edited 4 months ago
+InfoSWMM_H2OMAP_Import_Exchange.rb
+Last edited 4 months ago
+InfoSWMM_H2OMAP_Import_UI.rb
+Last edited 4 months ago
+SWMM Export Module (Python)
+Last edited 4 months ago
+XPSWMM to SWMM5 Converter - Lovable Specs
+Last edited 4 months ago
+SWMM Run Builder with Enhanced Debug Statements
+Last edited 4 months ago
+
+Running Scripts from ICM Exchange
+Last edited 4 months ago
+SWMM QA/QC Documentation with AI
+Last edited 4 months ago
+
+r/SWMM5_Enablement Community Guide
+Last edited 5 months ago
+
+InfoWorks ICM vs HEC-RAS: Comprehensive Comparison
+Last edited 5 months ago・Published
+SWMM to Civil 3D Converter
+Last edited 5 months ago
+Fixed Universal Polygon Geometry and ID Changer Script
+Last edited 5 months ago
+
+The Evolution of MOUSE into MIKE+: DHI's Integrated Water Modeling Platform
+Last edited 5 months ago
+Complete Data Categories Summary - RINCONADA Mike Urban Model
+Last edited 6 months ago
+
+
+RINCONADA Mike Urban Network Analysis
+Last edited 6 months ago
+
+SWMM5 Force Mains Modeling App - Instructions & Documentation
+Last edited 6 months ago・Published
+
+RUNOFF and EXTRAN Features in XP-SWMM .xp Files - Documentation with Examples
+Last edited 6 months ago
+
+Visual SWMM Special Keywords and Configuration Options
+Last edited 6 months ago
+SWMM Input File Format Documentation
+Last edited 6 months ago・Published
+SWMM5 Input File Format Documentation
+Last edited 6 months ago
+
+Visual SWMM Fortran Input File Format Documentation
+Last edited 6 months ago
+
+SWMM Input File Format Documentation
+Last edited 6 months ago
+SWMM Model Files Summary
+Last edited 6 months ago
+Google Drive Files Summary
+Last edited 6 months ago
+Detailed Retirement Analysis to Age 85 with $900K Cash Floor
+Last edited 6 months ago
+
+Year-by-Year Asset Evolution: 15% Crypto Growth with 3% Annual Sales
+Last edited 6 months ago
+
+Year-by-Year Asset Evolution: 3% Crypto Sales with 15% Growth
+Last edited 6 months ago
+
+Year-by-Year Asset Evolution: 15% Crypto Growth with Rebalancing
+Last edited 6 months ago
+
+Year-by-Year Asset Evolution: Crypto Rebalancing Strategy
+Last edited 6 months ago
+
+20-Year Retirement Projection with 12% Crypto Growth
+Last edited 6 months ago
+Stock Return Scenario Comparison: 10% vs 7%
+Last edited 6 months ago
+
+20-Year Retirement Financial Projection
+Last edited 6 months ago
+
+BTC, LTC & ETH Price Forecast 2025-2035
+Last edited 6 months ago
+SWMM5 Interactive Report Viewer
+Last edited 6 months ago
+Interactive Formatting Quiz Application
+Last edited 6 months ago
+replit.json - Formatting Quiz App Configuration
+Last edited 6 months ago
+Replit Setup Instructions for Formatting Quiz
+Last edited 6 months ago
+replit.json - InfoSewer Conversion App Configuration
+Last edited 6 months ago
+InfoSewer to InfoWorks ICM Conversion Steps App
+Last edited 6 months ago
+Replit Setup Instructions
+Last edited 6 months ago
+SWMM5 Model Optimized for ICM Import
+Last edited 7 months ago
+ICM InfoWorks Vacuum Sewer Model
+Last edited 7 months ago
+Fixed SWMM5 Input File
+Last edited 7 months ago
+Fixed Results Field Exporter Script (CSV Version)
+Last edited 7 months ago
+Fixed Results Field Exporter Script
+Last edited 8 months ago
+Combined Results Field Exporter with Statistics
+Last edited 8 months ago
+Modified InfoWorks/SWMM Exporter - Read Parameters from CSV
+Last edited 8 months ago
+Updated HW/SW Table Reader with Console-Based Variable Selection
+Last edited 8 months ago
+InfoWorks ICM Results Export with Variable Selection
+Last edited 8 months ago
+
+AI in Hydraulic Modeling: Augmentation Over Replacement
+Last edited 8 months ago
+
+
+Pyraminx Cubing Song (Cotton-Eyed Joe Style)
+Last edited 8 months ago
+Fixed InfoWorks ICM SWMM Results Export Script
+Last edited 8 months ago
+
+LinkedIn Article: Advanced Data Exporter for InfoWorks and SWMM Networks
+Last edited 8 months ago
+InfoWorks/SWMM Object Exporter with Continuous Loop
+Last edited 8 months ago
+
+SWMM Subcatchment Export Script Documentation
+Last edited 9 months ago
+
+SWMM Orifice Export Script Documentation
+Last edited 9 months ago
+
+SWMM Conduit Export Script Documentation
+Last edited 9 months ago
+
+SWMM Pump CSV Export Script - Summary
+Last edited 9 months ago
+
+SWMM Weir CSV Export Script - Summary
+Last edited 9 months ago
+
+SWMM Node CSV Export Script - Summary
+Last edited 9 months ago
+
+Alaska Engineering Moose
+Last edited 9 months ago
+Good Week Celebration
+Last edited 9 months ago
+
+HW_Orifice CSV Export Script - Summary
+Last edited 9 months ago
+
+HW_Pump CSV Export Script - Summary
+Last edited 9 months ago
+
+HW_Weir CSV Export Script - Summary
+Last edited 9 months ago
+Network Elements with Parameter IDs
+Last edited 9 months ago
+Discover All Parameter IDs for Each Table
+Last edited 9 months ago
+Debug Script to Find Parameter Access Methods
+Last edited 9 months ago
+Fixed Global Parameters Export Script with Selection Prompt
+Last edited 9 months ago
+Conference Presentation Excellence Guide
+Last edited 9 months ago・Published
+
+InfoSewer RPT File Reader Documentation
+Last edited 9 months ago
+InfoSewer RPT File Reader with CSV Output
+Last edited 9 months ago
+SWMM Model Comparison: Junctions vs Storage Nodes
+Last edited 9 months ago
+InfoSewer Report Parser for ICM Ruby
+Last edited 9 months ago
+Rain Garden Cross-Section Diagram
+Last edited 9 months ago
+ICM 2D Mesh with Polygon Types
+Last edited 9 months ago
+ICM Manhole with Shaft Area Twice Chamber Area
+Last edited 9 months ago
+InfoWorks ICM Manhole Data Model Diagram
+Last edited 9 months ago
+Manhole Technical Diagram
+Last edited 9 months ago
+Midjourney Prompt: 2D Mesh Character for Flood Simulation
+Last edited 9 months ago
+
+
+The O.R.B.I.T. Ballad - A Silverlock-Style Song
+Last edited 9 months ago
+
+
+
+Revised Emily Dickinson-Style Poem about Autodesk
+Last edited 9 months ago
+Midjourney Prompt: Clean Water Evolution
+Last edited 9 months ago
