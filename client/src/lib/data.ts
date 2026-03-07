@@ -2991,7 +2991,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "Repo Insights",
     description: "Explore and analyze GitHub repositories related to SWMM5 and stormwater modeling. Visualize code contributions, dependencies, and project activity.",
     platform: "Replit",
-    url: "https://repo-insights.replit.app",
+    url: "https://repo-insights--robertdickinson.replit.app",
     categories: ["Code Analysis", "SWMM5"]
   },
   {
@@ -2999,7 +2999,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM ICM St. Venant",
     description: "Interactive explorer for the Saint-Venant equations as implemented in SWMM5 and ICM. Compare solver approaches and visualize hydraulic computations.",
     platform: "Replit",
-    url: "https://swmm-icm-st-venant.replit.app",
+    url: "https://swmm-icm-st-venant--robertdickinson.replit.app",
     categories: ["SWMM5", "ICM InfoWorks", "Code Analysis"]
   },
   {
@@ -3007,7 +3007,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM Engine",
     description: "Run SWMM5 simulations directly in the browser. Upload INP files, execute the engine, and view results without installing any software.",
     platform: "Replit",
-    url: "https://swmm-engine.replit.app",
+    url: "https://swmm-engine--robertdickinson.replit.app",
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3015,7 +3015,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "Batch SWMM Runner",
     description: "Run hundreds of SWMM5 simulations in batch mode. Configure parameter sweeps, sensitivity analyses, and scenario comparisons automatically.",
     platform: "Replit",
-    url: "https://batch-swmm-runner.replit.app",
+    url: "https://batch-swmm-runner-robertdickinson.replit.app",
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3023,7 +3023,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "Historical Mystery",
     description: "An interactive journey through the hidden history of stormwater management and urban drainage engineering. Discover the stories behind the models.",
     platform: "Replit",
-    url: "https://historical-mystery.replit.app",
+    url: "https://historical-mystery-robertdickinson.replit.app",
     categories: ["History", "SWMM5"]
   },
   {
@@ -3031,7 +3031,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM5 File Stats",
     description: "Upload a SWMM5 INP file and instantly get comprehensive statistics: element counts, parameter distributions, network topology analysis, and more.",
     platform: "Replit",
-    url: "https://swmm5-file-stats.replit.app",
+    url: "https://swmm5filestats.com",
     categories: ["SWMM5", "Code Analysis"]
   },
   {
@@ -3039,7 +3039,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "HydroCouple Explorer",
     description: "Explore coupled hydrological-hydraulic modeling concepts. Visualize how different model components interact in integrated water systems.",
     platform: "Replit",
-    url: "https://hydrocouple-explorer.replit.app",
+    url: "https://hydrocouple-explorer-robertdickinson.replit.app",
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3047,7 +3047,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM Docs Explorer",
     description: "Search and browse over five decades of SWMM documentation in one place. From SWMM1 (1970) to SWMM5 (2026), all manuals made searchable.",
     platform: "Replit",
-    url: "https://swmm-docs-explorer.replit.app",
+    url: "https://swmmdocs.com",
     categories: ["SWMM5", "History"]
   },
   {
@@ -3055,7 +3055,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMManywhere Explorer",
     description: "Explore the SWMManywhere project — synthetic drainage network generation using machine learning trained on 2000 real-world models.",
     platform: "Replit",
-    url: "https://swmmanywhere-explorer.replit.app",
+    url: "https://swmmr-explorer-robertdickinson.replit.app",
     categories: ["SWMM5", "AI/ML"]
   },
   {
@@ -3063,7 +3063,7 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM5 Rosetta Stone",
     description: "View SWMM5 and EPANET engine code translated across 37 programming languages. Compare implementations side by side.",
     platform: "Replit",
-    url: "https://swmm5-rosetta-stone.replit.app",
+    url: "https://code-rosetta-stone.replit.app",
     categories: ["SWMM5", "Code Analysis"]
   },
   {
@@ -3071,15 +3071,15 @@ export const featuredApps: FeaturedApp[] = [
     name: "SWMM5 INP Maker",
     description: "Create SWMM5 INP files interactively. Build nodes, links, subcatchments, and rain gages with a visual editor and export valid input files.",
     platform: "Replit",
-    url: "https://swmm5-inp-maker.replit.app",
+    url: "https://swmm-inp-maker-robertdickinson.replit.app",
     categories: ["SWMM5", "Model Testing"]
   },
   {
     id: "app-13",
     name: "XP to SWMM Bridge",
     description: "Convert XP-SWMM models to EPA SWMM5 format. Bridge the gap between legacy XP models and modern SWMM5 simulations.",
-    platform: "Replit",
-    url: "https://xp-to-swmm-bridge.replit.app",
+    platform: "Lovable",
+    url: "https://xp-to-swmm-bridge.lovable.app",
     categories: ["SWMM5", "Migration"]
   }
 ];
