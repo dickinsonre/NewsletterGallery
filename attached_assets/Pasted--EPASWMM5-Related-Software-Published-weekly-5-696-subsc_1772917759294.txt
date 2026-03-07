@@ -1,0 +1,48 @@
+
+EPASWMM5 Related Software
+Published weekly
+•
+5,696 subscribers
+An Inside look at ICM InfoWorks and ICM SWMM Networks using the UX, Ruby and SQL
+
+
+Subscribed
+
+Edition 58: An APP ROSETTA Stone: Code Translations of SWMM5 and EPANET across 37 Programming Languages
+WHAT IF YOU COULD READ THE EPA'S STORMWATER ENGINE or EPANET IN ANY PROGRAMMING LANGUAGE? The EPA Storm Water Management Model (SWMM5) is the most widWHAT IF YOU COULD READ THE EPA'S STORMWATER ENGINE or EPANET IN ANY PROGRAMMING LANGUAGE? The EPA Storm Water Management Model (SWMM5) is the most wid
+11 min read
+
+
+The 250K-Element Question: What If You Could Generate Any SWMM5 Model in Seconds?
+On the quiet revolution of synthetic drainage networks, and why 2000 real-world models taught a machine to build better sewers than most of us do by hOn the quiet revolution of synthetic drainage networks, and why 2000 real-world models taught a machine to build better sewers than most of us do by h
+15 min read
+
+
+Edition 56: The $350,000 Model That Built a Billion-Dollar Ecosystem: 55 Years of EPASWMM
+The $350,000 Model That Built a Billion-Dollar Ecosystem: 55 Years of EPA SWMM A history of the world's most important software you've never heard of The $350,000 Model That Built a Billion-Dollar Ecosystem: 55 Years of EPA SWMM A history of the world's most important software you've never heard of 
+8 min read
+
+
+Design Storm App for 6 Continents and 66 Patterns
+Sixty-six patterns. Nine regions. Thirty countries. Six continents. Eight export formats. Three steps. Every piece of infrastructure you walk on, drivSixty-six patterns. Nine regions. Thirty countries. Six continents. Eight export formats. Three steps. Every piece of infrastructure you walk on, driv
+9 min read
+
+
+Edition 54: Two Solvers, One Equation, and the Argument That Has Lasted Forty Years
+A 150-year-old equation, two different ways to solve it, and why your pipe design might depend on which one you choose. There is a set of equations thA 150-year-old equation, two different ways to solve it, and why your pipe design might depend on which one you choose. There is a set of equations th
+11 min read
+
+
+Edition 53: The Measure of Honest Numbers, the app version of Rules for Responsible Modeling by William James (CHI)
+The Measure of Honest Numbers It is a peculiar feature of the human mind that we are most easily deceived by things that look precisely the way we expThe Measure of Honest Numbers It is a peculiar feature of the human mind that we are most easily deceived by things that look precisely the way we exp
+9 min read
+
+
+Edition 52—300,000 Years of Water Engineering in an Interactive App
+There is a fact about human beings that should be taught in every engineering school on the planet, and it is this: the very first problem we solved—bThere is a fact about human beings that should be taught in every engineering school on the planet, and it is this: the very first problem we solved—b
+6 min read
+
+
+Edition 51—The Memory of Water: Two Apps That Remember What We Built in 5 SWMM Releases
+There is a peculiar thing about institutional knowledge. It accumulates slowly, over decades, in manuals and reports and technical memoranda that circThere is a peculiar thing about institutional knowledge. It accumulates slowly, over decades, in manuals and reports and technical memoranda that circ
+3 min read

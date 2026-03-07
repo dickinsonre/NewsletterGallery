@@ -133,7 +133,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider text-center">Expertise Areas</h4>
                     <div className="flex flex-wrap justify-center gap-2 text-sm">
-                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">SWMM (50+ yrs)</span>
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">SWMM (53+ yrs)</span>
                       <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoSWMM/ESRI (20 yrs)</span>
                       <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">InfoWorks ICM (15 yrs)</span>
                       <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Ruby Scripting</span>
@@ -195,7 +195,7 @@ export default function Home() {
               <div className="text-center md:text-left flex-grow">
                 <h1 className="text-2xl font-serif font-bold mb-2">The Robert Dickinson Archive</h1>
                 <p className="text-muted-foreground mb-3">
-                  <span className="font-medium text-foreground">50+ years documenting stormwater modeling</span> — from SWMM 2.5 punch cards in 1978 to AI-integrated ICM InfoWorks today. 
+                  <span className="font-medium text-foreground">53+ years documenting stormwater modeling</span> — from SWMM 2.5 punch cards in 1978 to AI-integrated ICM InfoWorks today. 
                   This living archive captures decades of hydraulic engineering knowledge, Ruby scripting techniques, and the untold history of urban drainage software.
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs mb-3">

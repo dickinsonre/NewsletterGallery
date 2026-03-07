@@ -891,6 +891,54 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-154",
+    title: "People of PySWMM and The Man Who Gave the Pipes a Python Voice",
+    description: "A brief history of how one engineer connected a fifty-year-old government program to the future of intelligent infrastructure using Python and PySWMM.",
+    date: "Today",
+    readTime: "9 min read",
+    imageUrl: aiCover,
+    link: "https://www.linkedin.com/pulse/people-pyswmm-man-who-gave-pipes-python-voice-robert-dickinson",
+    categories: ["SWMM5", "Code Analysis"],
+    difficulty: "intermediate",
+    keywords: ["PySWMM", "Python", "SWMM5", "open source", "API", "intelligent infrastructure"]
+  },
+  {
+    id: "linkedin-153",
+    title: "SWMM1 to SWMM5 Documentation Archive and Explorer (1970 to 2026)",
+    description: "The SWMM Documentation Archive and Explorer is a web application that organizes, preserves, and makes searchable over five decades of EPA Storm Water Management Model documentation.",
+    date: "Today",
+    readTime: "9 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/swmm1-swmm5-documentation-archive-explorer-1970-2026-dickinson",
+    categories: ["History", "SWMM5"],
+    difficulty: "beginner",
+    keywords: ["SWMM", "documentation", "archive", "history", "1970", "EPA", "explorer"]
+  },
+  {
+    id: "linkedin-152",
+    title: "From 53 Chapters in 5 PDF Files to One Search Box: Making the SWMM5 Manuals More Usable",
+    description: "After four decades of working with EPA's Storm Water Management Model, I got tired of the same workflow every engineer knows: open an 800-page PDF, hunt for the right section. So I built a better way.",
+    date: "Today",
+    readTime: "6 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/from-53-chapters-5-pdf-files-one-search-box-making-robert-dickinson",
+    categories: ["SWMM5", "Code Analysis"],
+    difficulty: "beginner",
+    keywords: ["SWMM5", "manuals", "search", "PDF", "documentation", "usability"]
+  },
+  {
+    id: "linkedin-151",
+    title: "Could You Rebuild Your ICM InfoWorks Model from Results (the IWR File) Alone?",
+    description: "Here's a question that stumped me today: If all you had was the IWR results file, could you reconstruct your entire ICM InfoWorks model? A deep dive into what the results file really contains.",
+    date: "Today",
+    readTime: "5 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/could-you-rebuild-your-icm-infoworks-model-from-robert-dickinson",
+    categories: ["ICM InfoWorks", "Model Testing"],
+    difficulty: "advanced",
+    keywords: ["ICM", "InfoWorks", "IWR file", "results", "model reconstruction", "reverse engineering"]
+  },
+  {
     id: "linkedin-150",
     title: "What Kind of Hydraulic Modeller (Modeler) Are You? Discover Your Modeling Style",
     description: "A fun exploration of the different types of hydraulic modelers in the water industry. Discover your modeling personality and approach to stormwater and sewer modeling.",
