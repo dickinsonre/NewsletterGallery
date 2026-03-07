@@ -1,6 +1,6 @@
 # Overview
 
-This is a web application showcasing Robert Dickinson's expertise in stormwater modeling, SWMM5 (Storm Water Management Model), and ICM (InfoWorks) software. The application serves as a curated digital library organizing newsletters, LinkedIn articles, and technical documents related to hydraulic engineering, Ruby scripting for ICM, SQL data extraction, and water infrastructure modeling.
+This is a web application showcasing Robert Dickinson's expertise in stormwater modeling, SWMM5 (Storm Water Management Model), ICM (InfoWorks), XPSWMM, InfoSewer, and InfoSWMM software. The application serves as a curated digital library organizing newsletters, LinkedIn articles, and technical documents related to hydraulic engineering, Ruby scripting for ICM, SQL data extraction, and water infrastructure modeling.
 
 The application features a modern React-based frontend with a Node.js/Express backend, designed to present technical content in an accessible, visually appealing format with filtering, search, and categorization capabilities.
 

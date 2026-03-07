@@ -97,7 +97,7 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5 and ICM Modeling Expertise</h1>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling Expertise</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Archive</p>
             </div>
           </div>
@@ -542,16 +542,21 @@ export default function Home() {
                     href={app.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-card/60 border border-border rounded-xl p-5 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-200"
+                    className="group bg-card/60 border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-200"
                     data-testid={`app-card-${app.id}`}
                   >
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <AppWindow className="w-5 h-5 text-primary" />
-                      </div>
-                      <div className="flex-grow min-w-0">
-                        <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-1">{app.name}</h4>
-                        <span className={`text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded ${
+                    <div className="aspect-[4/3] overflow-hidden bg-muted">
+                      <img
+                        src={app.imageUrl}
+                        alt={app.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-1 flex-grow">{app.name}</h4>
+                        <span className={`text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded flex-shrink-0 ml-2 ${
                           app.platform === "Replit" 
                             ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300" 
                             : app.platform === "Lovable"
@@ -561,13 +566,15 @@ export default function Home() {
                           {app.platform}
                         </span>
                       </div>
-                      <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-3">{app.description}</p>
-                    <div className="flex gap-1.5 flex-wrap">
-                      {app.categories.map(c => (
-                        <span key={c} className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{c}</span>
-                      ))}
+                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2 mb-3">{app.description}</p>
+                      <div className="flex items-center justify-between">
+                        <div className="flex gap-1.5 flex-wrap">
+                          {app.categories.map(c => (
+                            <span key={c} className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{c}</span>
+                          ))}
+                        </div>
+                        <ExternalLink className="w-3.5 h-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                      </div>
                     </div>
                   </a>
                 ))}

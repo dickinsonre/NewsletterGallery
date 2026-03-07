@@ -4,6 +4,19 @@ import icmCover from "@assets/generated_images/icm_infoworks_software_interface.
 import historyCover from "@assets/generated_images/historical_timeline_of_swmm_evolution.png";
 import aiCover from "@assets/generated_images/ai_and_machine_learning_integration.png";
 import sqlCover from "@assets/generated_images/sql_database_queries_and_data_extraction.png";
+import appRainCanvas from "@assets/generated_images/app_rain_canvas_studio.png";
+import appRepoInsights from "@assets/generated_images/app_repo_insights.png";
+import appStVenant from "@assets/generated_images/app_st_venant.png";
+import appSwmmEngine from "@assets/generated_images/app_swmm_engine.png";
+import appBatchRunner from "@assets/generated_images/app_batch_runner.png";
+import appHistoricalMystery from "@assets/generated_images/app_historical_mystery.png";
+import appFileStats from "@assets/generated_images/app_file_stats.png";
+import appHydrocouple from "@assets/generated_images/app_hydrocouple.png";
+import appDocsExplorer from "@assets/generated_images/app_docs_explorer.png";
+import appSwmmanywhere from "@assets/generated_images/app_swmmanywhere.png";
+import appRosettaStone from "@assets/generated_images/app_rosetta_stone.png";
+import appInpMaker from "@assets/generated_images/app_inp_maker.png";
+import appXpBridge from "@assets/generated_images/app_xp_bridge.png";
 
 export type Category = 
   | "Ruby Scripting"
@@ -71,6 +84,7 @@ export interface FeaturedApp {
   description: string;
   platform: "Replit" | "Lovable" | "Other";
   url: string;
+  imageUrl: string;
   categories: Category[];
 }
 
@@ -2984,6 +2998,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "A creative visualization tool for rainfall patterns and design storms. Build beautiful, interactive rain canvases for presentations and reports.",
     platform: "Lovable",
     url: "https://rain-canvas-studio.lovable.app",
+    imageUrl: appRainCanvas,
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -2992,6 +3007,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Explore and analyze GitHub repositories related to SWMM5 and stormwater modeling. Visualize code contributions, dependencies, and project activity.",
     platform: "Replit",
     url: "https://repo-insights--robertdickinson.replit.app",
+    imageUrl: appRepoInsights,
     categories: ["Code Analysis", "SWMM5"]
   },
   {
@@ -3000,6 +3016,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Interactive explorer for the Saint-Venant equations as implemented in SWMM5 and ICM. Compare solver approaches and visualize hydraulic computations.",
     platform: "Replit",
     url: "https://swmm-icm-st-venant--robertdickinson.replit.app",
+    imageUrl: appStVenant,
     categories: ["SWMM5", "ICM InfoWorks", "Code Analysis"]
   },
   {
@@ -3008,6 +3025,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Run SWMM5 simulations directly in the browser. Upload INP files, execute the engine, and view results without installing any software.",
     platform: "Replit",
     url: "https://swmm-engine--robertdickinson.replit.app",
+    imageUrl: appSwmmEngine,
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3016,6 +3034,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Run hundreds of SWMM5 simulations in batch mode. Configure parameter sweeps, sensitivity analyses, and scenario comparisons automatically.",
     platform: "Replit",
     url: "https://batch-swmm-runner-robertdickinson.replit.app",
+    imageUrl: appBatchRunner,
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3024,6 +3043,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "An interactive journey through the hidden history of stormwater management and urban drainage engineering. Discover the stories behind the models.",
     platform: "Replit",
     url: "https://historical-mystery-robertdickinson.replit.app",
+    imageUrl: appHistoricalMystery,
     categories: ["History", "SWMM5"]
   },
   {
@@ -3032,6 +3052,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Upload a SWMM5 INP file and instantly get comprehensive statistics: element counts, parameter distributions, network topology analysis, and more.",
     platform: "Replit",
     url: "https://swmm5filestats.com",
+    imageUrl: appFileStats,
     categories: ["SWMM5", "Code Analysis"]
   },
   {
@@ -3040,6 +3061,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Explore coupled hydrological-hydraulic modeling concepts. Visualize how different model components interact in integrated water systems.",
     platform: "Replit",
     url: "https://hydrocouple-explorer-robertdickinson.replit.app",
+    imageUrl: appHydrocouple,
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3048,6 +3070,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Search and browse over five decades of SWMM documentation in one place. From SWMM1 (1970) to SWMM5 (2026), all manuals made searchable.",
     platform: "Replit",
     url: "https://swmmdocs.com",
+    imageUrl: appDocsExplorer,
     categories: ["SWMM5", "History"]
   },
   {
@@ -3056,6 +3079,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Explore the SWMManywhere project — synthetic drainage network generation using machine learning trained on 2000 real-world models.",
     platform: "Replit",
     url: "https://swmmr-explorer-robertdickinson.replit.app",
+    imageUrl: appSwmmanywhere,
     categories: ["SWMM5", "AI/ML"]
   },
   {
@@ -3064,6 +3088,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "View SWMM5 and EPANET engine code translated across 37 programming languages. Compare implementations side by side.",
     platform: "Replit",
     url: "https://code-rosetta-stone.replit.app",
+    imageUrl: appRosettaStone,
     categories: ["SWMM5", "Code Analysis"]
   },
   {
@@ -3072,6 +3097,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Create SWMM5 INP files interactively. Build nodes, links, subcatchments, and rain gages with a visual editor and export valid input files.",
     platform: "Replit",
     url: "https://swmm-inp-maker-robertdickinson.replit.app",
+    imageUrl: appInpMaker,
     categories: ["SWMM5", "Model Testing"]
   },
   {
@@ -3080,6 +3106,7 @@ export const featuredApps: FeaturedApp[] = [
     description: "Convert XP-SWMM models to EPA SWMM5 format. Bridge the gap between legacy XP models and modern SWMM5 simulations.",
     platform: "Lovable",
     url: "https://xp-to-swmm-bridge.lovable.app",
+    imageUrl: appXpBridge,
     categories: ["SWMM5", "Migration"]
   }
 ];
