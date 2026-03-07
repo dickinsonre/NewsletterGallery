@@ -238,6 +238,32 @@ export const newsletters: Newsletter[] = [
     keywords: ["responsible modeling", "William James", "CHI", "honest numbers", "best practices", "quality assurance"]
   },
   {
+    id: "52",
+    title: "300,000 Years of Water Engineering in an Interactive App",
+    description: "There is a fact about human beings that should be taught in every engineering school on the planet, and it is this: the very first problem we solved — before language, before writing — was water.",
+    date: "2024-12-01",
+    readTime: "6 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/edition-52-300000-years-water-engineering-interactive-robert-dickinson",
+    issueNumber: 52,
+    categories: ["History", "SWMM5"],
+    difficulty: "beginner",
+    keywords: ["water engineering", "history", "interactive app", "infrastructure", "civilization"]
+  },
+  {
+    id: "51",
+    title: "The Memory of Water: Two Apps That Remember What We Built in 5 SWMM Releases",
+    description: "There is a peculiar thing about institutional knowledge. It accumulates slowly, over decades, in manuals and reports and technical memoranda that circulate among specialists.",
+    date: "2024-11-15",
+    readTime: "3 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/edition-51-memory-water-two-apps-remember-what-we-robert-dickinson",
+    issueNumber: 51,
+    categories: ["SWMM5", "History"],
+    difficulty: "beginner",
+    keywords: ["SWMM", "institutional knowledge", "apps", "releases", "documentation", "memory"]
+  },
+  {
     id: "50",
     title: "An App to Read and Create 3000 Informative Charts and Tables from the SWMM5 Report File",
     description: "There is quite a long backstory on this app. I started working on SWMM 2.5 programming in 1978 using punch cards to run the model and voluminous print outputs.",
