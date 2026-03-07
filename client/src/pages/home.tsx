@@ -7,7 +7,8 @@ import { ToolCard } from "@/components/tool-card";
 import { GlobalSearch } from "@/components/global-search";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe, Brain } from "lucide-react";
+import { QuizSection } from "@/components/quiz-section";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -380,7 +381,7 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-5xl mx-auto grid-cols-7 mb-12">
+          <TabsList className="grid w-full max-w-5xl mx-auto grid-cols-8 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">Articles</TabsTrigger>
             <TabsTrigger value="posts" data-testid="tab-posts">Posts</TabsTrigger>
@@ -390,6 +391,9 @@ export default function Home() {
             </TabsTrigger>
             <TabsTrigger value="tools" data-testid="tab-tools">
               <Wrench className="w-4 h-4 mr-1" /> Tools
+            </TabsTrigger>
+            <TabsTrigger value="quiz" data-testid="tab-quiz">
+              <Brain className="w-4 h-4 mr-1" /> Quiz
             </TabsTrigger>
             <TabsTrigger value="paths" data-testid="tab-paths">
               <GraduationCap className="w-4 h-4 mr-1" /> Paths
@@ -626,6 +630,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </TabsContent>
+
+          <TabsContent value="quiz" data-testid="content-quiz">
+            <QuizSection />
           </TabsContent>
 
           <TabsContent value="paths" data-testid="content-paths">
