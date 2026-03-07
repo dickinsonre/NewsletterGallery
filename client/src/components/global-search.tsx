@@ -1,12 +1,12 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
-import { Search, X, FileText, BookOpen, File, MessageSquare, ExternalLink, Wrench, Filter, ChevronDown, ArrowUp, ArrowDown, CornerDownLeft, SlidersHorizontal } from "lucide-react";
+import { Search, X, FileText, BookOpen, File, MessageSquare, ExternalLink, Wrench, Filter, ChevronDown, ArrowUp, ArrowDown, CornerDownLeft, SlidersHorizontal, AppWindow } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { newsletters, linkedInArticles, documents, linkedInPosts, tools } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps } from "@/lib/data";
 import type { Category, Difficulty } from "@/lib/data";
 
-type ContentType = "newsletter" | "article" | "document" | "post" | "tool";
+type ContentType = "newsletter" | "article" | "document" | "post" | "tool" | "app";
 
 interface SearchResult {
   id: string;
@@ -130,7 +130,8 @@ const typeConfig: Record<ContentType, { icon: typeof BookOpen; label: string; co
   article: { icon: FileText, label: "Article", color: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300" },
   document: { icon: File, label: "Document", color: "bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300" },
   post: { icon: MessageSquare, label: "Post", color: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300" },
-  tool: { icon: Wrench, label: "Tool", color: "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300" }
+  tool: { icon: Wrench, label: "Tool", color: "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300" },
+  app: { icon: AppWindow, label: "App", color: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300" }
 };
 
 const allCategories: Category[] = ["Ruby Scripting", "SWMM5", "ICM InfoWorks", "SQL/Data", "AI/ML", "History", "Migration", "Quiz", "Code Analysis", "Model Testing"];
@@ -258,6 +259,21 @@ export function GlobalSearch() {
       }
     });
 
+    featuredApps.forEach(a => {
+      const { score, matchedFields } = scoreMatch(
+        { title: a.name, description: a.description, categories: a.categories },
+        queryTokens, query
+      );
+      if (score > 0) {
+        allResults.push({
+          id: a.id, type: "app",
+          title: a.name, description: a.description, link: a.url, score, matchedFields,
+          categories: a.categories,
+          snippet: createSnippet(a.description, queryTokens)
+        });
+      }
+    });
+
     let filtered = allResults;
     if (typeFilter !== "all") {
       filtered = filtered.filter(r => r.type === typeFilter);
@@ -293,6 +309,7 @@ export function GlobalSearch() {
     countType(documents, "document", d => ({ title: d.title, description: d.description, categories: d.categories }));
     countType(linkedInPosts, "post", p => ({ title: p.title, description: p.description, categories: p.categories }));
     countType(tools, "tool", t => ({ title: t.name, description: t.description, categories: t.categories }));
+    countType(featuredApps, "app", a => ({ title: a.name, description: a.description, categories: a.categories }));
 
     return counts;
   }, [query]);
@@ -338,7 +355,7 @@ export function GlobalSearch() {
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
         <Input 
           ref={inputRef}
-          placeholder="Search 58 newsletters, 154 articles, 20 docs, 6 tools... (⌘K)" 
+          placeholder="Search newsletters, articles, docs, apps & tools... (⌘K)" 
           className="pl-12 pr-24 py-6 text-base bg-background/90 border-primary/30 focus-visible:ring-primary/30 shadow-lg rounded-xl"
           value={query}
           onChange={(e) => {
@@ -370,7 +387,7 @@ export function GlobalSearch() {
           <div className="border-b border-border p-3 space-y-3 flex-shrink-0">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 flex-wrap">
-                {(["all", "newsletter", "article", "document", "post", "tool"] as const).map(type => {
+                {(["all", "newsletter", "article", "document", "post", "tool", "app"] as const).map(type => {
                   const count = type === "all" ? typeCounts.all || 0 : typeCounts[type] || 0;
                   if (type !== "all" && count === 0) return null;
                   const isActive = typeFilter === type;
@@ -545,7 +562,7 @@ export function GlobalSearch() {
 
           <div className="border-t border-border px-4 py-2 flex-shrink-0 bg-muted/30">
             <div className="flex items-center justify-between text-[10px] text-muted-foreground">
-              <span>Searching across {newsletters.length} newsletters, {linkedInArticles.length} articles, {documents.length} docs, {linkedInPosts.length} posts, {tools.length} tools</span>
+              <span>Searching across {newsletters.length} newsletters, {linkedInArticles.length} articles, {documents.length} docs, {featuredApps.length} apps, {tools.length} tools</span>
               <span className="hidden sm:inline">ESC to close</span>
             </div>
           </div>

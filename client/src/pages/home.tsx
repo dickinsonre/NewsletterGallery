@@ -1,4 +1,4 @@
-import { newsletters, linkedInArticles, documents, linkedInPosts, tools, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
@@ -7,7 +7,7 @@ import { ToolCard } from "@/components/tool-card";
 import { GlobalSearch } from "@/components/global-search";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -380,11 +380,14 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-6 mb-12">
+          <TabsList className="grid w-full max-w-5xl mx-auto grid-cols-7 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">Articles</TabsTrigger>
             <TabsTrigger value="posts" data-testid="tab-posts">Posts</TabsTrigger>
             <TabsTrigger value="documents" data-testid="tab-documents">Documents</TabsTrigger>
+            <TabsTrigger value="apps" data-testid="tab-apps">
+              <AppWindow className="w-4 h-4 mr-1" /> Apps
+            </TabsTrigger>
             <TabsTrigger value="tools" data-testid="tab-tools">
               <Wrench className="w-4 h-4 mr-1" /> Tools
             </TabsTrigger>
@@ -517,6 +520,55 @@ export default function Home() {
                 <p className="text-muted-foreground font-serif italic">No documents found matching your search.</p>
               </div>
             )}
+          </TabsContent>
+
+          <TabsContent value="apps" data-testid="content-apps">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-serif font-medium mb-2">Featured Web Apps</h3>
+                <p className="text-muted-foreground">Interactive tools and explorers for SWMM5, stormwater modeling, and hydraulic engineering — all running in your browser.</p>
+                <Badge variant="secondary" className="mt-3 bg-primary/10 text-primary">
+                  {featuredApps.length} Apps
+                </Badge>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {featuredApps.map((app) => (
+                  <a
+                    key={app.id}
+                    href={app.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-card/60 border border-border rounded-xl p-5 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-200"
+                    data-testid={`app-card-${app.id}`}
+                  >
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                        <AppWindow className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="flex-grow min-w-0">
+                        <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-1">{app.name}</h4>
+                        <span className={`text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded ${
+                          app.platform === "Replit" 
+                            ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300" 
+                            : app.platform === "Lovable"
+                            ? "bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-300"
+                            : "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                        }`}>
+                          {app.platform}
+                        </span>
+                      </div>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-3">{app.description}</p>
+                    <div className="flex gap-1.5 flex-wrap">
+                      {app.categories.map(c => (
+                        <span key={c} className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{c}</span>
+                      ))}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
           </TabsContent>
 
           <TabsContent value="tools" data-testid="content-tools">
