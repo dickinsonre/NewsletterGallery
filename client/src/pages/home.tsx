@@ -97,7 +97,7 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling Expertise</h1>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Archive</p>
             </div>
           </div>

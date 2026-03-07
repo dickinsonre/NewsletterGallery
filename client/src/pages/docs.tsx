@@ -16,7 +16,7 @@ export default function Docs() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling Expertise</h1>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Documentation</p>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Docs() {
             Library Documentation
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto">
-            A comprehensive guide to the SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling Expertise library, featuring Robert Dickinson's curated collection of stormwater modeling resources.
+            A comprehensive guide to the SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling library, featuring Robert Dickinson's curated collection of stormwater modeling resources.
           </p>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
