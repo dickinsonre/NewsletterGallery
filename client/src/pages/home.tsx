@@ -106,6 +106,14 @@ export default function Home() {
             <a href="/" className="text-foreground hover:text-primary transition-colors">Library</a>
             
             <a href="/docs" className="hover:text-primary transition-colors">Docs</a>
+
+            <a href="https://www.linkedin.com/newsletters/7159940733972434944/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Subscribe
+            </a>
+
+            <a href="https://www.linkedin.com/in/robert-dickinson-899011/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              LinkedIn
+            </a>
             
             <Dialog open={isAboutOpen} onOpenChange={setIsAboutOpen}>
               <DialogTrigger asChild>
@@ -170,13 +178,6 @@ export default function Home() {
               </DialogContent>
             </Dialog>
 
-            <a href="https://www.linkedin.com/newsletters/7159940733972434944/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              Subscribe
-            </a>
-
-            <a href="https://www.linkedin.com/in/robert-dickinson-899011/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              LinkedIn
-            </a>
             <ThemeToggle />
           </nav>
         </div>
