@@ -53,8 +53,16 @@ Preferred communication style: Simple, everyday language.
 
 ## Data Architecture
 
+**AI Chatbot:**
+- Floating chat widget (bottom-right corner) available on all pages
+- Powered by OpenAI via Replit AI Integrations (env vars: AI_INTEGRATIONS_OPENAI_API_KEY, AI_INTEGRATIONS_OPENAI_BASE_URL)
+- Server-side streaming endpoint at POST /api/chat
+- Domain-specific system prompt covering SWMM5, ICM, XPSWMM, InfoSewer, InfoSWMM
+- Component: `client/src/components/chatbot.tsx`
+- No database required — stateless conversation (messages kept in React state)
+
 **Content Organization:**
-- Three primary content types: Newsletters, LinkedIn Articles, and Documents
+- Eight content types: Newsletters, LinkedIn Articles, Posts, Documents, Apps, Tools, Quiz, Learning Paths
 - Each content item includes:
   - Metadata (title, description, date, read time)
   - Categorization (Category enums for filtering)
