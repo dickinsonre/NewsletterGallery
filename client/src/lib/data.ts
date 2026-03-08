@@ -2975,6 +2975,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-4",
+    title: "From a 1982 Water Resources Paper to an Interactive App: Honoring Jim Heaney's Legacy Through Game Theory and Fair Cost Allocation",
+    description: "An app honoring James 'Papa' Heaney, Head of Environmental Engineering at UC and UF for many years and a professor of Water Resources Engineering for 50 years. Based on a WRR 1982 paper about applying game theory to fair cost allocation in water resources. Heaney was also a coauthor of the first three SWMM manuals and passed away on August 24, 2024, at the age of 84.",
+    date: "2025",
+    link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436543013381844992/",
+    categories: ["SWMM5", "History"]
+  },
+  {
     id: "post-3",
     title: "Super SUDS Diagrams in Autodesk Water",
     description: "Showcasing the impressive SUDS (Sustainable Urban Drainage Systems) diagrams available in Autodesk Water software for green infrastructure design and visualization.",
