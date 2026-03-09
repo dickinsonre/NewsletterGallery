@@ -941,6 +941,18 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-155",
+    title: "From a 1982 Water Resources Paper to an Interactive App: Honoring Jim Heaney's Legacy Through Game Theory and Fair Cost Allocation",
+    description: "An app honoring James 'Papa' Heaney, Head of Environmental Engineering at UC and UF for many years and a professor of Water Resources Engineering for 50 years. Based on a WRR 1982 paper about applying game theory to fair cost allocation in water resources. Heaney was also a coauthor of the first three SWMM manuals and passed away on August 24, 2024, at the age of 84.",
+    date: "2025",
+    readTime: "5 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436543013381844992/",
+    categories: ["SWMM5", "History"],
+    difficulty: "beginner",
+    keywords: ["James Heaney", "game theory", "cost allocation", "water resources", "SWMM", "history", "UF", "UC"]
+  },
+  {
     id: "linkedin-154",
     title: "People of PySWMM and The Man Who Gave the Pipes a Python Voice",
     description: "A brief history of how one engineer connected a fifty-year-old government program to the future of intelligent infrastructure using Python and PySWMM.",
@@ -2974,14 +2986,6 @@ export const documents: Document[] = [
 ];
 
 export const linkedInPosts: LinkedInPost[] = [
-  {
-    id: "post-4",
-    title: "From a 1982 Water Resources Paper to an Interactive App: Honoring Jim Heaney's Legacy Through Game Theory and Fair Cost Allocation",
-    description: "An app honoring James 'Papa' Heaney, Head of Environmental Engineering at UC and UF for many years and a professor of Water Resources Engineering for 50 years. Based on a WRR 1982 paper about applying game theory to fair cost allocation in water resources. Heaney was also a coauthor of the first three SWMM manuals and passed away on August 24, 2024, at the age of 84.",
-    date: "2025",
-    link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436543013381844992/",
-    categories: ["SWMM5", "History"]
-  },
   {
     id: "post-3",
     title: "Super SUDS Diagrams in Autodesk Water",
