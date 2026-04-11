@@ -38,11 +38,11 @@ The platform covers the following modeling domains:
 | Tools/Scripts      | 45    | `client/src/lib/data.ts` (line 3123) | `tools`             |
 | Quiz Questions     | 30    | `client/src/lib/quiz-data.ts` (line 14) | `quizQuestions` |
 | Learning Paths     | 5     | `client/src/lib/data.ts` (line 129)  | `learningPaths`     |
-| Color Themes       | 11    | `client/src/components/theme-provider.tsx` (line 6) | `colorSchemes` |
+| Color Themes       | 13    | `client/src/components/theme-provider.tsx` (line 6) | `colorSchemes` |
 
 **Total data file size:** 3,574 lines (`data.ts`) + 404 lines (`quiz-data.ts`) = 3,978 lines of content
 
-**Note:** Newsletter signup text references "Edition #59" — update when new editions are added.
+**Note:** Newsletter signup text references "Edition #61" — update this number each time new editions are published.
 
 ---
 
@@ -164,6 +164,8 @@ Light/dark mode stored under key `swmm-library-theme`.
 | `uf` | UF Gators | 22 100% 50% | Orange/blue University of Florida |
 | `osu` | OSU Buckeyes | 0 100% 30% | Scarlet/gray Ohio State |
 | `auburn` | Auburn Tigers | 18 100% 35% | Orange/navy Auburn University |
+| `oregon` | Oregon State Beavers | 22 100% 43% | Beaver orange/black Oregon State |
+| `autodesk` | Autodesk | 201 94% 44% | Sky blue/dark Autodesk brand |
 
 **Special behavior:** The `darkmode` scheme forces the `dark` CSS class on the HTML root element regardless of system preference.
 

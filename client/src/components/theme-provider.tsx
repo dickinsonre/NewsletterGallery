@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
-type ColorScheme = "water" | "forest" | "sunset" | "ocean" | "lavender" | "classic" | "darkmode" | "epa" | "uf" | "osu" | "auburn";
+type ColorScheme = "water" | "forest" | "sunset" | "ocean" | "lavender" | "classic" | "darkmode" | "epa" | "uf" | "osu" | "auburn" | "oregon" | "autodesk";
 
 export const colorSchemes: Record<ColorScheme, { name: string; primary: string; gradient: string; preview: string }> = {
   water: {
@@ -69,6 +69,18 @@ export const colorSchemes: Record<ColorScheme, { name: string; primary: string; 
     primary: "18 100% 35%",
     gradient: "linear-gradient(135deg, #DD550C 0%, #c44a0a 25%, #03244d 50%, #c44a0a 75%, #DD550C 100%)",
     preview: "bg-gradient-to-br from-orange-600 via-blue-950 to-orange-600"
+  },
+  oregon: {
+    name: "Oregon State Beavers",
+    primary: "22 100% 43%",
+    gradient: "linear-gradient(135deg, #DC4405 0%, #c03c04 25%, #1a1a1a 50%, #000000 75%, #DC4405 100%)",
+    preview: "bg-gradient-to-br from-orange-600 via-neutral-900 to-black"
+  },
+  autodesk: {
+    name: "Autodesk",
+    primary: "201 94% 44%",
+    gradient: "linear-gradient(135deg, #0696D7 0%, #0578b0 25%, #1a1a2e 50%, #0d0d1a 75%, #0696D7 100%)",
+    preview: "bg-gradient-to-br from-sky-500 via-slate-900 to-sky-600"
   }
 };
 
