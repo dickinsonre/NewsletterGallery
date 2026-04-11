@@ -1,4 +1,4 @@
-import { LinkedInArticle, Difficulty } from "@/lib/data";
+import { LinkedInArticle, Difficulty, getCategoryImage } from "@/lib/data";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -40,23 +40,36 @@ export function ArticleCard({ article, index }: ArticleCardProps) {
       setFeedback(type);
     }
   };
+
+  const headerImage = getCategoryImage(article.categories);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.3) }}
     >
-      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30">
-        <CardContent className="flex-grow p-5">
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-xs text-muted-foreground font-medium">
-              Article
-            </span>
-            <span className={`px-2 py-1 text-xs font-medium rounded border ${difficultyColors[article.difficulty]}`}>
+      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30 overflow-hidden">
+        <div className="relative h-36 overflow-hidden flex-shrink-0">
+          <img
+            src={headerImage}
+            alt={article.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-card/20 to-transparent" />
+          <div className="absolute top-2 right-2">
+            <span className={`px-2 py-1 text-xs font-medium rounded border backdrop-blur-sm ${difficultyColors[article.difficulty]}`}>
               {difficultyLabels[article.difficulty]}
             </span>
           </div>
-          
+          <div className="absolute top-2 left-2">
+            <span className="text-xs text-white/90 font-medium bg-black/40 backdrop-blur-sm px-2 py-1 rounded">
+              Article
+            </span>
+          </div>
+        </div>
+
+        <CardContent className="flex-grow p-5">
           <h3 className="text-lg font-serif font-semibold leading-snug mb-2 text-foreground group-hover:text-primary transition-colors line-clamp-2">
             {article.title}
           </h3>

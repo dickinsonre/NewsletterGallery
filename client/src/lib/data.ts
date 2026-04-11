@@ -4,6 +4,12 @@ import icmCover from "@assets/generated_images/icm_infoworks_software_interface.
 import historyCover from "@assets/generated_images/historical_timeline_of_swmm_evolution.png";
 import aiCover from "@assets/generated_images/ai_and_machine_learning_integration.png";
 import sqlCover from "@assets/generated_images/sql_database_queries_and_data_extraction.png";
+import hydraulicCover from "@assets/generated_images/hydraulic_simulation_abstract.png";
+import urbanCover from "@assets/generated_images/urban_water_management_abstract.png";
+import blueprintCover from "@assets/generated_images/historical_engineering_blueprint_style.png";
+import codeDataCover from "@assets/generated_images/code_and_data_visualization_abstract.png";
+import geometricCover from "@assets/generated_images/geometric_water_flow_diagram_aesthetic.png";
+import networkCover from "@assets/generated_images/ai_and_network_node_connection.png";
 import appRainCanvas from "@assets/generated_images/app_rain_canvas_studio.png";
 import appRepoInsights from "@assets/generated_images/app_repo_insights.png";
 import appStVenant from "@assets/generated_images/app_st_venant.png";
@@ -116,6 +122,32 @@ export const ALL_CATEGORIES: Category[] = [
   "Code Analysis",
   "Model Testing"
 ];
+
+export const CATEGORY_IMAGE_MAP: Record<string, string> = {
+  "Ruby Scripting": rubyCover,
+  "SQL/Data": sqlCover,
+  "AI/ML": aiCover,
+  "History": historyCover,
+  "ICM InfoWorks": networkCover,
+  "SWMM5": hydraulicCover,
+  "Code Analysis": codeDataCover,
+  "Model Testing": geometricCover,
+  "Migration": blueprintCover,
+  "Quiz": quizCover,
+};
+
+export function getCategoryImage(categories: Category[]): string {
+  const priority: Category[] = [
+    "Ruby Scripting", "SQL/Data", "AI/ML", "History", "Code Analysis",
+    "Model Testing", "Migration", "Quiz", "ICM InfoWorks", "SWMM5"
+  ];
+  for (const cat of priority) {
+    if (categories.includes(cat) && CATEGORY_IMAGE_MAP[cat]) {
+      return CATEGORY_IMAGE_MAP[cat];
+    }
+  }
+  return urbanCover;
+}
 
 export interface LearningPath {
   id: string;

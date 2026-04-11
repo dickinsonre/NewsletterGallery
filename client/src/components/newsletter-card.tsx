@@ -1,4 +1,4 @@
-import { Newsletter, Difficulty } from "@/lib/data";
+import { Newsletter, Difficulty, getCategoryImage } from "@/lib/data";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -40,23 +40,36 @@ export function NewsletterCard({ newsletter, index }: NewsletterCardProps) {
       setFeedback(type);
     }
   };
+
+  const headerImage = newsletter.imageUrl || getCategoryImage(newsletter.categories);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.3) }}
     >
-      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30">
-        <CardContent className="flex-grow p-5">
-          <div className="flex items-center justify-between mb-3">
-            <span className="bg-primary/10 text-primary px-2 py-1 text-xs font-medium rounded">
+      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30 overflow-hidden">
+        <div className="relative h-36 overflow-hidden flex-shrink-0">
+          <img
+            src={headerImage}
+            alt={newsletter.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-card/20 to-transparent" />
+          <div className="absolute top-2 left-2">
+            <span className="bg-primary/90 text-primary-foreground px-2 py-1 text-xs font-semibold rounded backdrop-blur-sm">
               Edition #{newsletter.issueNumber}
             </span>
-            <span className={`px-2 py-1 text-xs font-medium rounded border ${difficultyColors[newsletter.difficulty]}`}>
+          </div>
+          <div className="absolute top-2 right-2">
+            <span className={`px-2 py-1 text-xs font-medium rounded border backdrop-blur-sm ${difficultyColors[newsletter.difficulty]}`}>
               {difficultyLabels[newsletter.difficulty]}
             </span>
           </div>
-          
+        </div>
+
+        <CardContent className="flex-grow p-5">
           <h3 className="text-lg font-serif font-semibold leading-snug mb-2 text-foreground group-hover:text-primary transition-colors line-clamp-2">
             {newsletter.title}
           </h3>
