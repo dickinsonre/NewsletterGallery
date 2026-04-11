@@ -31,7 +31,7 @@ The platform covers the following modeling domains:
 | Content Type       | Count | Data Source File                     | Array Name         |
 |--------------------|-------|--------------------------------------|--------------------|
 | Newsletters        | 58    | `client/src/lib/data.ts` (line 185)  | `newsletters`      |
-| LinkedIn Articles  | 155   | `client/src/lib/data.ts` (line 945)  | `linkedInArticles`  |
+| LinkedIn Articles  | 156   | `client/src/lib/data.ts` (line 945)  | `linkedInArticles`  |
 | LinkedIn Posts     | 3     | `client/src/lib/data.ts` (line 2991) | `linkedInPosts`     |
 | Documents          | 20    | `client/src/lib/data.ts` (line 2793) | `documents`         |
 | Featured Apps      | 13    | `client/src/lib/data.ts` (line 3003) | `featuredApps`      |
@@ -136,7 +136,7 @@ The home page features a tabbed interface using `grid-cols-8` layout.
 | Tab # | Label | Value | Content Type | Count | Features |
 |-------|-------|-------|-------------|-------|----------|
 | 1 | Newsletters | `newsletters` | Newsletter editions | 58 | Category images, difficulty badges, keyword tags |
-| 2 | Articles | `articles` | LinkedIn articles | 155 | Read time, difficulty, category filters |
+| 2 | Articles | `articles` | LinkedIn articles | 156 | Read time, difficulty, category filters |
 | 3 | Posts | `posts` | LinkedIn posts | 3 | Date, category badges |
 | 4 | Documents | `documents` | Technical documents | 20 | Page count, category badges |
 | 5 | Apps | `apps` | Featured web apps | 13 | Thumbnail images with hover zoom, platform badges |

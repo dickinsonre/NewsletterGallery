@@ -941,11 +941,23 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-156",
+    title: "Why Conduit Discretization Matters — and How ReSWMM Automates It for Your SWMM5 Models",
+    description: "A practical look at a common modeling problem most stormwater engineers know but few talk about. Long conduits in EPA SWMM models are one of those hidden sources of inaccuracy — and ReSWMM automates the discretization process to fix it.",
+    date: "2025",
+    readTime: "22 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/why-conduit-discretization-matters-how-reswmm-automates-dickinson",
+    categories: ["SWMM5"],
+    difficulty: "advanced",
+    keywords: ["conduit discretization", "ReSWMM", "SWMM5", "EPA SWMM", "dynamic wave", "routing", "pipe length", "modeling accuracy"]
+  },
+  {
     id: "linkedin-155",
     title: "From a 1982 Water Resources Paper to an Interactive App: Honoring Jim Heaney's Legacy Through Game Theory and Fair Cost Allocation",
     description: "An app honoring James 'Papa' Heaney, Head of Environmental Engineering at UC and UF for many years and a professor of Water Resources Engineering for 50 years. Based on a WRR 1982 paper about applying game theory to fair cost allocation in water resources. Heaney was also a coauthor of the first three SWMM manuals and passed away on August 24, 2024, at the age of 84.",
     date: "2025",
-    readTime: "5 min read",
+    readTime: "7 min read",
     imageUrl: historyCover,
     link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436543013381844992/",
     categories: ["SWMM5", "History"],
