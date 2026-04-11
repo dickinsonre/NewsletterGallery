@@ -184,6 +184,32 @@ export const learningPaths: LearningPath[] = [
 
 export const newsletters: Newsletter[] = [
   {
+    id: "60",
+    title: "New Graphical User Interface for EPANET 2.3 Now Available - Lew Rossman on GitHub",
+    description: "The new UX looks great and even has GIS features. EPANET-UI allows users to create, edit, and run EPANET water distribution models through a modern graphical interface. The code is on GitHub and the UX is available at sites.google.com/view/epanet-ui.",
+    date: "2025-04-01",
+    readTime: "2 min read",
+    imageUrl: historyCover,
+    link: "https://www.linkedin.com/pulse/edition-60-new-graphical-user-interface-epanet-23-now-robert-dickinson",
+    issueNumber: 60,
+    categories: ["SWMM5", "History"],
+    difficulty: "beginner",
+    keywords: ["EPANET", "EPANET 2.3", "GUI", "graphical user interface", "GIS", "Lew Rossman", "GitHub", "water distribution"]
+  },
+  {
+    id: "59",
+    title: "How One Web App Unlocks Two Worlds of Hydraulic Modeling: EPASWMM5 and EPANET",
+    description: "Or: Who is the common thread between SWMM5 and EPANET. Dedicated to the still active Dr. Lewis A. Rossman, creator of EPANET at the US EPA (1991–2026).",
+    date: "2025-03-15",
+    readTime: "17 min read",
+    imageUrl: icmCover,
+    link: "https://www.linkedin.com/pulse/edition-59-how-one-web-app-unlocks-two-worlds-hydraulic-robert-dickinson",
+    issueNumber: 59,
+    categories: ["SWMM5", "History"],
+    difficulty: "intermediate",
+    keywords: ["EPASWMM5", "EPANET", "hydraulic modeling", "web app", "Lewis Rossman", "EPA", "water distribution", "stormwater"]
+  },
+  {
     id: "58",
     title: "An APP ROSETTA Stone: Code Translations of SWMM5 and EPANET across 37 Programming Languages",
     description: "What if you could read the EPA's stormwater engine or EPANET in any programming language? Exploring code translations of SWMM5 and EPANET across 37 programming languages.",

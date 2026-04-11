@@ -30,7 +30,7 @@ The platform covers the following modeling domains:
 
 | Content Type       | Count | Data Source File                     | Array Name         |
 |--------------------|-------|--------------------------------------|--------------------|
-| Newsletters        | 58    | `client/src/lib/data.ts` (line 185)  | `newsletters`      |
+| Newsletters        | 60    | `client/src/lib/data.ts` (line 188)  | `newsletters`      |
 | LinkedIn Articles  | 156   | `client/src/lib/data.ts` (line 945)  | `linkedInArticles`  |
 | LinkedIn Posts     | 3     | `client/src/lib/data.ts` (line 2991) | `linkedInPosts`     |
 | Documents          | 20    | `client/src/lib/data.ts` (line 2793) | `documents`         |
@@ -135,7 +135,7 @@ The home page features a tabbed interface using `grid-cols-8` layout.
 
 | Tab # | Label | Value | Content Type | Count | Features |
 |-------|-------|-------|-------------|-------|----------|
-| 1 | Newsletters | `newsletters` | Newsletter editions | 58 | Category images, difficulty badges, keyword tags |
+| 1 | Newsletters | `newsletters` | Newsletter editions | 60 | Category images, difficulty badges, keyword tags |
 | 2 | Articles | `articles` | LinkedIn articles | 156 | Read time, difficulty, category filters |
 | 3 | Posts | `posts` | LinkedIn posts | 3 | Date, category badges |
 | 4 | Documents | `documents` | Technical documents | 20 | Page count, category badges |
