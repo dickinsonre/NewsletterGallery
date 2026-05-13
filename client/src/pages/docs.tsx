@@ -40,7 +40,7 @@ export default function Docs() {
             Library Documentation
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto">
-            A comprehensive guide to the swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling library, featuring Robert Dickinson's curated collection of stormwater modeling resources.
+            A comprehensive guide to the <span style={{ fontVariant: 'small-caps' }}>swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling</span> library, featuring Robert Dickinson's curated collection of stormwater modeling resources.
           </p>
 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
