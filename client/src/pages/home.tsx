@@ -203,8 +203,8 @@ export default function Home() {
                   This living archive captures decades of hydraulic engineering knowledge, Ruby scripting techniques, and the untold history of urban drainage software.
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs mb-3">
-                  <Badge variant="secondary">Autodesk Water Technologist</Badge>
-                  <Badge variant="secondary">17+ yrs at Innovyze</Badge>
+                  <Badge variant="secondary">Autodesk Water Technologist 2021–2026</Badge>
+                  <Badge variant="secondary">2007–2026 Innovyze/Autodesk</Badge>
                   <Badge variant="secondary">SWMM6 &amp; SWMM5 Enablement</Badge>
                   <Badge variant="secondary">Small Business Owner</Badge>
                   <Badge variant="secondary">Autodesk AEC Collection &amp; ICM InfoWorks, IWP, IFD</Badge>
@@ -213,6 +213,7 @@ export default function Home() {
                   <Badge variant="secondary">{newsletters.length} Newsletters</Badge>
                   <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
                   <Badge variant="secondary">{tools.length} Tools</Badge>
+                  <Badge variant="secondary">{githubRepos.length + cimmRepos.length + swmmEnablementRepos.length + swmmBobRepos.length} GitHub Repos</Badge>
                 </div>
                 {/* Quick Glossary with Linkable Terms */}
                 <details className="text-xs" id="glossary">
