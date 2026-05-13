@@ -205,6 +205,11 @@ export default function Home() {
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs mb-3">
                   <Badge variant="secondary">Autodesk Water Technologist</Badge>
                   <Badge variant="secondary">17+ yrs at Innovyze</Badge>
+                  <Badge variant="secondary">SWMM6 &amp; SWMM5 Enablement</Badge>
+                  <Badge variant="secondary">Small Business Owner</Badge>
+                  <Badge variant="secondary">Autodesk AEC Collection &amp; ICM InfoWorks, IWP, IFD</Badge>
+                  <Badge variant="secondary">Chair, SWMM5+ TAC at CIMM</Badge>
+                  <Badge variant="secondary">EWRI Stormwater Modeling Committee</Badge>
                   <Badge variant="secondary">{newsletters.length} Newsletters</Badge>
                   <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
                   <Badge variant="secondary">{tools.length} Tools</Badge>
