@@ -1,4 +1,4 @@
-# SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling — The Robert Dickinson Archive
+# swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling — The Robert Dickinson Archive
 
 ## Overview
 

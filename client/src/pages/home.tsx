@@ -1,4 +1,4 @@
-import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category, githubRepos } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category, githubRepos, cimmRepos, swmmEnablementRepos, swmmBobRepos } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
@@ -7,7 +7,7 @@ import { ToolCard } from "@/components/tool-card";
 import { GlobalSearch } from "@/components/global-search";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe, Brain, GitFork } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe, Brain, GitFork, Star } from "lucide-react";
 import { QuizSection } from "@/components/quiz-section";
 import { RepoCard } from "@/components/repo-card";
 import { Input } from "@/components/ui/input";
@@ -99,7 +99,7 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">SWMM5, ICM, XPSWMM, InfoSewer & InfoSWMM Modeling</h1>
+              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Archive</p>
             </div>
           </div>
@@ -712,58 +712,132 @@ export default function Home() {
           </TabsContent>
 
           <TabsContent value="repos" data-testid="content-repos">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-serif font-medium mb-2">GitHub Repositories</h3>
-                <p className="text-muted-foreground">All {githubRepos.length} public repositories from <a href="https://github.com/dickinsonre" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">@dickinsonre</a> — covering SWMM5, ICM, EPANET, Ruby scripting, and more.</p>
-                <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
-                  <Badge variant="secondary" className="bg-primary/10 text-primary">
-                    {githubRepos.length} Repos
-                  </Badge>
-                  <Badge variant="outline" className="gap-1">
-                    <GitFork className="w-3 h-3" /> {githubRepos.filter(r => r.fork).length} Forks
-                  </Badge>
-                  <Badge variant="outline" className="gap-1 bg-primary/5 border-primary/30 text-primary">
-                    {githubRepos.filter(r => !r.fork).length} Originals
-                  </Badge>
+            <div className="max-w-6xl mx-auto space-y-14">
+
+              {/* ── @dickinsonre ── */}
+              <section>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+                  <div>
+                    <a href="https://github.com/dickinsonre" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 group">
+                      <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="text-xl font-serif font-semibold group-hover:text-primary transition-colors">@dickinsonre</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Personal repos — SWMM5, ICM, EPANET, Ruby scripting, AI/ML and more.</p>
+                  </div>
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary">{githubRepos.length} repos</Badge>
+                    <Badge variant="outline" className="gap-1"><GitFork className="w-3 h-3" />{githubRepos.filter(r => r.fork).length} forks</Badge>
+                    <Badge variant="outline" className="bg-primary/5 border-primary/30 text-primary">{githubRepos.filter(r => !r.fork).length} originals</Badge>
+                  </div>
                 </div>
-              </div>
+                {/* Filter bar */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {(["All", "Original", "Fork", "SWMM5", "ICM InfoWorks", "Ruby Scripting", "AI/ML", "History", "Code Analysis", "SQL/Data"] as const).map((filter) => {
+                    const count = filter === "All" ? githubRepos.length
+                      : filter === "Original" ? githubRepos.filter(r => !r.fork).length
+                      : filter === "Fork" ? githubRepos.filter(r => r.fork).length
+                      : githubRepos.filter(r => r.categories.includes(filter as any)).length;
+                    return (
+                      <Button
+                        key={filter}
+                        variant={repoFilter === filter ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => setRepoFilter(filter)}
+                        data-testid={`repo-filter-${filter.toLowerCase().replace(/\s+/g, "-")}`}
+                        className="text-xs"
+                      >
+                        {filter} <span className="ml-1 opacity-70">{count}</span>
+                      </Button>
+                    );
+                  })}
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {githubRepos
+                    .filter(r =>
+                      repoFilter === "All" ? true
+                      : repoFilter === "Original" ? !r.fork
+                      : repoFilter === "Fork" ? r.fork
+                      : r.categories.includes(repoFilter as any)
+                    )
+                    .map((repo, idx) => (
+                      <RepoCard key={repo.id} repo={repo} index={idx} />
+                    ))
+                  }
+                </div>
+              </section>
 
-              {/* Filter bar */}
-              <div className="flex flex-wrap gap-2 justify-center mb-8">
-                {(["All", "Original", "Fork", "SWMM5", "ICM InfoWorks", "Ruby Scripting", "AI/ML", "History", "Code Analysis", "SQL/Data"] as const).map((filter) => {
-                  const count = filter === "All" ? githubRepos.length
-                    : filter === "Original" ? githubRepos.filter(r => !r.fork).length
-                    : filter === "Fork" ? githubRepos.filter(r => r.fork).length
-                    : githubRepos.filter(r => r.categories.includes(filter as any)).length;
-                  return (
-                    <Button
-                      key={filter}
-                      variant={repoFilter === filter ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setRepoFilter(filter)}
-                      data-testid={`repo-filter-${filter.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="text-xs"
-                    >
-                      {filter} <span className="ml-1 opacity-70">{count}</span>
-                    </Button>
-                  );
-                })}
-              </div>
+              <div className="border-t border-border/50" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {githubRepos
-                  .filter(r =>
-                    repoFilter === "All" ? true
-                    : repoFilter === "Original" ? !r.fork
-                    : repoFilter === "Fork" ? r.fork
-                    : r.categories.includes(repoFilter as any)
-                  )
-                  .map((repo, idx) => (
+              {/* ── CIMM-ORG ── */}
+              <section>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+                  <div>
+                    <a href="https://github.com/CIMM-ORG" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 group">
+                      <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="text-xl font-serif font-semibold group-hover:text-primary transition-colors">CIMM-ORG</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Center for Infrastructure Modeling and Management — non-profit research &amp; technology transfer for infrastructure collaboration.</p>
+                  </div>
+                  <Badge variant="secondary" className="bg-primary/10 text-primary flex-shrink-0">{cimmRepos.length} repos</Badge>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {cimmRepos.map((repo, idx) => (
                     <RepoCard key={repo.id} repo={repo} index={idx} />
-                  ))
-                }
-              </div>
+                  ))}
+                </div>
+              </section>
+
+              <div className="border-t border-border/50" />
+
+              {/* ── SWMMEnablement ── */}
+              <section>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+                  <div>
+                    <a href="https://github.com/SWMMEnablement" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 group">
+                      <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="text-xl font-serif font-semibold group-hover:text-primary transition-colors">SWMMEnablement</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Enabling and Enhancing SWMM for the Future and Present — model archives, legacy code, and scripting tools.</p>
+                  </div>
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary">{swmmEnablementRepos.length} repos</Badge>
+                    <Badge variant="outline" className="gap-1 text-yellow-600 dark:text-yellow-400 border-yellow-500/40">
+                      <Star className="w-3 h-3 fill-current" />{swmmEnablementRepos.reduce((a,r)=>a+r.stars,0)} stars
+                    </Badge>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {swmmEnablementRepos.map((repo, idx) => (
+                    <RepoCard key={repo.id} repo={repo} index={idx} />
+                  ))}
+                </div>
+              </section>
+
+              <div className="border-t border-border/50" />
+
+              {/* ── SWMMBobSWMM6 ── */}
+              <section>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+                  <div>
+                    <a href="https://github.com/SWMMBobSWMM6" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 group">
+                      <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="text-xl font-serif font-semibold group-hover:text-primary transition-colors">SWMMBobSWMM6</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">SWMM6 exploration and next-generation stormwater engine development by Robert Dickinson.</p>
+                  </div>
+                  <Badge variant="secondary" className="bg-primary/10 text-primary flex-shrink-0">{swmmBobRepos.length} repos</Badge>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {swmmBobRepos.map((repo, idx) => (
+                    <RepoCard key={repo.id} repo={repo} index={idx} />
+                  ))}
+                </div>
+              </section>
+
             </div>
           </TabsContent>
         </Tabs>

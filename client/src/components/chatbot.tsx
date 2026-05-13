@@ -127,7 +127,7 @@ export function Chatbot() {
               <Bot className="w-5 h-5" />
               <div>
                 <h3 className="font-medium text-sm">Stormwater Modeling Assistant</h3>
-                <p className="text-[10px] opacity-80">Ask about SWMM5, ICM, XPSWMM & more</p>
+                <p className="text-[10px] opacity-80">Ask about swmm4, swmm5, swmm5+, swmm6, xpswmm, ICM & more</p>
               </div>
             </div>
             <div className="flex items-center gap-1">
