@@ -104,7 +104,7 @@ export default function Home() {
             </div>
           </div>
           
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground items-center">
+          <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground items-center self-end pb-3">
             <a href="/" className="text-foreground hover:text-primary transition-colors">Library</a>
             
             <a href="/docs" className="hover:text-primary transition-colors">Docs</a>
