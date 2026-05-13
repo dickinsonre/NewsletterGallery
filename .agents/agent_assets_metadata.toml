@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "nKRYjlRE-RyztCswIKj-R"
+uri = "file://attached_assets/repo_swmm5_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "BdWC8zexuQLhfka0Z_Cuj"
+uri = "file://attached_assets/repo_icm_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Kn-0ZyqQvt3k_9uX_Kf0Y"
+uri = "file://attached_assets/repo_ruby_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "avAE_ANLpTokuvisZAx3O"
+uri = "file://attached_assets/repo_ai_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "o8xnYFFtBjIYGfFkMJp6u"
+uri = "file://attached_assets/repo_history_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QmQ66oH4x04gEGlPAlwqu"
+uri = "file://attached_assets/repo_code_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "snWciCJ1U88XdiyPCJJhq"
+uri = "file://attached_assets/repo_data_cover.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "0fteVGkNycm9bgx_G_pYe"
+uri = "file://attached_assets/repo_github_cover.png"
+type = "image"
+title = "generated_image"
