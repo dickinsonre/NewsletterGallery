@@ -99,7 +99,7 @@ export default function Home() {
               <BookOpen className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-bold leading-none tracking-tight">swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling</h1>
+              <h1 className="font-serif text-base font-bold leading-none tracking-tight whitespace-nowrap" style={{ fontVariant: 'small-caps' }}>swmm4, swmm5, swmm5+, swmm6, xpswmm, infosewer, infoswmm and ICM InfoWorks Modeling</h1>
               <p className="text-xs text-muted-foreground tracking-widest uppercase mt-1">Newsletter Archive</p>
             </div>
           </div>
