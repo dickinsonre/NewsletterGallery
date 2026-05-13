@@ -46,7 +46,7 @@ export default function Docs() {
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-8 space-y-4">
             <h3 className="text-2xl font-serif font-medium text-foreground">About This Library</h3>
             <p className="text-muted-foreground leading-relaxed">
-              This digital library showcases 53+ years of expertise in stormwater modeling, hydraulic analysis, and water infrastructure software development. Created by Robert Dickinson, Autodesk Water Technologist, the collection spans topics from SWMM5 fundamentals to advanced Ruby scripting for ICM InfoWorks automation, XPSWMM model conversion, and InfoSewer/InfoSWMM migration.
+              This digital library showcases 48+ years of expertise in stormwater modeling, hydraulic analysis, and water infrastructure software development. Created by Robert Dickinson, Autodesk Water Technologist, the collection spans topics from SWMM5 fundamentals to advanced Ruby scripting for ICM InfoWorks automation, XPSWMM model conversion, and InfoSewer/InfoSWMM migration.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The library serves as a comprehensive resource for engineers, modelers, and students looking to deepen their understanding of stormwater management software and techniques.

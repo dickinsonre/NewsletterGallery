@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a comprehensive digital library and knowledge hub showcasing Robert Dickinson's extensive expertise in stormwater modeling and water infrastructure software. It serves as a curated archive for newsletters, LinkedIn articles and posts, technical documents, interactive web applications, scripting tools, quizzes, and guided learning paths related to SWMM5, ICM, XPSWMM, InfoSewer, and InfoSWMM modeling. The platform aims to centralize and make accessible a vast repository of knowledge accumulated over 53+ years.
+This project is a comprehensive digital library and knowledge hub showcasing Robert Dickinson's extensive expertise in stormwater modeling and water infrastructure software. It serves as a curated archive for newsletters, LinkedIn articles and posts, technical documents, interactive web applications, scripting tools, quizzes, and guided learning paths related to SWMM5, ICM, XPSWMM, InfoSewer, and InfoSWMM modeling. The platform aims to centralize and make accessible a vast repository of knowledge accumulated over 48+ years.
 
 ## User Preferences
 
