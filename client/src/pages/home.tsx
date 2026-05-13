@@ -1,4 +1,4 @@
-import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category, githubRepos } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
@@ -7,8 +7,9 @@ import { ToolCard } from "@/components/tool-card";
 import { GlobalSearch } from "@/components/global-search";
 import robertPhoto from "@assets/image_1763939729281.png";
 import timeEngineerImage from "@assets/image_1764203582124.png";
-import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe, Brain } from "lucide-react";
+import { BookOpen, Search, GraduationCap, Filter, X, ArrowRight, SortAsc, LayoutGrid, List, Wrench, Mail, Send, Github, MessageCircleQuestion, ExternalLink, AppWindow, Globe, Brain, GitFork } from "lucide-react";
 import { QuizSection } from "@/components/quiz-section";
+import { RepoCard } from "@/components/repo-card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -35,6 +36,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [repoFilter, setRepoFilter] = useState<string>("All");
 
   const searchLower = searchQuery.toLowerCase();
   
@@ -382,7 +384,7 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-5xl mx-auto grid-cols-8 mb-12">
+          <TabsList className="grid w-full max-w-6xl mx-auto grid-cols-9 mb-12">
             <TabsTrigger value="newsletters" data-testid="tab-newsletters">Newsletters</TabsTrigger>
             <TabsTrigger value="articles" data-testid="tab-articles">Articles</TabsTrigger>
             <TabsTrigger value="posts" data-testid="tab-posts">Posts</TabsTrigger>
@@ -398,6 +400,9 @@ export default function Home() {
             </TabsTrigger>
             <TabsTrigger value="paths" data-testid="tab-paths">
               <GraduationCap className="w-4 h-4 mr-1" /> Paths
+            </TabsTrigger>
+            <TabsTrigger value="repos" data-testid="tab-repos">
+              <Github className="w-4 h-4 mr-1" /> Repos
             </TabsTrigger>
           </TabsList>
 
@@ -702,6 +707,62 @@ export default function Home() {
                     </CardContent>
                   </Card>
                 ))}
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="repos" data-testid="content-repos">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-serif font-medium mb-2">GitHub Repositories</h3>
+                <p className="text-muted-foreground">All {githubRepos.length} public repositories from <a href="https://github.com/dickinsonre" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">@dickinsonre</a> — covering SWMM5, ICM, EPANET, Ruby scripting, and more.</p>
+                <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
+                  <Badge variant="secondary" className="bg-primary/10 text-primary">
+                    {githubRepos.length} Repos
+                  </Badge>
+                  <Badge variant="outline" className="gap-1">
+                    <GitFork className="w-3 h-3" /> {githubRepos.filter(r => r.fork).length} Forks
+                  </Badge>
+                  <Badge variant="outline" className="gap-1 bg-primary/5 border-primary/30 text-primary">
+                    {githubRepos.filter(r => !r.fork).length} Originals
+                  </Badge>
+                </div>
+              </div>
+
+              {/* Filter bar */}
+              <div className="flex flex-wrap gap-2 justify-center mb-8">
+                {(["All", "Original", "Fork", "SWMM5", "ICM InfoWorks", "Ruby Scripting", "AI/ML", "History", "Code Analysis", "SQL/Data"] as const).map((filter) => {
+                  const count = filter === "All" ? githubRepos.length
+                    : filter === "Original" ? githubRepos.filter(r => !r.fork).length
+                    : filter === "Fork" ? githubRepos.filter(r => r.fork).length
+                    : githubRepos.filter(r => r.categories.includes(filter as any)).length;
+                  return (
+                    <Button
+                      key={filter}
+                      variant={repoFilter === filter ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setRepoFilter(filter)}
+                      data-testid={`repo-filter-${filter.toLowerCase().replace(/\s+/g, "-")}`}
+                      className="text-xs"
+                    >
+                      {filter} <span className="ml-1 opacity-70">{count}</span>
+                    </Button>
+                  );
+                })}
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {githubRepos
+                  .filter(r =>
+                    repoFilter === "All" ? true
+                    : repoFilter === "Original" ? !r.fork
+                    : repoFilter === "Fork" ? r.fork
+                    : r.categories.includes(repoFilter as any)
+                  )
+                  .map((repo, idx) => (
+                    <RepoCard key={repo.id} repo={repo} index={idx} />
+                  ))
+                }
               </div>
             </div>
           </TabsContent>
