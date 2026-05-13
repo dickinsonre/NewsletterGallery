@@ -3668,7 +3668,7 @@ export const tools: Tool[] = [
 ];
 
 export const githubRepos: GitHubRepo[] = [
-  { id: "repo-1", name: "NewsletterGallery", description: "Gallery app for the SWMM5/ICM newsletter archive, built on Replit.", url: "https://github.com/dickinsonre/NewsletterGallery", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
+  { id: "repo-1", name: "NewsletterGallery", description: "Gallery app for the SWMM5/ICM newsletter archive, built on Replit.", url: "https://github.com/dickinsonre/NewsletterGallery", language: "TypeScript", stars: 1, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
   { id: "repo-2", name: "SWMM-Infiltration", description: "SWMM5 infiltration modeling explorer built on Replit.", url: "https://github.com/dickinsonre/SWMM-Infiltration", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-12", categories: ["SWMM5"] },
   { id: "repo-3", name: "SWMM-Explorer", description: "Interactive SWMM5 model explorer built on Replit.", url: "https://github.com/dickinsonre/SWMM-Explorer", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-12", categories: ["SWMM5"] },
   { id: "repo-4", name: "Swmm5-UI-Engine", description: "Web-based HTML UI engine for running and interacting with EPA SWMM5 models.", url: "https://github.com/dickinsonre/Swmm5-UI-Engine", language: "HTML", stars: 0, fork: false, updatedAt: "2026-05-12", categories: ["SWMM5"] },
@@ -3733,7 +3733,8 @@ export const githubRepos: GitHubRepo[] = [
   { id: "repo-63", name: "SurchargeDetective", description: "SurchargeDetective — identifies and diagnoses surcharged pipes in SWMM5 models.", url: "https://github.com/dickinsonre/SurchargeDetective", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
   { id: "repo-64", name: "ICMFlowVisualizer", description: "ICM Flow Visualizer — interactive flow visualization tool for InfoWorks ICM networks.", url: "https://github.com/dickinsonre/ICMFlowVisualizer", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["ICM InfoWorks"] },
   { id: "repo-65", name: "Poincar-SWMM5-Subcatchment", description: "Poincaré SWMM5 Subcatchment — phase-space analysis of SWMM5 subcatchment runoff dynamics.", url: "https://github.com/dickinsonre/Poincar-SWMM5-Subcatchment", language: "", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
-  { id: "repo-66", name: "SWMM-Attractor", description: "SWMM Attractor — chaos theory and attractor visualization applied to SWMM5 hydrology.", url: "https://github.com/dickinsonre/SWMM-Attractor", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] }
+  { id: "repo-66", name: "SWMM-Attractor", description: "SWMM Attractor — chaos theory and attractor visualization applied to SWMM5 hydrology.", url: "https://github.com/dickinsonre/SWMM-Attractor", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
+  { id: "repo-67", name: "swmm5-ea", description: "SWMM5-EA — evolutionary algorithm extensions for SWMM5 calibration and optimization.", url: "https://github.com/dickinsonre/swmm5-ea", language: "", stars: 0, fork: true, updatedAt: "2026-05-13", categories: ["SWMM5"] }
 ];
 
 export const cimmRepos: GitHubRepo[] = [
