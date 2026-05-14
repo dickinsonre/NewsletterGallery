@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-13",
+    title: "Urban Clouds and Precipitation — Stormwater Modeling Insights",
+    description: "Exploring the relationship between urban environments, cloud formation, and precipitation patterns, and what it means for stormwater modeling and SWMM simulations.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_urban-clouds-precipitation-activity-7448790950245498880-3gKp",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
     id: "post-12",
     title: "Webinar: New Features in ICM InfoWorks — Autodesk Water",
     description: "Highlighting a webinar showcasing great new features in ICM InfoWorks, presented by three leading experts in the Autodesk Water community.",
