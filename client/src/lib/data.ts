@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-4",
+    title: "Two App-Making Credentials on My LinkedIn",
+    description: "Sharing two app-making credentials that highlight expertise in building stormwater modeling applications and tools.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_two-app-making-credentials-are-on-my-linkedin-activity-7458593568618688512-c1vR",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
     id: "post-3",
     title: "Super SUDS Diagrams in Autodesk Water",
     description: "Showcasing the impressive SUDS (Sustainable Urban Drainage Systems) diagrams available in Autodesk Water software for green infrastructure design and visualization.",
