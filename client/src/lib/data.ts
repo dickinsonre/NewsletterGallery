@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-11",
+    title: "Hydrology vs Hydraulics: What's the Difference?",
+    description: "Explaining the distinction between hydrology and hydraulics — two foundational disciplines in stormwater modeling — and how they work together in SWMM5 and ICM simulations.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_hydrology-vs-hydraulics-whats-the-difference-activity-7452736393765814273-5pAV",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
     id: "post-10",
     title: "A Great New Newsletter from Caleb Buahin",
     description: "Highlighting a new stormwater modeling newsletter from Caleb Buahin, sharing insights and updates relevant to the SWMM and water infrastructure community.",
