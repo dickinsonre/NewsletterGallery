@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-7",
+    title: "SWMM 2D Mesh Generation",
+    description: "Exploring 2D mesh generation techniques for SWMM flood modeling, covering mesh creation, refinement, and integration with stormwater simulation workflows.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_swmm2d-mesh-generation-activity-7455691963074441217-d2cO",
+    categories: ["SWMM5", "ICM InfoWorks"]
+  },
+  {
     id: "post-6",
     title: "InfoWorks ICM Ruby Scripting",
     description: "Exploring Ruby scripting capabilities in InfoWorks ICM for automating model workflows, data processing, and custom analysis within the ICM environment.",
