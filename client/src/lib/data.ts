@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-8",
+    title: "PhD Opportunity at the University of Florida",
+    description: "Sharing a PhD research opportunity at the University of Florida related to stormwater modeling and water infrastructure engineering.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_phd-opportunity-at-the-university-of-florida-activity-7454156252236124160-qU3E",
+    categories: ["SWMM5"]
+  },
+  {
     id: "post-7",
     title: "SWMM 2D Mesh Generation",
     description: "Exploring 2D mesh generation techniques for SWMM flood modeling, covering mesh creation, refinement, and integration with stormwater simulation workflows.",
