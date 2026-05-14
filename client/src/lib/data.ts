@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-18",
+    title: "Did You Know ICM Can Do That? — Samer Muhandes Expert Series",
+    description: "Highlighting the extremely informative #DidYouKnowICMcandothat series by Samer Muhandes PhD, CEng, MICE — PM for ICM InfoWorks and certified expert — sharing deep insights into lesser-known ICM capabilities.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_infoworksicm-didyouknowicmcandothat-activity-7444914906732322816-Frp4",
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
+  },
+  {
     id: "post-17",
     title: "Singapore Drainage: Real-World Stormwater Infrastructure",
     description: "Walking around Loyang Valley in Singapore reveals fascinating drainage design — sidewalk drains, tree inlets, linear drainage around buildings, and open channels with trash screens. A real-world look at urban stormwater infrastructure.",
