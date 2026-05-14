@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-12",
+    title: "Webinar: New Features in ICM InfoWorks — Autodesk Water",
+    description: "Highlighting a webinar showcasing great new features in ICM InfoWorks, presented by three leading experts in the Autodesk Water community.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_webinar-autodesk-water-activity-7452732645920219136-vci0",
+    categories: ["ICM InfoWorks"]
+  },
+  {
     id: "post-11",
     title: "Hydrology vs Hydraulics: What's the Difference?",
     description: "Explaining the distinction between hydrology and hydraulics — two foundational disciplines in stormwater modeling — and how they work together in SWMM5 and ICM simulations.",
