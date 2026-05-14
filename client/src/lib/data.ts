@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-6",
+    title: "InfoWorks ICM Ruby Scripting",
+    description: "Exploring Ruby scripting capabilities in InfoWorks ICM for automating model workflows, data processing, and custom analysis within the ICM environment.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_infoworks-icm-ruby-activity-7456985508666339328-IW2m",
+    categories: ["ICM InfoWorks", "Ruby Scripting"]
+  },
+  {
     id: "post-5",
     title: "Alpha Release Guide for Open Source SWMM",
     description: "Announcing and guiding users through the alpha release of an open source SWMM project, covering setup, features, and next steps for the community.",
