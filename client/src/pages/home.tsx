@@ -140,6 +140,17 @@ export default function Home() {
                       hydraulic analysis, and software development for water infrastructure.
                     </p>
                   </div>
+
+                  <div className="space-y-2">
+                    <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider text-center">Roles & Affiliations</h4>
+                    <div className="flex flex-wrap justify-center gap-2 text-sm">
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">SWMM6 & SWMM5 Enablement</span>
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Small Business Owner</span>
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Autodesk AEC Collection & ICM InfoWorks, IWP, IFD</span>
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">Chair, SWMM5+ TAC at CIMM</span>
+                      <span className="bg-secondary px-3 py-1 rounded-full text-secondary-foreground">EWRI Stormwater Modeling Committee</span>
+                    </div>
+                  </div>
                   
                   <div className="space-y-2">
                     <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider text-center">Expertise Areas</h4>
