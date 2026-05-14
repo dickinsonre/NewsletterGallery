@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-9",
+    title: "Did You Know ICM Can Do That? — InfoWorks ICM Tips",
+    description: "A 'Did You Know ICM Can Do That?' post highlighting lesser-known but powerful features and capabilities within InfoWorks ICM for stormwater and wastewater modeling.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_didyouknowicmcandothat-infoworksicm-didyouknowicmcandothat-activity-7454148555541307392-g7sY",
+    categories: ["ICM InfoWorks"]
+  },
+  {
     id: "post-8",
     title: "PhD Opportunity at the University of Florida",
     description: "Sharing a PhD research opportunity at the University of Florida related to stormwater modeling and water infrastructure engineering.",
