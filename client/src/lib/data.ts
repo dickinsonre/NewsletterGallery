@@ -3069,6 +3069,14 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-5",
+    title: "Alpha Release Guide for Open Source SWMM",
+    description: "Announcing and guiding users through the alpha release of an open source SWMM project, covering setup, features, and next steps for the community.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_alpha-release-guide-for-open-source-swmm-activity-7457559233727770624-qqyI",
+    categories: ["SWMM5"]
+  },
+  {
     id: "post-4",
     title: "Two App-Making Credentials on My LinkedIn",
     description: "Sharing two app-making credentials that highlight expertise in building stormwater modeling applications and tools.",
