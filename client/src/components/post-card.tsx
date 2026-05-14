@@ -17,7 +17,17 @@ export function PostCard({ post, index }: PostCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.3) }}
     >
-      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30">
+      <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300 border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card hover:border-primary/30 overflow-hidden">
+        {post.imageUrl && (
+          <div className="relative h-36 overflow-hidden bg-muted flex-shrink-0">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+          </div>
+        )}
         <CardContent className="flex-grow p-5">
           <div className="flex items-center justify-between mb-3">
             <span className="flex items-center gap-1 text-xs text-muted-foreground font-medium">

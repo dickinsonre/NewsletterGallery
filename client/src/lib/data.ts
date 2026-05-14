@@ -82,6 +82,7 @@ export interface LinkedInPost {
   date: string;
   link: string;
   categories: Category[];
+  imageUrl?: string;
 }
 
 export interface FeaturedApp {
@@ -3069,12 +3070,49 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-17",
+    title: "Singapore Drainage: Real-World Stormwater Infrastructure",
+    description: "Walking around Loyang Valley in Singapore reveals fascinating drainage design — sidewalk drains, tree inlets, linear drainage around buildings, and open channels with trash screens. A real-world look at urban stormwater infrastructure.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_walking-around-loyang-valley-in-singapore-activity-7447214411632771072-bl4l",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: urbanCover
+  },
+  {
+    id: "post-16",
+    title: "Global Launch: Biggest Software Updates of 2027 + 700 GitHub Scripts",
+    description: "Sharing the 2027 release highlights — including a spotlight on the GitHub repository that now contains more than 700 scripts and tools, with a deep-dive post from Daniel Moreira on how it started and grew.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_its-that-time-of-year-our-big-2027-releases-activity-7448370628249751552-pOLC",
+    categories: ["ICM InfoWorks"],
+    imageUrl: codeDataCover
+  },
+  {
+    id: "post-15",
+    title: "Autodesk Construction Cloud Is Now Autodesk Forma",
+    description: "Autodesk Construction Cloud has rebranded to Autodesk Forma — bringing design and construction into one connected platform with better data, improved collaboration, and more informed decisions across the project lifecycle.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_autodesk-construction-cloud-is-now-autodesk-activity-7448589249920122880-D73h",
+    categories: ["ICM InfoWorks"],
+    imageUrl: networkCover
+  },
+  {
+    id: "post-14",
+    title: "Autodesk Launches Product Help MCP Server for AI Assistants",
+    description: "Autodesk launched the Product Help MCP Server — making trusted product knowledge for ICM, InfoDrainage, WSPro, and InfoWater Pro accessible to AI assistants across 110+ tools for faster, more reliable answers.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/robertdickinson_autodesk-launches-product-help-mcp-server-activity-7448589514719248384-WO5s",
+    categories: ["ICM InfoWorks"],
+    imageUrl: aiCover
+  },
+  {
     id: "post-13",
     title: "Urban Clouds and Precipitation — Stormwater Modeling Insights",
     description: "Exploring the relationship between urban environments, cloud formation, and precipitation patterns, and what it means for stormwater modeling and SWMM simulations.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_urban-clouds-precipitation-activity-7448790950245498880-3gKp",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: urbanCover
   },
   {
     id: "post-12",
@@ -3082,7 +3120,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Highlighting a webinar showcasing great new features in ICM InfoWorks, presented by three leading experts in the Autodesk Water community.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_webinar-autodesk-water-activity-7452732645920219136-vci0",
-    categories: ["ICM InfoWorks"]
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
   },
   {
     id: "post-11",
@@ -3090,7 +3129,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Explaining the distinction between hydrology and hydraulics — two foundational disciplines in stormwater modeling — and how they work together in SWMM5 and ICM simulations.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_hydrology-vs-hydraulics-whats-the-difference-activity-7452736393765814273-5pAV",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: hydraulicCover
   },
   {
     id: "post-10",
@@ -3098,7 +3138,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Highlighting a new stormwater modeling newsletter from Caleb Buahin, sharing insights and updates relevant to the SWMM and water infrastructure community.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_a-great-new-newsletter-from-caleb-buahin-activity-7453064383322116097-9GQ-",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: networkCover
   },
   {
     id: "post-9",
@@ -3106,7 +3147,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "A 'Did You Know ICM Can Do That?' post highlighting lesser-known but powerful features and capabilities within InfoWorks ICM for stormwater and wastewater modeling.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_didyouknowicmcandothat-infoworksicm-didyouknowicmcandothat-activity-7454148555541307392-g7sY",
-    categories: ["ICM InfoWorks"]
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
   },
   {
     id: "post-8",
@@ -3114,7 +3156,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Sharing a PhD research opportunity at the University of Florida related to stormwater modeling and water infrastructure engineering.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_phd-opportunity-at-the-university-of-florida-activity-7454156252236124160-qU3E",
-    categories: ["SWMM5"]
+    categories: ["SWMM5"],
+    imageUrl: blueprintCover
   },
   {
     id: "post-7",
@@ -3122,7 +3165,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Exploring 2D mesh generation techniques for SWMM flood modeling, covering mesh creation, refinement, and integration with stormwater simulation workflows.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_swmm2d-mesh-generation-activity-7455691963074441217-d2cO",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: hydraulicCover
   },
   {
     id: "post-6",
@@ -3130,7 +3174,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Exploring Ruby scripting capabilities in InfoWorks ICM for automating model workflows, data processing, and custom analysis within the ICM environment.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_infoworks-icm-ruby-activity-7456985508666339328-IW2m",
-    categories: ["ICM InfoWorks", "Ruby Scripting"]
+    categories: ["ICM InfoWorks", "Ruby Scripting"],
+    imageUrl: rubyCover
   },
   {
     id: "post-5",
@@ -3138,7 +3183,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Announcing and guiding users through the alpha release of an open source SWMM project, covering setup, features, and next steps for the community.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_alpha-release-guide-for-open-source-swmm-activity-7457559233727770624-qqyI",
-    categories: ["SWMM5"]
+    categories: ["SWMM5"],
+    imageUrl: geometricCover
   },
   {
     id: "post-4",
@@ -3146,7 +3192,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Sharing two app-making credentials that highlight expertise in building stormwater modeling applications and tools.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_two-app-making-credentials-are-on-my-linkedin-activity-7458593568618688512-c1vR",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: aiCover
   },
   {
     id: "post-3",
@@ -3154,7 +3201,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Showcasing the impressive SUDS (Sustainable Urban Drainage Systems) diagrams available in Autodesk Water software for green infrastructure design and visualization.",
     date: "2025",
     link: "https://www.linkedin.com/posts/robertdickinson_super-suds-diagrams-in-this-autodesk-water-activity-7435427149479751680-CkNm",
-    categories: ["ICM InfoWorks", "SWMM5"]
+    categories: ["ICM InfoWorks", "SWMM5"],
+    imageUrl: urbanCover
   },
   {
     id: "post-2",
@@ -3162,7 +3210,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "Exploring the use of artificial and constructed wetlands as sustainable approaches to stormwater management and water quality treatment.",
     date: "Today",
     link: "https://www.linkedin.com/posts/robertdickinson_artificial-and-constructed-wetlands-sustainable-activity-7420525986594607104-vUi4",
-    categories: ["SWMM5", "ICM InfoWorks"]
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: urbanCover
   },
   {
     id: "post-1",
@@ -3170,7 +3219,8 @@ export const linkedInPosts: LinkedInPost[] = [
     description: "The InfoDrainage webinar demonstrates how to design green infrastructure solutions for urban stormwater management.",
     date: "3 days ago",
     link: "https://www.linkedin.com/posts/robertdickinson_the-infodrainage-webinar-demonstrates-how-activity-7417658210431475712-RC2S",
-    categories: ["ICM InfoWorks", "SWMM5"]
+    categories: ["ICM InfoWorks", "SWMM5"],
+    imageUrl: icmCover
   }
 ];
 
