@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-20",
+    title: "Did You Know ICM Can Do That? — Samer Muhandes ICM Tips Post",
+    description: "Another installment in Samer Muhandes PhD, CEng, MICE's #DidYouKnowICMCanDoThat series, sharing expert tips and lesser-known capabilities within InfoWorks ICM.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/samer-muhandes_infoworksicm-didyouknowicmcandothat-ugcPost-7460948710970257409--EST",
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
+  },
+  {
     id: "post-19",
     title: "Reminder: SWMMEnablement GitHub — SWMM5, SWMM4 & XPSWMM Model Repository",
     description: "A reminder that the SWMMEnablement GitHub organization hosts a repository filled with SWMM5 models, SWMM4 models, and over a thousand XPSWMM models from 1990 to 2000.",
