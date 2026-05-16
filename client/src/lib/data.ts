@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-24",
+    title: "Autodesk University 2026 — Matt Wunch, Autodesk",
+    description: "Matt Wunch, Autodesk employee, shares highlights and insights from Autodesk University 2026 (#AU2026), the annual conference showcasing the latest in Autodesk technology and workflows.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/mattwunch_au2026-autodesk-autodeskemployee-activity-7459951217482358784-eaRZ",
+    categories: ["ICM InfoWorks"],
+    imageUrl: networkCover
+  },
+  {
     id: "post-23",
     title: "Automate CSO Analysis in InfoWorks ICM — Samer Muhandes",
     description: "Part of the #DidYouKnowICMCanDoThat series by Samer Muhandes PhD, CEng, MICE — demonstrating how to automate Combined Sewer Overflow (CSO) analysis workflows within InfoWorks ICM.",
