@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-25",
+    title: "Aquatic Suite 2D vs Industry Benchmarks in Shallow Water Equation Solver — Aquanuity",
+    description: "Aquanuity compares their Aquatic Suite 2D solver against industry benchmarks for shallow water equations, highlighting performance in digital twin and water modeling applications.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/aquanuity_digitaltwin-digitalwater-watermodeling-ugcPost-7460309276989865984-_5nC",
+    categories: ["SWMM5", "ICM InfoWorks"],
+    imageUrl: hydraulicCover
+  },
+  {
     id: "post-24",
     title: "Autodesk University 2026 — Matt Wunch, Autodesk",
     description: "Matt Wunch, Autodesk employee, shares highlights and insights from Autodesk University 2026 (#AU2026), the annual conference showcasing the latest in Autodesk technology and workflows.",
