@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-21",
+    title: "Did You Know ICM Can Do That? — Samer Muhandes ICM Tips #3",
+    description: "The third entry in Samer Muhandes PhD, CEng, MICE's #DidYouKnowICMCanDoThat series, highlighting advanced and often overlooked features within InfoWorks ICM.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/samer-muhandes_infoworksicm-didyouknowicmcandothat-ugcPost-7461369489633288193-NzOw",
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
+  },
+  {
     id: "post-20",
     title: "Did You Know ICM Can Do That? — Samer Muhandes ICM Tips Post",
     description: "Another installment in Samer Muhandes PhD, CEng, MICE's #DidYouKnowICMCanDoThat series, sharing expert tips and lesser-known capabilities within InfoWorks ICM.",
