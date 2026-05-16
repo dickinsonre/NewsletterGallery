@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-22",
+    title: "Revit vs Autodesk Forma: Two Things Can Be True — Amy Bunszel",
+    description: "Amy Bunszel (Autodesk EVP) on Revit and Autodesk Forma: both have a place — Revit for how the industry works today, Forma for driving outcomes across the lifecycle tomorrow. New coding tools are compressing the timeline to deliver on this vision faster.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/amybunszel_i-spent-the-last-two-days-at-aec-magazine-ugcPost-7461083924950069248-ZYdp",
+    categories: ["ICM InfoWorks"],
+    imageUrl: networkCover
+  },
+  {
     id: "post-21",
     title: "Did You Know ICM Can Do That? — Samer Muhandes ICM Tips #3",
     description: "The third entry in Samer Muhandes PhD, CEng, MICE's #DidYouKnowICMCanDoThat series, highlighting advanced and often overlooked features within InfoWorks ICM.",
