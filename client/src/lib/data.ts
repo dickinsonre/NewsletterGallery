@@ -3070,6 +3070,15 @@ export const documents: Document[] = [
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "post-23",
+    title: "Automate CSO Analysis in InfoWorks ICM — Samer Muhandes",
+    description: "Part of the #DidYouKnowICMCanDoThat series by Samer Muhandes PhD, CEng, MICE — demonstrating how to automate Combined Sewer Overflow (CSO) analysis workflows within InfoWorks ICM.",
+    date: "2025",
+    link: "https://www.linkedin.com/posts/samer-muhandes_infoworksicm-didyouknowicmcandothat-ugcPost-7460569171437699072-VBcU",
+    categories: ["ICM InfoWorks"],
+    imageUrl: icmCover
+  },
+  {
     id: "post-22",
     title: "Revit vs Autodesk Forma: Two Things Can Be True — Amy Bunszel",
     description: "Amy Bunszel (Autodesk EVP) on Revit and Autodesk Forma: both have a place — Revit for how the industry works today, Forma for driving outcomes across the lifecycle tomorrow. New coding tools are compressing the timeline to deliver on this vision faster.",
