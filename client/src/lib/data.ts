@@ -3922,7 +3922,9 @@ export const githubRepos: GitHubRepo[] = [
   { id: "repo-58", name: "SWMM-ICM-StVenant", description: "SWMM5 and ICM InfoWorks St. Venant equation explorer — dynamic wave routing comparison built on Replit.", url: "https://github.com/dickinsonre/SWMM-ICM-StVenant", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5", "ICM InfoWorks"] },
   { id: "repo-59", name: "SwmmHistory", description: "Visual timeline and history of SWMM — from SWMM1 (1971) through SWMM5 and beyond.", url: "https://github.com/dickinsonre/SwmmHistory", language: "", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5", "History"] },
   { id: "repo-60", name: "EPANET-SWMM-Experts", description: "EPANET and SWMM5 expert knowledge base and reference tool built on Replit.", url: "https://github.com/dickinsonre/EPANET-SWMM-Experts", language: "", stars: 0, fork: false, updatedAt: "2026-05-13", categories: ["SWMM5"] },
-  { id: "repo-67", name: "swmm5-ea", description: "SWMM5-EA — evolutionary algorithm extensions for SWMM5 calibration and optimization.", url: "https://github.com/dickinsonre/swmm5-ea", language: "", stars: 0, fork: true, updatedAt: "2026-05-13", categories: ["SWMM5"] }
+  { id: "repo-67", name: "swmm5-ea", description: "SWMM5-EA — evolutionary algorithm extensions for SWMM5 calibration and optimization.", url: "https://github.com/dickinsonre/swmm5-ea", language: "", stars: 0, fork: true, updatedAt: "2026-05-13", categories: ["SWMM5"] },
+  { id: "repo-68", name: "mykonos-island-voxels", description: "A browser-based isometric island builder with the soft, sun-bleached look of Mykonos. Vanilla ES modules, no bundler, mobile-friendly.", url: "https://github.com/dickinsonre/mykonos-island-voxels", language: "", stars: 0, fork: true, updatedAt: "2026-05-16", categories: ["Code Analysis"] },
+  { id: "repo-69", name: "map3d", description: "Generate city 3D maps with R3F, including building and road information.", url: "https://github.com/dickinsonre/map3d", language: "", stars: 0, fork: true, updatedAt: "2026-05-14", categories: ["Code Analysis"] }
 ];
 
 export const cimmRepos: GitHubRepo[] = [
@@ -3957,7 +3959,9 @@ export const swmmEnablementRepos: GitHubRepo[] = [
   { id: "se-22", name: "cdm-swmm4", description: "CDM SWMM4 legacy hydraulic model interface and analysis tool.", url: "https://github.com/SWMMEnablement/cdm-swmm4", language: "HTML", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5", "History"] },
   { id: "se-23", name: "ICMNewView", description: "New visualization interface for ICM InfoWorks networks, built on Replit.", url: "https://github.com/SWMMEnablement/ICMNewView", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["ICM InfoWorks"] },
   { id: "se-24", name: "SWMM-Explorer", description: "Interactive SWMM5 model explorer built on Replit.", url: "https://github.com/SWMMEnablement/SWMM-Explorer", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5"] },
-  { id: "se-25", name: "SWMM-Infiltration", description: "SWMM5 infiltration modeling explorer built on Replit.", url: "https://github.com/SWMMEnablement/SWMM-Infiltration", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5"] }
+  { id: "se-25", name: "SWMM-Infiltration", description: "SWMM5 infiltration modeling explorer built on Replit.", url: "https://github.com/SWMMEnablement/SWMM-Infiltration", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5"] },
+  { id: "se-26", name: "SWMM5QuizMaster", description: "SWMM5 quiz and knowledge testing application for stormwater modeling education.", url: "https://github.com/SWMMEnablement/SWMM5QuizMaster", language: "", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5"] },
+  { id: "se-27", name: "WatershedSimulator", description: "Watershed simulation tool built on Replit for hydrology and stormwater runoff analysis.", url: "https://github.com/SWMMEnablement/WatershedSimulator", language: "Python", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5"] }
 ];
 
 export const swmmBobRepos: GitHubRepo[] = [
