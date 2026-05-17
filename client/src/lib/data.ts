@@ -3961,7 +3961,8 @@ export const swmmEnablementRepos: GitHubRepo[] = [
   { id: "se-24", name: "SWMM-Explorer", description: "Interactive SWMM5 model explorer built on Replit.", url: "https://github.com/SWMMEnablement/SWMM-Explorer", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5"] },
   { id: "se-25", name: "SWMM-Infiltration", description: "SWMM5 infiltration modeling explorer built on Replit.", url: "https://github.com/SWMMEnablement/SWMM-Infiltration", language: "TypeScript", stars: 0, fork: false, updatedAt: "2026-05-14", categories: ["SWMM5"] },
   { id: "se-26", name: "SWMM5QuizMaster", description: "SWMM5 quiz and knowledge testing application for stormwater modeling education.", url: "https://github.com/SWMMEnablement/SWMM5QuizMaster", language: "", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5"] },
-  { id: "se-27", name: "WatershedSimulator", description: "Watershed simulation tool built on Replit for hydrology and stormwater runoff analysis.", url: "https://github.com/SWMMEnablement/WatershedSimulator", language: "Python", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5"] }
+  { id: "se-27", name: "WatershedSimulator", description: "Watershed simulation tool built on Replit for hydrology and stormwater runoff analysis.", url: "https://github.com/SWMMEnablement/WatershedSimulator", language: "Python", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5"] },
+  { id: "se-28", name: "SwmmIcmConverter", description: "SWMM to ICM model converter — migrate SWMM5 networks into InfoWorks ICM format.", url: "https://github.com/SWMMEnablement/SwmmIcmConverter", language: "Python", stars: 0, fork: false, updatedAt: "2026-05-17", categories: ["SWMM5", "ICM InfoWorks"] }
 ];
 
 export const swmmBobRepos: GitHubRepo[] = [
