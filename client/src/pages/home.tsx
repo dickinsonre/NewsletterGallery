@@ -1,4 +1,4 @@
-import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category, githubRepos, cimmRepos, swmmEnablementRepos, swmmBobRepos } from "@/lib/data";
+import { newsletters, linkedInArticles, documents, linkedInPosts, tools, featuredApps, ALL_CATEGORIES, learningPaths, Category, githubRepos, cimmRepos, swmmEnablementRepos, swmmBobRepos, nsAppsRepos } from "@/lib/data";
 import { NewsletterCard } from "@/components/newsletter-card";
 import { ArticleCard } from "@/components/article-card";
 import { DocumentCard } from "@/components/document-card";
@@ -224,7 +224,7 @@ export default function Home() {
                   <Badge variant="secondary">{newsletters.length} Newsletters</Badge>
                   <Badge variant="secondary">{linkedInArticles.length} Articles</Badge>
                   <Badge variant="secondary">{tools.length} Tools</Badge>
-                  <Badge variant="secondary">{githubRepos.length + cimmRepos.length + swmmEnablementRepos.length + swmmBobRepos.length} GitHub Repos</Badge>
+                  <Badge variant="secondary">{githubRepos.length + cimmRepos.length + swmmEnablementRepos.length + swmmBobRepos.length + nsAppsRepos.length} GitHub Repos</Badge>
                 </div>
                 {/* Quick Glossary with Linkable Terms */}
                 <details className="text-xs" id="glossary">
@@ -853,6 +853,29 @@ export default function Home() {
                     <RepoCard key={repo.id} repo={repo} index={idx} />
                   ))}
                 </div>
+              </section>
+
+              <section>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+                  <div>
+                    <a href="https://github.com/Robert-Dickinson-NS-Apps" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 group">
+                      <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="text-xl font-serif font-semibold group-hover:text-primary transition-colors">Robert-Dickinson-NS-Apps</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Nova Scotia–based water and stormwater applications by Robert Dickinson.</p>
+                  </div>
+                  <Badge variant="secondary" className="bg-primary/10 text-primary flex-shrink-0">{nsAppsRepos.length} repos</Badge>
+                </div>
+                {nsAppsRepos.length > 0 ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {nsAppsRepos.map((repo, idx) => (
+                      <RepoCard key={repo.id} repo={repo} index={idx} />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted-foreground italic">Repos coming soon — check back after the next sync.</p>
+                )}
               </section>
 
             </div>
