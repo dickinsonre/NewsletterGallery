@@ -1012,6 +1012,18 @@ export const newsletters: Newsletter[] = [
 
 export const linkedInArticles: LinkedInArticle[] = [
   {
+    id: "linkedin-157",
+    title: "Interactive Release Timeline for InfoWorks ICM — Starts in 2011 and Lasts Forever",
+    description: "An interactive diagram version of the InfoWorks ICM release timeline, tracing the platform's evolution from its 2011 origins through every major version up to today.",
+    date: "2025",
+    readTime: "5 min read",
+    imageUrl: networkCover,
+    link: "https://www.linkedin.com/posts/robertdickinson_interactive-release-timeline-for-infoworks-activity-7463705011324362752-vTUq",
+    categories: ["ICM InfoWorks"],
+    difficulty: "intermediate",
+    keywords: ["InfoWorks ICM", "release timeline", "interactive diagram", "ICM history", "Innovyze", "Autodesk"]
+  },
+  {
     id: "linkedin-156",
     title: "Why Conduit Discretization Matters — and How ReSWMM Automates It for Your SWMM5 Models",
     description: "A practical look at a common modeling problem most stormwater engineers know but few talk about. Long conduits in EPA SWMM models are one of those hidden sources of inaccuracy — and ReSWMM automates the discretization process to fix it.",
@@ -3069,15 +3081,6 @@ export const documents: Document[] = [
 ];
 
 export const linkedInPosts: LinkedInPost[] = [
-  {
-    id: "post-26",
-    title: "Interactive Release Timeline for InfoWorks ICM — Starts in 2011 and Lasts Forever",
-    description: "An interactive diagram version of the InfoWorks ICM release timeline, tracing the platform's evolution from its 2011 origins through every major version up to today.",
-    date: "2025",
-    link: "https://www.linkedin.com/posts/robertdickinson_interactive-release-timeline-for-infoworks-activity-7463705011324362752-vTUq",
-    categories: ["ICM InfoWorks"],
-    imageUrl: networkCover
-  },
   {
     id: "post-25",
     title: "Aquatic Suite 2D vs Industry Benchmarks in Shallow Water Equation Solver — Aquanuity",
